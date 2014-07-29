@@ -1,0 +1,10 @@
+ROADMAP du JEU.
+
+Le but premier étant de monter en compétences sur Unity pour Alto et Thibault.
+
+1) Architecture multi-screen pour Android et Ios (Pas de valeur exactes mais positionnement relatifs a l'écran)
+2) Moteur de gameplay physique
+3) Mise en place des items
+4) Intégration du social avec Facebook (Unity Facebook SDK)
+
+
