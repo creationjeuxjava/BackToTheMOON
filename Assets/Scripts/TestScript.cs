@@ -3,6 +3,7 @@ using System.Collections;
 
 public class TestScript : MonoBehaviour {
 
+    public GUIStyle myStyle ;
 	// Use this for initialization
 	void Start () {
 	
@@ -12,4 +13,11 @@ public class TestScript : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    void OnGUI()
+    {
+        GUILayout.Button(" lol", myStyle);
+    }
+
+
 }
