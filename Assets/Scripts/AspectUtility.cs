@@ -179,4 +179,11 @@ public class AspectUtility : MonoBehaviour {
 		                       adaptCoordY(height));
 		return  rect;
 	}
+
+	public static int adaptFont(float x){
+		
+		//Debug.Log("ResponsiveController: on va adapter les coordY ou Height de la GUI");
+		int size =  (int)adaptCoordX(x);
+		return  size;
+	}
 }

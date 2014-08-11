@@ -27,11 +27,13 @@ public class MenuGUI : MonoBehaviour {
 		   */
 		/***** le résultat est criticable ... ***/
 
-		//menuStyle.fontSize = 20;
 
-		GUIStyle style = GUI.skin.GetStyle("Label");
-		style.fontSize = 30;
-		menuStyle.fontSize = 20;
+		//GUIStyle style = GUI.skin.GetStyle("Label");
+		//style.fontSize = 30;
+		menuStyle.fontSize = AspectUtility.adaptFont(30);
+		Debug.Log("MenuGUI: taille adaptée de la font est  :"+menuStyle.fontSize);
+
+
 		/*** gestion des input **********/
 		/*******************************/
 		// Groupe centré à l'écran
@@ -41,10 +43,8 @@ public class MenuGUI : MonoBehaviour {
 
 
 		Rect boxRect = AspectUtility.adaptRect(0,0, 300, 300);
-		Rect playRect = AspectUtility.adaptRect (300/2-200/2, 100, 200, 50);
-		Rect quitRect = AspectUtility.adaptRect (300/2-200/2, 200, 200, 50);
-
-
+		Rect playRect = AspectUtility.adaptRect (300/2-200/2, 100, 200, 70);
+		Rect quitRect = AspectUtility.adaptRect (300/2-200/2, 200, 200, 70);
 
 		GUI.Box (boxRect, "Menu");
 		/*** lancer le premier niveau ***/

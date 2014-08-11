@@ -26,7 +26,7 @@ public class ResponsiveController : MonoBehaviour {
 		//Screen.orientation = ScreenOrientation.Portrait;
 
 
-		Debug.Log("ResponsiveController: le device est en mode "+Screen.orientation);
+		//Debug.Log("ResponsiveController: le device est en mode "+Screen.orientation);
 
 		/************************ récupération des dimensions du terminal *************************/
 		/*******************************************************************************************/
