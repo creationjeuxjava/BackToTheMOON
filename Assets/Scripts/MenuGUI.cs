@@ -33,17 +33,10 @@ public class MenuGUI : MonoBehaviour {
 		float heightBox = AspectUtility.adaptCoordX(300);
 		GUI.BeginGroup (new Rect (Screen.width / 2 - widthBox/2, Screen.height / 2 - 50, widthBox, heightBox));
 
-		/*Rect boxRect = new Rect (0, 0, AspectUtility.adaptCoordX(100),  AspectUtility.adaptCoordY(150));
-		Rect boxRect = new Rect (0, 0, Screen.width * 0.4f, Screen.height *0.2f);
-		Rect playRect = new Rect (10, 40, 80, 30);
-		Rect quitRect = new Rect (10, 80, 80, 30);*/
 
-		/*Rect boxRect = new Rect (0, 0, widthBox, heightBox);
-		Rect playRect = new Rect (10, 40, 80, 30);
-		Rect quitRect = new Rect (10, 80, 80, 30);*/
 		Rect boxRect = AspectUtility.adaptRect(0,0, 300, 300);
-		Rect playRect = AspectUtility.adaptRect (10, 100, 200, 50);
-		Rect quitRect = AspectUtility.adaptRect (10, 200, 200, 50);
+		Rect playRect = AspectUtility.adaptRect (300/2-200/2, 100, 200, 50);
+		Rect quitRect = AspectUtility.adaptRect (300/2-200/2, 200, 200, 50);
 
 
 
