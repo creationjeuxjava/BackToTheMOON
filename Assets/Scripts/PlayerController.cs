@@ -10,7 +10,9 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Vector3 touchPosition = Input.GetTouch(0).position;
-		Debug.Log("PlayerController: on touche écran en  ("+touchPosition.x+" , "+touchPosition.y+")");
-	}
+				if (Input.touchCount == 1) {
+						Vector3 touchPosition = Input.GetTouch (0).position;
+						Debug.Log ("PlayerController: on touche écran en  (" + touchPosition.x + " , " + touchPosition.y + ")");
+				}
+		}
 }
