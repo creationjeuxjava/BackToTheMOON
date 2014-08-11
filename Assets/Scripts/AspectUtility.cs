@@ -169,4 +169,14 @@ public class AspectUtility : MonoBehaviour {
 		float yFinal =  y*hauteur_ecran/hauteurEcranRepere;
 		return  yFinal;
 	}
+
+	public static Rect adaptRect(float x, float y, float width, float height){
+		
+		//Debug.Log("ResponsiveController: on va adapter les coordY ou Height de la GUI");
+		Rect rect =  new Rect(adaptCoordX(x),
+		                       adaptCoordY(y),
+		                       adaptCoordX(width),
+		                       adaptCoordY(height));
+		return  rect;
+	}
 }
