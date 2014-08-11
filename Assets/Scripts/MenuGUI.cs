@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MenuGUI : MonoBehaviour {
 
+	public GUIStyle menuStyle ;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -25,7 +27,11 @@ public class MenuGUI : MonoBehaviour {
 		   */
 		/***** le résultat est criticable ... ***/
 
+		//menuStyle.fontSize = 20;
 
+		GUIStyle style = GUI.skin.GetStyle("Label");
+		style.fontSize = 30;
+		menuStyle.fontSize = 20;
 		/*** gestion des input **********/
 		/*******************************/
 		// Groupe centré à l'écran
@@ -42,11 +48,11 @@ public class MenuGUI : MonoBehaviour {
 
 		GUI.Box (boxRect, "Menu");
 		/*** lancer le premier niveau ***/
-		if (GUI.Button(playRect,"Jouer")) {
+		if (GUI.Button(playRect,"Jouer",menuStyle)) {
 			Application.LoadLevel(0);
 		}
 		/*** quitter le jeu ***/
-		if (GUI.Button (quitRect,"Quitter")) {
+		if (GUI.Button (quitRect,"Quitter",menuStyle)) {
 			Application.Quit();
 		}
 
