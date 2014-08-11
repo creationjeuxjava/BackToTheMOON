@@ -7,8 +7,8 @@ public class ResponsiveController : MonoBehaviour {
 	private static float largeur_ecran;
 	private static float hauteur_ecran;
 	
-	public float largeurEcranRepere = 800;
-	public float  hauteurEcranRepere = 480;
+	public static float largeurEcranRepere = 800;
+	public static float  hauteurEcranRepere = 1280;
 
 	private float  ratioX,ratioY;
 
@@ -88,16 +88,16 @@ public class ResponsiveController : MonoBehaviour {
 	}
 
 	
-	/************** méthodes de placement de la GUI dn fonction du terminal   ****************/
+	/************** méthodes de placement de la GUI en fonction du terminal   ****************/
 	/*******************************************************************************************/
-	public float adaptCoordX(float x){
+	public static float adaptCoordX(float x){
 
 		//Debug.Log("ResponsiveController: on va adapter les coordX ou width de la GUI");
 		float xFinal = x*largeur_ecran/largeurEcranRepere;
 		return xFinal;
 	}
 
-	public float adaptCoordY(float y){
+	public static float adaptCoordY(float y){
 		
 		//Debug.Log("ResponsiveController: on va adapter les coordY ou Height de la GUI");
 		float yFinal =  y*hauteur_ecran/hauteurEcranRepere;

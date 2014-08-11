@@ -9,11 +9,22 @@ public class AspectUtility : MonoBehaviour {
 	static float wantedAspectRatio;
 	static Camera cam;
 	static Camera backgroundCam;
+
+	private static float largeur_ecran;
+	private static float hauteur_ecran;
+	public static float largeurEcranRepere = 800;
+	public static float  hauteurEcranRepere = 1280;
 	
 	void Awake () {
 		_landscapeModeOnly = landscapeModeOnly;
 
-
+		/************************ récupération des dimensions du terminal *************************/
+		/*******************************************************************************************/
+		
+		//largeur_ecran = Screen.currentResolution.width;
+		//hauteur_ecran = Screen.currentResolution.height;
+		largeur_ecran = Screen.width;
+		hauteur_ecran = Screen.height;
 
 		/******************* on force le mode portrait *********************/
 		/********************************************************************/
@@ -141,5 +152,21 @@ public class AspectUtility : MonoBehaviour {
 			mousePos.x = Mathf.Clamp(mousePos.x, cam.rect.x * Screen.width, cam.rect.x * Screen.width + cam.rect.width * Screen.width);
 			return mousePos;
 		}
+	}
+
+	/************** méthodes de placement de la GUI en fonction du terminal   ****************/
+	/*******************************************************************************************/
+	public static float adaptCoordX(float x){
+		
+		//Debug.Log("ResponsiveController: on va adapter les coordX ou width de la GUI");
+		float xFinal = x*largeur_ecran/largeurEcranRepere;
+		return xFinal;
+	}
+	
+	public static float adaptCoordY(float y){
+		
+		//Debug.Log("ResponsiveController: on va adapter les coordY ou Height de la GUI");
+		float yFinal =  y*hauteur_ecran/hauteurEcranRepere;
+		return  yFinal;
 	}
 }
