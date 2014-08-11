@@ -49,7 +49,7 @@ public class MenuGUI : MonoBehaviour {
 		GUI.Box (boxRect, "Menu");
 		/*** lancer le premier niveau ***/
 		if (GUI.Button(playRect,"Jouer",menuStyle)) {
-			Application.LoadLevel(0);
+			Application.LoadLevel(1);
 		}
 		/*** quitter le jeu ***/
 		if (GUI.Button (quitRect,"Quitter",menuStyle)) {
