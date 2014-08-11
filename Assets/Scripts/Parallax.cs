@@ -2,7 +2,10 @@
 using System.Collections;
 
 public class Parallax : MonoBehaviour {
-    int x = 0;
+    int y = 0;
+    public GameObject[] objToParallax;
+    public bool playerMoving = false;
+    
 	// Use this for initialization
 	void Start () {
 	
@@ -10,6 +13,9 @@ public class Parallax : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(x++, 0, 0);
+        //Time.timeScale =  0.2f;
+       if(Input.GetKey(KeyCode.Space))
+            
+       transform.Translate(0, y-0.03f, 0);
 	}
 }
