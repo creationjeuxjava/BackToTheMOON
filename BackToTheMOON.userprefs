@@ -1,11 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\InGameGUI.cs">
     <Files>
       <File FileName="Assets\Scripts\ResponsiveController.cs" Line="29" Column="82" />
-      <File FileName="Assets\Scripts\AspectUtility.cs" Line="186" Column="20" />
-      <File FileName="Assets\Scripts\MenuGUI.cs" Line="52" Column="27" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="37" Column="46" />
+      <File FileName="Assets\Scripts\AspectUtility.cs" Line="193" Column="53" />
+      <File FileName="Assets\Scripts\MenuGUI.cs" Line="45" Column="42" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="30" Column="94" />
+      <File FileName="Assets\Scripts\InGameGUI.cs" Line="22" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
