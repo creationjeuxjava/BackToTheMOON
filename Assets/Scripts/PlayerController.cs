@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		touchDeltaPosition = Vector2.zero;
 		//Debug.Log("PlayerController-->création");
 	}
 	
@@ -66,14 +67,12 @@ public class PlayerController : MonoBehaviour {
 				lastMouseCoordinate = Input.mousePosition;
 			}
 		}
-		//relache...le player s'envole !!
-		if(Input.GetMouseButtonUp(0)){
+		//relache...le player s'envole mais toujours de la meme quantité...TODO...à améliorer!!
+		if(Input.GetMouseButtonUp(0)&& Application.platform != RuntimePlatform.Android 
+		   && Application.platform != RuntimePlatform.IPhonePlayer){
 
 			//transform.Translate(-touchDeltaPosition.x * speed, -touchDeltaPosition.y * speed, 0);
-			//if(transform.localPosition.Equals(touchDeltaPosition))
-				//transform.Translate(-touchDeltaPosition.x * speed, -touchDeltaPosition.y * speed, 0);
 			rigidbody2D.AddForce(new Vector2(-touchDeltaPosition.x* amplificationMove,-touchDeltaPosition.y* amplificationMove));
-			//rigidbody2D.AddForce(new Vector2(1000,1000));
 		}
 					
 	}
