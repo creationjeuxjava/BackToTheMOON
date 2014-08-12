@@ -186,4 +186,13 @@ public class AspectUtility : MonoBehaviour {
 		int size =  (int)adaptCoordX(x);
 		return  size;
 	}
+
+	public static Vector3 mouseInvertPosition {
+		get {
+			Vector3 mousePos = Input.mousePosition;
+			mousePos.y -= (int)(cam.rect.y * Screen.height*-1);
+			mousePos.x -= (int)(cam.rect.x * Screen.width);
+			return mousePos;
+		}
+	}
 }
