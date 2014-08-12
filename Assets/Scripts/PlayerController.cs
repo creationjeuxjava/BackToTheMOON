@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
     bool isMoving;
 	float speed = 0.5F;
+	float amplificationMove = 10f;
 	Vector2 touchDeltaPosition;
 	Vector3 lastMouseCoordinate = Vector3.zero;
 
@@ -45,7 +46,9 @@ public class PlayerController : MonoBehaviour {
 
 		/**** version pc *****/
 		//appui
-		if (Input.GetMouseButtonDown (0)&& Input.mousePresent) {
+		if (Input.GetMouseButtonDown (0)&& Input.mousePresent && Application.platform != RuntimePlatform.Android 
+		    	&& Application.platform != RuntimePlatform.IPhonePlayer) {
+
 			Vector3 touchPosition = Input.mousePosition;
 			touchPosition = camera.ScreenToWorldPoint(touchPosition);
 			//affichage pour debug
@@ -55,30 +58,27 @@ public class PlayerController : MonoBehaviour {
 			if(gameObject.collider2D.bounds.Contains(new Vector2(touchPosition.x,touchPosition.y))){
 
 				Debug.Log("*************************------>   clic gauche sur le perso !!");
-				//touchDeltaPosition = Input.GetMouseButtonDown(0);
-				//Input.GetMouseButtonDown(0);
-
 				// On regarde de combien la souris a bougé 
 				Vector3 mouseDelta = Input.mousePosition - lastMouseCoordinate;
 				touchDeltaPosition = camera.ScreenToWorldPoint(mouseDelta);
-
-				// Then we check if it has moved to the left.
-				//if(mouseDelta.x < 0) // Assuming a negative value is to the left.
-					//animation.Play("WhateverIWant");
 				
-				// Then we store our mousePosition so that we can check it again next frame.
+				// on save la dernière position
 				lastMouseCoordinate = Input.mousePosition;
 			}
 		}
-		//relache
+		//relache...le player s'envole !!
 		if(Input.GetMouseButtonUp(0)){
 
-			transform.Translate(-touchDeltaPosition.x * speed, -touchDeltaPosition.y * speed, 0);
+			//transform.Translate(-touchDeltaPosition.x * speed, -touchDeltaPosition.y * speed, 0);
+			//if(transform.localPosition.Equals(touchDeltaPosition))
+				//transform.Translate(-touchDeltaPosition.x * speed, -touchDeltaPosition.y * speed, 0);
+			rigidbody2D.AddForce(new Vector2(-touchDeltaPosition.x* amplificationMove,-touchDeltaPosition.y* amplificationMove));
+			//rigidbody2D.AddForce(new Vector2(1000,1000));
 		}
 					
 	}
 
-	void OnMouseOver()
+	/*void OnMouseOver()
 	{
 		Debug.Log ("souris au dessus de : "+gameObject.name);
 	}
@@ -86,5 +86,5 @@ public class PlayerController : MonoBehaviour {
 	void OnMouseDown()
 	{
 		Debug.Log ("souris clic  dessus de : "+gameObject.name);
-	}
+	}*/
 }
