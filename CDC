@@ -8,6 +8,7 @@ Le jeu est destiné aux plateformes mobiles pour être disponible sur l'AppleSto
 ++Coté technique :
 
 -Unity3D avec le langage C#
+-Utilisation de NGUI pour la GUI
 -Ads avec https://unityads.unity3d.com/monetize
 -Intégration du social avec Facebook https://developers.facebook.com/docs/unity/
 -Jouable via un glisser vers le haut de l'index sur le mobile
