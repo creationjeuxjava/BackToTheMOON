@@ -14,6 +14,8 @@ Le jeu est destiné aux plateformes mobiles pour être disponible sur l'AppleSto
 -Utilisation des shaders pour le changement d'environnements (Jour / Nuit) (Attention aux anciens mobiles sans ES 2.0 ! )
 -Jeu Basé sur le parrallax essentiellement, il faut donc choisir (Perso ou Décor qui se déplace ? )
 -Pooling pour les objets récupérables en vol (Vu la résolution, une dizaine peut être moins en pool)
+-5 écrans : Le menu de lancement (Play Quit), le menu du choix et déblocage de niveaux (Affichage des planetes),
+             L'écran inGame (10 Niveaux), Ecran GameOver, Ecran des scores (Avec partage social)
 
 ++Coté Gameplay :
 
