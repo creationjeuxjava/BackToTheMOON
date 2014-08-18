@@ -1,11 +1,11 @@
                                           Cahier des charges du jeu BackToTheMoon
                                           
-Histoire :
+++Histoire :
 
 Un jeu fun et amusant qui raconte l'histoire d'un astronaute qui se crash sur terre et qui veut retourner sur la lune.
 Le jeu est destiné aux plateformes mobiles pour être disponible sur l'AppleStore et le Google Play.
 
-Coté technique :
+++Coté technique :
 
 -Unity3D avec le langage C#
 -Ads avec https://unityads.unity3d.com/monetize
@@ -15,7 +15,7 @@ Coté technique :
 -Jeu Basé sur le parrallax essentiellement, il faut donc choisir (Perso ou Décor qui se déplace ? )
 -Pooling pour les objets récupérables en vol (Vu la résolution, une dizaine peut être moins en pool)
 
-Coté Gameplay :
+++Coté Gameplay :
 
 -Plusieurs planetes en mode decale (star wars et autres ref)
 
