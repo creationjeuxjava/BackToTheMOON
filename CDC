@@ -1,0 +1,47 @@
+                                          Cahier des charges du jeu BackToTheMoon
+                                          
+Histoire :
+
+Un jeu fun et amusant qui raconte l'histoire d'un astronaute qui se crash sur terre et qui veut retourner sur la lune.
+Le jeu est destiné aux plateformes mobiles pour être disponible sur l'AppleStore et le Google Play.
+
+Coté technique :
+
+-Unity3D avec le langage C#
+-Ads avec https://unityads.unity3d.com/monetize
+-Intégration du social avec Facebook https://developers.facebook.com/docs/unity/
+-Jouable via un glisser vers le haut de l'index sur le mobile
+-Utilisation des shaders pour le changement d'environnements (Jour / Nuit) (Attention aux anciens mobiles sans ES 2.0 ! )
+-Jeu Basé sur le parrallax essentiellement, il faut donc choisir (Perso ou Décor qui se déplace ? )
+-Pooling pour les objets récupérables en vol (Vu la résolution, une dizaine peut être moins en pool)
+
+Coté Gameplay :
+
+-Plusieurs planetes en mode decale (star wars et autres ref)
+
+-Items : flageollets, homme-canon, elastiques, chewing gum etc, poivre eternuant.
+
+-Orientation portrait force
+
+-Progression par palliers associes à des technos qui sont offertes par les habitants de la planetes.
+
+-Association de technos (briquet puis flageollet = boost). 
+
+-Partage de score (altitude + niveau) si facebook.
+
+-Items flottants
+
+-Objectifs fixes (planetes en planetes)
+
+-Personnages connus (ITI)
+
+-Achat d'items.
+
+-Sac à dos avec des items cliquables limites à 5 voire 4 mais un choix plus vastes lors de l'envol du héros. 
+
+- nitro, jetpack
+
+- quelques items recurrents (chewing gum -> malabar).
+
+- 10 niveaux pour commencer
+
