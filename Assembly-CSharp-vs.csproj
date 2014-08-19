@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AspectUtility.cs" />
+     <Compile Include="Assets\Scripts\HUDFPS.cs" />
      <Compile Include="Assets\Scripts\InGameGUI.cs" />
      <Compile Include="Assets\Scripts\MenuGUI.cs" />
      <Compile Include="Assets\Scripts\Parallax.cs" />

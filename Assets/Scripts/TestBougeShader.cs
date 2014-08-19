@@ -11,7 +11,7 @@ public class TestBougeShader : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
-            transform.position = new Vector3(0, Mathf.Lerp(0, 5, Time.time / 5), 0);
+            transform.position = new Vector3(0, Mathf.Lerp(-5, 5, Time.time / 10), 0);
 
 	}
 }
