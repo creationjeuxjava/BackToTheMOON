@@ -48,3 +48,8 @@ Le jeu est destiné aux plateformes mobiles pour être disponible sur l'AppleSto
 
 - 10 niveaux pour commencer
 
+-Gestion de la gravité
+
+-Avant décollage choisi item
+
+-items d'action
