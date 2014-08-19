@@ -53,6 +53,14 @@ Material:
         first:
           name: _node_10
         second: 1
+      data:
+        first:
+          name: _node_373
+        second: 1
+      data:
+        first:
+          name: _node_392
+        second: 2
     m_Colors:
       data:
         first:
