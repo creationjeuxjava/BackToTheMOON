@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: ShaderForgeInternal
+  m_Name: levelSwitch 1
   m_Shader: {fileID: 4800000, guid: c2f682c9f4412444185846028969d5f8, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
@@ -18,13 +18,6 @@ Material:
           name: _MainTex
         second:
           m_Texture: {fileID: 2800000, guid: 416c91bf2fbc2554186fa39c03b1cebf, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _background
-        second:
-          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -45,7 +38,7 @@ Material:
         first:
           name: _MainTex_copy
         second:
-          m_Texture: {fileID: 2800000, guid: 416c91bf2fbc2554186fa39c03b1cebf, type: 3}
+          m_Texture: {fileID: 2800000, guid: 6dfa0530857de64488ed1f571320a1a8, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -61,7 +54,7 @@ Material:
       data:
         first:
           name: _halfnight
-        second: {r: .470588207, g: .126572013, b: 0, a: 1}
+        second: {r: .470588207, g: .126571998, b: 0, a: 1}
       data:
         first:
           name: _day
