@@ -53,3 +53,7 @@ Le jeu est destiné aux plateformes mobiles pour être disponible sur l'AppleSto
 -Avant décollage choisi item
 
 -items d'action
+
+-Lanceur canon de base evolutif (partage social)
+
+-Accelerometre et drag du perso en horizontal
