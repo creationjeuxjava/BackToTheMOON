@@ -30,6 +30,7 @@ public class HUDFPS : MonoBehaviour
             return;
         }
         timeleft = updateInterval;
+        guiText.fontSize = 18;
     }
 
     void Update()
