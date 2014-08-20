@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{852E3969-82CF-4757-4EA7-E2881E015662}") = "BackToTheMOON", "Assembly-CSharp.csproj", "{F09158F4-3FC2-343F-630F-0AD863666D47}"
 EndProject
+Project("{852E3969-82CF-4757-4EA7-E2881E015662}") = "BackToTheMOON", "Assembly-CSharp-Editor.csproj", "{136ADF09-0374-1501-76F5-4CE7592D4D13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,15 @@ Global
 		{F09158F4-3FC2-343F-630F-0AD863666D47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F09158F4-3FC2-343F-630F-0AD863666D47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F09158F4-3FC2-343F-630F-0AD863666D47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{136ADF09-0374-1501-76F5-4CE7592D4D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136ADF09-0374-1501-76F5-4CE7592D4D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136ADF09-0374-1501-76F5-4CE7592D4D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136ADF09-0374-1501-76F5-4CE7592D4D13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																			GlobalSection(MonoDevelopProperties) = preSolution
+																																																					GlobalSection(MonoDevelopProperties) = preSolution
 																																GlobalSection(MonoDevelopProperties) = preSolution
 																											GlobalSection(MonoDevelopProperties) = preSolution
 																									GlobalSection(MonoDevelopProperties) = preSolution
