@@ -22,13 +22,6 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _background
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
           name: _node_284
         second:
           m_Texture: {fileID: 2800000, guid: faad7474c289beb4d86b6cacdadffed6, type: 3}
@@ -41,35 +34,12 @@ Material:
           m_Texture: {fileID: 2800000, guid: 9fbd55bef791b004dbbc130297e57cf4, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _MainTex_copy
-        second:
-          m_Texture: {fileID: 2800000, guid: 416c91bf2fbc2554186fa39c03b1cebf, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _node_10
         second: 1
-      data:
-        first:
-          name: _node_373
-        second: 1
-      data:
-        first:
-          name: _node_392
-        second: 2
     m_Colors:
-      data:
-        first:
-          name: _night
-        second: {r: 0, g: 0, b: 0, a: 1}
-      data:
-        first:
-          name: _halfnight
-        second: {r: .470588207, g: .126572013, b: 0, a: 1}
       data:
         first:
           name: _day

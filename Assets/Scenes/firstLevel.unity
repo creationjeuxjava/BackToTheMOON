@@ -320,7 +320,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 313015600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.0346031, y: -30.2492962, z: 0}
+  m_LocalPosition: {x: -13.25389, y: -33.8556557, z: 0}
   m_LocalScale: {x: .353587151, y: .353586733, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -336,6 +336,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5078099d4910554784529781c02281e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMoving: 0
+  speed: .5
+  amplificationMove: 10
+  touchDeltaPosition: {x: 0, y: 0}
+  lastMouseCoordinate: {x: 0, y: 0, z: 0}
+  isDragging: 0
+  initialDraggingPos: {x: 0, y: 0, z: 0}
   camera: {fileID: 276706956}
 --- !u!61 &313015604
 BoxCollider2D:
@@ -612,7 +619,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1024786363}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .810558319, y: -5, z: 0}
+  m_LocalPosition: {x: .997175694, y: -2.53662109, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

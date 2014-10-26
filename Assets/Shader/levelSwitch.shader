@@ -76,10 +76,9 @@ Shader "Custom/levelSwitch" {
                 float3 diffuseLight = diffuse;
                 float node_11_if_leA = step(_node_10,objPos.g);
                 float node_11_if_leB = step(objPos.g,_node_10);
-                float2 node_441 = i.uv0;
-                float4 node_3 = tex2D(_MainTex,TRANSFORM_TEX(node_441.rg, _MainTex));
-                float3 node_11 = lerp((node_11_if_leA*(node_3.rgb*_day.rgb))+(node_11_if_leB*(node_3.rgb*tex2D(_node_284,TRANSFORM_TEX(node_441.rg, _node_284)).rgb)),(node_3.rgb*tex2D(_node_284_copy,TRANSFORM_TEX(node_441.rg, _node_284_copy)).rgb),node_11_if_leA*node_11_if_leB);
-                finalColor += diffuseLight * node_11;
+                float2 node_437 = i.uv0;
+                float4 node_3 = tex2D(_MainTex,TRANSFORM_TEX(node_437.rg, _MainTex));
+                finalColor += diffuseLight * lerp((node_11_if_leA*(node_3.rgb*_day.rgb))+(node_11_if_leB*(node_3.rgb*tex2D(_node_284,TRANSFORM_TEX(node_437.rg, _node_284)).rgb)),(node_3.rgb*tex2D(_node_284_copy,TRANSFORM_TEX(node_437.rg, _node_284_copy)).rgb),node_11_if_leA*node_11_if_leB);
 /// Final Color:
                 return fixed4(finalColor,1);
             }
@@ -147,10 +146,9 @@ Shader "Custom/levelSwitch" {
                 float3 diffuseLight = diffuse;
                 float node_11_if_leA = step(_node_10,objPos.g);
                 float node_11_if_leB = step(objPos.g,_node_10);
-                float2 node_442 = i.uv0;
-                float4 node_3 = tex2D(_MainTex,TRANSFORM_TEX(node_442.rg, _MainTex));
-                float3 node_11 = lerp((node_11_if_leA*(node_3.rgb*_day.rgb))+(node_11_if_leB*(node_3.rgb*tex2D(_node_284,TRANSFORM_TEX(node_442.rg, _node_284)).rgb)),(node_3.rgb*tex2D(_node_284_copy,TRANSFORM_TEX(node_442.rg, _node_284_copy)).rgb),node_11_if_leA*node_11_if_leB);
-                finalColor += diffuseLight * node_11;
+                float2 node_438 = i.uv0;
+                float4 node_3 = tex2D(_MainTex,TRANSFORM_TEX(node_438.rg, _MainTex));
+                finalColor += diffuseLight * lerp((node_11_if_leA*(node_3.rgb*_day.rgb))+(node_11_if_leB*(node_3.rgb*tex2D(_node_284,TRANSFORM_TEX(node_438.rg, _node_284)).rgb)),(node_3.rgb*tex2D(_node_284_copy,TRANSFORM_TEX(node_438.rg, _node_284_copy)).rgb),node_11_if_leA*node_11_if_leB);
 /// Final Color:
                 return fixed4(finalColor * 1,0);
             }
