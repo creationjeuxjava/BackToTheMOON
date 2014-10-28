@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour {
 			//transform.Translate(-touchDeltaPosition.x * speed, -touchDeltaPosition.y * speed, 0);
 			rigidbody2D.AddForce(new Vector2(touchDeltaPosition.x* amplificationMove,touchDeltaPosition.y* amplificationMove));
 		}
-		renderer.	
+		//renderer.	
 	}
 
 	/*void OnMouseOver()
