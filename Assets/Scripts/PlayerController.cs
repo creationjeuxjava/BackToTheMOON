@@ -57,12 +57,15 @@ public class PlayerController : MonoBehaviour {
 			InGameGUI.setMessage ("perso centre en (" + gameObject.collider2D.bounds.center.x + " , " + gameObject.collider2D.bounds.center.y + ")",
                      "***clic gauche converti (" + touchPosition.x + " , " + touchPosition.y + ")");
 
+			Debug.Log("ameObject.collider2D.bounds "+gameObject.collider2D.bounds);
 			if (gameObject.collider2D.bounds.Contains (new Vector2 (touchPosition.x, touchPosition.y))) {
+				Debug.Log("iclic perso");
 					//si on n'est pas encore en mode dragging, on se met en mode dragging et on note 
 					// la position initialle de la souris
 					if (!isDragging) {
 						isDragging = true;	
 						initialDraggingPos = Input.mousePosition;
+						Debug.Log("initialDraggingPos:"+initialDraggingPos.x);
 					} 
 					// On regarde de combien la souris a bougé 
 					//Vector3 mouseDelta = Input.mousePosition - lastMouseCoordinate;
@@ -80,6 +83,7 @@ public class PlayerController : MonoBehaviour {
 			if(isDragging) {
 				isDragging = false;
 				touchDeltaPosition = Input.mousePosition - initialDraggingPos;
+				Debug.Log("touchDeltaPosition:"+touchDeltaPosition.x);
 			}
 			Debug.Log("touch delta :"+touchDeltaPosition);
 			//transform.Translate(-touchDeltaPosition.x * speed, -touchDeltaPosition.y * speed, 0);
