@@ -13,11 +13,15 @@ public class GameController : MonoBehaviour {
 	private int nbreMeteor = 20;
 	private int nbreNuages = 5;
 
-	private GameObject world;//conteneur du world
+	public static GameObject world;//conteneur du world
 	private static bool isWorldMoving = false;
+
+	private float altitude;
+	private int coeffAltitude = 5;
 
 	// Use this for initialization
 	void Start () {
+		altitude = 0;
 		world = GameObject.FindGameObjectWithTag ("World");
 		createWorld ();
 	}
@@ -25,8 +29,9 @@ public class GameController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (isWorldMoving == true) {
-			//Debug.Log ("***************  le monde se déplace ");				
-			world.transform.Translate (PlayerController.vitesse);//on déplace tout le niveau !!
+			world.transform.Translate (PlayerController.vitesse);//on déplace tout le niveau en fonction de la vitesse du joueur !!
+			altitude = world.transform.position.y * -1 * coeffAltitude;
+			InGameGUI.setMessage("Altitude :"+altitude,"pas de message");
 		}
 	}
 
@@ -38,22 +43,6 @@ public class GameController : MonoBehaviour {
 		createSpriteWorld (meteorite, nbreMeteor,new Vector2(-45,56),new Vector2(100,400));
 		createSpriteWorld (nuage, nbreNuages,new Vector2(-55,66),new Vector2(30,70));
 		createSpriteWorld (oiseau, nbreNuages,new Vector2(-40,50),new Vector2(30,70));
-
-		/*for(int i = 0 ; i < nbreMeteor ; i++){
-			Vector3 spawnPosition = new Vector3 (Random.Range(-45,56),Random.Range(100,400),-30f);
-			Quaternion spawnRotation =  Quaternion.identity;
-			GameObject sprite = Instantiate(meteorite, spawnPosition, spawnRotation) as GameObject;
-			sprite.transform.parent = world.transform;
-			
-		}
-
-		for(int i = 0 ; i < nbreNuages ; i++){
-			Vector3 spawnPosition = new Vector3 (Random.Range(-55,66),Random.Range(30,70),-30f);
-			Quaternion spawnRotation =  Quaternion.identity;
-			GameObject sprite = Instantiate(nuage, spawnPosition, spawnRotation) as GameObject;
-			sprite.transform.parent = world.transform;
-			
-		}*/
 
 	}
 
