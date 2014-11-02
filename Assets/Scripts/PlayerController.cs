@@ -11,6 +11,18 @@ public class PlayerController : MonoBehaviour {
 	public Vector3 initialDraggingPos;
 	public Camera camera;
 
+
+	/**** nvelle implémentation car le perso ne bouge pas ...c'est le niveau qui le fait ******/
+	private static bool isFlying = false;
+	public static Vector3 vitesse = Vector3.zero;
+
+	public static void launchIntheAir(){
+		Debug.Log ("***************  le joueur décolle");		
+		isFlying = true;
+		vitesse = new Vector3(0,-0.2f,0);
+	}
+
+
 	// Use this for initialization
 	void Start () {
 		touchDeltaPosition = Vector2.zero;
@@ -19,6 +31,12 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (isFlying) {
+			Debug.Log ("***************  le joueur vole");	
+			//vitesse.y *= -1;
+			//transform.Translate(new Vector3(0,vitesse.y*-1,0));	
+			//rigidbody2D.AddForce(new Vector2(0* amplificationMove,30f ));
+		}
 
 		/*** android ****/
 		if (Input.touchCount == 1) {

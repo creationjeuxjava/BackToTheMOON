@@ -23,8 +23,8 @@ public class GameController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (isWorldMoving == true) {
-				
-			world.transform.Translate (new Vector3 (0,-0.2f,0));
+			Debug.Log ("***************  le monde se déplace ");				
+			world.transform.Translate (PlayerController.vitesse);//on déplace tout le niveau !!
 		}
 	}
 
@@ -45,6 +45,7 @@ public class GameController : MonoBehaviour {
 
 	//lancer le joueur et donc faire avancer le monde !!
 	public static void LaunchPlayer (){
+		PlayerController.launchIntheAir ();
 		isWorldMoving = true;
 	}
 }
