@@ -17,7 +17,7 @@ public class CanonController : MonoBehaviour {
 
 	void OnMouseDown()
 	{
-		Debug.Log ("***************  souris clic  sur : "+gameObject.name+" on va tirer");
+		//Debug.Log ("***************  souris clic  sur : "+gameObject.name+" on va tirer");
 		GameController.LaunchPlayer();
 	}
 }

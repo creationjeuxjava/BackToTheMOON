@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour {
 	public static Vector3 vitesse = Vector3.zero;
 
 	public static void launchIntheAir(){
-		Debug.Log ("***************  le joueur décolle");		
+		//Debug.Log ("***************  le joueur décolle");		
 		isFlying = true;
 		vitesse = new Vector3(0,-0.2f,0);
 	}
@@ -32,10 +32,12 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (isFlying) {
-			Debug.Log ("***************  le joueur vole");	
+			//Debug.Log ("***************  le joueur vole");	
 			//vitesse.y *= -1;
 			//transform.Translate(new Vector3(0,vitesse.y*-1,0));	
 			//rigidbody2D.AddForce(new Vector2(0* amplificationMove,30f ));
+
+			//jouer animation de vol
 		}
 
 		/*** android ****/
@@ -108,6 +110,15 @@ public class PlayerController : MonoBehaviour {
 			rigidbody2D.AddForce(new Vector2(touchDeltaPosition.x* amplificationMove,touchDeltaPosition.y* amplificationMove));
 		}
 		//renderer.	
+	}
+
+	void OnCollisionEnter2D(Collision2D other){
+		
+		if(other.gameObject.tag == "Meteorite" ){
+			Debug.Log ("***************  collision avec un météorite ");
+			//on meurt ?
+			
+		}
 	}
 
 	/*void OnMouseOver()
