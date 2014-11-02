@@ -2,7 +2,7 @@
 using System.Collections;
 
 /*
- * * gère la logique du jeu
+ * * gère la logique du jeu et la création du niveau
  * */
 
 public class GameController : MonoBehaviour {

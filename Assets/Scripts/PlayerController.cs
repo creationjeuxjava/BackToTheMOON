@@ -95,10 +95,10 @@ public class PlayerController : MonoBehaviour {
 	/*void OnMouseOver()
 	{
 		Debug.Log ("souris au dessus de : "+gameObject.name);
-	}
+	}*/
 
 	void OnMouseDown()
 	{
 		Debug.Log ("souris clic  dessus de : "+gameObject.name);
-	}*/
+	}
 }
