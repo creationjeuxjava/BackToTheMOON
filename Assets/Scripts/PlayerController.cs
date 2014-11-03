@@ -11,15 +11,19 @@ public class PlayerController : MonoBehaviour {
 	public Vector3 initialDraggingPos;
 	public Camera camera;
 
+	public GameObject fumee;
+
 
 	/**** nvelle implémentation car le perso ne bouge pas ...c'est le niveau qui le fait ******/
 	private static bool isFlying = false;
 	public static Vector3 vitesse = Vector3.zero;
 
-	public static void launchIntheAir(){
+	public void launchIntheAir(){
 		//Debug.Log ("***************  le joueur décolle");		
 		isFlying = true;
 		vitesse = new Vector3(0,-0.2f,0);
+		GameObject particules = Instantiate(fumee, new Vector3(transform.position.x,transform.position.y-1, -16f), transform.rotation) as GameObject; 
+		particules.transform.parent = this.transform;
 	}
 
 

@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour {
 	public GameObject oiseau;
 	private int nbreMeteor = 20;
 	private int nbreNuages = 5;
+	public GameObject player;
 
 	public static GameObject world;//conteneur du world
 	private static bool isWorldMoving = false;
@@ -61,8 +62,8 @@ public class GameController : MonoBehaviour {
 
 
 	//lancer le joueur et donc faire avancer le monde !!
-	public static void LaunchPlayer (){
-		PlayerController.launchIntheAir ();
+	public void LaunchPlayer (){
+		player.GetComponent <PlayerController>().launchIntheAir ();
 		isWorldMoving = true;
 	}
 }
