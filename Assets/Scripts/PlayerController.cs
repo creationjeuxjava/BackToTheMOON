@@ -54,18 +54,33 @@ public class PlayerController : MonoBehaviour {
 
 			/******************  déplacement droite/gauche du player  *************/
 			if (Input.GetMouseButtonDown (0)){//fonctionne aussi sur Android !!
-				Debug.Log("Clic en  : "+Input.mousePosition);
-				if(camera.ScreenToWorldPoint(Input.mousePosition ).x < transform.position.x ){
-					translation.x = -0.2f;
 
-				}
-				else if(camera.ScreenToWorldPoint(Input.mousePosition ).x > transform.collider2D.bounds.max.x ){
-					translation.x = 0.2f;
+
+				/*Ray ray = camera.ScreenPointToRay(AspectUtility.mousePosition);// Input.GetTouch(0).position );
+				RaycastHit hit;
+				if ( Physics.Raycast(ray, out hit) && hit.transform.gameObject.name == "Player")
+				{
+					translation.x = 0;
+					Debug.Log ("*****souris clic  dessus de : "+gameObject.name);
+				}*/
+				//Vector2 touchPos = camera.ScreenToWorldPoint(AspectUtility.mousePosition );
+				Vector2 touchPos = camera.ScreenToWorldPoint(Input.mousePosition );
+				Debug.Log("*************   Clic en  : "+touchPos+" et player en : "+transform.position.x);
+
+				if(gameObject.collider2D.bounds.Contains (touchPos)){
+					translation.x = 0;
 
 				}
 				else{
-					translation.x = 0;
 
+					if(touchPos.x < transform.position.x ){
+						translation.x = -0.2f;
+						
+					}
+					else if(touchPos.x > (transform.position.x + collider2D.bounds.max.x )  ){
+						translation.x = 0.2f;
+						
+					}
 				}
 			} 			
 
@@ -83,14 +98,14 @@ public class PlayerController : MonoBehaviour {
 				
 				//Debug.Log("*************************------>   touche android sur le perso !!");
 				if (Input.GetTouch(0).phase == TouchPhase.Moved) {					
-					touchDeltaPosition = Input.GetTouch(0).deltaPosition;
+					//touchDeltaPosition = Input.GetTouch(0).deltaPosition;
 				}
 
 			}
 			//on relache la touche... le player s'envole !!
 			if (Input.GetTouch(0).phase == TouchPhase.Ended) {
 
-				transform.Translate(-touchDeltaPosition.x * speed, -touchDeltaPosition.y * speed, 0);
+				//transform.Translate(-touchDeltaPosition.x * speed, -touchDeltaPosition.y * speed, 0);
 			}
 
 			//affichage pour debug
@@ -118,6 +133,8 @@ public class PlayerController : MonoBehaviour {
 					if (!isDragging) {
 						isDragging = true;	
 						initialDraggingPos = Input.mousePosition;
+
+
 						//Debug.Log("initialDraggingPos:"+initialDraggingPos.x);
 					} 
 					// On regarde de combien la souris a bougé 
@@ -140,7 +157,9 @@ public class PlayerController : MonoBehaviour {
 			}
 			//Debug.Log("touch delta :"+touchDeltaPosition);
 			//transform.Translate(-touchDeltaPosition.x * speed, -touchDeltaPosition.y * speed, 0);
-			rigidbody2D.AddForce(new Vector2(touchDeltaPosition.x* amplificationMove,touchDeltaPosition.y* amplificationMove));
+
+
+			//rigidbody2D.AddForce(new Vector2(touchDeltaPosition.x* amplificationMove,touchDeltaPosition.y* amplificationMove));
 		}
 		//renderer.	
 	}
@@ -150,13 +169,21 @@ public class PlayerController : MonoBehaviour {
 		if(other.gameObject.tag == "Meteorite" ){
 			Debug.Log ("***************  collision avec un météorite ");
 			//on meurt ?
+			updateVitesse(other.gameObject);
 			
 		}
 		if(other.gameObject.tag == "Oiseau" ){
 			Debug.Log ("***************  collision avec un oiseau ");
 			//on meurt ?
+			updateVitesse(other.gameObject);
 			
 		}
+	}
+
+	private void updateVitesse(GameObject obj){
+
+		vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor;
+	
 	}
 
 	/*void OnMouseOver()
@@ -166,6 +193,7 @@ public class PlayerController : MonoBehaviour {
 
 	void OnMouseDown()
 	{
-		Debug.Log ("souris clic  dessus de : "+gameObject.name);
+		//Debug.Log ("souris clic  dessus de : "+gameObject.name);
+		//translation.x = 0;
 	}
 }

@@ -185,6 +185,7 @@
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\HUDFPS.cs" />
      <Compile Include="Assets\Scripts\InGameGUI.cs" />
+     <Compile Include="Assets\Scripts\InteractionEnnemy.cs" />
      <Compile Include="Assets\Scripts\MenuGUI.cs" />
      <Compile Include="Assets\Scripts\NoUseButNODelete\ResponsiveController.cs" />
      <Compile Include="Assets\Scripts\Parallax.cs" />

@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour {
 
 	private float altitude;
 	private int coeffAltitude = 5;
+	private int coeffVitesse= 1* 3600;
 
 	// Use this for initialization
 	void Start () {
@@ -32,7 +33,8 @@ public class GameController : MonoBehaviour {
 		if (isWorldMoving == true) {
 			world.transform.Translate (PlayerController.vitesse);//on déplace tout le niveau en fonction de la vitesse du joueur !!
 			altitude = world.transform.position.y * -1 * coeffAltitude;
-			InGameGUI.setMessage("Altitude :"+altitude,"pas de message");
+			float vitesse = PlayerController.vitesse.y*-1 * coeffVitesse;
+			InGameGUI.setMessage("Altitude :"+altitude,"Vitesse Player : "+vitesse+" km/h");
 		}
 	}
 
@@ -52,7 +54,7 @@ public class GameController : MonoBehaviour {
 
 		for(int i = 0 ; i < number ; i++){
 			Vector3 spawnPosition = new Vector3 (Random.Range(xRange.x,xRange.y),Random.Range(yRange.x,yRange.y),-30f);
-			Quaternion spawnRotation =  Quaternion.identity;
+			Quaternion spawnRotation =  Quaternion.Euler(0,0, Random.Range(0, 360) ); //Quaternion.identity;
 			GameObject sprite = Instantiate(objectToInstantiate, spawnPosition, spawnRotation) as GameObject;
 			sprite.transform.parent = world.transform;
 			

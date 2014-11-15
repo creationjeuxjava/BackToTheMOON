@@ -1,10 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\workspace\first3d\Assets\Scripts\InGameGUI.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerController.cs">
     <Files>
-      <File FileName="..\..\workspace\first3d\Assets\Scripts\CameraController.cs" Line="24" Column="105" />
-      <File FileName="..\..\workspace\first3d\Assets\Scripts\Playercontroller.cs" Line="142" Column="9" />
-      <File FileName="..\..\workspace\first3d\Assets\Scripts\InGameGUI.cs" Line="28" Column="12" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="59" Column="5" />
+      <File FileName="Assets\Scripts\GameController.cs" Line="22" Column="29" />
+      <File FileName="Assets\Scripts\CanonController.cs" Line="31" Column="53" />
+      <File FileName="Assets\Scripts\InGameGUI.cs" Line="31" Column="27" />
+      <File FileName="Assets\Scripts\AspectUtility.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

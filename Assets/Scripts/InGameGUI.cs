@@ -27,7 +27,7 @@ public class InGameGUI : MonoBehaviour {
 	/*** mise à jour du message du Label  *****/
 	public static void setMessage(string msg,string msg2){
 
-		message = "Infos Player : "+msg;
-		message2 = "Touch en : "+msg2;
+		message = "Infos Player => "+msg2;
+		message2 = "Altimètre => "+msg;
 	}
 }
