@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour {
 
 
 			/******************  déplacement droite/gauche du player  *************/
-			if (Input.GetMouseButtonDown (0)){
+			if (Input.GetMouseButtonDown (0)){//fonctionne aussi sur Android !!
 				Debug.Log("Clic en  : "+Input.mousePosition);
 				if(camera.ScreenToWorldPoint(Input.mousePosition ).x < transform.position.x ){
 					translation.x = -0.2f;
@@ -67,10 +67,7 @@ public class PlayerController : MonoBehaviour {
 					translation.x = 0;
 
 				}
-			} 
-
-
-			
+			} 			
 
 			transform.Translate(translation);
 				
