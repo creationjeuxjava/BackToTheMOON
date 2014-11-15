@@ -13,13 +13,12 @@ public class PlayerController : MonoBehaviour {
 
 	public GameObject fumee;
 
-
 	/**** nvelle implémentation car le perso ne bouge pas ...c'est le niveau qui le fait ******/
 	private static bool isFlying = false;
 	public static Vector3 vitesse = Vector3.zero;
+	private Vector3 translation = Vector3.zero;
 
 	public void launchIntheAir(){
-		//Debug.Log ("***************  le joueur décolle");		
 		isFlying = true;
 		vitesse = new Vector3(0,-0.2f,0);
 		GameObject particules = Instantiate(fumee, new Vector3(transform.position.x,transform.position.y-1, -16f), transform.rotation) as GameObject; 
@@ -30,18 +29,51 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		touchDeltaPosition = Vector2.zero;
-		//Debug.Log("PlayerController-->création");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (isFlying) {
-			//Debug.Log ("***************  le joueur vole");	
-			//vitesse.y *= -1;
-			//transform.Translate(new Vector3(0,vitesse.y*-1,0));	
-			//rigidbody2D.AddForce(new Vector2(0* amplificationMove,30f ));
 
-			//jouer animation de vol
+			/*****************   control out of Map	*********************/
+			//Debug.Log("Screen width : "+Screen.width+" avec un player en "+transform.position);
+			Vector3 screenPos = camera.WorldToScreenPoint(transform.position);
+			if(screenPos.x >= Screen.width ) {
+				translation.x = 0;
+				transform.position = new Vector3(transform.position.x - 0.7f,transform.position.y,0);
+			}
+			else if(screenPos.x <= 0){
+				translation.x = 0;
+				transform.position = new Vector3(transform.position.x + 0.7f,transform.position.y,0);
+				
+			}
+			else{
+				transform.position = new Vector3(transform.position.x,transform.position.y,0);
+			}
+
+
+			/******************  déplacement droite/gauche du player  *************/
+			if (Input.GetMouseButtonDown (0)){
+				Debug.Log("Clic en  : "+Input.mousePosition);
+				if(camera.ScreenToWorldPoint(Input.mousePosition ).x < transform.position.x ){
+					translation.x = -0.2f;
+
+				}
+				else if(camera.ScreenToWorldPoint(Input.mousePosition ).x > transform.collider2D.bounds.max.x ){
+					translation.x = 0.2f;
+
+				}
+				else{
+					translation.x = 0;
+
+				}
+			} 
+
+
+			
+
+			transform.Translate(translation);
+				
 		}
 
 		/*** android ****/
@@ -52,7 +84,7 @@ public class PlayerController : MonoBehaviour {
 			// est- on sur le player ?
 			if(gameObject.collider2D.bounds.Contains(new Vector2(touchPosition.x,touchPosition.y))){
 				
-				Debug.Log("*************************------>   touche android sur le perso !!");
+				//Debug.Log("*************************------>   touche android sur le perso !!");
 				if (Input.GetTouch(0).phase == TouchPhase.Moved) {					
 					touchDeltaPosition = Input.GetTouch(0).deltaPosition;
 				}
@@ -81,15 +113,15 @@ public class PlayerController : MonoBehaviour {
 			InGameGUI.setMessage("centré en ("+gameObject.collider2D.bounds.center.x+" , "+gameObject.collider2D.bounds.center.y+") ",
 			                     "PlayerController: on touche écran en  (" + touchPosition.x + " , " + touchPosition.y + ")");
 
-			Debug.Log("ameObject.collider2D.bounds "+gameObject.collider2D.bounds);
+			//Debug.Log("ameObject.collider2D.bounds "+gameObject.collider2D.bounds);
 			if (gameObject.collider2D.bounds.Contains (new Vector2 (touchPosition.x, touchPosition.y))) {
-				Debug.Log("iclic perso");
+				//Debug.Log("iclic perso");
 					//si on n'est pas encore en mode dragging, on se met en mode dragging et on note 
 					// la position initialle de la souris
 					if (!isDragging) {
 						isDragging = true;	
 						initialDraggingPos = Input.mousePosition;
-						Debug.Log("initialDraggingPos:"+initialDraggingPos.x);
+						//Debug.Log("initialDraggingPos:"+initialDraggingPos.x);
 					} 
 					// On regarde de combien la souris a bougé 
 					//Vector3 mouseDelta = Input.mousePosition - lastMouseCoordinate;
@@ -107,9 +139,9 @@ public class PlayerController : MonoBehaviour {
 			if(isDragging) {
 				isDragging = false;
 				touchDeltaPosition = Input.mousePosition - initialDraggingPos;
-				Debug.Log("touchDeltaPosition:"+touchDeltaPosition.x);
+				//Debug.Log("touchDeltaPosition:"+touchDeltaPosition.x);
 			}
-			Debug.Log("touch delta :"+touchDeltaPosition);
+			//Debug.Log("touch delta :"+touchDeltaPosition);
 			//transform.Translate(-touchDeltaPosition.x * speed, -touchDeltaPosition.y * speed, 0);
 			rigidbody2D.AddForce(new Vector2(touchDeltaPosition.x* amplificationMove,touchDeltaPosition.y* amplificationMove));
 		}
