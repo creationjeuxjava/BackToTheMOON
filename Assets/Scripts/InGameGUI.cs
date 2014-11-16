@@ -22,7 +22,7 @@ public class InGameGUI : MonoBehaviour {
 	
 	}
 
-	/**** juste pour le debug actuellemtn, mais pourra contenir les éléments GUI du jeu ****/
+	/**** Eléments GUI du jeu ****/
 	void OnGUI () {
 		GUI.skin.GetStyle ("Label").fontSize = 12;
 		GUI.Label(AspectUtility.adaptRect(30,120,500,100),message);
