@@ -22,8 +22,8 @@ public class InGameGUI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		float realY =  Screen.height - Input.mousePosition.y;
-		Debug.Log ("Mouse en : " + Input.mousePosition+" et Sreen : "+Screen.height);
-		Debug.Log ("REct en : " + pauseRect.position + " et souris en "+realY);
+		//Debug.Log ("Mouse en : " + Input.mousePosition+" et Sreen : "+Screen.height);
+		//Debug.Log ("REct en : " + pauseRect.position + " et souris en "+realY);
 		if (pauseRect.Contains (new Vector3(Input.mousePosition.x,realY,Input.mousePosition.z))) {
 			GameController.OverGUI(true);
 		

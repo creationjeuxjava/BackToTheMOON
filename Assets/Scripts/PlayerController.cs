@@ -175,6 +175,12 @@ public class PlayerController : MonoBehaviour {
 			updateVitesse(other.gameObject);
 			
 		}
+		if(other.gameObject.tag == "Cask" ){
+			Debug.Log ("***************  collision avec un cask ");
+			Destroy(other.gameObject);
+			this.GetComponent<Inventory>().addItem(new Item("casque",0,Item.ItemType.Permanent));
+			
+		}
 	}
 
 	private void updateVitesse(GameObject obj){

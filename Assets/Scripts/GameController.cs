@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEditor;
 
 /*
  * * gère la logique du jeu et la création du niveau
@@ -33,6 +34,14 @@ public class GameController : MonoBehaviour {
 		middleLayer = GameObject.FindGameObjectWithTag ("MiddleLayer");
 		foreLayer = GameObject.FindGameObjectWithTag ("ForeLayer");
 		createWorld ();
+
+		//création aléatoire de bonus en l'air =>AssetDatabase
+		Object prefab = AssetDatabase.LoadAssetAtPath("Assets/Prefabs/world1/cask.prefab", typeof(GameObject));
+		Vector3 pos = new Vector3(0,50,-4.6f);
+		GameObject clone = Instantiate(prefab, pos, Quaternion.identity) as GameObject;
+		// Modify the clone to your heart's content
+		//clone.transform.position = Vector3.one;
+		clone.transform.parent = foreLayer.transform;
 	}
 	
 	// Update is called once per frame
@@ -40,6 +49,7 @@ public class GameController : MonoBehaviour {
 		if (isWorldMoving == true && !isGameInPause) {
 			//world.transform.Translate (PlayerController.vitesse);//on déplace tout le niveau en fonction de la vitesse du joueur !!
 
+			//chaque partie avance à une vitesse différente
 			backLayer.transform.Translate (PlayerController.vitesse / 3);
 			middleLayer.transform.Translate (PlayerController.vitesse / 1.5f);
 			foreLayer.transform.Translate (PlayerController.vitesse);
@@ -47,6 +57,9 @@ public class GameController : MonoBehaviour {
 			altitude = foreLayer.transform.position.y * -1 * coeffAltitude;
 			float vitesse = PlayerController.vitesse.y*-1 * coeffVitesse;
 			InGameGUI.setMessage("Altitude :"+altitude,"Vitesse Player : "+vitesse+" km/h");
+
+
+
 		}
 	}
 
@@ -68,6 +81,7 @@ public class GameController : MonoBehaviour {
 			Vector3 spawnPosition = new Vector3 (Random.Range(xRange.x,xRange.y),Random.Range(yRange.x,yRange.y),-4.6f);
 			Quaternion spawnRotation =  Quaternion.identity;;//Quaternion.Euler(0,0, Random.Range(0, 360) ); //Quaternion.identity;
 			GameObject sprite = Instantiate(objectToInstantiate, spawnPosition, spawnRotation) as GameObject;
+			//sprite.rigidbody.angularVelocity = Random.insideUnitSphere * 2f;
 			sprite.transform.parent = foreLayer.transform;
 			//sprite.transform.parent = world.transform;
 			
@@ -89,11 +103,13 @@ public class GameController : MonoBehaviour {
 		else isGameInPause = true;
 	}
 
+	//
+	public static void OverGUI(bool value){		
+		isOverGUIPause = value;
+	}
+
 	public static bool isGamePaused(){return isGameInPause;}
 	public static bool isOverGUI(){return isOverGUIPause;}
 
-	public static void OverGUI(bool value){
-		
-		isOverGUIPause = value;
-	}
+
 }
