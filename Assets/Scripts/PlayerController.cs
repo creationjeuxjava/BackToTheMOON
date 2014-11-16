@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
     public bool isMoving;
-	public float speed = 0.5F;
+	public float speed = 0.75F;
 	public float amplificationMove = 10f;
 	public Vector2 touchDeltaPosition;
 	public Vector3 lastMouseCoordinate = Vector3.zero;
@@ -17,10 +17,11 @@ public class PlayerController : MonoBehaviour {
 	private static bool isFlying;
 	public static Vector3 vitesse ;
 	private Vector3 translation;
+	private float speedPlayer = 0.3f;
 
 	public void launchIntheAir(){
 		isFlying = true;
-		vitesse = new Vector3(0,-0.2f,0);
+		vitesse = new Vector3(0,-speedPlayer,0);
 		GameObject particules = Instantiate(fumee, new Vector3(transform.position.x,transform.position.y-1, -16f), transform.rotation) as GameObject; 
 		particules.transform.parent = this.transform;
 	}
@@ -36,9 +37,9 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (isFlying && !GameController.isGamePaused()) {
+		if (isFlying && !GameController.isGamePaused() && !GameController.isOverGUI()) {
 
-			audio.Play();
+			if(!audio.isPlaying)	audio.Play();
 			/*****************   control out of Map	*********************/
 			Vector3 screenPos = camera.WorldToScreenPoint(transform.position);
 			if(screenPos.x >= Screen.width ) {
@@ -81,6 +82,8 @@ public class PlayerController : MonoBehaviour {
 			transform.Translate(translation);
 				
 		}
+		if (GameController.isGamePaused ())
+						audio.Pause ();
 
 		/*** android ****/
 		if (Input.touchCount == 1) {

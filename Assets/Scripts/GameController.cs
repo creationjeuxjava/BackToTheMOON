@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour {
 	public static GameObject world;//conteneur du world
 	private static bool isWorldMoving = false;
 	private static bool isGameInPause = false;
+	private static bool isOverGUIPause = false;
 	private GameObject backLayer, middleLayer, foreLayer;
 
 
@@ -54,8 +55,8 @@ public class GameController : MonoBehaviour {
 	//a compléter pour créer un niveau complet !!
 	void createWorld(){
 
-		createSpriteWorld (meteorite, nbreMeteor,new Vector2(-45,56),new Vector2(200,500));
-		createSpriteWorld (nuage, nbreNuages,new Vector2(-55,66),new Vector2(30,70));
+		createSpriteWorld (meteorite, nbreMeteor,new Vector2(-45,56),new Vector2(300,500));
+		createSpriteWorld (nuage, nbreNuages,new Vector2(-40,40),new Vector2(50,250));
 		createSpriteWorld (oiseau, nbreNuages,new Vector2(-30,45),new Vector2(20,150));
 
 	}
@@ -64,8 +65,8 @@ public class GameController : MonoBehaviour {
 	private void createSpriteWorld(GameObject objectToInstantiate,int number,Vector2 xRange,Vector2 yRange){
 
 		for(int i = 0 ; i < number ; i++){
-			Vector3 spawnPosition = new Vector3 (Random.Range(xRange.x,xRange.y),Random.Range(yRange.x,yRange.y),-30f);
-			Quaternion spawnRotation =  Quaternion.Euler(0,0, Random.Range(0, 360) ); //Quaternion.identity;
+			Vector3 spawnPosition = new Vector3 (Random.Range(xRange.x,xRange.y),Random.Range(yRange.x,yRange.y),-4.6f);
+			Quaternion spawnRotation =  Quaternion.identity;;//Quaternion.Euler(0,0, Random.Range(0, 360) ); //Quaternion.identity;
 			GameObject sprite = Instantiate(objectToInstantiate, spawnPosition, spawnRotation) as GameObject;
 			sprite.transform.parent = foreLayer.transform;
 			//sprite.transform.parent = world.transform;
@@ -89,4 +90,10 @@ public class GameController : MonoBehaviour {
 	}
 
 	public static bool isGamePaused(){return isGameInPause;}
+	public static bool isOverGUI(){return isOverGUIPause;}
+
+	public static void OverGUI(bool value){
+		
+		isOverGUIPause = value;
+	}
 }
