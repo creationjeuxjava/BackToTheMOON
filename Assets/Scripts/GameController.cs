@@ -10,13 +10,14 @@ public class GameController : MonoBehaviour {
 	public GameObject meteorite;
 	public GameObject nuage;
 	public GameObject oiseau;
-	private int nbreMeteor = 20;
-	private int nbreNuages = 5;
+	private int nbreMeteor = 30;
+	private int nbreNuages = 15;
 	public GameObject player;
 
 	public static GameObject world;//conteneur du world
 	private static bool isWorldMoving = false;
 	private static bool isGameInPause = false;
+	private GameObject backLayer, middleLayer, foreLayer;
 
 
 	private float altitude;
@@ -27,14 +28,22 @@ public class GameController : MonoBehaviour {
 	void Start () {
 		altitude = 0;
 		world = GameObject.FindGameObjectWithTag ("World");
+		backLayer = GameObject.FindGameObjectWithTag ("BackLayer");
+		middleLayer = GameObject.FindGameObjectWithTag ("MiddleLayer");
+		foreLayer = GameObject.FindGameObjectWithTag ("ForeLayer");
 		createWorld ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (isWorldMoving == true && !isGameInPause) {
-			world.transform.Translate (PlayerController.vitesse);//on déplace tout le niveau en fonction de la vitesse du joueur !!
-			altitude = world.transform.position.y * -1 * coeffAltitude;
+			//world.transform.Translate (PlayerController.vitesse);//on déplace tout le niveau en fonction de la vitesse du joueur !!
+
+			backLayer.transform.Translate (PlayerController.vitesse / 3);
+			middleLayer.transform.Translate (PlayerController.vitesse / 1.5f);
+			foreLayer.transform.Translate (PlayerController.vitesse);
+
+			altitude = foreLayer.transform.position.y * -1 * coeffAltitude;
 			float vitesse = PlayerController.vitesse.y*-1 * coeffVitesse;
 			InGameGUI.setMessage("Altitude :"+altitude,"Vitesse Player : "+vitesse+" km/h");
 		}
@@ -45,9 +54,9 @@ public class GameController : MonoBehaviour {
 	//a compléter pour créer un niveau complet !!
 	void createWorld(){
 
-		createSpriteWorld (meteorite, nbreMeteor,new Vector2(-45,56),new Vector2(100,400));
+		createSpriteWorld (meteorite, nbreMeteor,new Vector2(-45,56),new Vector2(200,500));
 		createSpriteWorld (nuage, nbreNuages,new Vector2(-55,66),new Vector2(30,70));
-		createSpriteWorld (oiseau, nbreNuages,new Vector2(-40,50),new Vector2(30,70));
+		createSpriteWorld (oiseau, nbreNuages,new Vector2(-30,45),new Vector2(20,150));
 
 	}
 
@@ -58,7 +67,8 @@ public class GameController : MonoBehaviour {
 			Vector3 spawnPosition = new Vector3 (Random.Range(xRange.x,xRange.y),Random.Range(yRange.x,yRange.y),-30f);
 			Quaternion spawnRotation =  Quaternion.Euler(0,0, Random.Range(0, 360) ); //Quaternion.identity;
 			GameObject sprite = Instantiate(objectToInstantiate, spawnPosition, spawnRotation) as GameObject;
-			sprite.transform.parent = world.transform;
+			sprite.transform.parent = foreLayer.transform;
+			//sprite.transform.parent = world.transform;
 			
 		}
 	

@@ -7,6 +7,9 @@ TagManager:
   - Meteorite
   - Nuage
   - Oiseau
+  - BackLayer
+  - ForeLayer
+  - MiddleLayer
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
