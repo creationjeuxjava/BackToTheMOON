@@ -14,9 +14,9 @@ public class PlayerController : MonoBehaviour {
 	public GameObject fumee;
 
 	/**** nvelle implémentation car le perso ne bouge pas ...c'est le niveau qui le fait ******/
-	private static bool isFlying = false;
-	public static Vector3 vitesse = Vector3.zero;
-	private Vector3 translation = Vector3.zero;
+	private static bool isFlying;
+	public static Vector3 vitesse ;
+	private Vector3 translation;
 
 	public void launchIntheAir(){
 		isFlying = true;
@@ -29,14 +29,17 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		touchDeltaPosition = Vector2.zero;
+		vitesse = Vector3.zero;
+		isFlying = false;
+		translation = Vector3.zero;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (isFlying) {
+		if (isFlying && !GameController.isGamePaused()) {
 
+			audio.Play();
 			/*****************   control out of Map	*********************/
-			//Debug.Log("Screen width : "+Screen.width+" avec un player en "+transform.position);
 			Vector3 screenPos = camera.WorldToScreenPoint(transform.position);
 			if(screenPos.x >= Screen.width ) {
 				translation.x = 0;
@@ -55,15 +58,6 @@ public class PlayerController : MonoBehaviour {
 			/******************  déplacement droite/gauche du player  *************/
 			if (Input.GetMouseButtonDown (0)){//fonctionne aussi sur Android !!
 
-
-				/*Ray ray = camera.ScreenPointToRay(AspectUtility.mousePosition);// Input.GetTouch(0).position );
-				RaycastHit hit;
-				if ( Physics.Raycast(ray, out hit) && hit.transform.gameObject.name == "Player")
-				{
-					translation.x = 0;
-					Debug.Log ("*****souris clic  dessus de : "+gameObject.name);
-				}*/
-				//Vector2 touchPos = camera.ScreenToWorldPoint(AspectUtility.mousePosition );
 				Vector2 touchPos = camera.ScreenToWorldPoint(Input.mousePosition );
 				Debug.Log("*************   Clic en  : "+touchPos+" et player en : "+transform.position.x);
 

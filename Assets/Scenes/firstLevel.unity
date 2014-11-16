@@ -429,7 +429,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 276706951}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -50}
+  m_LocalPosition: {x: 0, y: -3.66245651, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -446,6 +446,7 @@ GameObject:
   - 114: {fileID: 313015603}
   - 61: {fileID: 313015604}
   - 50: {fileID: 313015605}
+  - 82: {fileID: 313015606}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -533,6 +534,64 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!82 &313015606
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 313015600}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: dcec7965603c4c645872e5a0c771941e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: .787999988
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &334396809
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,6 +709,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e6665da351612743b0828769c9da74a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iconCarte: {fileID: 2800000, guid: d9eb53b0c427e314fbe0aa2deb2cfb95, type: 3}
+  iconPause: {fileID: 2800000, guid: a8e94157e136d074285bf38a954b864f, type: 3}
+  iconRejouer: {fileID: 2800000, guid: 6bf99864851d9e44ea5e97cc7e49c839, type: 3}
+  barreVitesse: {fileID: 2800000, guid: f4248b26a0f028b4698c9a0bc6c9dda0, type: 3}
 --- !u!1 &646178467
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,7 +920,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 994081110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00931211282, y: .0102830967, z: 0}
+  m_LocalPosition: {x: .00381823466, y: -.0423072055, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2081676559}
@@ -1389,6 +1452,7 @@ GameObject:
   - 61: {fileID: 1525243524}
   - 50: {fileID: 1525243523}
   - 114: {fileID: 1525243525}
+  - 82: {fileID: 1525243526}
   m_Layer: 0
   m_Name: Canon
   m_TagString: Untagged
@@ -1425,7 +1489,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1525243520}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.1363745, y: -35.6285858, z: -4.5999999}
+  m_LocalPosition: {x: 12.8486595, y: -35.6285858, z: -4.5999999}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 2009106489}
@@ -1469,6 +1533,64 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canonFire: {fileID: 100000, guid: 30d3737bb91c4f748ac990b8991fdafb, type: 2}
   gameController: {fileID: 1620950173}
+--- !u!82 &1525243526
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1525243520}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 1cc405cc893d3db4f8176c1e53515f09, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1579850142
 GameObject:
   m_ObjectHideFlags: 0

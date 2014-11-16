@@ -16,6 +16,8 @@ public class GameController : MonoBehaviour {
 
 	public static GameObject world;//conteneur du world
 	private static bool isWorldMoving = false;
+	private static bool isGameInPause = false;
+
 
 	private float altitude;
 	private int coeffAltitude = 5;
@@ -30,7 +32,7 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (isWorldMoving == true) {
+		if (isWorldMoving == true && !isGameInPause) {
 			world.transform.Translate (PlayerController.vitesse);//on déplace tout le niveau en fonction de la vitesse du joueur !!
 			altitude = world.transform.position.y * -1 * coeffAltitude;
 			float vitesse = PlayerController.vitesse.y*-1 * coeffVitesse;
@@ -68,4 +70,13 @@ public class GameController : MonoBehaviour {
 		player.GetComponent <PlayerController>().launchIntheAir ();
 		isWorldMoving = true;
 	}
+
+	//mettre le jeu en pause ou le remettre
+	public static void tooglePauseGame(){
+
+		if(isGameInPause) isGameInPause = false;
+		else isGameInPause = true;
+	}
+
+	public static bool isGamePaused(){return isGameInPause;}
 }
