@@ -183,6 +183,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 114731852}
   - 212: {fileID: 114731851}
+  - 50: {fileID: 114731853}
   m_Layer: 0
   m_Name: arbre1
   m_TagString: Untagged
@@ -224,6 +225,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2009106489}
   m_RootOrder: 1
+--- !u!50 &114731853
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114731850}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &143829166
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +249,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 143829168}
   - 212: {fileID: 143829167}
+  - 50: {fileID: 143829169}
   m_Layer: 0
   m_Name: temple
   m_TagString: Untagged
@@ -274,6 +291,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2009106489}
   m_RootOrder: 5
+--- !u!50 &143829169
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143829166}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &144097162
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,6 +315,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 144097164}
   - 212: {fileID: 144097163}
+  - 50: {fileID: 144097165}
   m_Layer: 0
   m_Name: statue
   m_TagString: Untagged
@@ -324,6 +357,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2009106489}
   m_RootOrder: 13
+--- !u!50 &144097165
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 144097162}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &186900131
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +781,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 335928472}
   - 212: {fileID: 335928473}
+  - 50: {fileID: 335928474}
   m_Layer: 0
   m_Name: arbre6
   m_TagString: Untagged
@@ -774,6 +823,21 @@ SpriteRenderer:
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 68db949183989e24bb4b97638abee6bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!50 &335928474
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 335928471}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &346366966
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,6 +847,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 346366967}
   - 212: {fileID: 346366968}
+  - 50: {fileID: 346366969}
   m_Layer: 0
   m_Name: arbre4
   m_TagString: Untagged
@@ -824,6 +889,21 @@ SpriteRenderer:
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 11ff131e9eaf63947bb653cffa6e5bc1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!50 &346366969
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 346366966}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &351158937
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +963,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 550350194}
   - 212: {fileID: 550350193}
+  - 50: {fileID: 550350195}
   m_Layer: 0
   m_Name: colline2
   m_TagString: Untagged
@@ -924,6 +1005,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2009106489}
   m_RootOrder: 3
+--- !u!50 &550350195
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 550350192}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &605841865
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,6 +1029,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 605841867}
   - 212: {fileID: 605841866}
+  - 50: {fileID: 605841868}
   m_Layer: 0
   m_Name: colline1
   m_TagString: Untagged
@@ -974,6 +1071,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2009106489}
   m_RootOrder: 10
+--- !u!50 &605841868
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 605841865}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &624891773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,8 +1285,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 41.2700005, y: 5.30445862}
-  m_Center: {x: 0, y: -66.5167007}
+  m_Size: {x: 53.1545792, y: 8.41061401}
+  m_Center: {x: .270114899, y: -68.0698166}
 --- !u!4 &740875251
 Transform:
   m_ObjectHideFlags: 0
@@ -1182,7 +1294,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 740875248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .7135849, y: 29.9753113, z: -4}
+  m_LocalPosition: {x: .7135849, y: 29.9753113, z: -4.5999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1246,7 +1358,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 955319517}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.11999989, y: 4.13999987, z: 15.3964195}
+  m_LocalPosition: {x: -9, y: 4.13999987, z: 15.3964195}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 739687844}
@@ -1730,6 +1842,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1243391928}
   - 212: {fileID: 1243391929}
+  - 50: {fileID: 1243391930}
   m_Layer: 0
   m_Name: arbre2
   m_TagString: Untagged
@@ -1771,6 +1884,21 @@ SpriteRenderer:
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 1d4ced72a40037641b568ba5c2b6426d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!50 &1243391930
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1243391927}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &1260537905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,6 +1970,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1262988201}
   - 212: {fileID: 1262988202}
+  - 50: {fileID: 1262988203}
   m_Layer: 0
   m_Name: sol
   m_TagString: Untagged
@@ -1883,6 +2012,21 @@ SpriteRenderer:
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: cecd8624c8d3b45469b18ab38335a4f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!50 &1262988203
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1262988200}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &1352088547
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,6 +2511,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1694484698}
   - 212: {fileID: 1694484699}
+  - 61: {fileID: 1694484700}
+  - 50: {fileID: 1694484701}
   m_Layer: 0
   m_Name: pilier
   m_TagString: Untagged
@@ -2381,7 +2527,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1694484697}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.64745712, y: -32.3385925, z: 0}
+  m_LocalPosition: {x: 4.64745712, y: -32.3385925, z: -4.5999999}
   m_LocalScale: {x: 3.76242709, y: 3.762429, z: 1}
   m_Children: []
   m_Father: {fileID: 2009106489}
@@ -2408,6 +2554,32 @@ SpriteRenderer:
   m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: c1190006d4a58a947a4c89af9219511b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &1694484700
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1694484697}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 2.02999973, y: 4.48000002}
+  m_Center: {x: 2.38418579e-07, y: 4.76837158e-07}
+--- !u!50 &1694484701
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1694484697}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &1750838059
 GameObject:
   m_ObjectHideFlags: 0
@@ -2417,6 +2589,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1750838061}
   - 212: {fileID: 1750838060}
+  - 50: {fileID: 1750838062}
   m_Layer: 0
   m_Name: colline3
   m_TagString: Untagged
@@ -2458,6 +2631,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2009106489}
   m_RootOrder: 4
+--- !u!50 &1750838062
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1750838059}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &1965801079
 GameObject:
   m_ObjectHideFlags: 0
@@ -2467,6 +2655,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1965801081}
   - 212: {fileID: 1965801080}
+  - 50: {fileID: 1965801082}
   m_Layer: 0
   m_Name: pilierca
   m_TagString: Untagged
@@ -2508,6 +2697,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2009106489}
   m_RootOrder: 11
+--- !u!50 &1965801082
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1965801079}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &2009106488
 GameObject:
   m_ObjectHideFlags: 0
@@ -2558,6 +2762,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2030263427}
   - 212: {fileID: 2030263428}
+  - 50: {fileID: 2030263429}
   m_Layer: 0
   m_Name: arbre5
   m_TagString: Untagged
@@ -2599,6 +2804,21 @@ SpriteRenderer:
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: beb7d792e86ae524ba9c80adae05e048, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!50 &2030263429
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2030263426}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &2036371925
 GameObject:
   m_ObjectHideFlags: 0

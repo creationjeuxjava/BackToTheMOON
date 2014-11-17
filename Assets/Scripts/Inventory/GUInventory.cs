@@ -24,7 +24,7 @@ public class GUInventory : MonoBehaviour {
 
 		/*** le contenu de l'inventaire ***/
 		List<Item> items = player.GetComponent<Inventory> ().getInventory ();
-		Debug.Log (" contenu size : " + items.Count);
+		//Debug.Log (" contenu size : " + items.Count);
 		string message = "";
 		string message2 = "";
 		int nbre = 0;

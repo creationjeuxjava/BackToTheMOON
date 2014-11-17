@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEditor;
+//using UnityEditor;
 
 /*
  * * gère la logique du jeu et la création du niveau
@@ -35,12 +35,20 @@ public class GameController : MonoBehaviour {
 		foreLayer = GameObject.FindGameObjectWithTag ("ForeLayer");
 		createWorld ();
 
-		//création aléatoire de bonus en l'air =>AssetDatabase
+		//création aléatoire de bonus en l'air =>AssetDatabase non valable dans le build...remplacé par Resources.load !!
 		//TODO à généraliser  !!
-		Object prefab = AssetDatabase.LoadAssetAtPath("Assets/Prefabs/world1/cask.prefab", typeof(GameObject));
+		//Object prefab = AssetDatabase.LoadAssetAtPath("Assets/Prefabs/world1/cask.prefab", typeof(GameObject));
+		Object prefab = Resources.Load<Object>("Prefabs/cask");
+
 		Vector3 pos = new Vector3(0,50,-4.6f);
 		GameObject clone = Instantiate(prefab, pos, Quaternion.identity) as GameObject;
 		clone.transform.parent = foreLayer.transform;
+
+
+		Object prefab2 = Resources.Load<Object>("Prefabs/shoe");		
+		Vector3 pos2 = new Vector3(0,100,-4.6f);
+		GameObject clone2 = Instantiate(prefab2, pos2, Quaternion.identity) as GameObject;
+		clone2.transform.parent = foreLayer.transform;
 	}
 	
 	// Update is called once per frame

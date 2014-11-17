@@ -14,4 +14,10 @@ public class DestroyByOutOffBox : MonoBehaviour {
 		Destroy(other.gameObject);
 
 	}
+
+	void OnTriggerEnter2D(Collider2D other) {
+		Debug.Log("TRIGGER ==>Collision other est sorti : "+other.gameObject.name +" qui était en z "+other.transform.position.z);
+		Destroy(other.gameObject);
+		
+	}
 }

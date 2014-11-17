@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour {
 	private Vector3 translation;
 	private float speedPlayer = 0.3f;
 	private bool isWithCask = false;
+	private bool isWithShoe = false;
 
 	public void launchIntheAir(){
 		isFlying = true;
@@ -185,7 +186,18 @@ public class PlayerController : MonoBehaviour {
 			Sprite casqueSprite = Resources.Load("Sprites/persocasque", typeof(Sprite)) as Sprite;
 			GetComponent<SpriteRenderer>().sprite = casqueSprite;
 
-			GetComponent<Inventory>().addItem(new Item("casque",0,Item.ItemType.Permanent));
+			GetComponent<Inventory>().addItem(new Item("casque",1,Item.ItemType.Permanent));
+			
+		}
+		if(other.gameObject.tag == "Shoe" ){
+			Debug.Log ("***************  collision avec une shoe ");
+			Destroy(other.gameObject);
+			isWithShoe = true;
+			isWithCask = false;
+			Sprite casqueShoe = Resources.Load("Sprites/persoshoes", typeof(Sprite)) as Sprite;
+			GetComponent<SpriteRenderer>().sprite = casqueShoe;
+			
+			GetComponent<Inventory>().addItem(new Item("shoes",2,Item.ItemType.Timer));
 			
 		}
 	}
