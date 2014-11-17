@@ -1,13 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\GameController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\XML\testXML.xml">
     <Files>
-      <File FileName="Assets\Resources\Scripts\GameController.cs" Line="43" Column="5" />
-      <File FileName="Assets\Scripts\Inventory\Inventory.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Inventory\Inventory.cs" Line="11" Column="1" />
       <File FileName="Assets\Scripts\Inventory\Item.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Inventory\GUInventory.cs" Line="48" Column="77" />
+      <File FileName="Assets\Scripts\Inventory\GUInventory.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\InGameGUI.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DestroyByOutOffBox.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\HUDFPS.cs" Line="21" Column="25" />
+      <File FileName="Assets\Resources\XML\testXML.xml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
