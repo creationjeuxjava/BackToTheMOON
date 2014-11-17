@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections;
 using System.Collections.Generic;
 
 public class GUInventory : MonoBehaviour {
@@ -38,12 +37,17 @@ public class GUInventory : MonoBehaviour {
 			else{
 
 				message2 = item.itemName;
+				Texture2D tex = item.itemIcon.texture;
+				if (GUI.Button (new Rect(Screen.width - 80,Screen.height - 50 ,50,50), tex)) {
+					//TODO action on Playercontroller
+				}
 			}
 
 
 		}
-		GUI.Label(new Rect(Screen.width - 80,Screen.height - 50 ,100,30),message);
-		GUI.Label(new Rect(Screen.width - 80,Screen.height - 30 ,100,30),message2);
+		GUI.Label(new Rect(Screen.width - 80,Screen.height - 80 ,100,30),message);
+
+
 
 	
 	}

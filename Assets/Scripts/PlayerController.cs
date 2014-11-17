@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour {
 	public static Vector3 vitesse ;
 	private Vector3 translation;
 	private float speedPlayer = 0.3f;
+	private bool isWithCask = false;
 
 	public void launchIntheAir(){
 		isFlying = true;
@@ -166,7 +167,8 @@ public class PlayerController : MonoBehaviour {
 		if(other.gameObject.tag == "Meteorite" ){
 			Debug.Log ("***************  collision avec un météorite ");
 			//on meurt ?
-			updateVitesse(other.gameObject);
+			if(isWithCask) Destroy(other.gameObject);
+			else updateVitesse(other.gameObject);
 			
 		}
 		if(other.gameObject.tag == "Oiseau" ){
@@ -178,7 +180,12 @@ public class PlayerController : MonoBehaviour {
 		if(other.gameObject.tag == "Cask" ){
 			Debug.Log ("***************  collision avec un cask ");
 			Destroy(other.gameObject);
-			this.GetComponent<Inventory>().addItem(new Item("casque",0,Item.ItemType.Permanent));
+			isWithCask = true;
+
+			Sprite casqueSprite = Resources.Load("Sprites/persocasque", typeof(Sprite)) as Sprite;
+			GetComponent<SpriteRenderer>().sprite = casqueSprite;
+
+			GetComponent<Inventory>().addItem(new Item("casque",0,Item.ItemType.Permanent));
 			
 		}
 	}

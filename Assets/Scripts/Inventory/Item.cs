@@ -5,18 +5,19 @@ public class Item : MonoBehaviour {
 
 	public string itemName;
 	int itemId;
-	Sprite itemIcon;
+	public Sprite itemIcon;
 	ItemType itemType;
 
 	public enum ItemType{
 		Consumable,
-		Permanent
+		Permanent,
+		Timer
 
 	}
 	public Item(string name,int id,ItemType type){
 
 		itemId = id;
-		//itemIcon = icon;//Resources.Load<Sprite>(""+name);
+		if(!name.Equals("flageollets")) itemIcon = Resources.Load<Sprite>("GUI/bouton"+name);
 		itemType = type;
 		itemName = name;
 	}

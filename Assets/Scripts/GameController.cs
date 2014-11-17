@@ -36,11 +36,10 @@ public class GameController : MonoBehaviour {
 		createWorld ();
 
 		//création aléatoire de bonus en l'air =>AssetDatabase
+		//TODO à généraliser  !!
 		Object prefab = AssetDatabase.LoadAssetAtPath("Assets/Prefabs/world1/cask.prefab", typeof(GameObject));
 		Vector3 pos = new Vector3(0,50,-4.6f);
 		GameObject clone = Instantiate(prefab, pos, Quaternion.identity) as GameObject;
-		// Modify the clone to your heart's content
-		//clone.transform.position = Vector3.one;
 		clone.transform.parent = foreLayer.transform;
 	}
 	
