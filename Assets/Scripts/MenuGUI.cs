@@ -7,7 +7,8 @@ public class MenuGUI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		menuStyle.font = Resources.Load ("Fonts/J-airplane-swash-font") as Font;
+
 	}
 	
 	// Update is called once per frame
@@ -39,14 +40,14 @@ public class MenuGUI : MonoBehaviour {
 		// Groupe centré à l'écran
 		float widthBox = AspectUtility.adaptCoordX(300);
 		float heightBox = AspectUtility.adaptCoordX(300);
-		GUI.BeginGroup (new Rect (Screen.width / 2 - widthBox/2, Screen.height / 2 - 50, widthBox, heightBox));
+		GUI.BeginGroup (new Rect (Screen.width / 2 - widthBox/2, Screen.height * 0.6f - heightBox / 2, widthBox, heightBox));
 
 
 		Rect boxRect = AspectUtility.adaptRect(0,0, 300, 300);
 		Rect playRect = AspectUtility.adaptRect (300/2-200/2, 100, 200, 70);
 		Rect quitRect = AspectUtility.adaptRect (300/2-200/2, 200, 200, 70);
 
-		GUI.Box (boxRect, "Menu");
+		//GUI.Box (boxRect, "Menu");
 		/*** lancer le premier niveau ***/
 		if (GUI.Button(playRect,"Jouer",menuStyle)) {
 			Application.LoadLevel(1);
