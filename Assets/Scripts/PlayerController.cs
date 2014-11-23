@@ -2,22 +2,22 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-    public bool isMoving;
-	public float speed = 0.75F;
-	public float amplificationMove = 10f;
-	public Vector2 touchDeltaPosition;
-	public Vector3 lastMouseCoordinate = Vector3.zero;
-	public bool isDragging = false;
-	public Vector3 initialDraggingPos;
-	public Camera camera;
+	private bool isMoving;
+	private float speed = 0.75F;
+	private Vector2 touchDeltaPosition;
+	private Vector3 lastMouseCoordinate = Vector3.zero;
+	private bool isDragging = false;
+	private Vector3 initialDraggingPos;
+
 
 	public GameObject fumee;
 
 	/**** nvelle implémentation car le perso ne bouge pas ...c'est le niveau qui le fait ******/
 	private static bool isFlying;
 	public static Vector3 vitesse ;
-	private Vector3 translation;
-	private float speedPlayer = 0.3f;
+	public Camera camera;
+	public Vector3 translation;
+	private float speedPlayer = 0.6f;
 	private bool isWithCask = false;
 	private bool isWithShoe = false;
 

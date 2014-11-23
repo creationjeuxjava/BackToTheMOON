@@ -636,15 +636,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5078099d4910554784529781c02281e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMoving: 0
-  speed: .5
-  amplificationMove: 10
-  touchDeltaPosition: {x: 0, y: 0}
-  lastMouseCoordinate: {x: 0, y: 0, z: 0}
-  isDragging: 0
-  initialDraggingPos: {x: 0, y: 0, z: 0}
-  camera: {fileID: 276706956}
   fumee: {fileID: 100000, guid: 9154c1accb852d6439e65fe2a3b638be, type: 2}
+  camera: {fileID: 276706956}
+  translation: {x: 0, y: 0, z: 0}
 --- !u!61 &313015604
 BoxCollider2D:
   m_ObjectHideFlags: 0

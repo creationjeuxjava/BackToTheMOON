@@ -106,8 +106,7 @@ public class GameController : MonoBehaviour {
 	//mettre le jeu en pause ou le remettre
 	public static void tooglePauseGame(){
 
-		if(isGameInPause) isGameInPause = false;
-		else isGameInPause = true;
+		isGameInPause = !isGameInPause;
 	}
 
 	//
