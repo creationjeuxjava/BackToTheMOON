@@ -3,7 +3,9 @@ using System.Collections;
 
 public class InteractionEnnemy : MonoBehaviour {
 
-	public float speedReducingFactor ;
+	public float speedReducingFactor ; //cette valeur se règle dans Unity qd on écrit le prefab
+	public float minAltitude;
+	public float maxAltitude;
 
 	// Use this for initialization
 	void Start () {

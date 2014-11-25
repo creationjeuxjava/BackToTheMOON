@@ -1,19 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <levels>
-  <level>
+  <level indice="1">
     <name>Monde Grec</name>
-    <tutorial>Try comes close to all four objects. (xml)</tutorial>
-    <object name="Cube"> Hi, I'm a cube! (xml) </object>
-    <object name="Cylinder"> Hi, I'm a Cylinder! (xml) </object>
-    <object name="Capsule"> Hi, I'm a Capsule! (xml) </object>
-    <object name="Sphere"> Hi, I'm a Sphere! (xml)</object>
+    <tutorial>Evitez les obstacles et récupérez des bonus pour atteindre l'autre planète !!</tutorial>
+    <object name="oiseau" nombre="15" >
+		<Altitude max="300" min="20"></Altitude>
+    </object>
+    <object name="nuage" nombre="15"> 
+		<Altitude max="450" min="50"></Altitude>
+	</object>
+    <object name="meteorite" nombre="60">
+		<Altitude max="1500" min="400"></Altitude>
+	</object>
+    <object name="cask" nombre="5"> 
+		<Altitude max="1000" min="500"></Altitude>
+	</object>
+	<object name="shoe" nombre="5">
+		<Altitude max="1200" min="600"></Altitude>
+	</object>
   </level>
-  <level>
-    <name>Monde Lave</name>
-    <tutorial>Try comes close to all four objects, again. (xml)</tutorial>
-    <object name="Cube"> Hi, I'm a cube in the level 2! (xml)</object>
-    <object name="Cylinder"> Hi, I'm a Cylinder in the level 2! (xml)</object>
-    <object name="Capsule"> Hi, I'm a Capsule in the level 2! (xml)</object>
-    <object name="Sphere"> Hi, I'm a Sphere in the level 2! (xml)</object>
+  <level indice="2">
+    <name>Monde Fusion</name>
+    <tutorial>Evitez les obstacles et récupérez des bonus pour atteindre l'autre planète !!</tutorial>
+    <object name="oiseau" nombre="0" >
+		<Altitude max="150" min="20"></Altitude>
+    </object>
+    <object name="nuage" nombre="0"> 
+		<Altitude max="250" min="50"></Altitude>
+	</object>
+    <object name="meteorite" nombre="0">
+		<Altitude max="500" min="300"></Altitude>
+	</object>
+    <object name="cask" nombre="0"> 
+		<Altitude max="1000" min="500"></Altitude>
+	</object>
+	<object name="shoe" nombre="0">
+		<Altitude max="1200" min="600"></Altitude>
+	</object>
   </level>
 </levels>

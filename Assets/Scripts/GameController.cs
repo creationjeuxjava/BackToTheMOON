@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 //using UnityEditor;
 
 /*
- * * gère la logique du jeu et la création du niveau
+ * * gère la logique du jeu et la création du niveau par le biais, à terme de LoadLevelController
  * */
 
 public class GameController : MonoBehaviour {
@@ -24,7 +25,9 @@ public class GameController : MonoBehaviour {
 
 	private float altitude;
 	private int coeffAltitude = 5;
-	private int coeffVitesse= 1* 3600;
+	private int coeffVitesse = 1 * 3600; 
+	private int currentLevel = 1; //par défaut le premier niveau
+	private List<GameObject> listeGameObjects = new List<GameObject>();
 
 	// Use this for initialization
 	void Start () {
@@ -38,7 +41,7 @@ public class GameController : MonoBehaviour {
 		//création aléatoire de bonus en l'air =>AssetDatabase non valable dans le build...remplacé par Resources.load !!
 		//TODO à généraliser  !!
 		//Object prefab = AssetDatabase.LoadAssetAtPath("Assets/Prefabs/world1/cask.prefab", typeof(GameObject));
-		Object prefab = Resources.Load<Object>("Prefabs/cask");
+		/*Object prefab = Resources.Load<Object>("Prefabs/cask");
 
 		Vector3 pos = new Vector3(0,50,-4.6f);
 		GameObject clone = Instantiate(prefab, pos, Quaternion.identity) as GameObject;
@@ -48,7 +51,7 @@ public class GameController : MonoBehaviour {
 		Object prefab2 = Resources.Load<Object>("Prefabs/shoe");		
 		Vector3 pos2 = new Vector3(0,100,-4.6f);
 		GameObject clone2 = Instantiate(prefab2, pos2, Quaternion.identity) as GameObject;
-		clone2.transform.parent = foreLayer.transform;
+		clone2.transform.parent = foreLayer.transform;*/
 	}
 	
 	// Update is called once per frame
@@ -56,7 +59,7 @@ public class GameController : MonoBehaviour {
 		if (isWorldMoving == true && !isGameInPause) {
 			//world.transform.Translate (PlayerController.vitesse);//on déplace tout le niveau en fonction de la vitesse du joueur !!
 
-			//chaque partie avance à une vitesse différente
+			//chaque partie avance à une vitesse différente == parallax
 			backLayer.transform.Translate (PlayerController.vitesse / 3);
 			middleLayer.transform.Translate (PlayerController.vitesse / 1.5f);
 			foreLayer.transform.Translate (PlayerController.vitesse);
@@ -74,11 +77,16 @@ public class GameController : MonoBehaviour {
 
 	//a compléter pour créer un niveau complet !!
 	void createWorld(){
-
-		createSpriteWorld (meteorite, nbreMeteor,new Vector2(-45,56),new Vector2(300,500));
+		this.GetComponent<LoadLevelcontroller> ().loadLevel (currentLevel);
+		/*createSpriteWorld (meteorite, nbreMeteor,new Vector2(-45,56),new Vector2(300,500));
 		createSpriteWorld (nuage, nbreNuages,new Vector2(-40,40),new Vector2(50,250));
-		createSpriteWorld (oiseau, nbreNuages,new Vector2(-30,45),new Vector2(20,150));
+		createSpriteWorld (oiseau, nbreNuages,new Vector2(-30,45),new Vector2(20,150));*/
 
+	}
+
+	public void addGameObjectInWorld(GameObject obj){
+		obj.transform.parent = foreLayer.transform;
+		listeGameObjects.Add (obj);
 	}
 
 	/*** méthode de création d'éléments du World *****/

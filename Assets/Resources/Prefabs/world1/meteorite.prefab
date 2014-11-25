@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 50: {fileID: 5000000}
   m_Layer: 0
-  m_Name: testMeteorPrefab
+  m_Name: meteorite
   m_TagString: Meteorite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,6 +71,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedReducingFactor: .0500000007
+  minAltitude: 0
+  maxAltitude: 0
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1

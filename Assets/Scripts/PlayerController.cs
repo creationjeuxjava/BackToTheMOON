@@ -46,11 +46,11 @@ public class PlayerController : MonoBehaviour {
 			Vector3 screenPos = camera.WorldToScreenPoint(transform.position);
 			if(screenPos.x >= Screen.width ) {
 				translation.x = 0;
-				transform.position = new Vector3(transform.position.x - 0.7f,transform.position.y,0);
+				transform.position = new Vector3(transform.position.x - 1.5f,transform.position.y,0);
 			}
 			else if(screenPos.x <= 0){
 				translation.x = 0;
-				transform.position = new Vector3(transform.position.x + 0.7f,transform.position.y,0);
+				transform.position = new Vector3(transform.position.x + 1.5f,transform.position.y,0);
 				
 			}
 			else{

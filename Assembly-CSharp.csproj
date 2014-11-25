@@ -206,7 +206,7 @@
      <Compile Include="Assets\Scripts\Inventory\GUInventory.cs" />
      <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
      <Compile Include="Assets\Scripts\Inventory\Item.cs" />
-     <Compile Include="Assets\Scripts\LoadLevelcontroller.cs" />
+     <Compile Include="Assets\Scripts\LevelLoading\LoadLevelcontroller.cs" />
      <Compile Include="Assets\Scripts\MenuGUI.cs" />
      <Compile Include="Assets\Scripts\NoUseButNODelete\ResponsiveController.cs" />
      <Compile Include="Assets\Scripts\Parallax.cs" />
