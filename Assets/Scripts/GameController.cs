@@ -68,7 +68,10 @@ public class GameController : MonoBehaviour {
 			float vitesse = PlayerController.vitesse.y*-1 * coeffVitesse;
 			InGameGUI.setMessage("Altitude :"+altitude,"Vitesse Player : "+vitesse+" km/h");
 
+			if(PlayerController.vitesse.y >= 0){
 
+				Application.LoadLevel (0); //on a perdu
+			}
 
 		}
 	}
