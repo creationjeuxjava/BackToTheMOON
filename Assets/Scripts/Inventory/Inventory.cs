@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class Inventory : MonoBehaviour {
 
 	private List<Item> items = new List<Item>();
+	private Dictionary<string,Item> MyDico = new Dictionary<string,Item>();
 
 	// Use this for initialization
 	void Start () {
