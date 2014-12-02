@@ -74,7 +74,7 @@ public class LoadLevelcontroller : MonoBehaviour {
 		for(int i = 0 ; i < number ; i++){
 			Object prefab = Resources.Load<Object>("Prefabs/world"+numLevel+"/"+nomPrefab);		
 			Vector3 pos = new Vector3 (Random.Range(xRange.x,xRange.y),Random.Range(yRange.x,yRange.y),-4.6f);
-			Quaternion spawnRotation =  Quaternion.identity;;//Quaternion.Euler(0,0, Random.Range(0, 360) ); //Quaternion.identity;
+			Quaternion spawnRotation =  Quaternion.identity;//Quaternion.Euler(0,0, Random.Range(0, 360) ); //Quaternion.identity;
 			GameObject clone = Instantiate(prefab, pos, spawnRotation) as GameObject;
 
 			this.GetComponent<GameController>().addGameObjectInWorld(clone);
