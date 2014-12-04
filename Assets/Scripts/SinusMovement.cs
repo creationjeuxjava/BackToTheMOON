@@ -17,13 +17,14 @@ public class SinusMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//initialize the "movement box"
-
 		rx = transform.localPosition.x;
+		//introduce a random horizontal gap
+		locX = Random.Range (-boxMovementWidth / 2, boxMovementWidth / 2);
 
-		locX += Random.Range (-boxMovementWidth / 2, boxMovementWidth / 2);
+		// keep the original vertical position
 		ry = transform.localPosition.y;
-
 		sigma = piX5 / boxMovementWidth;
+
 		amp = boxMovementHeight/10;
 		theta = Random.Range (-Mathf.PI, Mathf.PI);
 	}
@@ -42,7 +43,6 @@ public class SinusMovement : MonoBehaviour {
 		if (locX > boxMovementWidth / 2)
 			back = true;
 
-		Debug.Log (back);
 		transform.localPosition = new Vector3 (locX + rx, locY + ry, transform.position.z);
 	}
 }
