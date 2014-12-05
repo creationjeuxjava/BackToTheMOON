@@ -2472,7 +2472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   meteorite: {fileID: 100000, guid: a22c54f850609f94583590674b9546a3, type: 2}
   nuage: {fileID: 100000, guid: 8bb15578e20d36745bf059545ecc96fc, type: 2}
-  oiseau: {fileID: 100000, guid: d2318f9f613eb4c4aa0f36514d1bd980, type: 2}
+  oiseau: {fileID: 0}
   player: {fileID: 313015600}
 --- !u!4 &1620950175
 Transform:

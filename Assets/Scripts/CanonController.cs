@@ -30,7 +30,7 @@ public class CanonController : MonoBehaviour {
 	/*** au clic sur le canon on fait "décoller" le pplayer *****/
 	void OnMouseDown()//fonctionne aussi sur android !!
 	{
-		anim.SetTrigger ("fireCanon");
+		anim.SetTrigger ("fire");
 		gameController.GetComponent<GameController>().LaunchPlayer();
 		GameObject particules = Instantiate(canonFire, new Vector3(transform.position.x,transform.position.y+5f, -20f), transform.rotation) as GameObject; 
 		particules.transform.parent = GameController.world.transform;
