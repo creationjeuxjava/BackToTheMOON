@@ -3,6 +3,132 @@ guid: 45d20f06e5509e3459d0fe1bc0f21423
 TextureImporter:
   fileIDToRecycleName:
     21300000: canonanimefond
+    21300002: canonanimefond_0
+    21300004: canonanimefond_1
+    21300006: canonanimefond_2
+    21300008: canonanimefond_3
+    21300010: canonanimefond_4
+    21300012: canonanimefond_5
+    21300014: canonanimefond_6
+    21300016: canonanimefond_7
+    21300018: canonanimefond_8
+    21300020: canonanimefond_9
+    21300022: canonanimefond_10
+    21300024: canonanimefond_11
+    21300026: canonanimefond_12
+    21300028: canonanimefond_13
+    21300030: canonanimefond_14
+    21300032: canonanimefond_15
+    21300034: canonanimefond_16
+    21300036: canonanimefond_17
+    21300038: canonanimefond_18
+    21300040: canonanimefond_19
+    21300042: canonanimefond_20
+    21300044: canonanimefond_21
+    21300046: canonanimefond_22
+    21300048: canonanimefond_23
+    21300050: canonanimefond_24
+    21300052: canonanimefond_25
+    21300054: canonanimefond_26
+    21300056: canonanimefond_27
+    21300058: canonanimefond_28
+    21300060: canonanimefond_29
+    21300062: canonanimefond_30
+    21300064: canonanimefond_31
+    21300066: canonanimefond_32
+    21300068: canonanimefond_33
+    21300070: canonanimefond_34
+    21300072: canonanimefond_35
+    21300074: canonanimefond_36
+    21300076: canonanimefond_37
+    21300078: canonanimefond_38
+    21300080: canonanimefond_39
+    21300082: canonanimefond_40
+    21300084: canonanimefond_41
+    21300086: canonanimefond_42
+    21300088: canonanimefond_43
+    21300090: canonanimefond_44
+    21300092: canonanimefond_45
+    21300094: canonanimefond_46
+    21300096: canonanimefond_47
+    21300098: canonanimefond_48
+    21300100: canonanimefond_49
+    21300102: canonanimefond_50
+    21300104: canonanimefond_51
+    21300106: canonanimefond_52
+    21300108: canonanimefond_53
+    21300110: canonanimefond_54
+    21300112: canonanimefond_55
+    21300114: canonanimefond_56
+    21300116: canonanimefond_57
+    21300118: canonanimefond_58
+    21300120: canonanimefond_59
+    21300122: canonanimefond_60
+    21300124: canonanimefond_61
+    21300126: canonanimefond_62
+    21300128: canonanimefond_63
+    21300130: canonanimefond_64
+    21300132: canonanimefond_65
+    21300134: canonanimefond_66
+    21300136: canonanimefond_67
+    21300138: canonanimefond_68
+    21300140: canonanimefond_69
+    21300142: canonanimefond_70
+    21300144: canonanimefond_71
+    21300146: canonanimefond_72
+    21300148: canonanimefond_73
+    21300150: canonanimefond_74
+    21300152: canonanimefond_75
+    21300154: canonanimefond_76
+    21300156: canonanimefond_77
+    21300158: canonanimefond_78
+    21300160: canonanimefond_79
+    21300162: canonanimefond_80
+    21300164: canonanimefond_81
+    21300166: canonanimefond_82
+    21300168: canonanimefond_83
+    21300170: canonanimefond_84
+    21300172: canonanimefond_85
+    21300174: canonanimefond_86
+    21300176: canonanimefond_87
+    21300178: canonanimefond_88
+    21300180: canonanimefond_89
+    21300182: canonanimefond_90
+    21300184: canonanimefond_91
+    21300186: canonanimefond_92
+    21300188: canonanimefond_93
+    21300190: canonanimefond_94
+    21300192: canonanimefond_95
+    21300194: canonanimefond_96
+    21300196: canonanimefond_97
+    21300198: canonanimefond_98
+    21300200: canonanimefond_99
+    21300202: canonanimefond_100
+    21300204: canonanimefond_101
+    21300206: canonanimefond_102
+    21300208: canonanimefond_103
+    21300210: canonanimefond_104
+    21300212: canonanimefond_105
+    21300214: canonanimefond_106
+    21300216: canonanimefond_107
+    21300218: canonanimefond_108
+    21300220: canonanimefond_109
+    21300222: canonanimefond_110
+    21300224: canonanimefond_111
+    21300226: canonanimefond_112
+    21300228: canonanimefond_113
+    21300230: canonanimefond_114
+    21300232: canonanimefond_115
+    21300234: canonanimefond_116
+    21300236: canonanimefond_117
+    21300238: canonanimefond_118
+    21300240: canonanimefond_119
+    21300242: canonanimefond_120
+    21300244: canonanimefond_121
+    21300246: canonanimefond_122
+    21300248: canonanimefond_123
+    21300250: canonanimefond_124
+    21300252: canonanimefond_125
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -32,7 +158,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -43,6 +169,1266 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: canonanimefond_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2869
+        width: 494
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_1
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 2869
+        width: 486
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_2
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 2869
+        width: 487
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_3
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 2869
+        width: 486
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_4
+      rect:
+        serializedVersion: 2
+        x: 4214
+        y: 2869
+        width: 478
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_5
+      rect:
+        serializedVersion: 2
+        x: 5314
+        y: 3061
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_6
+      rect:
+        serializedVersion: 2
+        x: 5832
+        y: 3077
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_7
+      rect:
+        serializedVersion: 2
+        x: 6342
+        y: 3037
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_8
+      rect:
+        serializedVersion: 2
+        x: 6884
+        y: 3053
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_9
+      rect:
+        serializedVersion: 2
+        x: 7411
+        y: 3069
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_10
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 3021
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_11
+      rect:
+        serializedVersion: 2
+        x: 3257
+        y: 3021
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_12
+      rect:
+        serializedVersion: 2
+        x: 3783
+        y: 3029
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_13
+      rect:
+        serializedVersion: 2
+        x: 4756
+        y: 3029
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_14
+      rect:
+        serializedVersion: 2
+        x: 5290
+        y: 3037
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_15
+      rect:
+        serializedVersion: 2
+        x: 5808
+        y: 3037
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_16
+      rect:
+        serializedVersion: 2
+        x: 6868
+        y: 3045
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_17
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 3021
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_18
+      rect:
+        serializedVersion: 2
+        x: 4780
+        y: 3005
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_19
+      rect:
+        serializedVersion: 2
+        x: 4844
+        y: 3021
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_20
+      rect:
+        serializedVersion: 2
+        x: 5904
+        y: 3021
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_21
+      rect:
+        serializedVersion: 2
+        x: 6430
+        y: 3021
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_22
+      rect:
+        serializedVersion: 2
+        x: 5298
+        y: 3005
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_23
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 2207
+        width: 495
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_24
+      rect:
+        serializedVersion: 2
+        x: 3289
+        y: 2207
+        width: 470
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_25
+      rect:
+        serializedVersion: 2
+        x: 4907
+        y: 2510
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_26
+      rect:
+        serializedVersion: 2
+        x: 4971
+        y: 2207
+        width: 454
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_27
+      rect:
+        serializedVersion: 2
+        x: 5465
+        y: 2526
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_28
+      rect:
+        serializedVersion: 2
+        x: 5537
+        y: 2207
+        width: 446
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_29
+      rect:
+        serializedVersion: 2
+        x: 6032
+        y: 2526
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_30
+      rect:
+        serializedVersion: 2
+        x: 6111
+        y: 2207
+        width: 439
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_31
+      rect:
+        serializedVersion: 2
+        x: 6598
+        y: 2534
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_32
+      rect:
+        serializedVersion: 2
+        x: 6669
+        y: 2207
+        width: 455
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_33
+      rect:
+        serializedVersion: 2
+        x: 7259
+        y: 2207
+        width: 439
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_34
+      rect:
+        serializedVersion: 2
+        x: 2707
+        y: 2486
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_35
+      rect:
+        serializedVersion: 2
+        x: 3249
+        y: 2486
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_36
+      rect:
+        serializedVersion: 2
+        x: 3799
+        y: 2495
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_37
+      rect:
+        serializedVersion: 2
+        x: 4349
+        y: 2510
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_38
+      rect:
+        serializedVersion: 2
+        x: 6622
+        y: 2479
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_39
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 2447
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_40
+      rect:
+        serializedVersion: 2
+        x: 2723
+        y: 2455
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_41
+      rect:
+        serializedVersion: 2
+        x: 3257
+        y: 2454
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_42
+      rect:
+        serializedVersion: 2
+        x: 3815
+        y: 2454
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_43
+      rect:
+        serializedVersion: 2
+        x: 4381
+        y: 2463
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_44
+      rect:
+        serializedVersion: 2
+        x: 4915
+        y: 2455
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_45
+      rect:
+        serializedVersion: 2
+        x: 5505
+        y: 2454
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_46
+      rect:
+        serializedVersion: 2
+        x: 6071
+        y: 2454
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_47
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 2447
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_48
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 2447
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_49
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2431
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_50
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 2430
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_51
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 2431
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_52
+      rect:
+        serializedVersion: 2
+        x: 2747
+        y: 2431
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_53
+      rect:
+        serializedVersion: 2
+        x: 4397
+        y: 2431
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_54
+      rect:
+        serializedVersion: 2
+        x: 4955
+        y: 2431
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_55
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 2407
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_56
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 2407
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_57
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2391
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_58
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 2391
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_59
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1537
+        width: 430
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_60
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1904
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_61
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1537
+        width: 446
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_62
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1537
+        width: 414
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_63
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 1537
+        width: 415
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_64
+      rect:
+        serializedVersion: 2
+        x: 5561
+        y: 1537
+        width: 414
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_65
+      rect:
+        serializedVersion: 2
+        x: 6023
+        y: 1537
+        width: 415
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_66
+      rect:
+        serializedVersion: 2
+        x: 6478
+        y: 1552
+        width: 414
+        height: 607
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_67
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_68
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1880
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_69
+      rect:
+        serializedVersion: 2
+        x: 3098
+        y: 1864
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_70
+      rect:
+        serializedVersion: 2
+        x: 3122
+        y: 1856
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_71
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 1840
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_72
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1824
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_73
+      rect:
+        serializedVersion: 2
+        x: 3711
+        y: 1840
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_74
+      rect:
+        serializedVersion: 2
+        x: 4644
+        y: 1840
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_75
+      rect:
+        serializedVersion: 2
+        x: 5123
+        y: 1848
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_76
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1824
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_77
+      rect:
+        serializedVersion: 2
+        x: 2524
+        y: 1824
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_78
+      rect:
+        serializedVersion: 2
+        x: 4214
+        y: 1824
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_79
+      rect:
+        serializedVersion: 2
+        x: 5107
+        y: 1832
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_80
+      rect:
+        serializedVersion: 2
+        x: 5146
+        y: 1824
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_81
+      rect:
+        serializedVersion: 2
+        x: 3727
+        y: 1816
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_82
+      rect:
+        serializedVersion: 2
+        x: 6940
+        y: 1768
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_83
+      rect:
+        serializedVersion: 2
+        x: 7395
+        y: 1784
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_84
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 914
+        width: 407
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_85
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 922
+        width: 414
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_86
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 1145
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_87
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 946
+        width: 383
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_88
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 954
+        width: 382
+        height: 543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_89
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 914
+        width: 391
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_90
+      rect:
+        serializedVersion: 2
+        x: 2667
+        y: 874
+        width: 390
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_91
+      rect:
+        serializedVersion: 2
+        x: 3097
+        y: 858
+        width: 391
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_92
+      rect:
+        serializedVersion: 2
+        x: 3528
+        y: 842
+        width: 383
+        height: 654
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_93
+      rect:
+        serializedVersion: 2
+        x: 3958
+        y: 826
+        width: 383
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_94
+      rect:
+        serializedVersion: 2
+        x: 4389
+        y: 818
+        width: 383
+        height: 678
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_95
+      rect:
+        serializedVersion: 2
+        x: 4812
+        y: 802
+        width: 390
+        height: 694
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_96
+      rect:
+        serializedVersion: 2
+        x: 5242
+        y: 794
+        width: 391
+        height: 702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_97
+      rect:
+        serializedVersion: 2
+        x: 5673
+        y: 778
+        width: 382
+        height: 710
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_98
+      rect:
+        serializedVersion: 2
+        x: 6103
+        y: 778
+        width: 383
+        height: 702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_99
+      rect:
+        serializedVersion: 2
+        x: 6534
+        y: 786
+        width: 382
+        height: 694
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_100
+      rect:
+        serializedVersion: 2
+        x: 6956
+        y: 778
+        width: 391
+        height: 702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_101
+      rect:
+        serializedVersion: 2
+        x: 7387
+        y: 778
+        width: 390
+        height: 710
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_102
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 12
+        width: 391
+        height: 702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_103
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 52
+        width: 390
+        height: 678
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_104
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 44
+        width: 383
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_105
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 44
+        width: 382
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_106
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 44
+        width: 383
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_107
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 44
+        width: 390
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_108
+      rect:
+        serializedVersion: 2
+        x: 2579
+        y: 44
+        width: 391
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_109
+      rect:
+        serializedVersion: 2
+        x: 3010
+        y: 44
+        width: 382
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_110
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 36
+        width: 383
+        height: 694
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_111
+      rect:
+        serializedVersion: 2
+        x: 3871
+        y: 36
+        width: 382
+        height: 694
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_112
+      rect:
+        serializedVersion: 2
+        x: 4293
+        y: 36
+        width: 391
+        height: 694
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_113
+      rect:
+        serializedVersion: 2
+        x: 4724
+        y: 36
+        width: 390
+        height: 694
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_114
+      rect:
+        serializedVersion: 2
+        x: 5154
+        y: 44
+        width: 383
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_115
+      rect:
+        serializedVersion: 2
+        x: 5585
+        y: 44
+        width: 383
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_116
+      rect:
+        serializedVersion: 2
+        x: 6015
+        y: 44
+        width: 383
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_117
+      rect:
+        serializedVersion: 2
+        x: 6446
+        y: 44
+        width: 383
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_118
+      rect:
+        serializedVersion: 2
+        x: 7108
+        y: 691
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_119
+      rect:
+        serializedVersion: 2
+        x: 7730
+        y: 116
+        width: 382
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_120
+      rect:
+        serializedVersion: 2
+        x: 7004
+        y: 667
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_121
+      rect:
+        serializedVersion: 2
+        x: 7140
+        y: 675
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_122
+      rect:
+        serializedVersion: 2
+        x: 7156
+        y: 667
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_123
+      rect:
+        serializedVersion: 2
+        x: 7530
+        y: 675
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_124
+      rect:
+        serializedVersion: 2
+        x: 7570
+        y: 675
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: canonanimefond_125
+      rect:
+        serializedVersion: 2
+        x: 7299
+        y: 44
+        width: 390
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
