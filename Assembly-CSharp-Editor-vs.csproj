@@ -243,9 +243,6 @@
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_search_box.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_list_row.xml" />
- <Reference Include="Assembly-UnityScript">
- <HintPath>C:/Users/Julien/Documents/ActiviteUnity/BackToTheMOON/BackToTheMOON/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
- </Reference>
  <Reference Include="IFacebook">
  <HintPath>C:/Users/Julien/Documents/ActiviteUnity/BackToTheMOON/BackToTheMOON/Assets/Facebook/Scripts/IFacebook.dll</HintPath>
  </Reference>

@@ -7,8 +7,6 @@ Project("{852E3969-82CF-4757-4EA7-E2881E015662}") = "BackToTheMOON", "Assembly-C
 EndProject
 Project("{852E3969-82CF-4757-4EA7-E2881E015662}") = "BackToTheMOON", "Assembly-CSharp-Editor.csproj", "{136ADF09-0374-1501-76F5-4CE7592D4D13}"
 EndProject
-Project("{852E3969-82CF-4757-4EA7-E2881E015662}") = "BackToTheMOON", "Assembly-UnityScript.unityproj", "{0C44BE70-8D08-D42B-FBAD-3FF369601C03}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,15 +25,11 @@ Global
 		{136ADF09-0374-1501-76F5-4CE7592D4D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{136ADF09-0374-1501-76F5-4CE7592D4D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{136ADF09-0374-1501-76F5-4CE7592D4D13}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0C44BE70-8D08-D42B-FBAD-3FF369601C03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C44BE70-8D08-D42B-FBAD-3FF369601C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C44BE70-8D08-D42B-FBAD-3FF369601C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C44BE70-8D08-D42B-FBAD-3FF369601C03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																																																																											GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																																																														GlobalSection(MonoDevelopProperties) = preSolution
 																																GlobalSection(MonoDevelopProperties) = preSolution
 																											GlobalSection(MonoDevelopProperties) = preSolution
 																									GlobalSection(MonoDevelopProperties) = preSolution
