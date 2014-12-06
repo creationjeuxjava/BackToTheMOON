@@ -260,7 +260,7 @@ GameObject:
   - 4: {fileID: 1949174785}
   - 114: {fileID: 1949174784}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: GUIHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
