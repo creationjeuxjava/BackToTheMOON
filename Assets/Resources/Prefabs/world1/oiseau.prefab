@@ -13,6 +13,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 50: {fileID: 5000000}
   - 95: {fileID: 9500000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: oiseau
   m_TagString: Oiseau
@@ -72,7 +73,32 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8374677f5ad1fef4c811f26292d7f628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxX: 0
+  maxY: 0
+  minX: 0
+  minY: 0
+  boxMovementWidth: 20
+  boxMovementHeight: 1
+  locX: 0
+  rx: 0
+  ry: 0
+  speed: 10
+  sigma: 0
+  amp: 0
+  back: 0
+  piX5: 15.7079639
+  theta: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

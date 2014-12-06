@@ -14,7 +14,7 @@ public class MenuGUI : MonoBehaviour {
 
 		//initialisation du facebook sdk
 		enabled = false;
-		FB.Init(SetInit, OnHideUnity);
+		//FB.Init(SetInit, OnHideUnity);
 	}
 	
 	// Update is called once per frame
@@ -62,13 +62,13 @@ public class MenuGUI : MonoBehaviour {
 			Application.Quit();
 		}
 
-		if (!FB.IsLoggedIn)                                                                                              
+		/*if (!FB.IsLoggedIn)                                                                                              
 		{                                                                                                               
 			if (GUI.Button(facebookRect, "Facebook", menuStyle))                                      
 			{                                                                                                            
 				FB.Login("email,publish_actions", LoginCallback);                                                        
 			}                                                                                                            
-		}   
+		}   */
 
 		GUI.EndGroup ();
 		/*** quitter le jeu (icone)***/
@@ -84,11 +84,11 @@ public class MenuGUI : MonoBehaviour {
 	{                                                                                            
 		Debug.Log("SetInit");                                                                  
 		enabled = true; // "enabled" is a property inherited from MonoBehaviour                  
-		if (FB.IsLoggedIn)                                                                       
+		/*if (FB.IsLoggedIn)                                                                       
 		{                                                                                        
 			Debug.Log("Already logged in");                                                    
 			OnLoggedIn();                                                                        
-		}                                                                                        
+		}  */                                                                                      
 	}                                                                                            
 	
 	private void OnHideUnity(bool isGameShown)                                                   
@@ -106,7 +106,7 @@ public class MenuGUI : MonoBehaviour {
 		}                                                                                        
 	}   
 
-	void LoginCallback(FBResult result)                                                        
+	/*void LoginCallback(FBResult result)                                                        
 	{                                                                                          
 		Debug.Log("LoginCallback");                                                          
 		
@@ -119,5 +119,5 @@ public class MenuGUI : MonoBehaviour {
 	void OnLoggedIn()                                                                          
 	{                                                                                          
 		Debug.Log("Logged in. ID: " + FB.UserId);                                            
-	}       
+	} */      
 }
