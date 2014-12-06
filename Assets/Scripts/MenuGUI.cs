@@ -9,11 +9,11 @@ public class MenuGUI : MonoBehaviour {
 	void Start () {
 		// on adapte la font
 		menuStyle.font = Resources.Load ("Fonts/J-airplane-swash-font") as Font;
-		menuStyle.fontSize = AspectUtility.adaptFont(10);
+		menuStyle.fontSize = AspectUtility.adaptFont(50);
 		Debug.Log("MenuGUI: taille adaptée de la font est  :"+menuStyle.fontSize);
 
 		//initialisation du facebook sdk
-		enabled = false;
+		//enabled = false;
 		//FB.Init(SetInit, OnHideUnity);
 	}
 	
@@ -42,8 +42,11 @@ public class MenuGUI : MonoBehaviour {
 		/*** gestion des input **********/
 		/*******************************/
 		// Groupe centré à l'écran
-		float widthBox = AspectUtility.adaptCoordX(300);
-		float heightBox = AspectUtility.adaptCoordX(300);
+		/*float widthBox = AspectUtility.adaptCoordX(300);
+		float heightBox = AspectUtility.adaptCoordX(300);*/
+
+		float widthBox = 300;
+		float heightBox = 300;
 		GUI.BeginGroup (new Rect (Screen.width / 2 - widthBox/2, Screen.height * 0.6f - heightBox / 2, widthBox, heightBox));
 
 
@@ -61,6 +64,11 @@ public class MenuGUI : MonoBehaviour {
 		if (GUI.Button (quitRect,"Quitter",menuStyle)) {
 			Application.Quit();
 		}
+
+		if (Input.GetKeyDown(KeyCode.Escape)) { Application.Quit(); }
+
+		if (Input.GetKeyUp(KeyCode.Escape))
+			Application.Quit();
 
 		/*if (!FB.IsLoggedIn)                                                                                              
 		{                                                                                                               
