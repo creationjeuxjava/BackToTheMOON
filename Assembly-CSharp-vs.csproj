@@ -46,6 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AdMobPlugin\Scripts\AdMobPlugin.cs" />
+     <Compile Include="Assets\AdMobPlugin\Scripts\AdMobPluginDebug.cs" />
+     <Compile Include="Assets\AdMobPlugin\Scripts\AdMobPluginMockup.cs" />
      <Compile Include="Assets\Examples\Scripts\ConsoleBase.cs" />
      <Compile Include="Assets\Examples\Scripts\GameGroupsConsole.cs" />
      <Compile Include="Assets\Examples\Scripts\InteractiveConsole.cs" />
@@ -234,6 +237,7 @@
      <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_top_button.xml" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_friendpickerfragment.xml" />
+     <None Include="Assets\AdMobPlugin\LICENSE.txt" />
      <None Include="Assets\ShaderForge\Example Assets\Shaders\LightCone.shader" />
      <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_button_check.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_button_blue.xml" />
@@ -264,6 +268,7 @@
      <None Include="Assets\ShaderForge\Example Assets\Shaders\Refraction.shader" />
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_title_bar_stub.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\values\drawables.xml" />
      <None Include="Assets\ShaderForge\Example Assets\Shaders\Parallax.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
@@ -308,6 +313,10 @@
  <Reference Include="IFacebook">
  <HintPath>C:/Users/Julien/Documents/ActiviteUnity/BackToTheMOON/BackToTheMOON/Assets/Facebook/Scripts/IFacebook.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{CADC6393-70ED-07BA-3A56-26D51A58E949}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
