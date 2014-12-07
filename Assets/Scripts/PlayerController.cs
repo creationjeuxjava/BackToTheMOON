@@ -239,11 +239,11 @@ public class PlayerController : MonoBehaviour {
 
 		if (isWithCask) {
 				
-			Destroy(obj);//explose le météorite
-			vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor;
+			Destroy(obj);//TODO : explose le météorite ==> methode spawnMiniAsteroides à créer !!
+			vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor * 50 /100;
 		}
 
-		else if(isWithShoe) vitesse.y += vitesse.y*50/100;
+		else if(isWithShoe) vitesse.y += vitesse.y * 50/100;
 
 		else vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor;
 	
