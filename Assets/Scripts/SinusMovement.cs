@@ -46,7 +46,7 @@ public class SinusMovement : MonoBehaviour {
 				back = true;
 				flip ();
 			}
-			Debug.Log (locX);
+			//Debug.Log (locX);
 			transform.localPosition = new Vector3 (locX + rx, locY + ry, transform.position.z);	
 		
 		}

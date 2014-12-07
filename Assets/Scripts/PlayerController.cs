@@ -230,11 +230,18 @@ public class PlayerController : MonoBehaviour {
 			GetComponent<SpriteRenderer>().sprite = shoeSprite;
 			
 			GetComponent<Inventory>().addItem(new Item("shoes",2,Item.ItemType.Timer));
+			//boostVitesse(50/100);
 			updateVitesse(other.gameObject);
 			
 		}
 	}
 
+
+	private void boostVitesse(float boostValue){
+		vitesse.y += vitesse.y * boostValue;
+		Debug.Log ("***************  collision avec une shoe -----------> boost de vitesse 50 /100 ");
+	
+	}
 	private void updateVitesse(GameObject obj){
 
 		if (isWithCask) {
@@ -243,7 +250,7 @@ public class PlayerController : MonoBehaviour {
 			vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor * 50 /100;
 		}
 
-		else if(isWithShoe) vitesse.y += vitesse.y * 50/100;
+		else if(isWithShoe && obj.tag == "Shoe" ) vitesse.y += vitesse.y * 50/100;  
 
 		else vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor;
 	
