@@ -4,7 +4,7 @@ using System.Collections.Generic;
 //using UnityEditor;
 
 /*
- * * gère la logique du jeu et la création du niveau par le biais, à terme de LoadLevelController
+ * * gère la logique du jeu et la création du niveau par le biais de LoadLevelController
  * */
 
 public class GameController : MonoBehaviour {

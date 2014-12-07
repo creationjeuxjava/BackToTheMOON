@@ -196,7 +196,7 @@ public class PlayerController : MonoBehaviour {
 			Sprite casqueSprite = Resources.Load("Sprites/persocasque", typeof(Sprite)) as Sprite;
 			GetComponent<SpriteRenderer>().sprite = casqueSprite;
 
-			GetComponent<Inventory>().addItem(new Item("casque",1,Item.ItemType.Permanent));
+			GetComponent<Inventory>().addItem(new Item("casque",1,Item.ItemType.Timer));
 			
 		}
 		if(other.gameObject.tag == "Shoe" ){

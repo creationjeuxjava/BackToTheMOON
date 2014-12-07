@@ -31,23 +31,26 @@ public class SinusMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		float delta = Time.deltaTime;
-
-		float incX = back ? -delta * speed : delta * speed;
-		locX += incX;
-		float locY = amp * Mathf.Sin (sigma * locX + theta);
-
-		if (locX < -boxMovementWidth / 2) {
-			back = false;
-			flip ();
+		if (!GameController.isGamePaused ()) {
+			float delta = Time.deltaTime;
+			
+			float incX = back ? -delta * speed : delta * speed;
+			locX += incX;
+			float locY = amp * Mathf.Sin (sigma * locX + theta);
+			
+			if (locX < -boxMovementWidth / 2) {
+				back = false;
+				flip ();
+			}
+			if (locX > boxMovementWidth / 2) {
+				back = true;
+				flip ();
+			}
+			Debug.Log (locX);
+			transform.localPosition = new Vector3 (locX + rx, locY + ry, transform.position.z);	
+		
 		}
-		if (locX > boxMovementWidth / 2) {
-			back = true;
-			flip ();
-		}
-		Debug.Log (locX);
-		transform.localPosition = new Vector3 (locX + rx, locY + ry, transform.position.z);
+
 	}
 
 	private void flip() {
