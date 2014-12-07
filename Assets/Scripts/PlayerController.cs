@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour {
 	private bool isWithShoe = false;
 	private bool isItemActivated = false;
 
+	private float timeLeft = 5.0f;
+
 	public void launchIntheAir(){
 		isFlying = true;
 		vitesse = new Vector3(0,-speedPlayer,0);
@@ -93,7 +95,8 @@ public class PlayerController : MonoBehaviour {
 			} 			
 
 			transform.Translate(translation);
-				
+
+			if(isItemActivated) this.checkTimeItemLeft();
 		}
 		if (GameController.isGamePaused ())
 						audio.Pause ();
@@ -174,6 +177,7 @@ public class PlayerController : MonoBehaviour {
 		//renderer.	
 	}
 
+	/**** détection des collisions avec les GO istrigger = false ****/
 	void OnCollisionEnter2D(Collision2D other){
 		
 		if(other.gameObject.tag == "Meteorite" ){
@@ -189,15 +193,23 @@ public class PlayerController : MonoBehaviour {
 			updateVitesse(other.gameObject);
 			
 		}
+
+
+
+	}
+
+	/**** détection des collisions avec les GO istrigger = true ****/
+	void OnTriggerEnter2D(Collider2D other) {
+
 		if(other.gameObject.tag == "Cask" && !isItemActivated ){
 			Debug.Log ("***************  collision avec un cask ");
 			Destroy(other.gameObject);
 			isWithCask = true;
 			isItemActivated = true;
-
+			
 			Sprite casqueSprite = Resources.Load("Sprites/persocasque", typeof(Sprite)) as Sprite;
 			GetComponent<SpriteRenderer>().sprite = casqueSprite;
-
+			
 			GetComponent<Inventory>().addItem(new Item("casque",1,Item.ItemType.Timer));
 			
 		}
@@ -208,9 +220,9 @@ public class PlayerController : MonoBehaviour {
 			isWithShoe = true;
 			isWithCask = false;
 			isItemActivated = true;
-
-			Sprite casqueShoe = Resources.Load("Sprites/persoshoes", typeof(Sprite)) as Sprite;
-			GetComponent<SpriteRenderer>().sprite = casqueShoe;
+			
+			Sprite shoeSprite = Resources.Load("Sprites/persoshoes", typeof(Sprite)) as Sprite;
+			GetComponent<SpriteRenderer>().sprite = shoeSprite;
 			
 			GetComponent<Inventory>().addItem(new Item("shoes",2,Item.ItemType.Timer));
 			
@@ -221,6 +233,26 @@ public class PlayerController : MonoBehaviour {
 
 		vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor;
 	
+	}
+
+	private void checkTimeItemLeft(){
+
+		timeLeft -= Time.deltaTime;
+		if(timeLeft < 0)
+		{
+			isItemActivated = false;
+			Sprite normalSprite = Resources.Load("Sprites/perso", typeof(Sprite)) as Sprite;
+			GetComponent<SpriteRenderer>().sprite = normalSprite;
+			timeLeft = 5.0f;
+			resetPlayerState();
+			//TODO : supprimer l'item de l'inventaire !!
+		}
+	}
+
+	private void resetPlayerState(){
+
+		isWithShoe = false;
+		isWithCask = false;
 	}
 
 	/*void OnMouseOver()
