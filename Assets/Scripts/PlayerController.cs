@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour {
 	private float speedPlayer = 0.6f;
 	private bool isWithCask = false;
 	private bool isWithShoe = false;
+	private bool isItemActivated = false;
 
 	public void launchIntheAir(){
 		isFlying = true;
@@ -188,10 +189,11 @@ public class PlayerController : MonoBehaviour {
 			updateVitesse(other.gameObject);
 			
 		}
-		if(other.gameObject.tag == "Cask" ){
+		if(other.gameObject.tag == "Cask" && !isItemActivated ){
 			Debug.Log ("***************  collision avec un cask ");
 			Destroy(other.gameObject);
 			isWithCask = true;
+			isItemActivated = true;
 
 			Sprite casqueSprite = Resources.Load("Sprites/persocasque", typeof(Sprite)) as Sprite;
 			GetComponent<SpriteRenderer>().sprite = casqueSprite;
@@ -199,11 +201,14 @@ public class PlayerController : MonoBehaviour {
 			GetComponent<Inventory>().addItem(new Item("casque",1,Item.ItemType.Timer));
 			
 		}
-		if(other.gameObject.tag == "Shoe" ){
+
+		if(other.gameObject.tag == "Shoe" && !isItemActivated ){
 			Debug.Log ("***************  collision avec une shoe ");
 			Destroy(other.gameObject);
 			isWithShoe = true;
 			isWithCask = false;
+			isItemActivated = true;
+
 			Sprite casqueShoe = Resources.Load("Sprites/persoshoes", typeof(Sprite)) as Sprite;
 			GetComponent<SpriteRenderer>().sprite = casqueShoe;
 			
