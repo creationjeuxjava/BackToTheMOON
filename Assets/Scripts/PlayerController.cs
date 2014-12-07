@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour {
 		if (isFlying && !GameController.isGamePaused() && !GameController.isOverGUI()) {
 
 			if(!audio.isPlaying)	audio.Play();
+
 			/*****************   control out of Map	*********************/
 			Vector3 screenPos = camera.WorldToScreenPoint(transform.position);
 			if(screenPos.x >= Screen.width ) {
@@ -174,7 +175,7 @@ public class PlayerController : MonoBehaviour {
 
 			//rigidbody2D.AddForce(new Vector2(touchDeltaPosition.x* amplificationMove,touchDeltaPosition.y* amplificationMove));
 		}
-		//renderer.	
+
 	}
 
 	/**** détection des collisions avec les GO istrigger = false ****/
@@ -183,8 +184,10 @@ public class PlayerController : MonoBehaviour {
 		if(other.gameObject.tag == "Meteorite" ){
 			Debug.Log ("***************  collision avec un météorite ");
 			//on meurt ?
-			if(isWithCask) Destroy(other.gameObject);
-			else updateVitesse(other.gameObject);
+			//if(isWithCask) Destroy(other.gameObject);
+			//else 
+
+			updateVitesse(other.gameObject);
 			
 		}
 		if(other.gameObject.tag == "Oiseau" ){
@@ -198,13 +201,15 @@ public class PlayerController : MonoBehaviour {
 
 	}
 
-	/**** détection des collisions avec les GO istrigger = true ****/
+	/**** détection des collisions avec les GO istrigger = true 
+	 *****    permet de pouvoir passer au travers !!      ****/
 	void OnTriggerEnter2D(Collider2D other) {
 
 		if(other.gameObject.tag == "Cask" && !isItemActivated ){
 			Debug.Log ("***************  collision avec un cask ");
 			Destroy(other.gameObject);
 			isWithCask = true;
+			isWithShoe = false;
 			isItemActivated = true;
 			
 			Sprite casqueSprite = Resources.Load("Sprites/persocasque", typeof(Sprite)) as Sprite;
@@ -225,16 +230,26 @@ public class PlayerController : MonoBehaviour {
 			GetComponent<SpriteRenderer>().sprite = shoeSprite;
 			
 			GetComponent<Inventory>().addItem(new Item("shoes",2,Item.ItemType.Timer));
+			updateVitesse(other.gameObject);
 			
 		}
 	}
 
 	private void updateVitesse(GameObject obj){
 
-		vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor;
+		if (isWithCask) {
+				
+			Destroy(obj);//explose le météorite
+			vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor;
+		}
+
+		else if(isWithShoe) vitesse.y += vitesse.y*50/100;
+
+		else vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor;
 	
 	}
 
+	/*** vérifie si l'item est encore valide en fonction du temps restant ****/
 	private void checkTimeItemLeft(){
 
 		timeLeft -= Time.deltaTime;
