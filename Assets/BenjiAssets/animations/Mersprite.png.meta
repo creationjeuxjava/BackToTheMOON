@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 29beb1fba419a0f48b7bfdc0e6572501
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Mersprite_0
+    21300002: Mersprite_1
+    21300004: Mersprite_2
+    21300006: Mersprite_3
+    21300008: Mersprite_4
+    21300010: Mersprite_5
+    21300012: Mersprite_6
+    21300014: Mersprite_7
+    21300016: Mersprite_8
+    21300018: Mersprite_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Mersprite_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 21
+        width: 803
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mersprite_1
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 21
+        width: 811
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mersprite_2
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 21
+        width: 811
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mersprite_3
+      rect:
+        serializedVersion: 2
+        x: 2554
+        y: 21
+        width: 811
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mersprite_4
+      rect:
+        serializedVersion: 2
+        x: 3398
+        y: 21
+        width: 811
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mersprite_5
+      rect:
+        serializedVersion: 2
+        x: 4242
+        y: 21
+        width: 811
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mersprite_6
+      rect:
+        serializedVersion: 2
+        x: 5086
+        y: 21
+        width: 812
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mersprite_7
+      rect:
+        serializedVersion: 2
+        x: 5931
+        y: 21
+        width: 811
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mersprite_8
+      rect:
+        serializedVersion: 2
+        x: 6775
+        y: 21
+        width: 811
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mersprite_9
+      rect:
+        serializedVersion: 2
+        x: 7620
+        y: 21
+        width: 810
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
