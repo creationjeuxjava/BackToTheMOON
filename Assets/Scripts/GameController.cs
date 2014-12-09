@@ -20,7 +20,7 @@ public class GameController : MonoBehaviour {
 	private static bool isWorldMoving = false;
 	private static bool isGameInPause = false;
 	private static bool isOverGUIPause = false;
-	private GameObject backLayer, middleLayer, foreLayer;
+	private GameObject backLayer, middleLayer, foreLayer,backBackLayer;
 
 
 	private float altitude;
@@ -36,6 +36,7 @@ public class GameController : MonoBehaviour {
 		backLayer = GameObject.FindGameObjectWithTag ("BackLayer");
 		middleLayer = GameObject.FindGameObjectWithTag ("MiddleLayer");
 		foreLayer = GameObject.FindGameObjectWithTag ("ForeLayer");
+		backBackLayer = GameObject.FindGameObjectWithTag ("BackBackLayer");
 		createWorld ();
 
 		//création aléatoire de bonus en l'air =>AssetDatabase non valable dans le build...remplacé par Resources.load !!
@@ -60,6 +61,7 @@ public class GameController : MonoBehaviour {
 			//world.transform.Translate (PlayerController.vitesse);//on déplace tout le niveau en fonction de la vitesse du joueur !!
 
 			//chaque partie avance à une vitesse différente == parallax
+			backBackLayer.transform.Translate (PlayerController.vitesse / 3.7f);
 			backLayer.transform.Translate (PlayerController.vitesse / 3);
 			middleLayer.transform.Translate (PlayerController.vitesse / 1.5f);
 			foreLayer.transform.Translate (PlayerController.vitesse);
