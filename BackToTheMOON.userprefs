@@ -1,15 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\link.xml">
     <Files>
-      <File FileName="Assets\Scripts\GameController.cs" Line="64" Column="70" />
+      <File FileName="Assets\Scripts\GameController.cs" Line="29" Column="62" />
       <File FileName="Assets\Scripts\MenuGUI.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="229" Column="47" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Inventory\Inventory.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Inventory\GUInventory.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Inventory\Item.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\LevelLoading\LoadLevelcontroller.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\SinusMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\link.xml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
