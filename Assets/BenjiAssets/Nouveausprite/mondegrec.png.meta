@@ -3,6 +3,96 @@ guid: 993c5bce4ac1e6048babdc0e21f4e073
 TextureImporter:
   fileIDToRecycleName:
     21300000: mondegrec
+    21300002: mondegrec_0
+    21300004: mondegrec_1
+    21300006: mondegrec_2
+    21300008: mondegrec_3
+    21300010: mondegrec_4
+    21300012: mondegrec_5
+    21300014: mondegrec_6
+    21300016: mondegrec_7
+    21300018: mondegrec_8
+    21300020: mondegrec_9
+    21300022: mondegrec_10
+    21300024: mondegrec_11
+    21300026: mondegrec_12
+    21300028: mondegrec_13
+    21300030: mondegrec_14
+    21300032: mondegrec_15
+    21300034: mondegrec_16
+    21300036: mondegrec_17
+    21300038: mondegrec_18
+    21300040: mondegrec_19
+    21300042: mondegrec_20
+    21300044: mondegrec_21
+    21300046: mondegrec_22
+    21300048: mondegrec_23
+    21300050: mondegrec_24
+    21300052: mondegrec_25
+    21300054: mondegrec_26
+    21300056: mondegrec_27
+    21300058: mondegrec_28
+    21300060: mondegrec_29
+    21300062: mondegrec_30
+    21300064: mondegrec_31
+    21300066: mondegrec_32
+    21300068: mondegrec_33
+    21300070: mondegrec_34
+    21300072: mondegrec_35
+    21300074: mondegrec_36
+    21300076: mondegrec_37
+    21300078: mondegrec_38
+    21300080: mondegrec_39
+    21300082: mondegrec_40
+    21300084: mondegrec_41
+    21300086: mondegrec_42
+    21300088: mondegrec_43
+    21300090: mondegrec_44
+    21300092: mondegrec_45
+    21300094: mondegrec_46
+    21300096: mondegrec_47
+    21300098: mondegrec_48
+    21300100: mondegrec_49
+    21300102: mondegrec_50
+    21300104: mondegrec_51
+    21300106: mondegrec_52
+    21300108: mondegrec_53
+    21300110: mondegrec_54
+    21300112: mondegrec_55
+    21300114: mondegrec_56
+    21300116: mondegrec_57
+    21300118: mondegrec_58
+    21300120: mondegrec_59
+    21300122: mondegrec_60
+    21300124: mondegrec_61
+    21300126: mondegrec_62
+    21300128: mondegrec_63
+    21300130: mondegrec_64
+    21300132: mondegrec_65
+    21300134: mondegrec_66
+    21300136: mondegrec_67
+    21300138: mondegrec_68
+    21300140: mondegrec_69
+    21300142: mondegrec_70
+    21300144: mondegrec_71
+    21300146: mondegrec_72
+    21300148: mondegrec_73
+    21300150: mondegrec_74
+    21300152: mondegrec_75
+    21300154: mondegrec_76
+    21300156: mondegrec_77
+    21300158: mondegrec_78
+    21300160: mondegrec_79
+    21300162: mondegrec_80
+    21300164: mondegrec_81
+    21300166: mondegrec_82
+    21300168: mondegrec_83
+    21300170: mondegrec_84
+    21300172: mondegrec_85
+    21300174: mondegrec_86
+    21300176: mondegrec_87
+    21300178: mondegrec_88
+    21300180: mondegrec_89
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -23,7 +113,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 4096
   textureSettings:
     filterMode: -1
     aniso: 1
@@ -38,11 +128,911 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: mondegrec_0
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 7986
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_1
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 5126
+        width: 812
+        height: 2877
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_2
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 6245
+        width: 818
+        height: 1756
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_3
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 6489
+        width: 589
+        height: 1514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_4
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 5296
+        width: 830
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_5
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 5687
+        width: 657
+        height: 734
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_6
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 3330
+        width: 806
+        height: 1727
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_7
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 4711
+        width: 806
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_8
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 4875
+        width: 645
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_9
+      rect:
+        serializedVersion: 2
+        x: 2233
+        y: 4721
+        width: 127
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_10
+      rect:
+        serializedVersion: 2
+        x: 2493
+        y: 4353
+        width: 367
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_11
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 3911
+        width: 692
+        height: 734
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_12
+      rect:
+        serializedVersion: 2
+        x: 2109
+        y: 3937
+        width: 317
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_13
+      rect:
+        serializedVersion: 2
+        x: 2553
+        y: 3942
+        width: 284
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_14
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 3559
+        width: 805
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_15
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 3663
+        width: 193
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_16
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 3467
+        width: 366
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_17
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 3563
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_18
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 3514
+        width: 78
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_19
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 2577
+        width: 429
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_20
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 2655
+        width: 381
+        height: 838
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_21
+      rect:
+        serializedVersion: 2
+        x: 2307
+        y: 3088
+        width: 356
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_22
+      rect:
+        serializedVersion: 2
+        x: 2731
+        y: 3287
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_23
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 2082
+        width: 820
+        height: 1176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_24
+      rect:
+        serializedVersion: 2
+        x: 2729
+        y: 3109
+        width: 112
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_25
+      rect:
+        serializedVersion: 2
+        x: 2307
+        y: 2696
+        width: 334
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_26
+      rect:
+        serializedVersion: 2
+        x: 2708
+        y: 2976
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_27
+      rect:
+        serializedVersion: 2
+        x: 2821
+        y: 3005
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_28
+      rect:
+        serializedVersion: 2
+        x: 2843
+        y: 2923
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_29
+      rect:
+        serializedVersion: 2
+        x: 2821
+        y: 2910
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_30
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 2904
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_31
+      rect:
+        serializedVersion: 2
+        x: 2708
+        y: 2869
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_32
+      rect:
+        serializedVersion: 2
+        x: 2708
+        y: 2757
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_33
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1568
+        width: 401
+        height: 1033
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_34
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 1689
+        width: 474
+        height: 822
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_35
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 1859
+        width: 334
+        height: 730
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_36
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 2076
+        width: 229
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_37
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 2272
+        width: 241
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_38
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1648
+        width: 806
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_39
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 2002
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_40
+      rect:
+        serializedVersion: 2
+        x: 2612
+        y: 1920
+        width: 266
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_41
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 1979
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_42
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1971
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_43
+      rect:
+        serializedVersion: 2
+        x: 2422
+        y: 1959
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_44
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 1963
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_45
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 1939
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_46
+      rect:
+        serializedVersion: 2
+        x: 2414
+        y: 1949
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_47
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 1932
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_48
+      rect:
+        serializedVersion: 2
+        x: 2344
+        y: 1904
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_49
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 1891
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_50
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 1767
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_51
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 1771
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_52
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 1742
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_53
+      rect:
+        serializedVersion: 2
+        x: 2162
+        y: 1738
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_54
+      rect:
+        serializedVersion: 2
+        x: 2549
+        y: 1491
+        width: 264
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_55
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 674
+        width: 762
+        height: 906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_56
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1578
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_57
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 1529
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_58
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 367
+        width: 516
+        height: 1134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_59
+      rect:
+        serializedVersion: 2
+        x: 2021
+        y: 1464
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_60
+      rect:
+        serializedVersion: 2
+        x: 2536
+        y: 1443
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_61
+      rect:
+        serializedVersion: 2
+        x: 2632
+        y: 1360
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_62
+      rect:
+        serializedVersion: 2
+        x: 2788
+        y: 1353
+        width: 39
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_63
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 1110
+        width: 236
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_64
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 1272
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_65
+      rect:
+        serializedVersion: 2
+        x: 2765
+        y: 1272
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_66
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 1188
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_67
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 1196
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_68
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 1171
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_69
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 1128
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_70
+      rect:
+        serializedVersion: 2
+        x: 2579
+        y: 842
+        width: 289
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_71
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 997
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_72
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 983
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_73
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 619
+        width: 448
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_74
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 922
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_75
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 226
+        width: 532
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_76
+      rect:
+        serializedVersion: 2
+        x: 2579
+        y: 635
+        width: 138
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_77
+      rect:
+        serializedVersion: 2
+        x: 2786
+        y: 684
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_78
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 322
+        width: 805
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_79
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 142
+        width: 429
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_80
+      rect:
+        serializedVersion: 2
+        x: 2788
+        y: 525
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_81
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 19
+        width: 804
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_82
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 58
+        width: 190
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_83
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 11
+        width: 796
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_84
+      rect:
+        serializedVersion: 2
+        x: 2017
+        y: 15
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_85
+      rect:
+        serializedVersion: 2
+        x: 2145
+        y: 13
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_86
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 13
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_87
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 24
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_88
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 24
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondegrec_89
+      rect:
+        serializedVersion: 2
+        x: 2530
+        y: 19
+        width: 55
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
