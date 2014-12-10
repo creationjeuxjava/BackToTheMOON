@@ -8,13 +8,14 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  - 95: {fileID: 9500000}
   - 212: {fileID: 21200000}
-  - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
+  - 50: {fileID: 5000000}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: piece
-  m_TagString: Piece
+  m_Name: miniAsteroid
+  m_TagString: MiniMeteorite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -54,24 +55,37 @@ BoxCollider2D:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: 1, y: 1}
+  m_IsTrigger: 0
+  m_Size: {x: .164999992, y: .215000004}
   m_Center: {x: 0, y: 0}
---- !u!95 &9500000
-Animator:
-  serializedVersion: 3
+--- !u!114 &11400000
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 22ab35a9ec9aa9f4487f0db71fed50f7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33107e471fa9a6246a72a4012f8c8eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: .600000024
+  velocity: {x: 0, y: 0, z: 0}
+  triggered: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9d0357dea91ab45822b1d6d6c4b4d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedReducingFactor: .0700000003
+  minAltitude: 0
+  maxAltitude: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -91,8 +105,8 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 7
-  m_Sprite: {fileID: 0}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300114, guid: 993c5bce4ac1e6048babdc0e21f4e073, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

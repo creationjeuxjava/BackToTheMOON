@@ -68,7 +68,7 @@ public class InGameGUI : MonoBehaviour {
 			if(GameController.isGameOver) msg = "GameOver";
 			else msg = " WIN";
 			GUI.Box(new Rect(Screen.width/2-200/2, Screen.height/2-400/2, 200, 200), msg);
-			if (GUI.Button (new Rect (Screen.width/2-300/2,Screen.height/2-200/2,100,50), "Quitter")) {
+			if (GUI.Button (new Rect (Screen.width/2-150/2,Screen.height/2-200/2,100,50), "Quitter")) {
 				Application.LoadLevel (0);
 			}
 		}

@@ -82,4 +82,19 @@ public class LoadLevelcontroller : MonoBehaviour {
 		
 	}
 
+	public void spawnAsteroid(Vector3 posToSpawn){
+		for(int i = 0 ; i < 5 ; i++){
+			Object prefab = Resources.Load<Object>("Prefabs/World1/miniAsteroid");		
+			Vector3 pos = new Vector3 (Random.Range(posToSpawn.x+1,posToSpawn.x-1),
+			                           	Random.Range(posToSpawn.y+1,posToSpawn.y-1),-4.6f);
+			Quaternion spawnRotation =  Quaternion.identity;
+			GameObject clone = Instantiate(prefab, pos, spawnRotation) as GameObject;
+			
+			this.GetComponent<GameController>().addGameObjectInWorld(clone);
+
+		}
+
+
+	}
+
 }

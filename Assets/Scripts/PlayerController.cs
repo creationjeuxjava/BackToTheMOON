@@ -253,7 +253,12 @@ public class PlayerController : MonoBehaviour {
 
 		if (isWithCask) {
 				
-			Destroy(obj);//TODO : explose le météorite ==> methode spawnMiniAsteroides à créer !!
+			Vector3 pos = obj.transform.position;
+			Destroy(obj);
+			//TODO : explose le météorite ==> methode spawnMiniAsteroides à créer !!
+			GameObject gameControlller = GameObject.FindGameObjectWithTag("GameController");
+			gameControlller.GetComponent<LoadLevelcontroller>().spawnAsteroid(pos);
+
 			vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor * 50 /100;
 		}
 
