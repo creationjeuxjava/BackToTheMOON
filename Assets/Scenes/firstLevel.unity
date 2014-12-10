@@ -377,6 +377,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!4 &144281847
 Transform:
   m_ObjectHideFlags: 0
@@ -471,6 +472,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &215453358
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -559,6 +561,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!4 &225183943
 Transform:
   m_ObjectHideFlags: 0
@@ -2170,6 +2173,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1019493030
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3256,6 +3260,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1579850142
 GameObject:
   m_ObjectHideFlags: 0
@@ -3424,9 +3429,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f5aabc1e7553e4c8ca26dce1ffd656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meteorite: {fileID: 100000, guid: a22c54f850609f94583590674b9546a3, type: 2}
-  nuage: {fileID: 100000, guid: 8bb15578e20d36745bf059545ecc96fc, type: 2}
-  oiseau: {fileID: 0}
   player: {fileID: 313015600}
 --- !u!4 &1620950175
 Transform:
@@ -3601,6 +3603,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1738372732
 SpriteRenderer:
   m_ObjectHideFlags: 0

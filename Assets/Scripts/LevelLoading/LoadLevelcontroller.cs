@@ -36,23 +36,23 @@ public class LoadLevelcontroller : MonoBehaviour {
 				foreach (XmlNode levelsItens in levelcontent) // levels itens nodes.
 				{
 					
-					Debug.Log("***************** on lit : "+levelsItens.Name);
-					Debug.Log("Contenu du noeud : "+levelsItens.InnerText);
+					//Debug.Log("***************** on lit : "+levelsItens.Name);
+					//Debug.Log("Contenu du noeud : "+levelsItens.InnerText);
 					
 					if(levelsItens.Name == "object")
 					{
 						int number = int.Parse(levelsItens.Attributes["nombre"].Value);
 						string name = levelsItens.Attributes["name"].Value;
-						Debug.Log("Valeur de attribut name: "+name);
-						Debug.Log("nbre à créer: "+number);
+						//Debug.Log("Valeur de attribut name: "+name);
+						//Debug.Log("nbre à créer: "+number);
 						
 						XmlNodeList objectcontent = levelsItens.ChildNodes;//récup de ses enfants !!
 						foreach (XmlNode child in objectcontent) 
 						{														
 							if(child.Name == "Altitude")
 							{
-								Debug.Log("--> MAX : "+child.Attributes["max"].Value);
-								Debug.Log("--> MIN : "+child.Attributes["min"].Value);
+								//Debug.Log("--> MAX : "+child.Attributes["max"].Value);
+								//Debug.Log("--> MIN : "+child.Attributes["min"].Value);
 								int max = int.Parse(child.Attributes["max"].Value);
 								int min = int.Parse(child.Attributes["min"].Value);
 

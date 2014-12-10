@@ -57,6 +57,16 @@ public class InGameGUI : MonoBehaviour {
 		if (GUI.Button (new Rect (40,20,buttonSize,buttonSize), iconRejouer)) {
 			Application.LoadLevel (0);
 		}
+
+
+		if (!GameController.isInGame) {
+				
+			GUI.Box(new Rect(Screen.width/2-400/2, Screen.height/2-400/2, 400, 400), "GameOver");
+			if (GUI.Button (new Rect (Screen.width/2-300/2,Screen.height/2-3/2,100,50), "Quitter")) {
+				Application.LoadLevel (0);
+			}
+		}
+			
 	}
 
 
