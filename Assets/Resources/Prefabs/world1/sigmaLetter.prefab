@@ -11,6 +11,8 @@ GameObject:
   - 212: {fileID: 21200000}
   - 114: {fileID: 11400000}
   - 50: {fileID: 5000000}
+  - 61: {fileID: 6100000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: sigmaLetter
   m_TagString: Untagged
@@ -45,6 +47,17 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &6100000
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -56,7 +69,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e9d0357dea91ab45822b1d6d6c4b4d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedReducingFactor: 0
+  speedReducingFactor: .0500000007
+  minAltitude: 0
+  maxAltitude: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33107e471fa9a6246a72a4012f8c8eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: .600000024
+  velocity: {x: 0, y: 0, z: 0}
+  triggered: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

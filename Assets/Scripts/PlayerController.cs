@@ -59,9 +59,9 @@ public class PlayerController : MonoBehaviour {
 			}
 			else{
 				/*** correction si trop bas...suite aux collisions ****/
-				if(screenPos.y <= 30){
+				if(screenPos.y <= 80){//40
 					
-					transform.position = new Vector3(transform.position.x,-8,0);
+					transform.position = new Vector3(transform.position.x,-15,0);
 				}
 				else{
 					transform.position = new Vector3(transform.position.x,transform.position.y,0);
