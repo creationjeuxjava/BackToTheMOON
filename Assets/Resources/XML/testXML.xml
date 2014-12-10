@@ -3,7 +3,7 @@
   <level indice="1">
     <name>Monde Grec</name>
     <tutorial>Evitez les obstacles et récupérez des bonus pour atteindre l'autre planète !!</tutorial>
-    <object name="world1/oiseau" nombre="15" >
+    <object name="world1/oiseau" nombre="15" ><!-- 15    15    60   5    5    150     -->
 		<Altitude max="300" min="20"></Altitude>
     </object>
     <object name="world1/nuage" nombre="15"> 
@@ -18,7 +18,7 @@
 	<object name="world1/shoe" nombre="5">
 		<Altitude max="1200" min="600"></Altitude>
 	</object>
-	<object name="piece" nombre="100">
+	<object name="piece" nombre="150">
 		<Altitude max="10000" min="100"></Altitude>
 	</object>
   </level>

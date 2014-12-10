@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour {
 			if (Input.GetMouseButtonDown (0)){//fonctionne aussi sur Android !!
 
 				Vector2 touchPos = camera.ScreenToWorldPoint(Input.mousePosition );
-				Debug.Log("*************   Clic en  : "+touchPos+" et player en : "+transform.position.x);
+				//Debug.Log("*************   Clic en  : "+touchPos+" et player en : "+transform.position.x);
 
 				if(gameObject.collider2D.bounds.Contains (touchPos)){
 					translation.x = 0;
@@ -182,7 +182,7 @@ public class PlayerController : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other){
 		
 		if(other.gameObject.tag == "Meteorite" ){
-			Debug.Log ("***************  collision avec un météorite ");
+			//Debug.Log ("***************  collision avec un météorite ");
 			//on meurt ?
 			//if(isWithCask) Destroy(other.gameObject);
 			//else 
@@ -191,7 +191,7 @@ public class PlayerController : MonoBehaviour {
 			
 		}
 		if(other.gameObject.tag == "Oiseau" ){
-			Debug.Log ("***************  collision avec un oiseau ");
+			//Debug.Log ("***************  collision avec un oiseau ");
 			//on meurt ?
 			updateVitesse(other.gameObject);
 			
@@ -207,7 +207,7 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 
 		if(other.gameObject.tag == "Cask" && !isItemActivated ){
-			Debug.Log ("***************  collision avec un cask ");
+			//Debug.Log ("***************  collision avec un cask ");
 			Destroy(other.gameObject);
 			isWithCask = true;
 			isWithShoe = false;
@@ -221,7 +221,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if(other.gameObject.tag == "Shoe" && !isItemActivated ){
-			Debug.Log ("***************  collision avec une shoe ");
+			//Debug.Log ("***************  collision avec une shoe ");
 			Destroy(other.gameObject);
 			isWithShoe = true;
 			isWithCask = false;
@@ -236,7 +236,7 @@ public class PlayerController : MonoBehaviour {
 			
 		}
 		if(other.gameObject.tag == "Piece" ){
-			Debug.Log ("***************  collision avec une piece ");
+			//Debug.Log ("***************  collision avec une piece ");
 			GameController.addPiece();
 			Destroy(other.gameObject);
 		}
@@ -246,7 +246,7 @@ public class PlayerController : MonoBehaviour {
 
 	private void boostVitesse(float boostValue){
 		vitesse.y += vitesse.y * boostValue;
-		Debug.Log ("***************  collision avec une shoe -----------> boost de vitesse 50 /100 ");
+		//Debug.Log ("***************  collision avec une shoe -----------> boost de vitesse 50 /100 ");
 	
 	}
 	private void updateVitesse(GameObject obj){
@@ -255,7 +255,7 @@ public class PlayerController : MonoBehaviour {
 				
 			Vector3 pos = obj.transform.position;
 			Destroy(obj);
-			//TODO : explose le météorite ==> methode spawnMiniAsteroides à créer !!
+			//explose le météorite ==> methode spawnAsteroid !!
 			GameObject gameControlller = GameObject.FindGameObjectWithTag("GameController");
 			gameControlller.GetComponent<LoadLevelcontroller>().spawnAsteroid(pos);
 
