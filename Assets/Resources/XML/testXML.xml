@@ -3,20 +3,23 @@
   <level indice="1">
     <name>Monde Grec</name>
     <tutorial>Evitez les obstacles et récupérez des bonus pour atteindre l'autre planète !!</tutorial>
-    <object name="oiseau" nombre="15" >
+    <object name="world1/oiseau" nombre="15" >
 		<Altitude max="300" min="20"></Altitude>
     </object>
-    <object name="nuage" nombre="15"> 
+    <object name="world1/nuage" nombre="15"> 
 		<Altitude max="450" min="50"></Altitude>
 	</object>
-    <object name="meteorite" nombre="60">
+    <object name="world1/meteorite" nombre="60">
 		<Altitude max="1500" min="400"></Altitude>
 	</object>
-    <object name="cask" nombre="5"> 
+    <object name="world1/cask" nombre="5"> 
 		<Altitude max="1000" min="500"></Altitude>
 	</object>
-	<object name="shoe" nombre="5">
+	<object name="world1/shoe" nombre="5">
 		<Altitude max="1200" min="600"></Altitude>
+	</object>
+	<object name="piece" nombre="100">
+		<Altitude max="10000" min="100"></Altitude>
 	</object>
   </level>
   <level indice="2">
@@ -36,6 +39,9 @@
 	</object>
 	<object name="shoe" nombre="0">
 		<Altitude max="1200" min="600"></Altitude>
+	</object>
+	<object name="piece" nombre="100">
+		<Altitude max="10000" min="100"></Altitude>
 	</object>
   </level>
 </levels>

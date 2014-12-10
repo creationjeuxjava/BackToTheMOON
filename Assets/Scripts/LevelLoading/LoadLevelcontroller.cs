@@ -12,10 +12,6 @@ using System.Collections.Generic;
  */
 public class LoadLevelcontroller : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		//loadLevel (1);
-	}
 
 	/*
 	 * Charge le bon monde !!
@@ -72,7 +68,7 @@ public class LoadLevelcontroller : MonoBehaviour {
 	private void createSpritesWorld(int number,Vector2 xRange,Vector2 yRange,string nomPrefab,int numLevel){
 
 		for(int i = 0 ; i < number ; i++){
-			Object prefab = Resources.Load<Object>("Prefabs/world"+numLevel+"/"+nomPrefab);		
+			Object prefab = Resources.Load<Object>("Prefabs/"+nomPrefab);		
 			Vector3 pos = new Vector3 (Random.Range(xRange.x,xRange.y),Random.Range(yRange.x,yRange.y),-4.6f);
 			Quaternion spawnRotation =  Quaternion.identity;//Quaternion.Euler(0,0, Random.Range(0, 360) ); //Quaternion.identity;
 			GameObject clone = Instantiate(prefab, pos, spawnRotation) as GameObject;
@@ -86,9 +82,4 @@ public class LoadLevelcontroller : MonoBehaviour {
 		
 	}
 
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

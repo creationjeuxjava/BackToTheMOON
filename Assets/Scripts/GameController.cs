@@ -10,11 +10,6 @@ using UnityEngine.Advertisements;
 
 public class GameController : MonoBehaviour {
 
-	/*public GameObject meteorite;
-	public GameObject nuage;
-	public GameObject oiseau;
-	private int nbreMeteor = 30;
-	private int nbreNuages = 15;*/
 	public GameObject player;
 
 	public static GameObject world;//conteneur du world
@@ -26,6 +21,7 @@ public class GameController : MonoBehaviour {
 
 
 	private float altitude;
+	private static int nbrePieces = 0;
 	private float altMaxForWinLevel = 10000f;
 	private int coeffAltitude = 5;
 	private int coeffVitesse = 1 * 3600; 
@@ -57,6 +53,7 @@ public class GameController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (isWorldMoving == true && !isGameInPause && isInGame) {
+
 			//chaque partie avance à une vitesse différente == parallax
 			backBackLayer.transform.Translate (PlayerController.vitesse / 3.7f);
 			backLayer.transform.Translate (PlayerController.vitesse / 3);
@@ -65,12 +62,11 @@ public class GameController : MonoBehaviour {
 
 			altitude = foreLayer.transform.position.y * -1 * coeffAltitude;
 			float vitesse = PlayerController.vitesse.y*-1 * coeffVitesse;
-			InGameGUI.setMessage("Altitude :"+altitude,"Vitesse Player : "+vitesse+" km/h");
+			InGameGUI.setMessage("Altitude :"+altitude,"Vitesse Player : "+vitesse+" km/h et nbre pièces : "+nbrePieces);
 
 			if(PlayerController.vitesse.y > 0){
 				isInGame = false;
 				isGameOver = true;
-				//Application.LoadLevel (0); //on a perdu
 			}
 			if(altitude >= altMaxForWinLevel){
 				isInGame = false;
@@ -82,13 +78,9 @@ public class GameController : MonoBehaviour {
 
 
 
-	//a compléter pour créer un niveau complet !!
+	/** méthode d'apel por la création d'un niveau *****/
 	void createWorld(){
 		this.GetComponent<LoadLevelcontroller> ().loadLevel (currentLevel);
-		/*createSpriteWorld (meteorite, nbreMeteor,new Vector2(-45,56),new Vector2(300,500));
-		createSpriteWorld (nuage, nbreNuages,new Vector2(-40,40),new Vector2(50,250));
-		createSpriteWorld (oiseau, nbreNuages,new Vector2(-30,45),new Vector2(20,150));*/
-
 	}
 
 	public void addGameObjectInWorld(GameObject obj){
@@ -96,26 +88,30 @@ public class GameController : MonoBehaviour {
 		listeGameObjects.Add (obj);
 	}
 
-	/*** méthode de création d'éléments du World *****/
-	private void createSpriteWorld(GameObject objectToInstantiate,int number,Vector2 xRange,Vector2 yRange){
+	/*** méthode de création d'éléments du World
+	 obsolète..cf LoadLevelController  *****/
+	/*private void createSpriteWorld(GameObject objectToInstantiate,int number,Vector2 xRange,Vector2 yRange){
 
 		for(int i = 0 ; i < number ; i++){
 			Vector3 spawnPosition = new Vector3 (Random.Range(xRange.x,xRange.y),Random.Range(yRange.x,yRange.y),-4.6f);
-			Quaternion spawnRotation =  Quaternion.identity;;//Quaternion.Euler(0,0, Random.Range(0, 360) ); //Quaternion.identity;
+			Quaternion spawnRotation =  Quaternion.identity;
 			GameObject sprite = Instantiate(objectToInstantiate, spawnPosition, spawnRotation) as GameObject;
-			//sprite.rigidbody.angularVelocity = Random.insideUnitSphere * 2f;
 			sprite.transform.parent = foreLayer.transform;
-			//sprite.transform.parent = world.transform;
 			
 		}
 	
-	}
+	}*/
 
 
 	//lancer le joueur et donc faire avancer le monde !!
 	public void LaunchPlayer (){
 		player.GetComponent <PlayerController>().launchIntheAir ();
 		isWorldMoving = true;
+	}
+
+	public static void addPiece(){
+
+		nbrePieces++;
 	}
 
 	//mettre le jeu en pause ou le remettre

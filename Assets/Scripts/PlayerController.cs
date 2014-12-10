@@ -199,6 +199,7 @@ public class PlayerController : MonoBehaviour {
 
 
 
+
 	}
 
 	/**** détection des collisions avec les GO istrigger = true 
@@ -234,6 +235,12 @@ public class PlayerController : MonoBehaviour {
 			updateVitesse(other.gameObject);
 			
 		}
+		if(other.gameObject.tag == "Piece" ){
+			Debug.Log ("***************  collision avec une piece ");
+			GameController.addPiece();
+			Destroy(other.gameObject);
+		}
+
 	}
 
 
