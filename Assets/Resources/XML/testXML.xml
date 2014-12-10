@@ -18,8 +18,8 @@
 	<object name="world1/shoe" nombre="5">
 		<Altitude max="1200" min="600"></Altitude>
 	</object>
-	<object name="piece" nombre="150">
-		<Altitude max="10000" min="100"></Altitude>
+	<object name="piece" nombre="100">
+		<Altitude max="2000" min="100"></Altitude>
 	</object>
   </level>
   <level indice="2">
