@@ -1,11 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerController.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\workspace\firstNetWork\Assets\scripts\persistance\GameController.cs">
     <Files>
-      <File FileName="Assets\Scripts\GameController.cs" Line="86" Column="9" />
-      <File FileName="Assets\Scripts\LevelLoading\LoadLevelcontroller.cs" Line="93" Column="39" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="260" Column="19" />
-      <File FileName="Assets\Scripts\InGameGUI.cs" Line="71" Column="47" />
+      <File FileName="..\..\..\workspace\firstNetWork\Assets\scripts\persistance\GameController.cs" Line="11" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
