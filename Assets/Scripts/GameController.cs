@@ -21,11 +21,12 @@ public class GameController : MonoBehaviour {
 	private static bool isWorldMoving = false;
 	private static bool isGameInPause = false;
 	private static bool isOverGUIPause = false;
-	public static bool isInGame;
+	public static bool isInGame,isGameOver;
 	private GameObject backLayer, middleLayer, foreLayer,backBackLayer;
 
 
 	private float altitude;
+	private float altMaxForWinLevel = 10000f;
 	private int coeffAltitude = 5;
 	private int coeffVitesse = 1 * 3600; 
 	private int currentLevel = 1; //par défaut le premier niveau
@@ -34,6 +35,7 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		isInGame = true;
+		isGameOver = false;
 		altitude = 0;
 		world = GameObject.FindGameObjectWithTag ("World");
 		backLayer = GameObject.FindGameObjectWithTag ("BackLayer");
@@ -67,7 +69,12 @@ public class GameController : MonoBehaviour {
 
 			if(PlayerController.vitesse.y > 0){
 				isInGame = false;
+				isGameOver = true;
 				//Application.LoadLevel (0); //on a perdu
+			}
+			if(altitude >= altMaxForWinLevel){
+				isInGame = false;
+
 			}
 
 		}

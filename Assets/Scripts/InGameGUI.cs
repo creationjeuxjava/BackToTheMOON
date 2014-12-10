@@ -42,8 +42,12 @@ public class InGameGUI : MonoBehaviour {
 
 		/*** la vitesse du player ****/
 		//GUI.DrawTexture(new Rect(150 ,20,100,30), barreVitesse, ScaleMode.StretchToFill, true, 0f);//ScaleMode.ScaleToFit	
-		float vitesse = PlayerController.vitesse.y * -1 * coeffVitesse;
-		GUI.DrawTexture(new Rect(100 ,20,vitesse,30), barreVitesse);
+		if (GameController.isInGame) {
+			float vitesse = PlayerController.vitesse.y * -1 * coeffVitesse;
+			GUI.DrawTexture(new Rect(100 ,20,vitesse,30), barreVitesse);
+		
+		}
+
 
 		/***** retour à la carte  ****/
 		if (GUI.Button (new Rect (40,Screen.height - 80,buttonSize,buttonSize), iconCarte)) {
@@ -60,9 +64,11 @@ public class InGameGUI : MonoBehaviour {
 
 
 		if (!GameController.isInGame) {
-				
-			GUI.Box(new Rect(Screen.width/2-400/2, Screen.height/2-400/2, 400, 400), "GameOver");
-			if (GUI.Button (new Rect (Screen.width/2-300/2,Screen.height/2-3/2,100,50), "Quitter")) {
+			string msg ="";
+			if(GameController.isGameOver) msg = "GameOver";
+			else msg = " WIN";
+			GUI.Box(new Rect(Screen.width/2-200/2, Screen.height/2-400/2, 200, 200), msg);
+			if (GUI.Button (new Rect (Screen.width/2-300/2,Screen.height/2-200/2,100,50), "Quitter")) {
 				Application.LoadLevel (0);
 			}
 		}
