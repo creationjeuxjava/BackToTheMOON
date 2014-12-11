@@ -1,0 +1,850 @@
+fileFormatVersion: 2
+guid: 9fe12f151a053ca4f8a1ebd3d50f995b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: battement_0
+    21300002: battement_1
+    21300004: battement_2
+    21300006: battement_3
+    21300008: battement_4
+    21300010: battement_5
+    21300012: battement_6
+    21300014: battement_7
+    21300016: battement_8
+    21300018: battement_9
+    21300020: battement_10
+    21300022: battement_11
+    21300024: battement_12
+    21300026: battement_13
+    21300028: battement_14
+    21300030: battement_15
+    21300032: battement_16
+    21300034: battement_17
+    21300036: battement_18
+    21300038: battement_19
+    21300040: battement_20
+    21300042: battement_21
+    21300044: battement_22
+    21300046: battement_23
+    21300048: battement_24
+    21300050: battement_25
+    21300052: battement_26
+    21300054: battement_27
+    21300056: battement_28
+    21300058: battement_29
+    21300060: battement_30
+    21300062: battement_31
+    21300064: battement_32
+    21300066: battement_33
+    21300068: battement_34
+    21300070: battement_35
+    21300072: battement_36
+    21300074: battement_37
+    21300076: battement_38
+    21300078: battement_39
+    21300080: battement_40
+    21300082: battement_41
+    21300084: battement_42
+    21300086: battement_43
+    21300088: battement_44
+    21300090: battement_45
+    21300092: battement_46
+    21300094: battement_47
+    21300096: battement_48
+    21300098: battement_49
+    21300100: battement_50
+    21300102: battement_51
+    21300104: battement_52
+    21300106: battement_53
+    21300108: battement_54
+    21300110: battement_55
+    21300112: battement_56
+    21300114: battement_57
+    21300116: battement_58
+    21300118: battement_59
+    21300120: battement_60
+    21300122: battement_61
+    21300124: battement_62
+    21300126: battement_63
+    21300128: battement_64
+    21300130: battement_65
+    21300132: battement_66
+    21300134: battement_67
+    21300136: battement_68
+    21300138: battement_69
+    21300140: battement_70
+    21300142: battement_71
+    21300144: battement_72
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: battement_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2564
+        width: 156
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 2564
+        width: 156
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_2
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 2563
+        width: 172
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_3
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 2562
+        width: 219
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_4
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 2562
+        width: 258
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_5
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 2560
+        width: 284
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_6
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 2561
+        width: 299
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_7
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 2561
+        width: 301
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_8
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 2561
+        width: 304
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_9
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 2561
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_10
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2197
+        width: 306
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_11
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 2196
+        width: 306
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_12
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 2197
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_13
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 2197
+        width: 304
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_14
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 2196
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_15
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 2197
+        width: 304
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_16
+      rect:
+        serializedVersion: 2
+        x: 2142
+        y: 2197
+        width: 299
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_17
+      rect:
+        serializedVersion: 2
+        x: 2491
+        y: 2197
+        width: 292
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_18
+      rect:
+        serializedVersion: 2
+        x: 2833
+        y: 2196
+        width: 282
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_19
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1833
+        width: 292
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_20
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1833
+        width: 299
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_21
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1832
+        width: 304
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_22
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 1833
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_23
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 1833
+        width: 304
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_24
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 1832
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_25
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 1833
+        width: 306
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_26
+      rect:
+        serializedVersion: 2
+        x: 2477
+        y: 1833
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_27
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 1833
+        width: 303
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_28
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1468
+        width: 299
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_29
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1469
+        width: 303
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_30
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1469
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_31
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 1468
+        width: 306
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_32
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 1469
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_33
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 1469
+        width: 304
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_34
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 1468
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_35
+      rect:
+        serializedVersion: 2
+        x: 2489
+        y: 1469
+        width: 304
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_36
+      rect:
+        serializedVersion: 2
+        x: 2843
+        y: 1469
+        width: 299
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_37
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1105
+        width: 292
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_38
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1104
+        width: 282
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_39
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1105
+        width: 292
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_40
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 1105
+        width: 299
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_41
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1104
+        width: 304
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_42
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 1105
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_43
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 1105
+        width: 304
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_44
+      rect:
+        serializedVersion: 2
+        x: 2439
+        y: 1104
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_45
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 1105
+        width: 306
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_46
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 741
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_47
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 741
+        width: 303
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_48
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 740
+        width: 299
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_49
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 741
+        width: 303
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_50
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 741
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_51
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 740
+        width: 306
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_52
+      rect:
+        serializedVersion: 2
+        x: 2131
+        y: 741
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_53
+      rect:
+        serializedVersion: 2
+        x: 2487
+        y: 741
+        width: 304
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_54
+      rect:
+        serializedVersion: 2
+        x: 2841
+        y: 740
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_55
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 377
+        width: 304
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_56
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 377
+        width: 299
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_57
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 377
+        width: 292
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_58
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 376
+        width: 282
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_59
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 377
+        width: 292
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_60
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 377
+        width: 299
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_61
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 376
+        width: 304
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_62
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 377
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_63
+      rect:
+        serializedVersion: 2
+        x: 2788
+        y: 377
+        width: 304
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_64
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 12
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_65
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 13
+        width: 306
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_66
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 13
+        width: 305
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_67
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 13
+        width: 303
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_68
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 12
+        width: 299
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_69
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 13
+        width: 269
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_70
+      rect:
+        serializedVersion: 2
+        x: 2098
+        y: 14
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_71
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 16
+        width: 167
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: battement_72
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 17
+        width: 156
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
