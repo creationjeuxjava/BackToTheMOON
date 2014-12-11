@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: c60fca8840792f041a34b9f75cc95d65
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: droiteshoes_0
+    21300002: droiteshoes_1
+    21300004: droiteshoes_2
+    21300006: droiteshoes_3
+    21300008: droiteshoes_4
+    21300010: droiteshoes_5
+    21300012: droiteshoes_6
+    21300014: droiteshoes_7
+    21300016: droiteshoes_8
+    21300018: droiteshoes_9
+    21300020: droiteshoes_10
+    21300022: droiteshoes_11
+    21300024: droiteshoes_12
+    21300026: droiteshoes_13
+    21300028: droiteshoes_14
+    21300030: droiteshoes_15
+    21300032: droiteshoes_16
+    21300034: droiteshoes_17
+    21300036: droiteshoes_18
+    21300038: droiteshoes_19
+    21300040: droiteshoes_20
+    21300042: droiteshoes_21
+    21300044: droiteshoes_22
+    21300046: droiteshoes_23
+    21300048: droiteshoes_24
+    21300050: droiteshoes_25
+    21300052: droiteshoes_26
+    21300054: droiteshoes_27
+    21300056: droiteshoes_28
+    21300058: droiteshoes_29
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -22,26 +52,326 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 4096
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: droiteshoes_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 21
+        width: 172
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_1
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 21
+        width: 171
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_2
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 19
+        width: 173
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_3
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 19
+        width: 177
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_4
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 18
+        width: 176
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_5
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 16
+        width: 178
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_6
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 16
+        width: 179
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_7
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 14
+        width: 181
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_8
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 13
+        width: 185
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_9
+      rect:
+        serializedVersion: 2
+        x: 2035
+        y: 14
+        width: 186
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_10
+      rect:
+        serializedVersion: 2
+        x: 2268
+        y: 13
+        width: 189
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_11
+      rect:
+        serializedVersion: 2
+        x: 2504
+        y: 13
+        width: 188
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_12
+      rect:
+        serializedVersion: 2
+        x: 2740
+        y: 13
+        width: 189
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_13
+      rect:
+        serializedVersion: 2
+        x: 2977
+        y: 13
+        width: 190
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_14
+      rect:
+        serializedVersion: 2
+        x: 3214
+        y: 13
+        width: 192
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_15
+      rect:
+        serializedVersion: 2
+        x: 3453
+        y: 11
+        width: 189
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_16
+      rect:
+        serializedVersion: 2
+        x: 3691
+        y: 13
+        width: 190
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_17
+      rect:
+        serializedVersion: 2
+        x: 3928
+        y: 13
+        width: 188
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_18
+      rect:
+        serializedVersion: 2
+        x: 4163
+        y: 13
+        width: 188
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_19
+      rect:
+        serializedVersion: 2
+        x: 4398
+        y: 14
+        width: 187
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_20
+      rect:
+        serializedVersion: 2
+        x: 4633
+        y: 13
+        width: 183
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_21
+      rect:
+        serializedVersion: 2
+        x: 4865
+        y: 14
+        width: 182
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_22
+      rect:
+        serializedVersion: 2
+        x: 5095
+        y: 16
+        width: 180
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_23
+      rect:
+        serializedVersion: 2
+        x: 5325
+        y: 18
+        width: 178
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_24
+      rect:
+        serializedVersion: 2
+        x: 5551
+        y: 18
+        width: 176
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_25
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 19
+        width: 174
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_26
+      rect:
+        serializedVersion: 2
+        x: 5999
+        y: 19
+        width: 173
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_27
+      rect:
+        serializedVersion: 2
+        x: 6219
+        y: 21
+        width: 173
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_28
+      rect:
+        serializedVersion: 2
+        x: 6441
+        y: 21
+        width: 169
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: droiteshoes_29
+      rect:
+        serializedVersion: 2
+        x: 6659
+        y: 21
+        width: 171
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
