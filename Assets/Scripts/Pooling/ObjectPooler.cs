@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class ObjectPooler : MonoBehaviour {
 
-	public static ObjectPooler current;
+	//public static ObjectPooler current;
 	public GameObject pooledObject;
 	public int pooledAmount = 5;
 	public bool willGrow = false;
@@ -14,7 +14,7 @@ public class ObjectPooler : MonoBehaviour {
 	int altMax;
 
 	void Awake(){
-		current = this;
+		//current = this;
 	
 	}
 

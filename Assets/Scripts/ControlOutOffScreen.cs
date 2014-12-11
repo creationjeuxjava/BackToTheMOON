@@ -17,13 +17,14 @@ public class ControlOutOffScreen : MonoBehaviour {
 		Vector3 screenPos = camera.WorldToScreenPoint(pos);
 
 		if(screenPos.x >= Screen.width ) {
-			transform.position = new Vector3(transform.position.x - 1.5f,transform.position.y,0);
+			//transform.position = new Vector3(transform.position.x - 1.5f,transform.position.y,0);
 			GetComponent<TranslationMovement>().velocity.x = (-1) * GetComponent<TranslationMovement>().velocity.x;
 		}
 		else if(screenPos.x <= 0){
-			transform.position = new Vector3(transform.position.x + 1.5f,transform.position.y,0);
+			//transform.position = new Vector3(transform.position.x + 1.5f,transform.position.y,0);
 			GetComponent<TranslationMovement>().velocity.x = (-1) * GetComponent<TranslationMovement>().velocity.x;
 		}
+		/***gestion des pooledObject****/
 		else if(screenPos.y <= 0){
 			gameObject.SetActive (false);
 

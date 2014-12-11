@@ -56,12 +56,22 @@ public class GameController : MonoBehaviour {
 		for (int i = 0; i < listeObjectPoolers.Count; i++) {
 
 			Vector2 minMax = listeObjectPoolers[i].GetComponent<ObjectPooler>().getMinMax();
-			if(foreLayer.transform.position.y * -1 < minMax.x && foreLayer.transform.position.y * -1 < minMax.y){
-				GameObject obj = ObjectPooler.current.GetPooledObject();
-				if (obj == null)return;
-				obj.transform.position = transform.position;
-				obj.SetActive(true);
-				obj.transform.parent = foreLayer.transform;
+			//Debug.Log("Position du ForeLayer : "+foreLayer.transform.position.y*(-1)+" et min "+minMax.x+" et max "+minMax.y +" pour GO "+listeObjectPoolers[i].name);
+			if(foreLayer.transform.position.y * (-1) > minMax.x && foreLayer.transform.position.y * (-1 )< minMax.y){
+				GameObject obj = listeObjectPoolers[i].GetComponent<ObjectPooler>().GetPooledObject();
+				if(obj != null){
+					Debug.Log(listeObjectPoolers[i].name +" crée !");
+
+					obj.transform.position = transform.position;//TODO : rendre position de création aléatoire
+
+					obj.SetActive(true);
+					obj.transform.parent = foreLayer.transform;
+				}
+
+			}
+			else{
+
+				//Debug.Log(listeObjectPoolers[i].name +" : On ne peut pas créer le prefab => alt non correcte !");
 			}
 		}
 
@@ -105,20 +115,6 @@ public class GameController : MonoBehaviour {
 		listeObjectPoolers.Add (obj);
 	}
 
-	/*** méthode de création d'éléments du World
-	 obsolète..cf LoadLevelController  *****/
-	/*private void createSpriteWorld(GameObject objectToInstantiate,int number,Vector2 xRange,Vector2 yRange){
-
-		for(int i = 0 ; i < number ; i++){
-			Vector3 spawnPosition = new Vector3 (Random.Range(xRange.x,xRange.y),Random.Range(yRange.x,yRange.y),-4.6f);
-			Quaternion spawnRotation =  Quaternion.identity;
-			GameObject sprite = Instantiate(objectToInstantiate, spawnPosition, spawnRotation) as GameObject;
-			sprite.transform.parent = foreLayer.transform;
-			
-		}
-	
-	}*/
-
 
 	//lancer le joueur et donc faire avancer le monde !!
 	public void LaunchPlayer (){
@@ -137,7 +133,7 @@ public class GameController : MonoBehaviour {
 		isGameInPause = !isGameInPause;
 	}
 
-	//
+	//permetr de savoir si a cliqué sur un élément GUI
 	public static void OverGUI(bool value){		
 		isOverGUIPause = value;
 	}
