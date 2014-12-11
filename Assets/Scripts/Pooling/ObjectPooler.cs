@@ -7,14 +7,17 @@ public class ObjectPooler : MonoBehaviour {
 	public static ObjectPooler current;
 	public GameObject pooledObject;
 	public int pooledAmount = 5;
-	public bool willGrow = true;
+	public bool willGrow = false;
 
 	List<GameObject> pooledObjects;
+	int altMin;
+	int altMax;
 
 	void Awake(){
 		current = this;
 	
 	}
+
 	void Start () {
 
 		pooledObjects = new List<GameObject> ();
@@ -26,7 +29,15 @@ public class ObjectPooler : MonoBehaviour {
 		}
 
 	}
-	
+
+	public void setMinMaxAlt(int min, int max){
+		altMin = min;
+		altMax = max;
+	}
+	public Vector2 getMinMax(){
+
+		return new Vector2(altMin,altMax);
+	}
 	
 	public GameObject GetPooledObject(){
 		for (int i = 0; i < pooledObjects.Count; i++) {			

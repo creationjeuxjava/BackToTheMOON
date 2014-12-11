@@ -5,7 +5,8 @@ using UnityEngine.Advertisements;
 //using UnityEditor;
 
 /*
- * * gère la logique du jeu et la création du niveau par le biais de LoadLevelController
+ * * gère la logique du jeu et la création du niveau par le biais de LoadLevelController, mais aussi d'objets
+ *    de pooling !!
  * */
 
 public class GameController : MonoBehaviour {
@@ -26,7 +27,7 @@ public class GameController : MonoBehaviour {
 	private int coeffAltitude = 5;
 	private int coeffVitesse = 1 * 3600; 
 	private int currentLevel = 1; //par défaut le premier niveau
-	//private List<GameObject> listeGameObjects = new List<GameObject>();
+	private List<GameObject> listeObjectPoolers = new List<GameObject>();
 
 	// Use this for initialization
 	void Start () {
@@ -50,6 +51,22 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		/** a-t-on besoin d'activer des GO depuis les ObjectPooler ****/
+		for (int i = 0; i < listeObjectPoolers.Count; i++) {
+
+			Vector2 minMax = listeObjectPoolers[i].GetComponent<ObjectPooler>().getMinMax();
+			if(foreLayer.transform.position.y * -1 < minMax.x && foreLayer.transform.position.y * -1 < minMax.y){
+				GameObject obj = ObjectPooler.current.GetPooledObject();
+				if (obj == null)return;
+				obj.transform.position = transform.position;
+				obj.SetActive(true);
+				obj.transform.parent = foreLayer.transform;
+			}
+		}
+
+
+
 		if (isWorldMoving == true && !isGameInPause && isInGame) {
 
 			//chaque partie avance à une vitesse différente == parallax
@@ -82,7 +99,10 @@ public class GameController : MonoBehaviour {
 
 	public void addGameObjectInWorld(GameObject obj){
 		obj.transform.parent = foreLayer.transform;
-		//listeGameObjects.Add (obj);
+	}
+
+	public void addObjectPoolerInWorld(GameObject obj){
+		listeObjectPoolers.Add (obj);
 	}
 
 	/*** méthode de création d'éléments du World

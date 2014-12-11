@@ -66,7 +66,10 @@ public class LoadLevelcontroller : MonoBehaviour {
 									Vector3 pos = new Vector3 (Random.Range(-15,15),Random.Range(min,max),-4.6f);
 									Quaternion rotation =  Quaternion.identity;
 									GameObject poolerObject = Instantiate(pooler, pos, rotation) as GameObject;
+									poolerObject.name = "poolerObjectFor"+name;
 									poolerObject.GetComponent<ObjectPooler>().pooledObject = (GameObject)prefab;
+									poolerObject.GetComponent<ObjectPooler>().setMinMaxAlt(min,max);
+									this.GetComponent<GameController>().addObjectPoolerInWorld(poolerObject);
 								}
 							}
 						}
