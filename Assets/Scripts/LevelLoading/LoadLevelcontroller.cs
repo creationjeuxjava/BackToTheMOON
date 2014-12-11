@@ -39,6 +39,11 @@ public class LoadLevelcontroller : MonoBehaviour {
 					{
 						int number = int.Parse(levelsItens.Attributes["nombre"].Value);
 						string name = levelsItens.Attributes["name"].Value;
+						string isPoolNeeded = levelsItens.Attributes["pool"].Value;
+						bool needPooling;
+
+						if(isPoolNeeded == "true")	needPooling = true;//Convert.ToBoolean();
+						else needPooling = false;
 						//Debug.Log("Valeur de attribut name: "+name);
 						//Debug.Log("nbre à créer: "+number);
 						
@@ -52,8 +57,12 @@ public class LoadLevelcontroller : MonoBehaviour {
 								int max = int.Parse(child.Attributes["max"].Value);
 								int min = int.Parse(child.Attributes["min"].Value);
 
-								createSpritesWorld(number,new Vector2 (-15 ,15) ,new Vector2(min,max),name,levelNum);
-								
+								if(!needPooling)
+									createSpritesWorld(number,new Vector2 (-15 ,15) ,new Vector2(min,max),name,levelNum);
+								else{
+
+
+								}
 							}
 						}
 						
