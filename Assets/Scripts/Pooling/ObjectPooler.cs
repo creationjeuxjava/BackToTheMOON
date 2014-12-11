@@ -6,7 +6,7 @@ public class ObjectPooler : MonoBehaviour {
 
 	public static ObjectPooler current;
 	public GameObject pooledObject;
-	public int pooledAmount = 20;
+	public int pooledAmount = 5;
 	public bool willGrow = true;
 
 	List<GameObject> pooledObjects;
@@ -21,7 +21,7 @@ public class ObjectPooler : MonoBehaviour {
 		
 		for (int i = 0; i < pooledAmount; i++) {				
 			GameObject obj = (GameObject) Instantiate(pooledObject);
-			obj.SetActive(true);
+			obj.SetActive(false);
 			pooledObjects.Add(obj);
 		}
 

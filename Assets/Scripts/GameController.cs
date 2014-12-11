@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour {
 	private int coeffAltitude = 5;
 	private int coeffVitesse = 1 * 3600; 
 	private int currentLevel = 1; //par défaut le premier niveau
-	private List<GameObject> listeGameObjects = new List<GameObject>();
+	//private List<GameObject> listeGameObjects = new List<GameObject>();
 
 	// Use this for initialization
 	void Start () {
@@ -39,8 +39,6 @@ public class GameController : MonoBehaviour {
 		foreLayer = GameObject.FindGameObjectWithTag ("ForeLayer");
 		backBackLayer = GameObject.FindGameObjectWithTag ("BackBackLayer");
 		createWorld ();
-
-		//Debug.LogError ("méthode start de  "+this.name);
 
 		//création aléatoire de bonus en l'air =>AssetDatabase non valable dans le build...remplacé par Resources.load !!
 		//TODO à généraliser  !!
@@ -70,7 +68,6 @@ public class GameController : MonoBehaviour {
 			}
 			if(altitude >= altMaxForWinLevel){
 				isInGame = false;
-
 			}
 
 		}
@@ -85,7 +82,7 @@ public class GameController : MonoBehaviour {
 
 	public void addGameObjectInWorld(GameObject obj){
 		obj.transform.parent = foreLayer.transform;
-		listeGameObjects.Add (obj);
+		//listeGameObjects.Add (obj);
 	}
 
 	/*** méthode de création d'éléments du World

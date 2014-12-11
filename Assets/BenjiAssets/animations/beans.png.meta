@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: 5513b74217a59864c99e4907491ef506
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: beans_0
+    21300002: beans_1
+    21300004: beans_2
+    21300006: beans_3
+    21300008: beans_4
+    21300010: beans_5
+    21300012: beans_6
+    21300014: beans_7
+    21300016: beans_8
+    21300018: beans_9
+    21300020: beans_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: beans_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 32
+        width: 99
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beans_1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 29
+        width: 101
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beans_2
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 25
+        width: 103
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beans_3
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 22
+        width: 105
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beans_4
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 19
+        width: 107
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beans_5
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 16
+        width: 108
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beans_6
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 19
+        width: 107
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beans_7
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 22
+        width: 105
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beans_8
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 25
+        width: 103
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beans_9
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 29
+        width: 101
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beans_10
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 32
+        width: 99
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

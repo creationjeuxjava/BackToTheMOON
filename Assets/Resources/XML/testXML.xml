@@ -24,7 +24,7 @@
 	<object name="world1/sigmaLetter" nombre="5" pool="true">
 		<Altitude max="2500" min="800"></Altitude>
 	</object>
-	<object name="piece" nombre="50" pool="true">
+	<object name="commonPrefabs/piece" nombre="50" pool="true">
 		<Altitude max="2000" min="100"></Altitude>
 	</object>
 	<object name="world1/colonne" nombre="10" pool="true">

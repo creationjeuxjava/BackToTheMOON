@@ -24,5 +24,9 @@ public class ControlOutOffScreen : MonoBehaviour {
 			transform.position = new Vector3(transform.position.x + 1.5f,transform.position.y,0);
 			GetComponent<TranslationMovement>().velocity.x = (-1) * GetComponent<TranslationMovement>().velocity.x;
 		}
+		else if(screenPos.y <= 0){
+			gameObject.SetActive (false);
+
+		}
 	}
 }

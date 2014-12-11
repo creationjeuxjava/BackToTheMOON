@@ -60,8 +60,13 @@ public class LoadLevelcontroller : MonoBehaviour {
 								if(!needPooling)
 									createSpritesWorld(number,new Vector2 (-15 ,15) ,new Vector2(min,max),name,levelNum);
 								else{
+									Object prefab = Resources.Load<Object>("Prefabs/"+name);
+									Object pooler = Resources.Load<Object>("Prefabs/ObjectPooler");
 
-
+									Vector3 pos = new Vector3 (Random.Range(-15,15),Random.Range(min,max),-4.6f);
+									Quaternion rotation =  Quaternion.identity;
+									GameObject poolerObject = Instantiate(pooler, pos, rotation) as GameObject;
+									poolerObject.GetComponent<ObjectPooler>().pooledObject = (GameObject)prefab;
 								}
 							}
 						}
