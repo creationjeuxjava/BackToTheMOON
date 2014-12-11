@@ -73,7 +73,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -90,7 +89,7 @@ MonoBehaviour:
   minX: 0
   minY: 0
   boxMovementWidth: 20
-  boxMovementHeight: 1
+  boxMovementHeight: 20
   locX: 0
   rx: 0
   ry: 0
