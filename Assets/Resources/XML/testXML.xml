@@ -21,7 +21,7 @@
 	<object name="world1/sigmaLetter" nombre="5">
 		<Altitude max="1500" min="600"></Altitude>
 	</object>
-	<object name="piece" nombre="1">
+	<object name="piece" nombre="50">
 		<Altitude max="2000" min="100"></Altitude>
 	</object>
   </level>

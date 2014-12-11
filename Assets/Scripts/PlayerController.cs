@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour {
 
 
 	public GameObject fumee;
+	public Animator anim;
 
 	/**** nvelle implémentation car le perso ne bouge pas ...c'est le niveau qui le fait ******/
 	private static bool isFlying;
@@ -29,11 +30,13 @@ public class PlayerController : MonoBehaviour {
 		vitesse = new Vector3(0,-speedPlayer,0);
 		GameObject particules = Instantiate(fumee, new Vector3(transform.position.x,transform.position.y-1, -16f), transform.rotation) as GameObject; 
 		particules.transform.parent = this.transform;
+		anim.SetTrigger ("decollage");
 	}
 
 
 	// Use this for initialization
 	void Start () {
+		anim = GetComponent<Animator> ();
 		touchDeltaPosition = Vector2.zero;
 		vitesse = Vector3.zero;
 		isFlying = false;
@@ -86,11 +89,12 @@ public class PlayerController : MonoBehaviour {
 
 					if(touchPos.x < transform.position.x ){
 						translation.x = -0.2f;
+						anim.SetTrigger ("toLeft");
 						
 					}
 					else if(touchPos.x > (transform.position.x + collider2D.bounds.max.x )  ){
 						translation.x = 0.2f;
-						
+						anim.SetTrigger ("toRight");
 					}
 				}
 			} 			

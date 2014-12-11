@@ -733,8 +733,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 313015600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .967489183, y: -15.7729454, z: -4.64216805}
-  m_LocalScale: {x: 2.86999989, y: 3.08999991, z: 1}
+  m_LocalPosition: {x: 1.0388608, y: -15.7729454, z: -4.64216805}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -750,6 +750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fumee: {fileID: 100000, guid: 9154c1accb852d6439e65fe2a3b638be, type: 2}
+  anim: {fileID: 0}
   camera: {fileID: 276706956}
   translation: {x: 0, y: 0, z: 0}
 --- !u!61 &313015604

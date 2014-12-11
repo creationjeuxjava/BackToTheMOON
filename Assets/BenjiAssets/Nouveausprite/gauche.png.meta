@@ -2,7 +2,36 @@ fileFormatVersion: 2
 guid: 6dd774cee6b84274298706a03978d4ef
 TextureImporter:
   fileIDToRecycleName:
-    21300000: gauche
+    21300000: gauche_0
+    21300002: gauche_1
+    21300004: gauche_2
+    21300006: gauche_3
+    21300008: gauche_4
+    21300010: gauche_5
+    21300012: gauche_6
+    21300014: gauche_7
+    21300016: gauche_8
+    21300018: gauche_9
+    21300020: gauche_10
+    21300022: gauche_11
+    21300024: gauche_12
+    21300026: gauche_13
+    21300028: gauche_14
+    21300030: gauche_15
+    21300032: gauche_16
+    21300034: gauche_17
+    21300036: gauche_18
+    21300038: gauche_19
+    21300040: gauche_20
+    21300042: gauche_21
+    21300044: gauche_22
+    21300046: gauche_23
+    21300048: gauche_24
+    21300050: gauche_25
+    21300052: gauche_26
+    21300054: gauche_27
+    21300056: gauche_28
+    21300058: gauche_29
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -43,6 +72,306 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: gauche_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 22
+        width: 158
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_1
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 22
+        width: 156
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_2
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 23
+        width: 158
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_3
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 23
+        width: 157
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_4
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 25
+        width: 158
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_5
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 26
+        width: 158
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_6
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 25
+        width: 159
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_7
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 23
+        width: 164
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_8
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 23
+        width: 171
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_9
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 25
+        width: 175
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_10
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 25
+        width: 180
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_11
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 25
+        width: 182
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_12
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 26
+        width: 187
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_13
+      rect:
+        serializedVersion: 2
+        x: 2811
+        y: 26
+        width: 186
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_14
+      rect:
+        serializedVersion: 2
+        x: 3046
+        y: 26
+        width: 188
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_15
+      rect:
+        serializedVersion: 2
+        x: 3282
+        y: 26
+        width: 188
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_16
+      rect:
+        serializedVersion: 2
+        x: 3518
+        y: 26
+        width: 187
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_17
+      rect:
+        serializedVersion: 2
+        x: 3752
+        y: 25
+        width: 184
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_18
+      rect:
+        serializedVersion: 2
+        x: 3985
+        y: 25
+        width: 180
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_19
+      rect:
+        serializedVersion: 2
+        x: 4213
+        y: 23
+        width: 177
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_20
+      rect:
+        serializedVersion: 2
+        x: 4438
+        y: 23
+        width: 172
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_21
+      rect:
+        serializedVersion: 2
+        x: 4658
+        y: 23
+        width: 167
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_22
+      rect:
+        serializedVersion: 2
+        x: 4873
+        y: 25
+        width: 162
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_23
+      rect:
+        serializedVersion: 2
+        x: 5083
+        y: 25
+        width: 158
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_24
+      rect:
+        serializedVersion: 2
+        x: 5289
+        y: 26
+        width: 158
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_25
+      rect:
+        serializedVersion: 2
+        x: 5496
+        y: 25
+        width: 158
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_26
+      rect:
+        serializedVersion: 2
+        x: 5702
+        y: 23
+        width: 157
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_27
+      rect:
+        serializedVersion: 2
+        x: 5907
+        y: 22
+        width: 158
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_28
+      rect:
+        serializedVersion: 2
+        x: 6113
+        y: 22
+        width: 158
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauche_29
+      rect:
+        serializedVersion: 2
+        x: 6318
+        y: 22
+        width: 158
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
