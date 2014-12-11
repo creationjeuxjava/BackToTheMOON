@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ControlOutOffScreen : MonoBehaviour {
 
-	public Camera camera;
+	//public Camera camera;
 	// Use this for initialization
 	void Start () {
 	
@@ -11,7 +11,11 @@ public class ControlOutOffScreen : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Vector3 screenPos = camera.WorldToScreenPoint(transform.position);
+		Vector3 pos = transform.position;
+
+		Camera camera = GameObject.FindWithTag ("Camera").camera;//.camera
+		Vector3 screenPos = camera.WorldToScreenPoint(pos);
+
 		if(screenPos.x >= Screen.width ) {
 			transform.position = new Vector3(transform.position.x - 1.5f,transform.position.y,0);
 			//Vector3 vitesse = GetComponent<TranslationMovement>().velocity;
