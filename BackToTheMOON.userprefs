@@ -1,13 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TranslationMovement.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\workspace\firstNetWork\Assets\scripts\pooling\ObjectPooler.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="88" Column="4" />
-      <File FileName="Assets\Scripts\GameController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\LevelLoading\LoadLevelcontroller.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ControlOutOffScreen.cs" Line="21" Column="4" />
-      <File FileName="Assets\Scripts\TranslationMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\AspectUtility.cs" Line="68" Column="1" />
+      <File FileName="..\..\..\workspace\firstNetWork\Assets\scripts\pooling\ObjectPooler.cs" Line="15" Column="18" />
+      <File FileName="..\..\..\workspace\firstNetWork\Assets\scripts\pooling\BulletFire.cs" Line="37" Column="20" />
+      <File FileName="..\..\..\workspace\firstNetWork\Assets\scripts\pooling\BulletDestroy.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
