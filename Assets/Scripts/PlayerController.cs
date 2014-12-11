@@ -216,6 +216,7 @@ public class PlayerController : MonoBehaviour {
 			isWithCask = true;
 			isWithShoe = false;
 			isItemActivated = true;
+			anim.SetBool("withCask",true);
 			
 			Sprite casqueSprite = Resources.Load("Sprites/persocasque", typeof(Sprite)) as Sprite;
 			GetComponent<SpriteRenderer>().sprite = casqueSprite;
@@ -230,6 +231,7 @@ public class PlayerController : MonoBehaviour {
 			isWithShoe = true;
 			isWithCask = false;
 			isItemActivated = true;
+			anim.SetBool("withShoes",true);
 			
 			Sprite shoeSprite = Resources.Load("Sprites/persoshoes", typeof(Sprite)) as Sprite;
 			GetComponent<SpriteRenderer>().sprite = shoeSprite;
@@ -291,6 +293,8 @@ public class PlayerController : MonoBehaviour {
 
 		isWithShoe = false;
 		isWithCask = false;
+		anim.SetBool("withCask",false);
+		anim.SetBool("withShoes",false);
 	}
 
 	/*void OnMouseOver()

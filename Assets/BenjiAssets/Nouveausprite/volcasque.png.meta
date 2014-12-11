@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 5295d64dca6e22143a7060c33eb1d803
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: volcasque_0
+    21300002: volcasque_1
+    21300004: volcasque_2
+    21300006: volcasque_3
+    21300008: volcasque_4
+    21300010: volcasque_5
+    21300012: volcasque_6
+    21300014: volcasque_7
+    21300016: volcasque_8
+    21300018: volcasque_9
+    21300020: volcasque_10
+    21300022: volcasque_11
+    21300024: volcasque_12
+    21300026: volcasque_13
+    21300028: volcasque_14
+    21300030: volcasque_15
+    21300032: volcasque_16
+    21300034: volcasque_17
+    21300036: volcasque_18
+    21300038: volcasque_19
+    21300040: volcasque_20
+    21300042: volcasque_21
+    21300044: volcasque_22
+    21300046: volcasque_23
+    21300048: volcasque_24
+    21300050: volcasque_25
+    21300052: volcasque_26
+    21300054: volcasque_27
+    21300056: volcasque_28
+    21300058: volcasque_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: volcasque_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 12
+        width: 167
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 12
+        width: 168
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_2
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 12
+        width: 168
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_3
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 12
+        width: 168
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_4
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 12
+        width: 168
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_5
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 12
+        width: 168
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_6
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 13
+        width: 168
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_7
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 13
+        width: 168
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_8
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 13
+        width: 168
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_9
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 13
+        width: 167
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_10
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 13
+        width: 168
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_11
+      rect:
+        serializedVersion: 2
+        x: 2386
+        y: 15
+        width: 168
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_12
+      rect:
+        serializedVersion: 2
+        x: 2602
+        y: 15
+        width: 168
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_13
+      rect:
+        serializedVersion: 2
+        x: 2819
+        y: 15
+        width: 168
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_14
+      rect:
+        serializedVersion: 2
+        x: 3034
+        y: 15
+        width: 167
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_15
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 15
+        width: 168
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_16
+      rect:
+        serializedVersion: 2
+        x: 3466
+        y: 13
+        width: 168
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_17
+      rect:
+        serializedVersion: 2
+        x: 3683
+        y: 13
+        width: 168
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_18
+      rect:
+        serializedVersion: 2
+        x: 3898
+        y: 13
+        width: 167
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_19
+      rect:
+        serializedVersion: 2
+        x: 4114
+        y: 13
+        width: 168
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_20
+      rect:
+        serializedVersion: 2
+        x: 4329
+        y: 13
+        width: 168
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_21
+      rect:
+        serializedVersion: 2
+        x: 4546
+        y: 13
+        width: 168
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_22
+      rect:
+        serializedVersion: 2
+        x: 4762
+        y: 13
+        width: 166
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_23
+      rect:
+        serializedVersion: 2
+        x: 4978
+        y: 12
+        width: 168
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_24
+      rect:
+        serializedVersion: 2
+        x: 5195
+        y: 12
+        width: 168
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_25
+      rect:
+        serializedVersion: 2
+        x: 5410
+        y: 12
+        width: 168
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_26
+      rect:
+        serializedVersion: 2
+        x: 5626
+        y: 12
+        width: 168
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_27
+      rect:
+        serializedVersion: 2
+        x: 5841
+        y: 12
+        width: 167
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_28
+      rect:
+        serializedVersion: 2
+        x: 6057
+        y: 12
+        width: 168
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volcasque_29
+      rect:
+        serializedVersion: 2
+        x: 6274
+        y: 12
+        width: 166
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

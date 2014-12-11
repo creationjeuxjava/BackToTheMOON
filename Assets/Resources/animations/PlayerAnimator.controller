@@ -26,6 +26,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: withCask
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
@@ -118,6 +124,26 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
+--- !u!1101 &110163832
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110281510}
+  m_DstState: {fileID: 110290719}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: withCask
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1101 &110180405
 Transition:
   serializedVersion: 2
@@ -169,7 +195,67 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 1b6cd46f47e7fc248bc2d2ea2142bb2b, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -432, y: -144, z: 0}
+  m_Position: {x: -384, y: -144, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110214940
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: playerBattement
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: a17f2211b1362af4990e71572ebb7825, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 0, y: 24, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110233187
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: playerFlyRightShoes
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 205a9130199b2e24080e1903ffb7a1b8, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: -156, y: 120, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110241169
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: playerFlyRightCask
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: e41921fcbe7c8c34b975b7f046827b91, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: -684, y: 36, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110242468
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: playerFlyShoes
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: f7bedec998306c34b86e9cf587d3b3a8, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: -276, y: 48, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -184,7 +270,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 82297eb9da25460429d4a6ded48ddfc5, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 24, y: -36, z: 0}
+  m_Position: {x: 48, y: -144, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -203,6 +289,66 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110288312
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: playerFear
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: bad385add9c902b498507b3a48c62af9, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 0, y: -36, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110290719
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: playerFlyCask
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: da462766bf5b2874883260d367b4eaed, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: -528, y: -36, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110293129
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: playerFlyLeftShoes
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: ecb6145a3c2bbd64bb380130d7fde3ca, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: -408, y: 120, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110295201
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: playerFlyLeftCask
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: c24585d8c81647a4c9c9b23c3a480b09, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: -684, y: -108, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110297805
 State:
   m_ObjectHideFlags: 3
@@ -214,7 +360,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: ad516b3a85d3fc54594401cda0ef17c4, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -432, y: 60, z: 0}
+  m_Position: {x: -168, y: -144, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -231,9 +377,41 @@ StateMachine:
   - {fileID: 110297805}
   - {fileID: 110281510}
   - {fileID: 110264262}
+  - {fileID: 110214940}
+  - {fileID: 110288312}
+  - {fileID: 110290719}
+  - {fileID: 110295201}
+  - {fileID: 110241169}
+  - {fileID: 110242468}
+  - {fileID: 110293129}
+  - {fileID: 110233187}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
+    data:
+      first: {fileID: 110233187}
+      second: []
+    data:
+      first: {fileID: 110293129}
+      second: []
+    data:
+      first: {fileID: 110242468}
+      second: []
+    data:
+      first: {fileID: 110241169}
+      second: []
+    data:
+      first: {fileID: 110295201}
+      second: []
+    data:
+      first: {fileID: 110290719}
+      second: []
+    data:
+      first: {fileID: 110288312}
+      second: []
+    data:
+      first: {fileID: 110214940}
+      second: []
     data:
       first: {fileID: 110264262}
       second:
@@ -244,6 +422,7 @@ StateMachine:
       - {fileID: 110100000}
       - {fileID: 110199275}
       - {fileID: 110180405}
+      - {fileID: 110163832}
     data:
       first: {fileID: 110297805}
       second:

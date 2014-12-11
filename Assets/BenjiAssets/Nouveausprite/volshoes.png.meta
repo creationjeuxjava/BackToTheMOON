@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 928b12035f1f1ad44ac266b64116d4f9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: volshoes_0
+    21300002: volshoes_1
+    21300004: volshoes_2
+    21300006: volshoes_3
+    21300008: volshoes_4
+    21300010: volshoes_5
+    21300012: volshoes_6
+    21300014: volshoes_7
+    21300016: volshoes_8
+    21300018: volshoes_9
+    21300020: volshoes_10
+    21300022: volshoes_11
+    21300024: volshoes_12
+    21300026: volshoes_13
+    21300028: volshoes_14
+    21300030: volshoes_15
+    21300032: volshoes_16
+    21300034: volshoes_17
+    21300036: volshoes_18
+    21300038: volshoes_19
+    21300040: volshoes_20
+    21300042: volshoes_21
+    21300044: volshoes_22
+    21300046: volshoes_23
+    21300048: volshoes_24
+    21300050: volshoes_25
+    21300052: volshoes_26
+    21300054: volshoes_27
+    21300056: volshoes_28
+    21300058: volshoes_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: volshoes_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 9
+        width: 170
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_1
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 10
+        width: 170
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_2
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 9
+        width: 171
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_3
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 10
+        width: 172
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_4
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 10
+        width: 171
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_5
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 10
+        width: 170
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_6
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 10
+        width: 171
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_7
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 10
+        width: 171
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_8
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 10
+        width: 170
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_9
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 10
+        width: 170
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_10
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 12
+        width: 171
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_11
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 12
+        width: 172
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_12
+      rect:
+        serializedVersion: 2
+        x: 2642
+        y: 12
+        width: 170
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_13
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 12
+        width: 172
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_14
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 12
+        width: 172
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_15
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 12
+        width: 171
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_16
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 12
+        width: 170
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_17
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 12
+        width: 172
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_18
+      rect:
+        serializedVersion: 2
+        x: 3958
+        y: 10
+        width: 171
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_19
+      rect:
+        serializedVersion: 2
+        x: 4177
+        y: 10
+        width: 171
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_20
+      rect:
+        serializedVersion: 2
+        x: 4398
+        y: 10
+        width: 170
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_21
+      rect:
+        serializedVersion: 2
+        x: 4617
+        y: 10
+        width: 170
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_22
+      rect:
+        serializedVersion: 2
+        x: 4835
+        y: 10
+        width: 173
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_23
+      rect:
+        serializedVersion: 2
+        x: 5056
+        y: 10
+        width: 170
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_24
+      rect:
+        serializedVersion: 2
+        x: 5275
+        y: 10
+        width: 170
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_25
+      rect:
+        serializedVersion: 2
+        x: 5495
+        y: 10
+        width: 171
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_26
+      rect:
+        serializedVersion: 2
+        x: 5714
+        y: 10
+        width: 171
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_27
+      rect:
+        serializedVersion: 2
+        x: 5933
+        y: 10
+        width: 171
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_28
+      rect:
+        serializedVersion: 2
+        x: 6153
+        y: 10
+        width: 169
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: volshoes_29
+      rect:
+        serializedVersion: 2
+        x: 6371
+        y: 9
+        width: 170
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

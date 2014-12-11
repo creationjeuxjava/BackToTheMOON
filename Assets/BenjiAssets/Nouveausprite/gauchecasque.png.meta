@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 61a531dddc8186b4fbc182254e342bea
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: gauchecasque_0
+    21300002: gauchecasque_1
+    21300004: gauchecasque_2
+    21300006: gauchecasque_3
+    21300008: gauchecasque_4
+    21300010: gauchecasque_5
+    21300012: gauchecasque_6
+    21300014: gauchecasque_7
+    21300016: gauchecasque_8
+    21300018: gauchecasque_9
+    21300020: gauchecasque_10
+    21300022: gauchecasque_11
+    21300024: gauchecasque_12
+    21300026: gauchecasque_13
+    21300028: gauchecasque_14
+    21300030: gauchecasque_15
+    21300032: gauchecasque_16
+    21300034: gauchecasque_17
+    21300036: gauchecasque_18
+    21300038: gauchecasque_19
+    21300040: gauchecasque_20
+    21300042: gauchecasque_21
+    21300044: gauchecasque_22
+    21300046: gauchecasque_23
+    21300048: gauchecasque_24
+    21300050: gauchecasque_25
+    21300052: gauchecasque_26
+    21300054: gauchecasque_27
+    21300056: gauchecasque_28
+    21300058: gauchecasque_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: gauchecasque_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 16
+        width: 167
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 16
+        width: 168
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_2
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 16
+        width: 168
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_3
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 16
+        width: 169
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_4
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 16
+        width: 171
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_5
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 16
+        width: 173
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_6
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 15
+        width: 178
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_7
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 13
+        width: 187
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_8
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 11
+        width: 194
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_9
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 11
+        width: 199
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_10
+      rect:
+        serializedVersion: 2
+        x: 2266
+        y: 13
+        width: 204
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_11
+      rect:
+        serializedVersion: 2
+        x: 2519
+        y: 11
+        width: 209
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_12
+      rect:
+        serializedVersion: 2
+        x: 2777
+        y: 13
+        width: 211
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_13
+      rect:
+        serializedVersion: 2
+        x: 3036
+        y: 13
+        width: 213
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_14
+      rect:
+        serializedVersion: 2
+        x: 3297
+        y: 13
+        width: 217
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_15
+      rect:
+        serializedVersion: 2
+        x: 3560
+        y: 13
+        width: 215
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_16
+      rect:
+        serializedVersion: 2
+        x: 3823
+        y: 13
+        width: 212
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_17
+      rect:
+        serializedVersion: 2
+        x: 4083
+        y: 11
+        width: 209
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_18
+      rect:
+        serializedVersion: 2
+        x: 4341
+        y: 11
+        width: 206
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_19
+      rect:
+        serializedVersion: 2
+        x: 4595
+        y: 11
+        width: 201
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_20
+      rect:
+        serializedVersion: 2
+        x: 4844
+        y: 11
+        width: 196
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_21
+      rect:
+        serializedVersion: 2
+        x: 5087
+        y: 13
+        width: 190
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_22
+      rect:
+        serializedVersion: 2
+        x: 5324
+        y: 15
+        width: 183
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_23
+      rect:
+        serializedVersion: 2
+        x: 5554
+        y: 16
+        width: 176
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_24
+      rect:
+        serializedVersion: 2
+        x: 5779
+        y: 16
+        width: 171
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_25
+      rect:
+        serializedVersion: 2
+        x: 5999
+        y: 16
+        width: 171
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_26
+      rect:
+        serializedVersion: 2
+        x: 6218
+        y: 16
+        width: 170
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_27
+      rect:
+        serializedVersion: 2
+        x: 6436
+        y: 16
+        width: 168
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_28
+      rect:
+        serializedVersion: 2
+        x: 6653
+        y: 16
+        width: 168
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gauchecasque_29
+      rect:
+        serializedVersion: 2
+        x: 6869
+        y: 16
+        width: 168
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
