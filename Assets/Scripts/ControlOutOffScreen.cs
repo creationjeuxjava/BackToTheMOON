@@ -13,12 +13,11 @@ public class ControlOutOffScreen : MonoBehaviour {
 	void Update () {
 		Vector3 pos = transform.position;
 
-		Camera camera = GameObject.FindWithTag ("Camera").camera;//.camera
+		Camera camera = GameObject.FindWithTag ("Camera").camera;
 		Vector3 screenPos = camera.WorldToScreenPoint(pos);
 
 		if(screenPos.x >= Screen.width ) {
 			transform.position = new Vector3(transform.position.x - 1.5f,transform.position.y,0);
-			//Vector3 vitesse = GetComponent<TranslationMovement>().velocity;
 			GetComponent<TranslationMovement>().velocity.x = (-1) * GetComponent<TranslationMovement>().velocity.x;
 		}
 		else if(screenPos.x <= 0){
