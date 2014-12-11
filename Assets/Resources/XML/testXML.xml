@@ -9,10 +9,10 @@
     <object name="world1/nuage" nombre="15"> 
 		<Altitude max="450" min="50"></Altitude>
 	</object>
-    <object name="world1/meteorite" nombre="70">
-		<Altitude max="2000" min="400"></Altitude>
+    <object name="world1/meteorite" nombre="50">
+		<Altitude max="2500" min="400"></Altitude>
 	</object>
-	<object name="world1/miniAsteroid" nombre="50">
+	<object name="world1/miniAsteroid" nombre="10">
 		<Altitude max="2500" min="400"></Altitude>
 	</object>
     <object name="world1/cask" nombre="5"> 
@@ -22,15 +22,15 @@
 		<Altitude max="1200" min="600"></Altitude>
 	</object>
 	<object name="world1/sigmaLetter" nombre="5">
-		<Altitude max="1500" min="600"></Altitude>
+		<Altitude max="2500" min="800"></Altitude>
 	</object>
 	<object name="piece" nombre="50">
 		<Altitude max="2000" min="100"></Altitude>
 	</object>
 	<object name="world1/colonne" nombre="10">
-		<Altitude max="1000" min="200"></Altitude>
+		<Altitude max="1500" min="500"></Altitude>
 	</object>
-	<object name="world1/triangle" nombre="15">
+	<object name="world1/triangle" nombre="5">
 		<Altitude max="2000" min="500"></Altitude>
 	</object>
   </level>

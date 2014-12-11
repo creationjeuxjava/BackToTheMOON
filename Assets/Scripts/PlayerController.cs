@@ -88,12 +88,12 @@ public class PlayerController : MonoBehaviour {
 				else{
 
 					if(touchPos.x < transform.position.x ){
-						translation.x = -0.2f;
+						translation.x = -0.4f;
 						anim.SetTrigger ("toLeft");
 						
 					}
 					else if(touchPos.x > (transform.position.x + collider2D.bounds.max.x )  ){
-						translation.x = 0.2f;
+						translation.x = 0.4f;
 						anim.SetTrigger ("toRight");
 					}
 				}

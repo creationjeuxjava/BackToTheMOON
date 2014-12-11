@@ -41,7 +41,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: 5
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e9d0357dea91ab45822b1d6d6c4b4d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedReducingFactor: .100000001
+  speedReducingFactor: .0500000007
   minAltitude: 0
   maxAltitude: 0
 --- !u!114 &11400004
@@ -100,7 +100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e927ecad757f54289ff8e7fe39db89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1
