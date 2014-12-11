@@ -12,6 +12,9 @@
     <object name="world1/meteorite" nombre="70">
 		<Altitude max="2000" min="400"></Altitude>
 	</object>
+	<object name="world1/miniAsteroid" nombre="50">
+		<Altitude max="2500" min="400"></Altitude>
+	</object>
     <object name="world1/cask" nombre="5"> 
 		<Altitude max="1000" min="500"></Altitude>
 	</object>

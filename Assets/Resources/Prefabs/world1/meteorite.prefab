@@ -12,8 +12,9 @@ GameObject:
   - 198: {fileID: 19800000}
   - 199: {fileID: 19900000}
   - 61: {fileID: 6100000}
-  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   - 50: {fileID: 5000000}
+  - 114: {fileID: 11400000}
   - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: meteorite
@@ -68,6 +69,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33107e471fa9a6246a72a4012f8c8eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: .600000024
+  velocity: {x: 0, y: 0, z: 0}
+  triggered: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e9d0357dea91ab45822b1d6d6c4b4d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -82,12 +97,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33107e471fa9a6246a72a4012f8c8eba, type: 3}
+  m_Script: {fileID: 11500000, guid: d9e927ecad757f54289ff8e7fe39db89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: .600000024
-  velocity: {x: 0, y: 0, z: 0}
-  triggered: 0
+  camera: {fileID: 0}
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1
