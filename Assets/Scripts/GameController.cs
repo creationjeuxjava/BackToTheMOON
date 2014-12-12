@@ -62,9 +62,7 @@ public class GameController : MonoBehaviour {
 				if(obj != null){
 					//Debug.Log(listeObjectPoolers[i].name +" crée !");
 
-					obj.transform.position = new Vector3(Random.Range(-14,14),Random.Range(Screen.height/3,Screen.height),-4.6f);
-					//transform.position;//TODO : rendre position de création aléatoire...en cours...la hauteur pas encore top !!
-
+					obj.transform.position = new Vector3(Random.Range(-14,14),Random.Range(20,40),-4.6f);
 					obj.SetActive(true);
 					obj.transform.parent = foreLayer.transform;
 				}

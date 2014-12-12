@@ -18,16 +18,19 @@ public class ControlOutOffScreen : MonoBehaviour {
 
 		if(screenPos.x >= Screen.width ) {
 			//transform.position = new Vector3(transform.position.x - 1.5f,transform.position.y,0);
-			GetComponent<TranslationMovement>().velocity.x = (-1) * GetComponent<TranslationMovement>().velocity.x;
+			//GetComponent<TranslationMovement>().velocity.x = (-1) * GetComponent<TranslationMovement>().velocity.x;
 		}
 		else if(screenPos.x <= 0){
 			//transform.position = new Vector3(transform.position.x + 1.5f,transform.position.y,0);
-			GetComponent<TranslationMovement>().velocity.x = (-1) * GetComponent<TranslationMovement>().velocity.x;
+			//GetComponent<TranslationMovement>().velocity.x = (-1) * GetComponent<TranslationMovement>().velocity.x;
 		}
 		/***gestion des pooledObject****/
 		else if(screenPos.y <= 0){
-			gameObject.SetActive (false);
-			//Debug.Log("on desactive "+gameObject.name);
+			PooledObject poolObjectComponent = gameObject.GetComponent<PooledObject>();
+			if (poolObjectComponent != null) {
+				gameObject.SetActive (false);
+				//Debug.Log("on desactive "+gameObject.name);
+			} 
 
 		}
 	}
