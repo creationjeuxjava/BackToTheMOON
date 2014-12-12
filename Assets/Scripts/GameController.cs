@@ -60,9 +60,10 @@ public class GameController : MonoBehaviour {
 			if(foreLayer.transform.position.y * (-1) > minMax.x && foreLayer.transform.position.y * (-1 )< minMax.y){
 				GameObject obj = listeObjectPoolers[i].GetComponent<ObjectPooler>().GetPooledObject();
 				if(obj != null){
-					Debug.Log(listeObjectPoolers[i].name +" crée !");
+					//Debug.Log(listeObjectPoolers[i].name +" crée !");
 
-					obj.transform.position = transform.position;//TODO : rendre position de création aléatoire
+					obj.transform.position = new Vector3(Random.Range(-14,14),Random.Range(Screen.height/3,Screen.height),-4.6f);
+					//transform.position;//TODO : rendre position de création aléatoire...en cours...la hauteur pas encore top !!
 
 					obj.SetActive(true);
 					obj.transform.parent = foreLayer.transform;

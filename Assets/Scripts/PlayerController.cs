@@ -244,7 +244,8 @@ public class PlayerController : MonoBehaviour {
 		if(other.gameObject.tag == "Piece" ){
 			//Debug.Log ("***************  collision avec une piece ");
 			GameController.addPiece();
-			Destroy(other.gameObject);
+			//Destroy(other.gameObject);
+			other.gameObject.SetActive(false);
 		}
 
 	}
@@ -260,17 +261,22 @@ public class PlayerController : MonoBehaviour {
 		if (isWithCask) {
 				
 			Vector3 pos = obj.transform.position;
-			Destroy(obj);
+			PooledObject poolObjectComponent = obj.GetComponent<PooledObject> ();
+			if (poolObjectComponent == null) {
+					Destroy (obj);
+			} 
 			//explose le météorite ==> methode spawnAsteroid !!
-			GameObject gameControlller = GameObject.FindGameObjectWithTag("GameController");
-			gameControlller.GetComponent<LoadLevelcontroller>().spawnAsteroid(pos);
+			GameObject gameControlller = GameObject.FindGameObjectWithTag ("GameController");
+			gameControlller.GetComponent<LoadLevelcontroller> ().spawnAsteroid (pos);
 
-			vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor * 50 /100;
+			vitesse.y += obj.GetComponent<InteractionEnnemy> ().speedReducingFactor * 50 / 100;
+		} 
+		else if (isWithShoe && obj.tag == "Shoe")
+						vitesse.y += vitesse.y * 50 / 100;
+		else {
+			vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor;
+			Debug.Log(obj.name+" : On réduit la vitesse");
 		}
-
-		else if(isWithShoe && obj.tag == "Shoe" ) vitesse.y += vitesse.y * 50/100;  
-
-		else vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor;
 	
 	}
 

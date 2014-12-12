@@ -27,6 +27,7 @@ public class ControlOutOffScreen : MonoBehaviour {
 		/***gestion des pooledObject****/
 		else if(screenPos.y <= 0){
 			gameObject.SetActive (false);
+			//Debug.Log("on desactive "+gameObject.name);
 
 		}
 	}

@@ -8,6 +8,7 @@ public class ObjectPooler : MonoBehaviour {
 	public GameObject pooledObject;
 	public int pooledAmount = 5;
 	public bool willGrow = false;
+	//public float timeBetweenEach
 
 	List<GameObject> pooledObjects;
 	int altMin;
@@ -23,7 +24,13 @@ public class ObjectPooler : MonoBehaviour {
 		pooledObjects = new List<GameObject> ();
 		
 		for (int i = 0; i < pooledAmount; i++) {				
+
 			GameObject obj = (GameObject) Instantiate(pooledObject);
+			PooledObject poolObj; // declare la reference
+			//myScript = thisGameObject.AddComponent( typeof ( PooledObject ) ) as PooledObject;
+			//Or using Generics ( requires using System.Collections.Generics )
+			poolObj = obj.AddComponent<PooledObject>();
+
 			obj.SetActive(false);
 			pooledObjects.Add(obj);
 		}
@@ -46,14 +53,22 @@ public class ObjectPooler : MonoBehaviour {
 				return pooledObjects[i];
 			}
 		}
-		if (willGrow) {
+		/*if (willGrow) {
 				
 			GameObject obj = (GameObject)Instantiate(pooledObject);
 			pooledObjects.Add(obj);
 			return obj;
-		}
+		}*/
 
 		return null;
 	}
 
+}
+
+class PooledObject :MonoBehaviour{
+
+	bool isPoolObject = true;
+	public bool isPooledObject(){
+		return isPoolObject;
+	}
 }
