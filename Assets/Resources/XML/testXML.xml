@@ -28,10 +28,10 @@
 		<Altitude max="2000" min="100"></Altitude>
 	</object>
 	<object name="world1/colonne" nombre="10" pool="true">
-		<Altitude max="1500" min="500"></Altitude>
+		<Altitude max="1500" min="300"></Altitude>
 	</object>
 	<object name="world1/triangle" nombre="5" pool="true">
-		<Altitude max="2000" min="500"></Altitude>
+		<Altitude max="2000" min="1000"></Altitude>
 	</object>
   </level>
   <level indice="2">
