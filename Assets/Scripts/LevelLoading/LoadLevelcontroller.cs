@@ -26,7 +26,10 @@ public class LoadLevelcontroller : MonoBehaviour {
 		
 		foreach (XmlNode levelInfo in levelsList) {
 
+			//est-ce le level désiré ??
 			if(int.Parse(levelInfo.Attributes["indice"].Value).Equals(levelNum)){
+				//récupération de la gravité du level !!
+				float gravity = float.Parse(levelInfo.Attributes["gravity"].Value);
 
 				XmlNodeList levelcontent = levelInfo.ChildNodes;//récup de ses enfants !!
 				foreach (XmlNode levelsItens in levelcontent) // levels itens nodes.
@@ -34,7 +37,8 @@ public class LoadLevelcontroller : MonoBehaviour {
 					
 					//Debug.Log("***************** on lit : "+levelsItens.Name);
 					//Debug.Log("Contenu du noeud : "+levelsItens.InnerText);
-					
+
+
 					if(levelsItens.Name == "object")
 					{
 						int number = int.Parse(levelsItens.Attributes["nombre"].Value);

@@ -8,7 +8,6 @@ public class ObjectPooler : MonoBehaviour {
 	public GameObject pooledObject;
 	public int pooledAmount = 1;
 	public bool willGrow = false;
-	//public float timeBetweenEach
 
 	List<GameObject> pooledObjects;
 	int altMin;

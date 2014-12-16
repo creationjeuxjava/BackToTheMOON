@@ -1,16 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <levels>
-  <level indice="1">
+  <level indice="1" gravity="9.81">
     <name>Monde Grec</name>
     <tutorial>Evitez les obstacles et récupérez des bonus pour atteindre l'autre planète !!</tutorial>
-    <object name="world1/oiseau" nombre="15" pool="false"><!-- 15    15    60   5    5    150     -->
+	
+	<!-- Si pool = true, le nombre n'est pas pris en compte !!   -->
+    <object name="world1/oiseau" nombre="15" pool="false">
 		<Altitude max="300" min="20"></Altitude>
     </object>
     <object name="world1/nuage" nombre="15" pool="true"> 
 		<Altitude max="450" min="50"></Altitude>
 	</object>
     <object name="world1/meteorite" nombre="50" pool="true">
-		<Altitude max="2500" min="400"></Altitude>
+		<Altitude max="2500" min="800"></Altitude>
 	</object>
 	<object name="world1/miniAsteroid" nombre="10" pool="false">
 		<Altitude max="2500" min="400"></Altitude>
@@ -28,7 +30,7 @@
 		<Altitude max="2000" min="100"></Altitude>
 	</object>
 	<object name="world1/colonne" nombre="10" pool="true">
-		<Altitude max="1500" min="300"></Altitude>
+		<Altitude max="1000" min="300"></Altitude>
 	</object>
 	<object name="world1/triangle" nombre="5" pool="true">
 		<Altitude max="2000" min="1000"></Altitude>

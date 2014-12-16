@@ -67,7 +67,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -76,19 +76,19 @@ TextureImporter:
     - name: volshoes_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 9
-        width: 170
-        height: 325
+        x: 10
+        y: 10
+        width: 173
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: volshoes_1
       rect:
         serializedVersion: 2
-        x: 228
+        x: 229
         y: 10
-        width: 170
+        width: 173
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -96,10 +96,10 @@ TextureImporter:
     - name: volshoes_2
       rect:
         serializedVersion: 2
-        x: 448
-        y: 9
-        width: 171
-        height: 325
+        x: 447
+        y: 10
+        width: 174
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,7 +108,7 @@ TextureImporter:
         serializedVersion: 2
         x: 666
         y: 10
-        width: 172
+        width: 174
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -116,9 +116,9 @@ TextureImporter:
     - name: volshoes_4
       rect:
         serializedVersion: 2
-        x: 886
+        x: 885
         y: 10
-        width: 171
+        width: 174
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -126,9 +126,9 @@ TextureImporter:
     - name: volshoes_5
       rect:
         serializedVersion: 2
-        x: 1105
+        x: 1104
         y: 10
-        width: 170
+        width: 174
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -136,9 +136,9 @@ TextureImporter:
     - name: volshoes_6
       rect:
         serializedVersion: 2
-        x: 1325
+        x: 1323
         y: 10
-        width: 171
+        width: 174
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -146,9 +146,9 @@ TextureImporter:
     - name: volshoes_7
       rect:
         serializedVersion: 2
-        x: 1544
+        x: 1542
         y: 10
-        width: 171
+        width: 174
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -156,9 +156,9 @@ TextureImporter:
     - name: volshoes_8
       rect:
         serializedVersion: 2
-        x: 1765
+        x: 1761
         y: 10
-        width: 170
+        width: 173
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,9 +166,9 @@ TextureImporter:
     - name: volshoes_9
       rect:
         serializedVersion: 2
-        x: 1984
+        x: 1986
         y: 10
-        width: 170
+        width: 167
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -176,30 +176,30 @@ TextureImporter:
     - name: volshoes_10
       rect:
         serializedVersion: 2
-        x: 2202
-        y: 12
-        width: 171
-        height: 322
+        x: 2205
+        y: 10
+        width: 174
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: volshoes_11
       rect:
         serializedVersion: 2
-        x: 2421
-        y: 12
-        width: 172
-        height: 322
+        x: 2424
+        y: 10
+        width: 174
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: volshoes_12
       rect:
         serializedVersion: 2
-        x: 2642
-        y: 12
-        width: 170
-        height: 322
+        x: 2643
+        y: 10
+        width: 173
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,9 +207,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2861
-        y: 12
-        width: 172
-        height: 322
+        y: 10
+        width: 174
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,48 +217,48 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3080
-        y: 12
-        width: 172
-        height: 322
+        y: 10
+        width: 174
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: volshoes_15
       rect:
         serializedVersion: 2
-        x: 3300
-        y: 12
-        width: 171
-        height: 322
+        x: 3299
+        y: 10
+        width: 174
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: volshoes_16
       rect:
         serializedVersion: 2
-        x: 3519
-        y: 12
-        width: 170
-        height: 322
+        x: 3518
+        y: 10
+        width: 174
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: volshoes_17
       rect:
         serializedVersion: 2
-        x: 3738
-        y: 12
-        width: 172
-        height: 322
+        x: 3737
+        y: 10
+        width: 174
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: volshoes_18
       rect:
         serializedVersion: 2
-        x: 3958
+        x: 3962
         y: 10
-        width: 171
+        width: 168
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -266,9 +266,9 @@ TextureImporter:
     - name: volshoes_19
       rect:
         serializedVersion: 2
-        x: 4177
+        x: 4181
         y: 10
-        width: 171
+        width: 168
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -276,9 +276,9 @@ TextureImporter:
     - name: volshoes_20
       rect:
         serializedVersion: 2
-        x: 4398
+        x: 4394
         y: 10
-        width: 170
+        width: 173
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -286,9 +286,9 @@ TextureImporter:
     - name: volshoes_21
       rect:
         serializedVersion: 2
-        x: 4617
+        x: 4612
         y: 10
-        width: 170
+        width: 181
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -296,9 +296,9 @@ TextureImporter:
     - name: volshoes_22
       rect:
         serializedVersion: 2
-        x: 4835
+        x: 4838
         y: 10
-        width: 173
+        width: 174
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -306,9 +306,9 @@ TextureImporter:
     - name: volshoes_23
       rect:
         serializedVersion: 2
-        x: 5056
+        x: 5057
         y: 10
-        width: 170
+        width: 173
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -316,9 +316,9 @@ TextureImporter:
     - name: volshoes_24
       rect:
         serializedVersion: 2
-        x: 5275
+        x: 5276
         y: 10
-        width: 170
+        width: 173
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -328,7 +328,7 @@ TextureImporter:
         serializedVersion: 2
         x: 5495
         y: 10
-        width: 171
+        width: 173
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -336,9 +336,9 @@ TextureImporter:
     - name: volshoes_26
       rect:
         serializedVersion: 2
-        x: 5714
+        x: 5720
         y: 10
-        width: 171
+        width: 167
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -346,9 +346,9 @@ TextureImporter:
     - name: volshoes_27
       rect:
         serializedVersion: 2
-        x: 5933
+        x: 5932
         y: 10
-        width: 171
+        width: 174
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -356,9 +356,9 @@ TextureImporter:
     - name: volshoes_28
       rect:
         serializedVersion: 2
-        x: 6153
+        x: 6151
         y: 10
-        width: 169
+        width: 174
         height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -366,10 +366,10 @@ TextureImporter:
     - name: volshoes_29
       rect:
         serializedVersion: 2
-        x: 6371
-        y: 9
-        width: 170
-        height: 325
+        x: 6370
+        y: 10
+        width: 174
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
