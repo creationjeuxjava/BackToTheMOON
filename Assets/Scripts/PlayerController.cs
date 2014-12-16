@@ -185,7 +185,7 @@ public class PlayerController : MonoBehaviour {
 	/**** détection des collisions avec les GO istrigger = false ****/
 	void OnCollisionEnter2D(Collision2D other){
 		
-		if(other.gameObject.tag == "Meteorite" ){
+		if(other.gameObject.tag == "Meteorite" || other.gameObject.tag == "Colonne"){
 			//Debug.Log ("***************  collision avec un météorite ");
 			//on meurt ?
 			//if(isWithCask) Destroy(other.gameObject);
@@ -210,7 +210,7 @@ public class PlayerController : MonoBehaviour {
 	 *****    permet de pouvoir passer au travers !!      ****/
 	void OnTriggerEnter2D(Collider2D other) {
 
-		if(other.gameObject.tag == "Cask" && !isItemActivated ){
+		if(other.gameObject.tag == "Cask"  && !isItemActivated ){
 			//Debug.Log ("***************  collision avec un cask ");
 			Destroy(other.gameObject);
 			isWithCask = true;
