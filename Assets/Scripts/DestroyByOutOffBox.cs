@@ -9,9 +9,14 @@ public class DestroyByOutOffBox : MonoBehaviour {
 
 		PooledObject poolObjectComponent = other.gameObject.GetComponent<PooledObject>();
 		if (poolObjectComponent == null) {
-			Destroy (other.gameObject);
-			//Debug.Log("on supprime le GameObject type collision:"+other.gameObject.name);
+				Destroy (other.gameObject);
+				Debug.Log ("on supprime le GameObject type collision:" + other.gameObject.name);
 		} 
+		else {
+			other.gameObject.SetActive (false);
+			Debug.Log("on desactive "+gameObject.name);	
+		
+		}
 
 	}
 
@@ -19,9 +24,14 @@ public class DestroyByOutOffBox : MonoBehaviour {
 		//Debug.Log("TRIGGER ==>Collision other est sorti : "+other.gameObject.name +" qui était en z "+other.transform.position.z);
 		PooledObject poolObjectComponent = other.gameObject.GetComponent<PooledObject>();
 		if (poolObjectComponent == null) {
-			Destroy (other.gameObject);
-			//Debug.Log("on supprime le GameObject type trigger:"+other.gameObject.name);
+				Destroy (other.gameObject);
+				Debug.Log ("on supprime le GameObject type trigger:" + other.gameObject.name);
 		} 
+		else {
+			other.gameObject.SetActive (false);
+			Debug.Log("on desactive "+gameObject.name);	
+		
+		}
 		
 	}
 }
