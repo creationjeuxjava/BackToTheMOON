@@ -29,7 +29,7 @@ public class ControlOutOffScreen : MonoBehaviour {
 			PooledObject poolObjectComponent = gameObject.GetComponent<PooledObject>();
 			if (poolObjectComponent != null) {
 				gameObject.SetActive (false);
-				//Debug.Log("on desactive "+gameObject.name);
+				Debug.Log("on desactive "+gameObject.name);
 			} 
 
 		}
