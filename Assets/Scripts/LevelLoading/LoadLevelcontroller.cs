@@ -30,6 +30,7 @@ public class LoadLevelcontroller : MonoBehaviour {
 			if(int.Parse(levelInfo.Attributes["indice"].Value).Equals(levelNum)){
 				//récupération de la gravité du level !!
 				float gravity = float.Parse(levelInfo.Attributes["gravity"].Value);
+				this.GetComponent<GameController>().setLevelGravity(gravity);
 
 				XmlNodeList levelcontent = levelInfo.ChildNodes;//récup de ses enfants !!
 				foreach (XmlNode levelsItens in levelcontent) // levels itens nodes.

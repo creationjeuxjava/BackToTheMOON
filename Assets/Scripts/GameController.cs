@@ -27,6 +27,9 @@ public class GameController : MonoBehaviour {
 	private int coeffAltitude = 5;
 	private int coeffVitesse = 1 * 3600; 
 	private int currentLevel = 1; //par défaut le premier niveau
+	private float gravityLevel;
+	private float startFlyTime;
+
 	private List<GameObject> listeObjectPoolers = new List<GameObject>();
 
 	// Use this for initialization
@@ -78,12 +81,23 @@ public class GameController : MonoBehaviour {
 
 		if (isWorldMoving == true && !isGameInPause && isInGame) {
 
-			//chaque partie avance à une vitesse différente == parallax
-			backBackLayer.transform.Translate (PlayerController.vitesse / 3.7f);
-			backLayer.transform.Translate (PlayerController.vitesse / 3);
-			middleLayer.transform.Translate (PlayerController.vitesse / 1.5f);
-			foreLayer.transform.Translate (PlayerController.vitesse);
 
+
+			//temps écoulé depuis le début du lancement
+			float timeSinceStart = Time.time - startFlyTime;
+			float gravityEffect = (float) 0.5f * gravityLevel * timeSinceStart * timeSinceStart /3000;//calcul savant de l'équation horaire !!
+			//on calcule le vecteur vitesse du player ajusté
+			Vector3 playerSpeed = new Vector3(PlayerController.vitesse.x,PlayerController.vitesse.y + gravityEffect, PlayerController.vitesse.z);
+			Debug.Log("Vitesse globale : "+playerSpeed+" et temps écoulé depuis le lancement : "+timeSinceStart+ " effet de gravity : "+ gravityEffect);
+
+
+			//chaque partie avance à une vitesse différente == parallax
+			backBackLayer.transform.Translate (playerSpeed / 3.7f);
+			backLayer.transform.Translate (playerSpeed / 3);
+			middleLayer.transform.Translate (playerSpeed / 1.5f);
+			foreLayer.transform.Translate (playerSpeed);
+
+			//calcul de l'altitude
 			altitude = foreLayer.transform.position.y * -1 * coeffAltitude;
 			float vitesse = PlayerController.vitesse.y*-1 * coeffVitesse;
 			InGameGUI.setMessage("Altitude :"+altitude,"Vitesse Player : "+vitesse+" km/h et nbre pièces : "+nbrePieces);
@@ -114,11 +128,19 @@ public class GameController : MonoBehaviour {
 		listeObjectPoolers.Add (obj);
 	}
 
+	public void setLevelGravity(float gravity){
+		gravityLevel = gravity;	
+		Debug.Log("Gravité du Level  : "+ gravityLevel);
+	}
+
+
 
 	//lancer le joueur et donc faire avancer le monde !!
 	public void LaunchPlayer (){
 		player.GetComponent <PlayerController>().launchIntheAir ();
 		isWorldMoving = true;
+		startFlyTime = Time.time;//on note le temps du démarrage du vol !!
+		Debug.Log("au démarre le vol au temps : "+ startFlyTime);
 	}
 
 	public static void addPiece(){
