@@ -16,7 +16,7 @@ GameObject:
   - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: colonne
-  m_TagString: Untagged
+  m_TagString: Colonne
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: .600000024
-  velocity: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0}
   triggered: 0
 --- !u!114 &11400004
 MonoBehaviour:

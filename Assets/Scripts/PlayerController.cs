@@ -267,7 +267,7 @@ public class PlayerController : MonoBehaviour {
 			} 
 			//explose le météorite ==> methode spawnAsteroid !!
 			GameObject gameControlller = GameObject.FindGameObjectWithTag ("GameController");
-			gameControlller.GetComponent<LoadLevelcontroller> ().spawnAsteroid (pos);
+			gameControlller.GetComponent<LoadLevelcontroller> ().spawnAsteroid (obj);
 
 			vitesse.y += obj.GetComponent<InteractionEnnemy> ().speedReducingFactor * 50 / 100;
 		} 

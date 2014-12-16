@@ -95,7 +95,9 @@ public class LoadLevelcontroller : MonoBehaviour {
 		
 	}
 
-	public void spawnAsteroid(Vector3 posToSpawn){
+	public void spawnAsteroid(GameObject obj){
+		Vector3 posToSpawn = obj.transform.position;
+		obj.SetActive (false);
 		for(int i = 0 ; i < 5 ; i++){
 			Object prefab = Resources.Load<Object>("Prefabs/World1/miniAsteroid");		
 			Vector3 pos = new Vector3 (Random.Range(posToSpawn.x+1,posToSpawn.x-1),

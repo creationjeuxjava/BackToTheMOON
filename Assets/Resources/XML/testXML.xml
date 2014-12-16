@@ -6,7 +6,7 @@
     <object name="world1/oiseau" nombre="15" pool="false"><!-- 15    15    60   5    5    150     -->
 		<Altitude max="300" min="20"></Altitude>
     </object>
-    <object name="world1/nuage" nombre="15" pool="false"> 
+    <object name="world1/nuage" nombre="15" pool="true"> 
 		<Altitude max="450" min="50"></Altitude>
 	</object>
     <object name="world1/meteorite" nombre="50" pool="true">
@@ -21,7 +21,7 @@
 	<object name="world1/shoe" nombre="10" pool="false">
 		<Altitude max="2000" min="500"></Altitude>
 	</object>
-	<object name="world1/sigmaLetter" nombre="5" pool="false">
+	<object name="world1/sigmaLetter" nombre="5" pool="true">
 		<Altitude max="2500" min="800"></Altitude>
 	</object>
 	<object name="commonPrefabs/piece" nombre="50" pool="true">
@@ -30,7 +30,7 @@
 	<object name="world1/colonne" nombre="10" pool="true">
 		<Altitude max="1500" min="300"></Altitude>
 	</object>
-	<object name="world1/triangle" nombre="5" pool="false">
+	<object name="world1/triangle" nombre="5" pool="true">
 		<Altitude max="2000" min="1000"></Altitude>
 	</object>
   </level>
