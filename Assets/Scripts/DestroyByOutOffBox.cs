@@ -10,6 +10,7 @@ public class DestroyByOutOffBox : MonoBehaviour {
 		PooledObject poolObjectComponent = other.gameObject.GetComponent<PooledObject>();
 		if (poolObjectComponent == null) {
 			Destroy (other.gameObject);
+			//Debug.Log("on supprime le GameObject type collision:"+other.gameObject.name);
 		} 
 
 	}
@@ -19,7 +20,7 @@ public class DestroyByOutOffBox : MonoBehaviour {
 		PooledObject poolObjectComponent = other.gameObject.GetComponent<PooledObject>();
 		if (poolObjectComponent == null) {
 			Destroy (other.gameObject);
-			//Debug.Log("on supprime le pooledObject type trigger:"+other.gameObject.name);
+			//Debug.Log("on supprime le GameObject type trigger:"+other.gameObject.name);
 		} 
 		
 	}
