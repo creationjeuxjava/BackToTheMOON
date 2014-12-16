@@ -62,7 +62,7 @@ public class GameController : MonoBehaviour {
 				if(obj != null){
 					//Debug.Log(listeObjectPoolers[i].name +" crée !");
 
-					obj.transform.position = new Vector3(Random.Range(-14,14),Random.Range(20,60),-4.6f);
+					obj.transform.position = new Vector3(Random.Range(-14,14),Random.Range(20,200),-4.6f);
 					obj.SetActive(true);
 					obj.transform.parent = foreLayer.transform;
 				}

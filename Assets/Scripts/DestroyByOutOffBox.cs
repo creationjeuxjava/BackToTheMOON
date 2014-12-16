@@ -14,7 +14,7 @@ public class DestroyByOutOffBox : MonoBehaviour {
 		} 
 		else {
 			other.gameObject.SetActive (false);
-			Debug.Log("on desactive "+gameObject.name);	
+			Debug.Log("on desactive "+other.gameObject.name);	
 		
 		}
 
@@ -29,7 +29,7 @@ public class DestroyByOutOffBox : MonoBehaviour {
 		} 
 		else {
 			other.gameObject.SetActive (false);
-			Debug.Log("on desactive "+gameObject.name);	
+			Debug.Log("on desactive "+other.gameObject.name);	
 		
 		}
 		
