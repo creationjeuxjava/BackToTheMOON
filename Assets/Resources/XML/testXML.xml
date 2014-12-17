@@ -5,35 +5,47 @@
     <tutorial>Evitez les obstacles et récupérez des bonus pour atteindre l'autre planète !!</tutorial>
 	
 	<!-- Si pool = true, le nombre n'est pas pris en compte !!   -->
-    <object name="world1/oiseau" nombre="15" pool="false">
+    <object name="world1/oiseau" nombre="15" pool="false" layer="foreGround">
 		<Altitude max="300" min="20"></Altitude>
     </object>
-    <object name="world1/nuage" nombre="15" pool="true"> 
+    <object name="world1/nuage" nombre="15" pool="true" layer="foreGround"> 
 		<Altitude max="450" min="50"></Altitude>
 	</object>
-    <object name="world1/meteorite" nombre="50" pool="true">
+    <object name="world1/meteorite" nombre="50" pool="true" layer="foreGround">
 		<Altitude max="2500" min="800"></Altitude>
 	</object>
-	<object name="world1/miniAsteroid" nombre="10" pool="false">
+	<object name="world1/miniAsteroid" nombre="10" pool="false" layer="foreGround">
 		<Altitude max="2500" min="400"></Altitude>
 	</object>
-    <object name="world1/cask" nombre="10" pool="false"> 
+    <object name="world1/cask" nombre="10" pool="false" layer="foreGround"> 
 		<Altitude max="1500" min="300"></Altitude>
 	</object>
-	<object name="world1/shoe" nombre="30" pool="false">
+	<object name="world1/shoe" nombre="30" pool="false" layer="foreGround">
 		<Altitude max="1000" min="100"></Altitude>
 	</object>
-	<object name="world1/sigmaLetter" nombre="5" pool="true">
+	<object name="world1/sigmaLetter" nombre="5" pool="true" layer="foreGround">
 		<Altitude max="2500" min="800"></Altitude>
 	</object>
-	<object name="commonPrefabs/piece" nombre="50" pool="true">
+	<object name="commonPrefabs/piece" nombre="50" pool="true" layer="foreGround">
 		<Altitude max="2000" min="100"></Altitude>
 	</object>
-	<object name="world1/colonne" nombre="10" pool="true">
+	<object name="world1/colonne" nombre="10" pool="true" layer="foreGround">
 		<Altitude max="1000" min="300"></Altitude>
 	</object>
-	<object name="world1/triangle" nombre="5" pool="true">
+	<object name="world1/triangle" nombre="5" pool="true" layer="foreGround">
 		<Altitude max="2000" min="1000"></Altitude>
+	</object>
+	<object name="commonPrefabs/galaxie" nombre="50" pool="true" layer="backGround">
+		<Altitude max="3000" min="1000"></Altitude>
+	</object>
+	<object name="commonPrefabs/etoilesAmas" nombre="50" pool="true" layer="backGround">
+		<Altitude max="3000" min="1000"></Altitude>
+	</object>
+	<object name="commonPrefabs/twoStars" nombre="50" pool="true" layer="backGround">
+		<Altitude max="3000" min="1000"></Altitude>
+	</object>
+	<object name="commonPrefabs/etoileBrillante" nombre="50" pool="true" layer="backGround">
+		<Altitude max="3000" min="1000"></Altitude>
 	</object>
   </level>
   <level indice="2">

@@ -45,6 +45,7 @@ public class LoadLevelcontroller : MonoBehaviour {
 						int number = int.Parse(levelsItens.Attributes["nombre"].Value);
 						string name = levelsItens.Attributes["name"].Value;
 						string isPoolNeeded = levelsItens.Attributes["pool"].Value;
+						string layerName = levelsItens.Attributes["layer"].Value;
 						bool needPooling;
 
 						if(isPoolNeeded == "true")	needPooling = true;//Convert.ToBoolean();
@@ -74,7 +75,7 @@ public class LoadLevelcontroller : MonoBehaviour {
 									poolerObject.name = "poolerObjectFor"+name;
 									poolerObject.GetComponent<ObjectPooler>().pooledObject = (GameObject)prefab;
 									poolerObject.GetComponent<ObjectPooler>().setMinMaxAlt(min,max);
-									this.GetComponent<GameController>().addObjectPoolerInWorld(poolerObject);
+									this.GetComponent<GameController>().addObjectPoolerInWorld(poolerObject,layerName);
 								}
 							}
 						}

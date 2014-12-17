@@ -33,6 +33,7 @@ public class GameController : MonoBehaviour {
 	private float startFlyTime;
 
 	private List<GameObject> listeObjectPoolers = new List<GameObject>();
+	private Dictionary<GameObject,string> dicoObjectPoolers = new Dictionary<GameObject,string>();
 
 	// création initiale
 	void Start () {
@@ -44,26 +45,48 @@ public class GameController : MonoBehaviour {
 	void Update () {
 
 		/** a-t-on besoin d'activer des GO depuis les ObjectPooler ****/
-		for (int i = 0; i < listeObjectPoolers.Count; i++) {
+		foreach (KeyValuePair<GameObject, string> entry in dicoObjectPoolers)
+		{
+			string layerName = entry.Value; 
+
+			//Vector2 minMax = listeObjectPoolers[i].GetComponent<ObjectPooler>().getMinMax();
+			Vector2 minMax = entry.Key.GetComponent<ObjectPooler>().getMinMax();
+			//Debug.Log("Position du ForeLayer : "+foreLayer.transform.position.y*(-1)+" et min "+minMax.x+" et max "+minMax.y +" pour GO "+listeObjectPoolers[i].name);
+			if(foreLayer.transform.position.y * (-1) > minMax.x && foreLayer.transform.position.y * (-1 )< minMax.y){
+				GameObject obj = entry.Key.GetComponent<ObjectPooler>().GetPooledObject();
+				if(obj != null){
+					//Debug.Log(listeObjectPoolers[i].name +" crée !");
+					
+					obj.transform.position = new Vector3(Random.Range(-14,14),Random.Range(20,200),-4.6f);
+					obj.SetActive(true);
+					if(layerName == "foreGround")
+						obj.transform.parent = foreLayer.transform;
+					else 
+						obj.transform.parent = backBackLayer.transform;
+				}
+				
+			}
+
+
+			/*Console.WriteLine("key: " + kvp.Key);
+			Console.WriteLine("values: " + theElement.Symbol + " " +
+			                  theElement.Name + " " + theElement.AtomicNumber);*/
+		}
+
+
+		/*for (int i = 0; i < listeObjectPoolers.Count; i++) {
 
 			Vector2 minMax = listeObjectPoolers[i].GetComponent<ObjectPooler>().getMinMax();
-			//Debug.Log("Position du ForeLayer : "+foreLayer.transform.position.y*(-1)+" et min "+minMax.x+" et max "+minMax.y +" pour GO "+listeObjectPoolers[i].name);
 			if(foreLayer.transform.position.y * (-1) > minMax.x && foreLayer.transform.position.y * (-1 )< minMax.y){
 				GameObject obj = listeObjectPoolers[i].GetComponent<ObjectPooler>().GetPooledObject();
 				if(obj != null){
-					//Debug.Log(listeObjectPoolers[i].name +" crée !");
-
 					obj.transform.position = new Vector3(Random.Range(-14,14),Random.Range(20,200),-4.6f);
 					obj.SetActive(true);
 					obj.transform.parent = foreLayer.transform;
 				}
 
 			}
-			else{
-
-				//Debug.Log(listeObjectPoolers[i].name +" : On ne peut pas créer le prefab => alt non correcte !");
-			}
-		}
+		}*/
 
 
 
@@ -122,9 +145,9 @@ public class GameController : MonoBehaviour {
 	public void addGameObjectInWorld(GameObject obj){
 		obj.transform.parent = foreLayer.transform;
 	}
-
-	public void addObjectPoolerInWorld(GameObject obj){
-		listeObjectPoolers.Add (obj);
+	public void addObjectPoolerInWorld(GameObject obj,string layerName){
+		//listeObjectPoolers.Add (obj);
+		dicoObjectPoolers.Add (obj, layerName);
 	}
 
 	public void setLevelGravity(float gravity){
