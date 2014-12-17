@@ -5,11 +5,12 @@ public class CanonController : MonoBehaviour {
 
 	public GameObject canonFire;
 	public GameObject gameController;
-	public Animator anim;
+	public Animator anim,animMoitie;
 
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
+		animMoitie = GameObject.Find ("moitie").GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -30,7 +31,8 @@ public class CanonController : MonoBehaviour {
 	/*** au clic sur le canon on fait "décoller" le pplayer *****/
 	void OnMouseDown()//fonctionne aussi sur android !!
 	{
-		anim.SetTrigger ("fire");
+		anim.SetTrigger ("fire");//audio.Play();
+		animMoitie.SetTrigger ("fire");
 
 	}
 
@@ -38,12 +40,15 @@ public class CanonController : MonoBehaviour {
 	/*** fonction appelée par l'animator ****/
 	//[RequireComponent(typeof(AudioSource))]
 	void launchIt(){
-		if(!audio.isPlaying) audio.Play();
+		if(!audio.isPlaying) 
+			audio.Play();
 			//audio.PlayOneShot ("canon2", 0.7F);
 		gameController.GetComponent<GameController>().LaunchPlayer();
 		GameObject particules = Instantiate(canonFire, new Vector3(transform.position.x,transform.position.y+5f, -20f), transform.rotation) as GameObject; 
 		particules.transform.parent = GameController.world.transform;
 
+
+		Debug.Log ("on launchIt");
 
 	}
 }
