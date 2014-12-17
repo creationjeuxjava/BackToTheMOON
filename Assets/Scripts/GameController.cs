@@ -34,7 +34,7 @@ public class GameController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		isInGame = true;
+		/*isInGame = true;
 		isGameOver = false;
 		altitude = 0;
 		world = GameObject.FindGameObjectWithTag ("World");
@@ -42,14 +42,16 @@ public class GameController : MonoBehaviour {
 		middleLayer = GameObject.FindGameObjectWithTag ("MiddleLayer");
 		foreLayer = GameObject.FindGameObjectWithTag ("ForeLayer");
 		backBackLayer = GameObject.FindGameObjectWithTag ("BackBackLayer");
-		createWorld ();
+		createWorld ();*/
+
+		resetGame ();
 
 		//création aléatoire de bonus en l'air =>AssetDatabase non valable dans le build...remplacé par Resources.load !!
 		//TODO à généraliser  !!
 		//Object prefab = AssetDatabase.LoadAssetAtPath("Assets/Prefabs/world1/cask.prefab", typeof(GameObject));
 		//Object prefab = Resources.Load<Object>("Prefabs/cask");
 
-
+		Debug.Log (this.name + " méthode strat");
 	}
 	
 	// Update is called once per frame
@@ -88,7 +90,7 @@ public class GameController : MonoBehaviour {
 			float gravityEffect = (float) 0.5f * gravityLevel * timeSinceStart * timeSinceStart /3000;//calcul savant de l'équation horaire !!
 			//on calcule le vecteur vitesse du player ajusté
 			Vector3 playerSpeed = new Vector3(PlayerController.vitesse.x,PlayerController.vitesse.y + gravityEffect, PlayerController.vitesse.z);
-			Debug.Log("Vitesse globale : "+playerSpeed+" et temps écoulé depuis le lancement : "+timeSinceStart+ " effet de gravity : "+ gravityEffect);
+			//Debug.Log("Vitesse globale : "+playerSpeed+" et temps écoulé depuis le lancement : "+timeSinceStart+ " effet de gravity : "+ gravityEffect);
 
 
 			//chaque partie avance à une vitesse différente == parallax
@@ -130,7 +132,27 @@ public class GameController : MonoBehaviour {
 
 	public void setLevelGravity(float gravity){
 		gravityLevel = gravity;	
-		Debug.Log("Gravité du Level  : "+ gravityLevel);
+		//Debug.Log("Gravité du Level  : "+ gravityLevel);
+	}
+
+	/*** méthode de remise à zéro de toutes les variables pour pouvoir rejouer sur une meme session ****/
+	// à ce stade le nbre de pièces n'est pas remis à jour
+	public void resetGame(){
+		isWorldMoving = false;
+		isGameInPause = false;
+		isOverGUIPause = false;
+		isInGame = true;
+		isGameOver = false;
+
+		altitude = 0;
+		world = GameObject.FindGameObjectWithTag ("World");
+		backLayer = GameObject.FindGameObjectWithTag ("BackLayer");
+		middleLayer = GameObject.FindGameObjectWithTag ("MiddleLayer");
+		foreLayer = GameObject.FindGameObjectWithTag ("ForeLayer");
+		backBackLayer = GameObject.FindGameObjectWithTag ("BackBackLayer");
+
+		createWorld ();
+	
 	}
 
 
@@ -140,7 +162,7 @@ public class GameController : MonoBehaviour {
 		player.GetComponent <PlayerController>().launchIntheAir ();
 		isWorldMoving = true;
 		startFlyTime = Time.time;//on note le temps du démarrage du vol !!
-		Debug.Log("au démarre le vol au temps : "+ startFlyTime);
+		//Debug.Log("au démarre le vol au temps : "+ startFlyTime);
 	}
 
 	public static void addPiece(){
