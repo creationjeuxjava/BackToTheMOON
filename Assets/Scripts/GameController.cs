@@ -18,12 +18,14 @@ public class GameController : MonoBehaviour {
 	private static bool isGameInPause = false;
 	private static bool isOverGUIPause = false;
 	public static bool isInGame,isGameOver;
+	private bool isInSpace;
 	private GameObject backLayer, middleLayer, foreLayer,backBackLayer;
 
 
 	private float altitude;
 	private static int nbrePieces = 0;
 	private float altMaxForWinLevel = 10000f;
+	private float altBeginOfSpace = 5000f;
 	private int coeffAltitude = 5;
 	private int coeffVitesse = 1 * 3600; 
 	private int currentLevel = 1; //par défaut le premier niveau
@@ -72,9 +74,19 @@ public class GameController : MonoBehaviour {
 			//temps écoulé depuis le début du lancement
 			float timeSinceStart = Time.time - startFlyTime;
 			float gravityEffect = (float) 0.5f * gravityLevel * timeSinceStart * timeSinceStart /3000;//calcul savant de l'équation horaire !!
-			//on calcule le vecteur vitesse du player ajusté
-			Vector3 playerSpeed = new Vector3(PlayerController.vitesse.x,PlayerController.vitesse.y + gravityEffect, PlayerController.vitesse.z);
-			//Debug.Log("Vitesse globale : "+playerSpeed+" et temps écoulé depuis le lancement : "+timeSinceStart+ " effet de gravity : "+ gravityEffect);
+		
+			Vector3 playerSpeed ;
+			if(!isInSpace){
+				//on calcule le vecteur vitesse du player ajusté
+				playerSpeed = new Vector3(PlayerController.vitesse.x,PlayerController.vitesse.y + gravityEffect, PlayerController.vitesse.z);
+				//Debug.Log("Vitesse globale : "+playerSpeed+" et temps écoulé depuis le lancement : "+timeSinceStart+ " effet de gravity : "+ gravityEffect);
+
+			}
+			else{
+				playerSpeed = PlayerController.vitesse;
+
+			}
+
 
 
 			//chaque partie avance à une vitesse différente == parallax
@@ -86,7 +98,7 @@ public class GameController : MonoBehaviour {
 			//calcul de l'altitude
 			altitude = foreLayer.transform.position.y * -1 * coeffAltitude;
 			float vitesse = PlayerController.vitesse.y*-1 * coeffVitesse;
-			InGameGUI.setMessage("Altitude :"+altitude,"Vitesse Player : "+vitesse+" km/h et nbre pièces : "+nbrePieces);
+			InGameGUI.setMessage("ISINSpace :"+isInSpace +" Altitude :"+altitude,"Vitesse Player : "+vitesse+" km/h et nbre pièces : "+nbrePieces);
 
 			if(PlayerController.vitesse.y > 0){
 				isInGame = false;
@@ -95,6 +107,7 @@ public class GameController : MonoBehaviour {
 			if(altitude >= altMaxForWinLevel){
 				isInGame = false;
 			}
+			if(altitude >= altBeginOfSpace) isInSpace = true;
 
 		}
 	}
@@ -127,6 +140,7 @@ public class GameController : MonoBehaviour {
 		isOverGUIPause = false;
 		isInGame = true;
 		isGameOver = false;
+		isInSpace = false;
 
 		altitude = 0;
 		world = GameObject.FindGameObjectWithTag ("World");
