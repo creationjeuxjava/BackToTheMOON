@@ -22,11 +22,13 @@ public class PlayerController : MonoBehaviour {
 	private bool isWithCask = false;
 	private bool isWithShoe = false;
 	private bool isItemActivated = false;
+	private bool isFlyBegin = false;
 
 	private float timeLeft = 5.0f;
 
 	public void launchIntheAir(){
 		isFlying = true;
+		isFlyBegin = true;
 		vitesse = new Vector3(0,-speedPlayer,0);
 		GameObject particules = Instantiate(fumee, new Vector3(transform.position.x,transform.position.y-1, -16f), transform.rotation) as GameObject; 
 		particules.transform.parent = this.transform;
@@ -86,16 +88,19 @@ public class PlayerController : MonoBehaviour {
 
 				}
 				else{
+					if(!isFlyBegin){
+						if(touchPos.x < transform.position.x ){
+							translation.x = -0.4f;
+							anim.SetTrigger ("toLeft");
+							
+						}
+						else if(touchPos.x > (transform.position.x + collider2D.bounds.max.x )  ){
+							translation.x = 0.4f;
+							anim.SetTrigger ("toRight");
+						}
 
-					if(touchPos.x < transform.position.x ){
-						translation.x = -0.4f;
-						anim.SetTrigger ("toLeft");
-						
 					}
-					else if(touchPos.x > (transform.position.x + collider2D.bounds.max.x )  ){
-						translation.x = 0.4f;
-						anim.SetTrigger ("toRight");
-					}
+
 				}
 			} 			
 
@@ -301,6 +306,13 @@ public class PlayerController : MonoBehaviour {
 		isWithCask = false;
 		anim.SetBool("withCask",false);
 		anim.SetBool("withShoes",false);
+	}
+
+	/*** permet de savoir si la phase de décollage est terminée en animation ...****/
+	/*** fonction appelée par l'animator ****/
+	private void stopStartFly(){
+
+		isFlyBegin = false;
 	}
 
 	/*void OnMouseOver()

@@ -32,26 +32,10 @@ public class GameController : MonoBehaviour {
 
 	private List<GameObject> listeObjectPoolers = new List<GameObject>();
 
-	// Use this for initialization
+	// création initiale
 	void Start () {
-		/*isInGame = true;
-		isGameOver = false;
-		altitude = 0;
-		world = GameObject.FindGameObjectWithTag ("World");
-		backLayer = GameObject.FindGameObjectWithTag ("BackLayer");
-		middleLayer = GameObject.FindGameObjectWithTag ("MiddleLayer");
-		foreLayer = GameObject.FindGameObjectWithTag ("ForeLayer");
-		backBackLayer = GameObject.FindGameObjectWithTag ("BackBackLayer");
-		createWorld ();*/
-
 		resetGame ();
-
-		//création aléatoire de bonus en l'air =>AssetDatabase non valable dans le build...remplacé par Resources.load !!
-		//TODO à généraliser  !!
-		//Object prefab = AssetDatabase.LoadAssetAtPath("Assets/Prefabs/world1/cask.prefab", typeof(GameObject));
-		//Object prefab = Resources.Load<Object>("Prefabs/cask");
-
-		Debug.Log (this.name + " méthode strat");
+		//Debug.Log (this.name + " méthode strat");
 	}
 	
 	// Update is called once per frame

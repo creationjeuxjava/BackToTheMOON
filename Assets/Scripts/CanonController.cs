@@ -31,9 +31,19 @@ public class CanonController : MonoBehaviour {
 	void OnMouseDown()//fonctionne aussi sur android !!
 	{
 		anim.SetTrigger ("fire");
+
+	}
+
+	/*** permet de savoir si la phase de chauffe du canon est terminée en animation ...****/
+	/*** fonction appelée par l'animator ****/
+	//[RequireComponent(typeof(AudioSource))]
+	void launchIt(){
+		if(!audio.isPlaying) audio.Play();
+			//audio.PlayOneShot ("canon2", 0.7F);
 		gameController.GetComponent<GameController>().LaunchPlayer();
 		GameObject particules = Instantiate(canonFire, new Vector3(transform.position.x,transform.position.y+5f, -20f), transform.rotation) as GameObject; 
 		particules.transform.parent = GameController.world.transform;
-		audio.Play();
+
+
 	}
 }
