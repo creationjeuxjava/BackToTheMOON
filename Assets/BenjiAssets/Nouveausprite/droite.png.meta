@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: 1
+    aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -76,60 +76,60 @@ TextureImporter:
     - name: droite_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 25
-        width: 158
-        height: 311
+        x: 15
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_1
       rect:
         serializedVersion: 2
-        x: 225
-        y: 25
-        width: 158
-        height: 311
+        x: 222
+        y: 21
+        width: 163
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_2
       rect:
         serializedVersion: 2
-        x: 432
-        y: 25
-        width: 156
-        height: 311
+        x: 428
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_3
       rect:
         serializedVersion: 2
-        x: 637
-        y: 23
-        width: 157
-        height: 313
+        x: 634
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_4
       rect:
         serializedVersion: 2
-        x: 845
-        y: 23
-        width: 156
-        height: 313
+        x: 841
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_5
       rect:
         serializedVersion: 2
-        x: 1049
-        y: 23
-        width: 158
-        height: 313
+        x: 1047
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,69 +137,69 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1254
-        y: 22
-        width: 158
-        height: 314
+        y: 21
+        width: 163
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_7
       rect:
         serializedVersion: 2
-        x: 1461
-        y: 22
-        width: 157
-        height: 314
+        x: 1460
+        y: 21
+        width: 158
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_8
       rect:
         serializedVersion: 2
-        x: 1667
-        y: 22
-        width: 156
-        height: 314
+        x: 1666
+        y: 21
+        width: 158
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_9
       rect:
         serializedVersion: 2
-        x: 1872
-        y: 22
-        width: 158
-        height: 315
+        x: 1873
+        y: 21
+        width: 157
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_10
       rect:
         serializedVersion: 2
-        x: 2078
-        y: 22
+        x: 2079
+        y: 21
         width: 158
-        height: 315
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_11
       rect:
         serializedVersion: 2
-        x: 2283
-        y: 22
-        width: 160
-        height: 315
+        x: 2279
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_12
       rect:
         serializedVersion: 2
-        x: 2490
+        x: 2486
         y: 21
-        width: 160
-        height: 316
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,169 +207,169 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2698
-        y: 20
-        width: 162
-        height: 317
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_14
       rect:
         serializedVersion: 2
-        x: 2908
-        y: 20
-        width: 163
-        height: 317
+        x: 2905
+        y: 21
+        width: 170
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_15
       rect:
         serializedVersion: 2
-        x: 3119
-        y: 20
-        width: 161
-        height: 317
+        x: 3117
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_16
       rect:
         serializedVersion: 2
-        x: 3329
+        x: 3330
         y: 21
-        width: 161
-        height: 316
+        width: 163
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_17
       rect:
         serializedVersion: 2
-        x: 3537
-        y: 22
-        width: 158
-        height: 315
+        x: 3536
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_18
       rect:
         serializedVersion: 2
-        x: 3743
-        y: 22
-        width: 158
-        height: 315
+        x: 3742
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_19
       rect:
         serializedVersion: 2
-        x: 3950
-        y: 22
-        width: 157
-        height: 315
+        x: 3949
+        y: 21
+        width: 158
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_20
       rect:
         serializedVersion: 2
-        x: 4156
-        y: 22
+        x: 4155
+        y: 21
         width: 158
-        height: 314
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_21
       rect:
         serializedVersion: 2
-        x: 4361
-        y: 22
-        width: 158
-        height: 314
+        x: 4362
+        y: 21
+        width: 157
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_22
       rect:
         serializedVersion: 2
-        x: 4566
-        y: 22
-        width: 157
-        height: 314
+        x: 4562
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_23
       rect:
         serializedVersion: 2
-        x: 4772
-        y: 23
-        width: 158
-        height: 313
+        x: 4768
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_24
       rect:
         serializedVersion: 2
-        x: 4978
-        y: 23
-        width: 158
-        height: 313
+        x: 4975
+        y: 21
+        width: 163
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_25
       rect:
         serializedVersion: 2
-        x: 5185
-        y: 24
-        width: 158
-        height: 312
+        x: 5181
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_26
       rect:
         serializedVersion: 2
-        x: 5390
-        y: 25
-        width: 157
-        height: 311
+        x: 5387
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_27
       rect:
         serializedVersion: 2
-        x: 5596
-        y: 25
-        width: 158
-        height: 311
+        x: 5594
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_28
       rect:
         serializedVersion: 2
-        x: 5802
-        y: 25
-        width: 158
-        height: 311
+        x: 5800
+        y: 21
+        width: 164
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: droite_29
       rect:
         serializedVersion: 2
-        x: 6009
-        y: 25
-        width: 156
-        height: 311
+        x: 6007
+        y: 21
+        width: 163
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
