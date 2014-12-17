@@ -295,7 +295,7 @@ AnimationClip:
   m_EditorCurves: []
   m_EulerEditorCurves: []
   m_Events:
-  - time: 3.03999996
+  - time: 2
     functionName: launchIt
     data: 
     objectReferenceParameter: {fileID: 0}
