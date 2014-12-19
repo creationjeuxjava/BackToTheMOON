@@ -14,8 +14,6 @@ public class InGameGUI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		message = "Player en : ";
-		message2 = "Touch en : ";
 		pauseRect = new Rect (Screen.width - 80, 20, buttonSize, buttonSize);
 	}
 	
@@ -34,19 +32,6 @@ public class InGameGUI : MonoBehaviour {
 	/**** Eléments GUI du jeu ****/
 	void OnGUI () {
 		GUI.skin.GetStyle ("Label").fontSize = 12;
-
-		/*** juste utiles au debug ****/
-		GUI.Label(new Rect(30,120,600,100),message);
-		GUI.Label(new Rect(30,90,600,100),message2);
-		GUI.Label(new Rect(30,150,600,100),"isWithCask : "+PlayerController.isWithCask +" || isWithShoe : "+PlayerController.isWithShoe);
-		GUI.Label(new Rect(30,170,600,100),"isFlyBegin : "+PlayerController.isFlyBegin);
-
-		//GUI.Label(AspectUtility.adaptRect(30,120,600,100),message);
-		//GUI.Label(AspectUtility.adaptRect(30,90,600,100),message2);
-
-
-		//GUI.Label (new Rect( 70 ,50,30,30),iconCarte);
-		//GUI.Label (new Rect( 100 ,55,50,50),""+infosGameObject);
 
 		/*** la vitesse du player ****/
 		if (GameController.isInGame) {
@@ -82,11 +67,4 @@ public class InGameGUI : MonoBehaviour {
 			
 	}
 
-
-	/*** mise à jour du message du Label  *****/
-	public static void setMessage(string msg,string msg2){
-
-		message = "Infos Player => "+msg2;
-		message2 = "Altimètre => "+msg;
-	}
 }

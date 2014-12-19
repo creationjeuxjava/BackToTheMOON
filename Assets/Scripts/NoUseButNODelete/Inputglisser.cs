@@ -36,7 +36,7 @@ public class Inputglisser : MonoBehaviour {
 			}
 			
 			//affichage pour debug
-			InGameGUI.setMessage("centré en ("+gameObject.collider2D.bounds.center.x+" , "+gameObject.collider2D.bounds.center.y+") ",
+			DebugInGame.setMessage("centré en ("+gameObject.collider2D.bounds.center.x+" , "+gameObject.collider2D.bounds.center.y+") ",
 			                     "PlayerController: on touche écran en  (" + touchPosition.x + " , " + touchPosition.y + ")");
 		}
 		
@@ -49,7 +49,7 @@ public class Inputglisser : MonoBehaviour {
 			Vector3 touchPosition = Input.mousePosition;
 			touchPosition = camera.ScreenToWorldPoint (touchPosition);
 			//affichage pour debug
-			InGameGUI.setMessage("centré en ("+gameObject.collider2D.bounds.center.x+" , "+gameObject.collider2D.bounds.center.y+") ",
+			DebugInGame.setMessage("centré en ("+gameObject.collider2D.bounds.center.x+" , "+gameObject.collider2D.bounds.center.y+") ",
 			                     "PlayerController: on touche écran en  (" + touchPosition.x + " , " + touchPosition.y + ")");
 			
 			//Debug.Log("ameObject.collider2D.bounds "+gameObject.collider2D.bounds);

@@ -32,7 +32,7 @@ public class GameController : MonoBehaviour {
 	private float gravityLevel;
 	private float startFlyTime;
 
-	private List<GameObject> listeObjectPoolers = new List<GameObject>();
+	//private List<GameObject> listeObjectPoolers = new List<GameObject>();
 	private Dictionary<GameObject,string> dicoObjectPoolers = new Dictionary<GameObject,string>();
 
 	// création initiale
@@ -84,11 +84,7 @@ public class GameController : MonoBehaviour {
 			}
 		}*/
 
-
-
 		if (isWorldMoving == true && !isGameInPause && isInGame) {
-
-
 
 			//temps écoulé depuis le début du lancement
 			float timeSinceStart = Time.time - startFlyTime;
@@ -117,7 +113,7 @@ public class GameController : MonoBehaviour {
 			//calcul de l'altitude
 			altitude = foreLayer.transform.position.y * -1 * coeffAltitude;
 			float vitesse = PlayerController.vitesse.y*-1 * coeffVitesse;
-			InGameGUI.setMessage("ISINSpace :"+isInSpace +" Altitude :"+altitude,"Vitesse Player : "+vitesse+" km/h et nbre pièces : "+nbrePieces);
+			DebugInGame.setMessage("ISINSpace :"+isInSpace +" Altitude :"+altitude,"Vitesse Player : "+vitesse+" km/h et nbre pièces : "+nbrePieces);
 
 			if(PlayerController.vitesse.y > 0){
 				isInGame = false;
