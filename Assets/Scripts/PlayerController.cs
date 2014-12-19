@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-	private bool isMoving;
-	private float speed = 0.75F;
+	/*private bool isMoving;
+	private float speed = 0.75F;*/
 
 	public GameObject fumee;
 	public Animator anim;

@@ -702,7 +702,6 @@ MonoBehaviour:
   fumee: {fileID: 100000, guid: 9154c1accb852d6439e65fe2a3b638be, type: 2}
   anim: {fileID: 0}
   camera: {fileID: 276706956}
-  translation: {x: 0, y: 0, z: 0}
 --- !u!61 &313015604
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3066,6 +3065,7 @@ GameObject:
   - 4: {fileID: 1620950175}
   - 114: {fileID: 1620950174}
   - 114: {fileID: 1620950176}
+  - 114: {fileID: 1620950177}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -3106,6 +3106,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ffa31f7c95f4f04fa3e4427de5493fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1620950177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1620950173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c48a4e0e6333d8345a3fd3f93ab0e3b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1625144565
