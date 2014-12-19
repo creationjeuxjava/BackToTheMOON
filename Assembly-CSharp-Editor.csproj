@@ -129,6 +129,7 @@
      <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetContainerEditor.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIWrapContentEditor.cs" />
+     <Compile Include="Assets\codeandweb.com\Editor\TexturePackerImporter.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.6.7.txt" />
      <None Include="Assets\Plugins\Android\unityads\proguard-project.txt" />
@@ -180,6 +181,7 @@
      <None Include="Assets\ShaderForge\Example Assets\Shaders\CustomLighting.shader" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+     <None Include="Assets\codeandweb.com\Readme.txt" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
      <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />

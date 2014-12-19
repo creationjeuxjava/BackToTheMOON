@@ -67,10 +67,6 @@ public class GameController : MonoBehaviour {
 				
 			}
 
-
-			/*Console.WriteLine("key: " + kvp.Key);
-			Console.WriteLine("values: " + theElement.Symbol + " " +
-			                  theElement.Name + " " + theElement.AtomicNumber);*/
 		}
 
 

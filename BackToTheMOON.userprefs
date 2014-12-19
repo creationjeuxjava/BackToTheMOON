@@ -1,16 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\codeandweb.com\Editor\TexturePackerImporter.cs">
     <Files>
-      <File FileName="Assets\Scripts\GameController.cs" Line="91" Column="1" />
-      <File FileName="Assets\Scripts\CanonController.cs" Line="13" Column="35" />
+      <File FileName="Assets\codeandweb.com\Editor\TexturePackerImporter.cs" Line="134" Column="5" />
+      <File FileName="Assets\Scripts\GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CanonController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Pooling\ObjectPooler.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="21" Column="33" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="40" Column="22" />
       <File FileName="Assets\Scripts\DestroyByOutOffBox.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ControlOutOffScreen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\LevelLoading\LoadLevelcontroller.cs" Line="77" Column="74" />
+      <File FileName="Assets\Scripts\LevelLoading\LoadLevelcontroller.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\TranslationMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Inventory\Inventory.cs" Line="8" Column="73" />
+      <File FileName="Assets\Scripts\Inventory\Inventory.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\InGameGUI.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

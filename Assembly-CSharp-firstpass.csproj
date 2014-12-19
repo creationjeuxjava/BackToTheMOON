@@ -139,6 +139,7 @@
      <None Include="Assets\ShaderForge\Example Assets\Shaders\CustomLighting.shader" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+     <None Include="Assets\codeandweb.com\Readme.txt" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
      <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />

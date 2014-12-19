@@ -193,6 +193,7 @@
      <Compile Include="Assets\Scripts\Inventory\Item.cs" />
      <Compile Include="Assets\Scripts\LevelLoading\LoadLevelcontroller.cs" />
      <Compile Include="Assets\Scripts\MenuGUI.cs" />
+     <Compile Include="Assets\Scripts\NoUseButNODelete\Inputglisser.cs" />
      <Compile Include="Assets\Scripts\NoUseButNODelete\Parallax.cs" />
      <Compile Include="Assets\Scripts\NoUseButNODelete\ResponsiveController.cs" />
      <Compile Include="Assets\Scripts\NoUseButNODelete\TestBougeShader.cs" />
@@ -254,6 +255,7 @@
      <None Include="Assets\ShaderForge\Example Assets\Shaders\CustomLighting.shader" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+     <None Include="Assets\codeandweb.com\Readme.txt" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
      <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />
