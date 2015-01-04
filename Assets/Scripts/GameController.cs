@@ -194,8 +194,28 @@ public class GameController : MonoBehaviour {
 		isOverGUIPause = value;
 	}
 
+
 	public static bool isGamePaused(){return isGameInPause;}
 	public static bool isOverGUI(){return isOverGUIPause;}
 
+	void Awake() {
+		if (Advertisement.isSupported) {
+			Advertisement.allowPrecache = true;
+			Advertisement.Initialize ("22375");
+		} else {
+			Debug.Log("Platform not supported");
+		}
+	}
+	void OnGUI() {
+		if(GUI.Button(new Rect(140, 40, 150, 50), Advertisement.isReady() ? "Montrer ADS" : "En chargement ADS...")) {
+			// Show with default zone, pause engine and print result to debug log
+			Advertisement.Show(null, new ShowOptions {
+				pause = true,
+				resultCallback = result => {
+					Debug.Log(result.ToString());
+				}
+			});
+		}
+	}
 
 }
