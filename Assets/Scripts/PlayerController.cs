@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
+
+    /*Nettoyage à faire */
 	/*private bool isMoving;
 	private float speed = 0.75F;*/
 
