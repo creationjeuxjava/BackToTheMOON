@@ -16,6 +16,11 @@ public class GUInventory : MonoBehaviour {
 	
 	}
 
+   public  void ShowLabel()
+    {
+        Debug.Log("Shoes depuis inventaire !");
+    }
+
 	/**** Eléments GUI du jeu ****/
 	void OnGUI () {
 
