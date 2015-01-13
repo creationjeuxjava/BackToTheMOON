@@ -49,7 +49,7 @@
      <Compile Include="Assets\codeandweb.com\Editor\TexturePackerImporter.cs" />
      <None Include="Assets\Plugins\Android\unityads\proguard-project.txt" />
      <None Include="Assets\Plugins\Android\unityads\build.xml" />
-     <None Include="Assets\link.xml" />
+     <None Include="Assets\BenjiAssets\12-01-2015\link.xml" />
      <None Include="Assets\Plugins\Android\unityads\res\values\strings.xml" />
      <None Include="Assets\Shader\levelSwitch.shader" />
      <None Include="Assets\Resources\XML\testXML.xml" />

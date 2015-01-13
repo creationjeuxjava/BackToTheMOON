@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 6a03d2127deb340b096e248e0eaedabc
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Composition 2_00000
+    21300002: Composition 2_00001
+    21300004: Composition 2_00002
+    21300006: Composition 2_00003
+    21300008: Composition 2_00004
+    21300010: Composition 2_00005
+    21300012: Composition 2_00006
+    21300014: Composition 2_00007
+    21300016: Composition 2_00008
+    21300018: Composition 2_00009
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Composition 2_00000
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1919
+        width: 800
+        height: 427
+      alignment: 9
+      pivot: {x: .5, y: .503512859}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Composition 2_00001
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1919
+        width: 800
+        height: 427
+      alignment: 9
+      pivot: {x: .5, y: .503512859}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Composition 2_00002
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1442
+        width: 800
+        height: 427
+      alignment: 9
+      pivot: {x: .5, y: .503512859}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Composition 2_00003
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1442
+        width: 800
+        height: 427
+      alignment: 9
+      pivot: {x: .5, y: .503512859}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Composition 2_00004
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 965
+        width: 800
+        height: 427
+      alignment: 9
+      pivot: {x: .5, y: .503512859}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Composition 2_00005
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 965
+        width: 800
+        height: 427
+      alignment: 9
+      pivot: {x: .5, y: .503512859}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Composition 2_00006
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 488
+        width: 800
+        height: 427
+      alignment: 9
+      pivot: {x: .5, y: .503512859}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Composition 2_00007
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 11
+        width: 800
+        height: 427
+      alignment: 9
+      pivot: {x: .5, y: .503512859}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Composition 2_00008
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 488
+        width: 800
+        height: 427
+      alignment: 9
+      pivot: {x: .5, y: .503512859}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Composition 2_00009
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 11
+        width: 800
+        height: 427
+      alignment: 9
+      pivot: {x: .5, y: .503512859}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

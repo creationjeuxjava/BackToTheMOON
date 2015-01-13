@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 5e6622dd8451c494981574d5b1da702d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: vapeur_00001
+    21300002: vapeur_00002
+    21300004: vapeur_00003
+    21300006: vapeur_00004
+    21300008: vapeur_00005
+    21300010: vapeur_00006
+    21300012: vapeur_00007
+    21300014: vapeur_00008
+    21300016: vapeur_00009
+    21300018: vapeur_00010
+    21300020: vapeur_00011
+    21300022: vapeur_00012
+    21300024: vapeur_00013
+    21300026: vapeur_00014
+    21300028: vapeur_00015
+    21300030: vapeur_00016
+    21300032: vapeur_00017
+    21300034: vapeur_00018
+    21300036: vapeur_00019
+    21300038: vapeur_00020
+    21300040: vapeur_00021
+    21300042: vapeur_00022
+    21300044: vapeur_00023
+    21300046: vapeur_00024
+    21300048: vapeur_00025
+    21300050: vapeur_00026
+    21300052: vapeur_00027
+    21300054: vapeur_00028
+    21300056: vapeur_00029
+    21300058: vapeur_00030
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: vapeur_00001
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 334
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 400, y: -224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00002
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 709
+        width: 5
+        height: 14
+      alignment: 9
+      pivot: {x: 80, y: 3.35714293}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00003
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 530
+        width: 59
+        height: 33
+      alignment: 9
+      pivot: {x: 6.77966118, y: 1.69696975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00004
+      rect:
+        serializedVersion: 2
+        x: 2519
+        y: 283
+        width: 84
+        height: 44
+      alignment: 9
+      pivot: {x: 4.76190472, y: 1.18181813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00005
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 502
+        width: 101
+        height: 61
+      alignment: 9
+      pivot: {x: 3.96039605, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00006
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1249
+        width: 154
+        height: 101
+      alignment: 9
+      pivot: {x: 2.59740257, y: .732673287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00007
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 613
+        width: 182
+        height: 104
+      alignment: 9
+      pivot: {x: 2.19780231, y: .615384638}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00008
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 154
+        width: 229
+        height: 127
+      alignment: 9
+      pivot: {x: 1.74672484, y: .795275569}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00009
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1197
+        width: 288
+        height: 153
+      alignment: 9
+      pivot: {x: 1.38888884, y: .836601317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00010
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 377
+        width: 324
+        height: 170
+      alignment: 9
+      pivot: {x: 1.23456788, y: .805882335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00011
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 847
+        width: 401
+        height: 186
+      alignment: 9
+      pivot: {x: .997506261, y: .774193525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00012
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 597
+        width: 364
+        height: 200
+      alignment: 9
+      pivot: {x: 1.09890115, y: .745000005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00013
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 1456
+        width: 360
+        height: 237
+      alignment: 9
+      pivot: {x: 1.11111116, y: .654008448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00014
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 1083
+        width: 397
+        height: 267
+      alignment: 9
+      pivot: {x: 1.00755668, y: .584269643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00015
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 1743
+        width: 432
+        height: 295
+      alignment: 9
+      pivot: {x: .92592591, y: .528813541}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00016
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 12
+        width: 470
+        height: 315
+      alignment: 9
+      pivot: {x: .851063848, y: .48888889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00017
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1716
+        width: 507
+        height: 322
+      alignment: 9
+      pivot: {x: .788954616, y: .478260875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00018
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 331
+        width: 545
+        height: 328
+      alignment: 9
+      pivot: {x: .733944952, y: .478658527}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00019
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 806
+        width: 575
+        height: 332
+      alignment: 9
+      pivot: {x: .695652187, y: .481927723}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00020
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 107
+        width: 593
+        height: 293
+      alignment: 9
+      pivot: {x: .674536228, y: .525597274}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00021
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1400
+        width: 605
+        height: 266
+      alignment: 9
+      pivot: {x: .661157012, y: .537593961}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00022
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 49
+        width: 622
+        height: 286
+      alignment: 9
+      pivot: {x: .643086791, y: .486013979}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00023
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 450
+        width: 657
+        height: 306
+      alignment: 9
+      pivot: {x: .608828008, y: .477124184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00024
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 385
+        width: 701
+        height: 338
+      alignment: 9
+      pivot: {x: .570613384, y: .470414191}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00025
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 767
+        width: 741
+        height: 371
+      alignment: 9
+      pivot: {x: .539811075, y: .450134784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00026
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 773
+        width: 781
+        height: 375
+      alignment: 9
+      pivot: {x: .512163877, y: .453333348}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00027
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1198
+        width: 800
+        height: 378
+      alignment: 9
+      pivot: {x: .5, y: .476190478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00028
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1188
+        width: 800
+        height: 394
+      alignment: 9
+      pivot: {x: .5, y: .479695439}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00029
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1632
+        width: 800
+        height: 406
+      alignment: 9
+      pivot: {x: .5, y: .480295569}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vapeur_00030
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1626
+        width: 800
+        height: 412
+      alignment: 9
+      pivot: {x: .5, y: .483009696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

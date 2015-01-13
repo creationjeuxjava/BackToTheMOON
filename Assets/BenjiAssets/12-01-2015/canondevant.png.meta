@@ -1,0 +1,927 @@
+fileFormatVersion: 2
+guid: fd0c27f6c1fcc4634877c32be1ae60dc
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: animecanon_00001
+    21300002: animecanon_00002
+    21300004: animecanon_00003
+    21300006: animecanon_00004
+    21300008: animecanon_00005
+    21300010: animecanon_00006
+    21300012: animecanon_00007
+    21300014: animecanon_00008
+    21300016: animecanon_00009
+    21300018: animecanon_00010
+    21300020: animecanon_00011
+    21300022: animecanon_00012
+    21300024: animecanon_00013
+    21300026: animecanon_00014
+    21300028: animecanon_00015
+    21300030: animecanon_00016
+    21300032: animecanon_00017
+    21300034: animecanon_00018
+    21300036: animecanon_00019
+    21300038: animecanon_00020
+    21300040: animecanon_00021
+    21300042: animecanon_00022
+    21300044: animecanon_00023
+    21300046: animecanon_00024
+    21300048: animecanon_00025
+    21300050: animecanon_00026
+    21300052: animecanon_00027
+    21300054: animecanon_00028
+    21300056: animecanon_00029
+    21300058: animecanon_00030
+    21300060: animecanon_00031
+    21300062: animecanon_00032
+    21300064: animecanon_00033
+    21300066: animecanon_00034
+    21300068: animecanon_00035
+    21300070: animecanon_00036
+    21300072: animecanon_00037
+    21300074: animecanon_00038
+    21300076: animecanon_00039
+    21300078: animecanon_00040
+    21300080: animecanon_00041
+    21300082: animecanon_00042
+    21300084: animecanon_00043
+    21300086: animecanon_00044
+    21300088: animecanon_00045
+    21300090: animecanon_00046
+    21300092: animecanon_00047
+    21300094: animecanon_00048
+    21300096: animecanon_00049
+    21300098: animecanon_00050
+    21300100: animecanon_00051
+    21300102: animecanon_00052
+    21300104: animecanon_00053
+    21300106: animecanon_00054
+    21300108: animecanon_00055
+    21300110: animecanon_00056
+    21300112: animecanon_00057
+    21300114: animecanon_00058
+    21300116: animecanon_00059
+    21300118: animecanon_00060
+    21300120: animecanon_00061
+    21300122: animecanon_00062
+    21300124: animecanon_00063
+    21300126: animecanon_00064
+    21300128: animecanon_00065
+    21300130: animecanon_00066
+    21300132: animecanon_00067
+    21300134: animecanon_00068
+    21300136: animecanon_00069
+    21300138: animecanon_00070
+    21300140: animecanon_00071
+    21300142: animecanon_00072
+    21300144: animecanon_00073
+    21300146: animecanon_00074
+    21300148: animecanon_00075
+    21300150: animecanon_00076
+    21300152: animecanon_00077
+    21300154: animecanon_00078
+    21300156: animecanon_00079
+    21300158: animecanon_00080
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: animecanon_00001
+      rect:
+        serializedVersion: 2
+        x: 3786
+        y: 3232
+        width: 483
+        height: 591
+      alignment: 9
+      pivot: {x: 1.40993786, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00002
+      rect:
+        serializedVersion: 2
+        x: 4279
+        y: 3232
+        width: 481
+        height: 591
+      alignment: 9
+      pivot: {x: 1.41164243, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00003
+      rect:
+        serializedVersion: 2
+        x: 4770
+        y: 3232
+        width: 479
+        height: 591
+      alignment: 9
+      pivot: {x: 1.41336119, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00004
+      rect:
+        serializedVersion: 2
+        x: 5259
+        y: 3232
+        width: 478
+        height: 591
+      alignment: 9
+      pivot: {x: 1.41422594, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00005
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 2669
+        width: 476
+        height: 591
+      alignment: 9
+      pivot: {x: 1.41596639, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00006
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 2659
+        width: 475
+        height: 591
+      alignment: 9
+      pivot: {x: 1.4168421, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00007
+      rect:
+        serializedVersion: 2
+        x: 2681
+        y: 2650
+        width: 473
+        height: 591
+      alignment: 9
+      pivot: {x: 1.41860461, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00008
+      rect:
+        serializedVersion: 2
+        x: 3164
+        y: 2640
+        width: 472
+        height: 591
+      alignment: 9
+      pivot: {x: 1.41949153, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00009
+      rect:
+        serializedVersion: 2
+        x: 3646
+        y: 2631
+        width: 471
+        height: 591
+      alignment: 9
+      pivot: {x: 1.42038214, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00010
+      rect:
+        serializedVersion: 2
+        x: 4127
+        y: 2631
+        width: 471
+        height: 591
+      alignment: 9
+      pivot: {x: 1.42038214, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00011
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2631
+        width: 472
+        height: 591
+      alignment: 9
+      pivot: {x: 1.41949153, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00012
+      rect:
+        serializedVersion: 2
+        x: 5090
+        y: 2631
+        width: 474
+        height: 591
+      alignment: 9
+      pivot: {x: 1.41772151, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00013
+      rect:
+        serializedVersion: 2
+        x: 5574
+        y: 2605
+        width: 476
+        height: 591
+      alignment: 9
+      pivot: {x: 1.41596639, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00014
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 2077
+        width: 478
+        height: 591
+      alignment: 9
+      pivot: {x: 1.41422594, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00015
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 2068
+        width: 480
+        height: 591
+      alignment: 9
+      pivot: {x: 1.41250002, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00016
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 2058
+        width: 483
+        height: 591
+      alignment: 9
+      pivot: {x: 1.40993786, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00017
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 2049
+        width: 485
+        height: 591
+      alignment: 9
+      pivot: {x: 1.40824747, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00018
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 2039
+        width: 491
+        height: 591
+      alignment: 9
+      pivot: {x: 1.40325868, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00019
+      rect:
+        serializedVersion: 2
+        x: 3326
+        y: 2030
+        width: 494
+        height: 591
+      alignment: 9
+      pivot: {x: 1.40080976, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00020
+      rect:
+        serializedVersion: 2
+        x: 3830
+        y: 2030
+        width: 496
+        height: 591
+      alignment: 9
+      pivot: {x: 1.39919353, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00021
+      rect:
+        serializedVersion: 2
+        x: 4336
+        y: 2030
+        width: 498
+        height: 591
+      alignment: 9
+      pivot: {x: 1.3975904, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00022
+      rect:
+        serializedVersion: 2
+        x: 4844
+        y: 2030
+        width: 500
+        height: 591
+      alignment: 9
+      pivot: {x: 1.39600003, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00023
+      rect:
+        serializedVersion: 2
+        x: 5354
+        y: 2004
+        width: 503
+        height: 591
+      alignment: 9
+      pivot: {x: 1.39363813, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1495
+        width: 506
+        height: 591
+      alignment: 9
+      pivot: {x: 1.39130437, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00025
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1476
+        width: 510
+        height: 591
+      alignment: 9
+      pivot: {x: 1.38823533, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00026
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 1467
+        width: 515
+        height: 591
+      alignment: 9
+      pivot: {x: 1.38446605, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00027
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 1457
+        width: 519
+        height: 591
+      alignment: 9
+      pivot: {x: 1.38150287, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00028
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 1448
+        width: 523
+        height: 591
+      alignment: 9
+      pivot: {x: 1.3785851, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00029
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 1438
+        width: 527
+        height: 591
+      alignment: 9
+      pivot: {x: 1.37571156, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00030
+      rect:
+        serializedVersion: 2
+        x: 3161
+        y: 1429
+        width: 532
+        height: 591
+      alignment: 9
+      pivot: {x: 1.37218046, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00031
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 1429
+        width: 537
+        height: 591
+      alignment: 9
+      pivot: {x: 1.36871505, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00032
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 1429
+        width: 542
+        height: 591
+      alignment: 9
+      pivot: {x: 1.36531365, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00033
+      rect:
+        serializedVersion: 2
+        x: 5340
+        y: 1403
+        width: 547
+        height: 591
+      alignment: 9
+      pivot: {x: 1.36197436, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00034
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 875
+        width: 553
+        height: 591
+      alignment: 9
+      pivot: {x: 1.35804701, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00035
+      rect:
+        serializedVersion: 2
+        x: 4802
+        y: 1429
+        width: 528
+        height: 591
+      alignment: 9
+      pivot: {x: 1.375, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00036
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 2096
+        width: 430
+        height: 591
+      alignment: 9
+      pivot: {x: 1.46046507, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00037
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2707
+        width: 428
+        height: 591
+      alignment: 9
+      pivot: {x: 1.4626168, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00038
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 2697
+        width: 415
+        height: 591
+      alignment: 9
+      pivot: {x: 1.47710848, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00039
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 2678
+        width: 418
+        height: 591
+      alignment: 9
+      pivot: {x: 1.47368419, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00040
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2688
+        width: 408
+        height: 591
+      alignment: 9
+      pivot: {x: 1.4852941, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00041
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2106
+        width: 408
+        height: 591
+      alignment: 9
+      pivot: {x: 1.4852941, y: -.0659898445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00042
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 3241
+        width: 408
+        height: 582
+      alignment: 9
+      pivot: {x: 1.4852941, y: -.0670103058}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00043
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 3251
+        width: 409
+        height: 572
+      alignment: 9
+      pivot: {x: 1.48410761, y: -.0681818202}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00044
+      rect:
+        serializedVersion: 2
+        x: 2530
+        y: 3260
+        width: 409
+        height: 563
+      alignment: 9
+      pivot: {x: 1.48410761, y: -.0692717582}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00045
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 3270
+        width: 409
+        height: 553
+      alignment: 9
+      pivot: {x: 1.48410761, y: -.0705244094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00046
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 3279
+        width: 410
+        height: 544
+      alignment: 9
+      pivot: {x: 1.48292685, y: -.0716911778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00047
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 3289
+        width: 410
+        height: 534
+      alignment: 9
+      pivot: {x: 1.48292685, y: -.0730337054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00048
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 3298
+        width: 420
+        height: 525
+      alignment: 9
+      pivot: {x: 1.47142851, y: -.0742857158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00049
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3308
+        width: 429
+        height: 515
+      alignment: 9
+      pivot: {x: 1.46153843, y: -.0757281557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00050
+      rect:
+        serializedVersion: 2
+        x: 2129
+        y: 3270
+        width: 391
+        height: 553
+      alignment: 9
+      pivot: {x: 1.50639391, y: -.0705244094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00051
+      rect:
+        serializedVersion: 2
+        x: 5747
+        y: 3206
+        width: 380
+        height: 617
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0632090792}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00052
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 829
+        width: 380
+        height: 637
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0612244904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00053
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 803
+        width: 380
+        height: 654
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0596330278}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00054
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 96
+        width: 380
+        height: 669
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0582959652}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00055
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 72
+        width: 380
+        height: 681
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0572687238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00056
+      rect:
+        serializedVersion: 2
+        x: 2731
+        y: 52
+        width: 380
+        height: 691
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0564399436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00057
+      rect:
+        serializedVersion: 2
+        x: 3511
+        y: 43
+        width: 380
+        height: 700
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0557142869}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00058
+      rect:
+        serializedVersion: 2
+        x: 4681
+        y: 35
+        width: 380
+        height: 708
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0550847463}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00059
+      rect:
+        serializedVersion: 2
+        x: 5461
+        y: 1
+        width: 380
+        height: 715
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0545454547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00060
+      rect:
+        serializedVersion: 2
+        x: 3121
+        y: 44
+        width: 380
+        height: 699
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0557939932}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00061
+      rect:
+        serializedVersion: 2
+        x: 3901
+        y: 37
+        width: 380
+        height: 706
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.055240795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00062
+      rect:
+        serializedVersion: 2
+        x: 4291
+        y: 37
+        width: 380
+        height: 706
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.055240795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00063
+      rect:
+        serializedVersion: 2
+        x: 5071
+        y: 3
+        width: 380
+        height: 713
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0546984561}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00064
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 763
+        width: 380
+        height: 665
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0586466156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00065
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 753
+        width: 380
+        height: 666
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0585585572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00066
+      rect:
+        serializedVersion: 2
+        x: 3294
+        y: 753
+        width: 380
+        height: 666
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0585585572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00067
+      rect:
+        serializedVersion: 2
+        x: 3684
+        y: 753
+        width: 380
+        height: 666
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0585585572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00068
+      rect:
+        serializedVersion: 2
+        x: 5244
+        y: 726
+        width: 380
+        height: 667
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0584707633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00069
+      rect:
+        serializedVersion: 2
+        x: 5634
+        y: 726
+        width: 380
+        height: 667
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0584707633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00070
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 198
+        width: 380
+        height: 667
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0584707633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00071
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 152
+        width: 380
+        height: 667
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0584707633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00072
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 126
+        width: 380
+        height: 667
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0584707633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00073
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 110
+        width: 380
+        height: 667
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0584707633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00074
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 99
+        width: 380
+        height: 667
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0584707633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00075
+      rect:
+        serializedVersion: 2
+        x: 4074
+        y: 753
+        width: 380
+        height: 666
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0585585572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00076
+      rect:
+        serializedVersion: 2
+        x: 4464
+        y: 753
+        width: 380
+        height: 666
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0585585572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00077
+      rect:
+        serializedVersion: 2
+        x: 4854
+        y: 753
+        width: 380
+        height: 666
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0585585572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00078
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 775
+        width: 380
+        height: 663
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0588235296}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00079
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 776
+        width: 380
+        height: 662
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0589123853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animecanon_00080
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 787
+        width: 380
+        height: 660
+      alignment: 9
+      pivot: {x: 1.5210526, y: -.0590909086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

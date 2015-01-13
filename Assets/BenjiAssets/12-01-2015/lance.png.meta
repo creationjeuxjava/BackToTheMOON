@@ -1,0 +1,344 @@
+fileFormatVersion: 2
+guid: 25546e326adbf4beba0f4e9fa1ffe26e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Untitled 2_00001
+    21300002: Untitled 2_00002
+    21300004: Untitled 2_00003
+    21300006: Untitled 2_00004
+    21300008: Untitled 2_00005
+    21300010: Untitled 2_00006
+    21300012: Untitled 2_00007
+    21300014: Untitled 2_00008
+    21300016: Untitled 2_00009
+    21300018: Untitled 2_00010
+    21300020: Untitled 2_00011
+    21300022: Untitled 2_00012
+    21300024: Untitled 2_00013
+    21300026: Untitled 2_00014
+    21300028: Untitled 2_00015
+    21300030: Untitled 2_00016
+    21300032: Untitled 2_00017
+    21300034: Untitled 2_00018
+    21300036: Untitled 2_00019
+    21300038: Untitled 2_00020
+    21300040: Untitled 2_00021
+    21300042: Untitled 2_00022
+    21300044: Untitled 2_00023
+    21300046: Untitled 2_00024
+    21300048: Untitled 2_00025
+    21300050: Untitled 2_00026
+    21300052: Untitled 2_00027
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 90
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Untitled 2_00001
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 1805
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 375, y: -599}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00002
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 1856
+        width: 8
+        height: 4
+      alignment: 9
+      pivot: {x: 46.875, y: 108.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00003
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 1910
+        width: 76
+        height: 126
+      alignment: 9
+      pivot: {x: 4.9342103, y: 3.42857146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00004
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 676
+        width: 147
+        height: 155
+      alignment: 9
+      pivot: {x: 2.55102038, y: 2.72258067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00005
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 436
+        width: 220
+        height: 190
+      alignment: 9
+      pivot: {x: 1.7045455, y: 2.19473696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00006
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 433
+        width: 294
+        height: 229
+      alignment: 9
+      pivot: {x: 1.27551019, y: 1.8034935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00007
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 26
+        width: 367
+        height: 276
+      alignment: 9
+      pivot: {x: 1.02179837, y: 1.48550725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00008
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 81
+        width: 439
+        height: 302
+      alignment: 9
+      pivot: {x: .854214132, y: 1.31125832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00009
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 352
+        width: 509
+        height: 315
+      alignment: 9
+      pivot: {x: .736738682, y: 1.19047618}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00010
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 85
+        width: 574
+        height: 345
+      alignment: 9
+      pivot: {x: .65331012, y: 1.09855068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00011
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 480
+        width: 633
+        height: 376
+      alignment: 9
+      pivot: {x: .592417061, y: 1.04255319}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00012
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 906
+        width: 684
+        height: 407
+      alignment: 9
+      pivot: {x: .548245609, y: 1.01965606}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00013
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1363
+        width: 727
+        height: 435
+      alignment: 9
+      pivot: {x: .515818417, y: 1.02528739}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00014
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1848
+        width: 729
+        height: 458
+      alignment: 9
+      pivot: {x: .485596716, y: 1.05240178}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00015
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1835
+        width: 684
+        height: 471
+      alignment: 9
+      pivot: {x: .451754391, y: 1.08917201}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00016
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 1834
+        width: 638
+        height: 472
+      alignment: 9
+      pivot: {x: .412225693, y: 1.12923729}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00017
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1296
+        width: 590
+        height: 489
+      alignment: 9
+      pivot: {x: .364406794, y: 1.13292432}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00018
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1278
+        width: 541
+        height: 506
+      alignment: 9
+      pivot: {x: .306839198, y: 1.12450588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00019
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 733
+        width: 491
+        height: 513
+      alignment: 9
+      pivot: {x: .236252546, y: 1.12865496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00020
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 717
+        width: 439
+        height: 511
+      alignment: 9
+      pivot: {x: .145785883, y: 1.14285719}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00021
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 183
+        width: 382
+        height: 500
+      alignment: 9
+      pivot: {x: .018324608, y: 1.16999996}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00022
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 712
+        width: 315
+        height: 486
+      alignment: 9
+      pivot: {x: -.190476194, y: 1.20576131}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00023
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 1248
+        width: 242
+        height: 361
+      alignment: 9
+      pivot: {x: -.549586773, y: 1.32963991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00024
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 881
+        width: 167
+        height: 347
+      alignment: 9
+      pivot: {x: -1.24550903, y: 1.39769447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00025
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 2086
+        width: 95
+        height: 220
+      alignment: 9
+      pivot: {x: -2.94736838, y: 2.2136364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00026
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 1659
+        width: 29
+        height: 201
+      alignment: 9
+      pivot: {x: -11.9310341, y: 2.44278598}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Untitled 2_00027
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 1754
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 375, y: -599}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: 5f5102d5d7ed1481687ab8f70668dfd8
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sans titre - 10001
+    21300002: Sans titre - 10002
+    21300004: Sans titre - 10003
+    21300006: Sans titre - 10004
+    21300008: Sans titre - 10005
+    21300010: Sans titre - 10006
+    21300012: Sans titre - 10007
+    21300014: Sans titre - 10008
+    21300016: Sans titre - 10009
+    21300018: Sans titre - 10010
+    21300020: Sans titre - 10011
+    21300022: Sans titre - 10012
+    21300024: Sans titre - 10013
+    21300026: Sans titre - 10014
+    21300028: Sans titre - 10015
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 65
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sans titre - 10001
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 191
+        width: 52
+        height: 39
+      alignment: 9
+      pivot: {x: .615384638, y: .384615391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 10002
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 102
+        width: 51
+        height: 39
+      alignment: 9
+      pivot: {x: .627451003, y: .384615391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 10003
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 12
+        width: 49
+        height: 39
+      alignment: 9
+      pivot: {x: .632653058, y: .384615391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 10004
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 190
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: .645833313, y: .375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 10005
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 10
+        width: 49
+        height: 40
+      alignment: 9
+      pivot: {x: .632653058, y: .375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 10006
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 190
+        width: 49
+        height: 40
+      alignment: 9
+      pivot: {x: .612244904, y: .375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 10007
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 100
+        width: 49
+        height: 40
+      alignment: 9
+      pivot: {x: .591836751, y: .375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 10008
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 10
+        width: 49
+        height: 40
+      alignment: 9
+      pivot: {x: .571428597, y: .375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 10009
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 10
+        width: 50
+        height: 40
+      alignment: 9
+      pivot: {x: .579999983, y: .375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 10010
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 190
+        width: 51
+        height: 40
+      alignment: 9
+      pivot: {x: .588235319, y: .375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 10011
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 100
+        width: 51
+        height: 40
+      alignment: 9
+      pivot: {x: .588235319, y: .375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 10012
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 190
+        width: 52
+        height: 40
+      alignment: 9
+      pivot: {x: .596153855, y: .375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 10013
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 100
+        width: 52
+        height: 40
+      alignment: 9
+      pivot: {x: .596153855, y: .375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 10014
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 52
+        height: 40
+      alignment: 9
+      pivot: {x: .615384638, y: .375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 10015
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 101
+        width: 52
+        height: 39
+      alignment: 9
+      pivot: {x: .615384638, y: .384615391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

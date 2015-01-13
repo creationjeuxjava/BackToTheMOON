@@ -79,7 +79,7 @@ public class TexturePackerImporter : AssetPostprocessor
 		if (importer.textureType != TextureImporterType.Advanced) {
 			importer.textureType = TextureImporterType.Sprite;
 		}
-		importer.maxTextureSize = 2048;//4096;
+		importer.maxTextureSize = 4096;
 		importer.spriteImportMode = SpriteImportMode.Multiple;
 
 		string[] dataFileContent = File.ReadAllLines(pathToData);

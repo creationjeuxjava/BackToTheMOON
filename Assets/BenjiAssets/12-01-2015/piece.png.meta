@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: d9bd419943eea4b438ec2706694f0fad
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: piece0000
+    21300002: piece0001
+    21300004: piece0002
+    21300006: piece0003
+    21300008: piece0004
+    21300010: piece0005
+    21300012: piece0006
+    21300014: piece0007
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: piece0000
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 517
+        width: 455
+        height: 453
+      alignment: 9
+      pivot: {x: .498901099, y: .503311276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: piece0001
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 11
+        width: 343
+        height: 453
+      alignment: 9
+      pivot: {x: .428571433, y: .503311276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: piece0002
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 13
+        width: 34
+        height: 452
+      alignment: 9
+      pivot: {x: .588235319, y: .502212405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: piece0003
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 11
+        width: 350
+        height: 453
+      alignment: 9
+      pivot: {x: .5657143, y: .503311276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: piece0004
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 14
+        width: 455
+        height: 453
+      alignment: 9
+      pivot: {x: .496703297, y: .503311276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: piece0005
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 514
+        width: 334
+        height: 456
+      alignment: 9
+      pivot: {x: .425149709, y: .502192974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: piece0006
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 515
+        width: 49
+        height: 455
+      alignment: 9
+      pivot: {x: .591836751, y: .503296733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: piece0007
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 514
+        width: 359
+        height: 456
+      alignment: 9
+      pivot: {x: .562674105, y: .502192974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
