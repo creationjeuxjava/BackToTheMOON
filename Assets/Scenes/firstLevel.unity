@@ -598,12 +598,12 @@ GameObject:
   - 81: {fileID: 276706953}
   - 114: {fileID: 276706952}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: CameraBenjiTestAssets
   m_TagString: Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &276706952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1763,7 +1763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &974009673
 Transform:
   m_ObjectHideFlags: 0
@@ -1844,7 +1844,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &999640361
 Transform:
   m_ObjectHideFlags: 0
@@ -3072,12 +3072,12 @@ GameObject:
   - 92: {fileID: 1421484489}
   - 81: {fileID: 1421484488}
   m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
+  m_Name: CameraGame
+  m_TagString: Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1421484488
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3119,7 +3119,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 14.6000004
+  orthographic size: 26.5607567
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -3138,7 +3138,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1421484487}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .200000003, y: -10.8999996, z: -146}
+  m_LocalPosition: {x: .200000003, y: -8.39999962, z: -146}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
