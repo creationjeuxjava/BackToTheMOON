@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\NoUseButNODelete\ResponsiveController.cs" />
      <Compile Include="Assets\Scripts\NoUseButNODelete\TestBougeShader.cs" />
      <Compile Include="Assets\Scripts\NoUseButNODelete\TestScript.cs" />
+     <Compile Include="Assets\Scripts\PlayButtonManager.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Pooling\ObjectPooler.cs" />
      <Compile Include="Assets\Scripts\SinusMovement.cs" />
