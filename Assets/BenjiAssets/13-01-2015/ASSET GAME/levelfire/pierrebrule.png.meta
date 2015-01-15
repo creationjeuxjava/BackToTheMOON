@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: a49fdbbe966e34df9b79ef8423511a23
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pierrebrule_00001
+    21300002: pierrebrule_00002
+    21300004: pierrebrule_00003
+    21300006: pierrebrule_00004
+    21300008: pierrebrule_00005
+    21300010: pierrebrule_00006
+    21300012: pierrebrule_00007
+    21300014: pierrebrule_00008
+    21300016: pierrebrule_00009
+    21300018: pierrebrule_00010
+    21300020: pierrebrule_00011
+    21300022: pierrebrule_00012
+    21300024: pierrebrule_00013
+    21300026: pierrebrule_00014
+    21300028: pierrebrule_00015
+    21300030: pierrebrule_00016
+    21300032: pierrebrule_00017
+    21300034: pierrebrule_00018
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: pierrebrule_00001
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 678
+        width: 306
+        height: 573
+      alignment: 9
+      pivot: {x: .375817001, y: .6893543}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00002
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 51
+        width: 206
+        height: 512
+      alignment: 9
+      pivot: {x: .490291268, y: .794921875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00003
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 718
+        width: 274
+        height: 615
+      alignment: 9
+      pivot: {x: .383211672, y: .728455305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00004
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 719
+        width: 274
+        height: 614
+      alignment: 9
+      pivot: {x: .383211672, y: .728013039}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00005
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 657
+        width: 319
+        height: 594
+      alignment: 9
+      pivot: {x: .435736686, y: .708754182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00006
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1321
+        width: 319
+        height: 653
+      alignment: 9
+      pivot: {x: .435736686, y: .735068917}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00007
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 635
+        width: 291
+        height: 636
+      alignment: 9
+      pivot: {x: .436426103, y: .732704401}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00008
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 13
+        width: 291
+        height: 615
+      alignment: 9
+      pivot: {x: .436426103, y: .723577261}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00009
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1330
+        width: 297
+        height: 644
+      alignment: 9
+      pivot: {x: .441077441, y: .695652187}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00010
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1383
+        width: 297
+        height: 591
+      alignment: 9
+      pivot: {x: .441077441, y: .668358743}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00011
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1353
+        width: 297
+        height: 621
+      alignment: 9
+      pivot: {x: .441077441, y: .684380054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00012
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 1301
+        width: 280
+        height: 673
+      alignment: 9
+      pivot: {x: .360714287, y: .717682004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00013
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 613
+        width: 280
+        height: 658
+      alignment: 9
+      pivot: {x: .360714287, y: .711246192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00014
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 13
+        width: 294
+        height: 615
+      alignment: 9
+      pivot: {x: .425170064, y: .72682929}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00015
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 10
+        width: 294
+        height: 597
+      alignment: 9
+      pivot: {x: .425170064, y: .718592942}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00016
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 65
+        width: 272
+        height: 604
+      alignment: 9
+      pivot: {x: .400735289, y: .698675513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00017
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 1388
+        width: 272
+        height: 586
+      alignment: 9
+      pivot: {x: .400735289, y: .689419806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pierrebrule_00018
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 21
+        width: 238
+        height: 564
+      alignment: 9
+      pivot: {x: .424369752, y: .702127635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -105,8 +105,8 @@ public class GameController : MonoBehaviour {
 
 
 			//chaque partie avance à une vitesse différente == parallax
-			backBackLayer.transform.Translate (playerSpeed / 3.7f);
-			backLayer.transform.Translate (playerSpeed / 3);
+			backBackLayer.transform.Translate (playerSpeed / 3f);
+			backLayer.transform.Translate (playerSpeed / 2);
 			middleLayer.transform.Translate (playerSpeed / 1.5f);
 			foreLayer.transform.Translate (playerSpeed);
 

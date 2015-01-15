@@ -1,0 +1,113 @@
+fileFormatVersion: 2
+guid: 301740732e8a742b2a56500ed6418d32
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sans titre - 30000
+    21300002: Sans titre - 30001
+    21300004: Sans titre - 30002
+    21300006: Sans titre - 30003
+    21300008: Sans titre - 30004
+    21300010: Sans titre - 30005
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sans titre - 30000
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 756
+        width: 800
+        height: 758
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 30001
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 23
+        width: 800
+        height: 710
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 30002
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 783
+        width: 800
+        height: 731
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 30003
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 11
+        width: 800
+        height: 722
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 30004
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 783
+        width: 800
+        height: 731
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 30005
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 27
+        width: 800
+        height: 679
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

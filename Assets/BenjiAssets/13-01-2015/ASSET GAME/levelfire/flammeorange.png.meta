@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: ffb2443590678442ca9bcaa5c8e69d5d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: flammeblur20001
+    21300002: flammeblur20002
+    21300004: flammeblur20003
+    21300006: flammeblur20004
+    21300008: flammeblur20005
+    21300010: flammeblur20006
+    21300012: flammeblur20007
+    21300014: flammeblur20008
+    21300016: flammeblur20009
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: flammeblur20001
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 915
+        width: 729
+        height: 1087
+      alignment: 9
+      pivot: {x: .495198905, y: .488500446}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flammeblur20002
+      rect:
+        serializedVersion: 2
+        x: 2277
+        y: 1014
+        width: 700
+        height: 988
+      alignment: 9
+      pivot: {x: .497142851, y: .504048586}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flammeblur20003
+      rect:
+        serializedVersion: 2
+        x: 3027
+        y: 1021
+        width: 751
+        height: 981
+      alignment: 9
+      pivot: {x: .471371502, y: .549439371}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flammeblur20004
+      rect:
+        serializedVersion: 2
+        x: 3042
+        y: 43
+        width: 712
+        height: 928
+      alignment: 9
+      pivot: {x: .456460685, y: .5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flammeblur20005
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 984
+        width: 683
+        height: 1018
+      alignment: 9
+      pivot: {x: .431917995, y: .569744587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flammeblur20006
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 982
+        width: 705
+        height: 1020
+      alignment: 9
+      pivot: {x: .496453911, y: .546078444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flammeblur20007
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 11
+        width: 726
+        height: 923
+      alignment: 9
+      pivot: {x: .472451776, y: .554712892}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flammeblur20008
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 21
+        width: 672
+        height: 943
+      alignment: 9
+      pivot: {x: .495535702, y: .572640538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flammeblur20009
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 69
+        width: 531
+        height: 863
+      alignment: 9
+      pivot: {x: .465160072, y: .597914279}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

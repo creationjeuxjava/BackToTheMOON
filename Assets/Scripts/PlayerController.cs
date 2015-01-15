@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
 	public static Vector3 vitesse ;
 	public Camera camera;
 	public static Vector3 translation;
-	private float speedPlayer = 0.7f;
+	private float speedPlayer = 0.3f;//0.7f;
 	public static bool isWithCask = false;
 	public static bool isWithShoe = false;
 	private bool isItemActivated = false;

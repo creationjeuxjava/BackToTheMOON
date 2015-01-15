@@ -1,0 +1,16 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: incendie.png (2520 x 1524)
+# $TexturePacker:SmartUpdate:19aea959ef90004b9104bdf481d41409:910d44d99a2b15372c37368f384e5ccb:8b7b00c35676b82e51349a5c58784221$
+#
+
+Sans titre - 30000;10;756;800;758;1;0
+Sans titre - 30001;1710;23;800;710;1;0
+Sans titre - 30002;860;783;800;731;1;0
+Sans titre - 30003;860;11;800;722;1;0
+Sans titre - 30004;1710;783;800;731;1;0
+Sans titre - 30005;10;27;800;679;1;0
