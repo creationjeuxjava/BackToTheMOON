@@ -46,7 +46,7 @@ public class CanonController : MonoBehaviour {
 			//audio.PlayOneShot ("canon2", 0.7F);
 		gameController.GetComponent<GameController>().LaunchPlayer();
 		GameObject particules = Instantiate(canonFire, new Vector3(transform.position.x,transform.position.y+5f, -20f), transform.rotation) as GameObject; 
-		particules.transform.parent = GameController.world.transform;
+		//particules.transform.parent = GameController.world.transform;
 
 
 		Debug.Log ("on launchIt");
