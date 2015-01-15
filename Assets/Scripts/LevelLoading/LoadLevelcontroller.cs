@@ -64,12 +64,12 @@ public class LoadLevelcontroller : MonoBehaviour {
 								int min = int.Parse(child.Attributes["min"].Value);
 
 								if(!needPooling)
-									createSpritesWorld(number,new Vector2 (-15 ,15) ,new Vector2(min,max),name,levelNum);
+									createSpritesWorld(number,new Vector2 (-3 ,3) ,new Vector2(min,max),name,levelNum);
 								else{
 									Object prefab = Resources.Load<Object>("Prefabs/"+name);
 									Object pooler = Resources.Load<Object>("Prefabs/ObjectPooler");
 
-									Vector3 pos = new Vector3 (Random.Range(-15,15),Random.Range(min,max),-4.6f);
+									Vector3 pos = new Vector3 (Random.Range(-50,50),Random.Range(min,max),-4.6f);
 									Quaternion rotation =  Quaternion.identity;
 									GameObject poolerObject = Instantiate(pooler, pos, rotation) as GameObject;
 									poolerObject.name = "poolerObjectFor"+name;
