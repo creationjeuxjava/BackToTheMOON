@@ -9,8 +9,8 @@ public class CanonController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		anim = GetComponent<Animator> ();
-		animMoitie = GameObject.Find ("moitie").GetComponent<Animator> ();
+		anim = GameObject.Find ("canondevant").GetComponent<Animator> ();
+		animMoitie = GameObject.Find ("canonfond").GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -31,6 +31,7 @@ public class CanonController : MonoBehaviour {
 	/*** au clic sur le canon on fait "décoller" le pplayer *****/
 	void OnMouseDown()//fonctionne aussi sur android !!
 	{
+		//Debug.Log ("on touche le canon");
 		anim.SetTrigger ("fire");//audio.Play();
 		animMoitie.SetTrigger ("fire");
 
