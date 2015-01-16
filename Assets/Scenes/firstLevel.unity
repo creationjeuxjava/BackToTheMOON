@@ -3600,6 +3600,8 @@ GameObject:
   - 4: {fileID: 656015620}
   - 212: {fileID: 656015622}
   - 95: {fileID: 656015621}
+  - 61: {fileID: 656015624}
+  - 50: {fileID: 656015623}
   m_Layer: 0
   m_Name: canonfond
   m_TagString: Untagged
@@ -3658,6 +3660,32 @@ SpriteRenderer:
   m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: b242073414f3c43debc1766822417c32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!50 &656015623
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 656015619}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!61 &656015624
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 656015619}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 2.21333361, y: 3.93333292}
+  m_Center: {x: -2.42666698, y: 2.39333367}
 --- !u!1 &656816783
 GameObject:
   m_ObjectHideFlags: 0
@@ -3997,8 +4025,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1403.46362, y: 8.41061401}
-  m_Center: {x: 5.29257202, y: -68.0698166}
+  m_Size: {x: 32, y: 8.41061401}
+  m_Center: {x: 0, y: 0}
 --- !u!4 &740875251
 Transform:
   m_ObjectHideFlags: 0
@@ -4006,7 +4034,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 740875248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .699999988, y: 29.3999996, z: -4.5999999}
+  m_LocalPosition: {x: 0, y: -37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6258,7 +6286,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1243479561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -31, y: -18.1000004, z: -305.200012}
+  m_LocalPosition: {x: -31, y: -18.1000004, z: -281.970001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1646134310}
@@ -8062,6 +8090,7 @@ GameObject:
   - 114: {fileID: 1646134313}
   - 61: {fileID: 1646134312}
   - 82: {fileID: 1646134311}
+  - 50: {fileID: 1646134316}
   m_Layer: 0
   m_Name: canondevant
   m_TagString: Untagged
@@ -8204,6 +8233,21 @@ SpriteRenderer:
   m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: fd0c27f6c1fcc4634877c32be1ae60dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!50 &1646134316
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1646134309}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &1694484697
 GameObject:
   m_ObjectHideFlags: 0
