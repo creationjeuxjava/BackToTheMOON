@@ -31,7 +31,7 @@ public class CanonController : MonoBehaviour {
 	/*** au clic sur le canon on fait "décoller" le pplayer *****/
 	void OnMouseDown()//fonctionne aussi sur android !!
 	{
-		//Debug.Log ("on touche le canon");
+		Debug.Log ("on touche le canon");
 		anim.SetTrigger ("fire");//audio.Play();
 		animMoitie.SetTrigger ("fire");
 
