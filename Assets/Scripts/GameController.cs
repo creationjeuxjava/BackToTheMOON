@@ -18,11 +18,11 @@ public class GameController : MonoBehaviour {
 	private static bool isGameInPause = false;
 	private static bool isOverGUIPause = false;
 	public static bool isInGame,isGameOver;
-	private bool isInSpace;
+	public static bool isInSpace;
 	private GameObject backLayer, middleLayer, foreLayer,backBackLayer;
 
 
-	private float altitude;
+	public static float altitude;
 	public static int nbrePieces = 0;
 	private float altMaxForWinLevel = 10000f;
 	private float altBeginOfSpace = 5000f;
