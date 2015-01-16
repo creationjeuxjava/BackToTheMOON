@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour {
 	public static bool isFlyBegin = false;
 
 	private float timeLeft = 5.0f;
+	private float lateralDelta = 0.1f;
 
 	public void launchIntheAir(){
 		isFlying = true;
@@ -53,11 +54,11 @@ public class PlayerController : MonoBehaviour {
 			Vector3 screenPos = camera.WorldToScreenPoint(transform.position);
 			if(screenPos.x >= Screen.width ) {
 				translation.x = 0;
-				transform.position = new Vector3(transform.position.x - 1.5f,transform.position.y,0);
+				transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
 			}
 			else if(screenPos.x <= 0){
 				translation.x = 0;
-				transform.position = new Vector3(transform.position.x + 1.5f,transform.position.y,0);
+				transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
 				
 			}
 			else{
@@ -89,12 +90,12 @@ public class PlayerController : MonoBehaviour {
 				else{
 					if(!isFlyBegin){
 						if(touchPos.x < transform.position.x ){
-							translation.x = -0.4f;
+							translation.x = -lateralDelta;
 							anim.SetTrigger ("toLeft");
 							
 						}
 						else if(touchPos.x > (transform.position.x + collider2D.bounds.max.x )  ){
-							translation.x = 0.4f;
+							translation.x = lateralDelta;
 							anim.SetTrigger ("toRight");
 						}
 

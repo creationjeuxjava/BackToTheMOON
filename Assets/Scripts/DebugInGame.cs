@@ -31,8 +31,8 @@ public class DebugInGame : MonoBehaviour {
 		updateFPS ();
 
 		isFly.text = "isBeginFly : "+PlayerController.isFlyBegin;
-		isFly.text = "isWithCask : "+PlayerController.isWithCask;
-		isFly.text = "isWithShoe : "+PlayerController.isWithShoe;
+		isCask.text = "isWithCask : "+PlayerController.isWithCask;
+		isShoe.text = "isWithShoe : "+PlayerController.isWithShoe;
 		translation.text = "translation :" + PlayerController.translation;
 		vitesse.text = "vitesse : " + PlayerController.vitesse;
 		fpsText.text = "FPS : "+format;
