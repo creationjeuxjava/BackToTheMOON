@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour {
 
 
 	private float altitude;
-	private static int nbrePieces = 0;
+	public static int nbrePieces = 0;
 	private float altMaxForWinLevel = 10000f;
 	private float altBeginOfSpace = 5000f;
 	private int coeffAltitude = 5;
@@ -181,6 +181,7 @@ public class GameController : MonoBehaviour {
 	public static void addPiece(){
 
 		nbrePieces++;
+		//Debug.Log("au ajoute une pièce  "+ nbrePieces);
 	}
 
 	//mettre le jeu en pause ou le remettre

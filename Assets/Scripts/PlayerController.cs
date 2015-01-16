@@ -175,7 +175,7 @@ public class PlayerController : MonoBehaviour {
 			
 		}
 		if(other.gameObject.tag == "Piece" ){
-			//Debug.Log ("***************  collision avec une piece ");
+			Debug.Log ("***************  collision avec une piece ");
 			GameController.addPiece();
 			//Destroy(other.gameObject);
 			other.gameObject.SetActive(false);

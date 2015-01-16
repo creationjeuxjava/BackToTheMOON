@@ -7,11 +7,11 @@ public class DestroyByOutOffBox : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other) {
 
 		manageDestruction (other.gameObject);
-		Debug.Log ("collision boundary et " + other.gameObject.name);
+		//Debug.Log ("collision boundary et " + other.gameObject.name);
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		Debug.Log ("collision boundary et " + other.gameObject.name);
+		//Debug.Log ("collision boundary et " + other.gameObject.name);
 		manageDestruction (other.gameObject);
 	}
 

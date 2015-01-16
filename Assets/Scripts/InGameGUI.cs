@@ -36,7 +36,7 @@ public class InGameGUI : MonoBehaviour {
 		/*** la vitesse du player ****/
 		if (GameController.isInGame) {
 			float vitesse = PlayerController.vitesse.y * -1 * coeffVitesse;
-			GUI.DrawTexture(new Rect(100 ,20,vitesse,30), barreVitesse);
+			//GUI.DrawTexture(new Rect(100 ,20,vitesse,30), barreVitesse);
 		
 		}
 
