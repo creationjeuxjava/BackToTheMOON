@@ -1,15 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <levels>
-  <level indice="1" gravity="9.81">
+  <level indice="1" gravity="5.81">
     <name>Monde Grec</name>
     <tutorial>Evitez les obstacles et récupérez des bonus pour atteindre l'autre planète !!</tutorial>
 	
 	<!-- Si pool = true, le nombre n'est pas pris en compte !!   -->
     <object name="world1/oiseau" nombre="15" pool="false" layer="foreGround">
-		<Altitude max="300" min="20"></Altitude>
+		<Altitude max="300" min="-50"></Altitude>
     </object>
-    <object name="world1/nuage" nombre="15" pool="true" layer="foreGround"> 
-		<Altitude max="450" min="50"></Altitude>
+    <object name="world1/nuage" nombre="15" pool="true" layer="middleLayer"> 
+		<Altitude max="450" min="-20"></Altitude>
+	</object>
+	 <object name="world1/nuage2" nombre="15" pool="true" layer="middleLayer"> 
+		<Altitude max="450" min="10"></Altitude>
 	</object>
     <object name="world1/meteorite" nombre="50" pool="true" layer="foreGround">
 		<Altitude max="2500" min="800"></Altitude>
@@ -20,8 +23,8 @@
     <object name="world1/cask" nombre="10" pool="false" layer="foreGround"> 
 		<Altitude max="1500" min="300"></Altitude>
 	</object>
-	<object name="world1/shoe" nombre="30" pool="false" layer="foreGround">
-		<Altitude max="1000" min="100"></Altitude>
+	<object name="world1/shoe" nombre="30" pool="true" layer="foreGround">
+		<Altitude max="400" min="-20"></Altitude>
 	</object>
 	<object name="world1/sigmaLetter" nombre="5" pool="true" layer="foreGround">
 		<Altitude max="2500" min="800"></Altitude>

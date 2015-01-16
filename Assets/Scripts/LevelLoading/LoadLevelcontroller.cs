@@ -63,8 +63,9 @@ public class LoadLevelcontroller : MonoBehaviour {
 								int max = int.Parse(child.Attributes["max"].Value);
 								int min = int.Parse(child.Attributes["min"].Value);
 
-								if(!needPooling)
-									createSpritesWorld(number,new Vector2 (-3 ,3) ,new Vector2(min,max),name,levelNum);
+								if(!needPooling){
+									createSpritesWorld(number,new Vector2 (-3 ,3) ,new Vector2(min,max),name,levelNum,layerName);
+								}
 								else{
 									Object prefab = Resources.Load<Object>("Prefabs/"+name);
 									Object pooler = Resources.Load<Object>("Prefabs/ObjectPooler");
@@ -88,7 +89,7 @@ public class LoadLevelcontroller : MonoBehaviour {
 	}
 
 	/*** méthode de création d'éléments du World *****/
-	private void createSpritesWorld(int number,Vector2 xRange,Vector2 yRange,string nomPrefab,int numLevel){
+	private void createSpritesWorld(int number,Vector2 xRange,Vector2 yRange,string nomPrefab,int numLevel,string layerName){
 
 		for(int i = 0 ; i < number ; i++){
 			Object prefab = Resources.Load<Object>("Prefabs/"+nomPrefab);		
@@ -96,7 +97,7 @@ public class LoadLevelcontroller : MonoBehaviour {
 			Quaternion spawnRotation =  Quaternion.identity;
 			GameObject clone = Instantiate(prefab, pos, spawnRotation) as GameObject;
 
-			this.GetComponent<GameController>().addGameObjectInWorld(clone);
+			this.GetComponent<GameController>().addGameObjectInWorld(clone,layerName);
 		}
 		
 	}
@@ -111,7 +112,7 @@ public class LoadLevelcontroller : MonoBehaviour {
 			Quaternion spawnRotation =  Quaternion.identity;
 			GameObject clone = Instantiate(prefab, pos, spawnRotation) as GameObject;
 			
-			this.GetComponent<GameController>().addGameObjectInWorld(clone);
+			this.GetComponent<GameController>().addGameObjectInWorld(clone,"foreLayer");
 
 		}
 

@@ -24,8 +24,8 @@ public class GameController : MonoBehaviour {
 
 	public static float altitude;
 	public static int nbrePieces = 0;
-	private float altMaxForWinLevel = 10000f;
-	private float altBeginOfSpace = 5000f;
+	private float altMaxForWinLevel = 8000f;
+	private float altBeginOfSpace = 3000f;
 	private int coeffAltitude = 5;
 	private int coeffVitesse = 1 * 3600; 
 	private int currentLevel = 1; //par défaut le premier niveau
@@ -134,8 +134,17 @@ public class GameController : MonoBehaviour {
 		this.GetComponent<LoadLevelcontroller> ().loadLevel (currentLevel);
 	}
 
-	public void addGameObjectInWorld(GameObject obj){
-		obj.transform.parent = foreLayer.transform;
+	public void addGameObjectInWorld(GameObject obj,string layerName){
+
+		if(layerName == "foreGround")
+			obj.transform.parent = foreLayer.transform;
+		else 
+			obj.transform.parent = middleLayer.transform;
+
+
+		/*if(obj.name == "nuage(clone)")
+			obj.transform.parent = middleLayer.transform;
+		else obj.transform.parent = foreLayer.transform;*/
 	}
 	public void addObjectPoolerInWorld(GameObject obj,string layerName){
 		//listeObjectPoolers.Add (obj);

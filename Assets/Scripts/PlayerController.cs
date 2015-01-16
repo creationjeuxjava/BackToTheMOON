@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour {
 				/*** correction si trop bas...suite aux collisions ****/
 				if(screenPos.y <= 80){//40
 					
-					transform.position = new Vector3(transform.position.x,-15,0);
+					transform.position = new Vector3(transform.position.x,-50,0);
 				}
 				else{
 					transform.position = new Vector3(transform.position.x,transform.position.y,0);
@@ -160,7 +160,8 @@ public class PlayerController : MonoBehaviour {
 
 		if(other.gameObject.tag == "Shoe" && !isItemActivated ){
 			//Debug.Log ("***************  collision avec une shoe ");
-			Destroy(other.gameObject);
+			//Destroy(other.gameObject);
+			other.gameObject.SetActive(false);
 			isWithShoe = true;
 			isWithCask = false;
 			isItemActivated = true;
