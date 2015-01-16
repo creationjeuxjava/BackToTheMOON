@@ -21,7 +21,6 @@ public class GameController : MonoBehaviour {
 	public static bool isInSpace;
 	private GameObject backLayer, middleLayer, foreLayer,backBackLayer;
 
-	private Animator iconeEspaceAnimator;
 
 
 	public static float altitude;
@@ -40,7 +39,7 @@ public class GameController : MonoBehaviour {
 	// création initiale
 	void Start () {
 		resetGame ();
-		iconeEspaceAnimator = GameObject.Find ("espaceIcone").GetComponent<Animator> ();
+
 		//Debug.Log (this.name + " méthode strat");
 	}
 	
@@ -126,7 +125,6 @@ public class GameController : MonoBehaviour {
 				isInGame = false;
 			}
 			if(altitude >= altBeginOfSpace) {
-				iconeEspaceAnimator.SetTrigger("beginSpace");
 				isInSpace = true;
 			}
 
