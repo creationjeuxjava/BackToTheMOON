@@ -21,11 +21,13 @@ public class GameController : MonoBehaviour {
 	public static bool isInSpace;
 	private GameObject backLayer, middleLayer, foreLayer,backBackLayer;
 
+	private Animator iconeEspaceAnimator;
+
 
 	public static float altitude;
 	public static int nbrePieces = 0;
 	private float altMaxForWinLevel = 8000f;
-	private float altBeginOfSpace = 3000f;
+	private float altBeginOfSpace = 300f;//3000f à remettre
 	private int coeffAltitude = 5;
 	private int coeffVitesse = 1 * 3600; 
 	private int currentLevel = 1; //par défaut le premier niveau
@@ -38,6 +40,7 @@ public class GameController : MonoBehaviour {
 	// création initiale
 	void Start () {
 		resetGame ();
+		iconeEspaceAnimator = GameObject.Find ("espaceIcone").GetComponent<Animator> ();
 		//Debug.Log (this.name + " méthode strat");
 	}
 	
@@ -122,7 +125,10 @@ public class GameController : MonoBehaviour {
 			if(altitude >= altMaxForWinLevel){
 				isInGame = false;
 			}
-			if(altitude >= altBeginOfSpace) isInSpace = true;
+			if(altitude >= altBeginOfSpace) {
+				iconeEspaceAnimator.SetTrigger("beginSpace");
+				isInSpace = true;
+			}
 
 		}
 	}
@@ -217,7 +223,7 @@ public class GameController : MonoBehaviour {
 		}
 	}
 	void OnGUI() {
-		if(GUI.Button(new Rect(140, 40, 150, 50), Advertisement.isReady() ? "Montrer ADS" : "En chargement ADS...")) {
+		/*if(GUI.Button(new Rect(140, 40, 150, 50), Advertisement.isReady() ? "Montrer ADS" : "En chargement ADS...")) {
 			// Show with default zone, pause engine and print result to debug log
 			Advertisement.Show(null, new ShowOptions {
 				pause = true,
@@ -225,7 +231,7 @@ public class GameController : MonoBehaviour {
 					Debug.Log(result.ToString());
 				}
 			});
-		}
+		}*/
 	}
 
 }

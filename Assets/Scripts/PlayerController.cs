@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour {
 				/*** correction si trop bas...suite aux collisions ****/
 				if(screenPos.y <= 80){//40
 					
-					transform.position = new Vector3(transform.position.x,-50,0);
+					transform.position = new Vector3(transform.position.x,-24,0);
 				}
 				else{
 					transform.position = new Vector3(transform.position.x,transform.position.y,0);
@@ -240,7 +240,7 @@ public class PlayerController : MonoBehaviour {
 	/*** permet de savoir si la phase de décollage est terminée en animation ...****/
 	/*** fonction appelée par l'animator ****/
 	private void stopStartFly(){
-
+		//Debug.Log ("le fly enclanché !!");
 		isFlyBegin = false;
 	}
 
