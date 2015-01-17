@@ -23,15 +23,17 @@ public class GameController : MonoBehaviour {
 
 
 
-	public static float altitude;
+	public static float altitude = 0;
 	public static int nbrePieces = 0;
-	private float altMaxForWinLevel = 8000f * 100;
-	private float altBeginOfSpace = 500f*100;//4000f à remettre
-	private int coeffAltitude = 1000;
+	private int coeffAltitude = 100;
+	private float altMaxForWinLevel = 80000f ;
+	private float altBeginOfSpace= 41000f;
+
 	private int coeffVitesse = 1 * 3600; 
 	private int currentLevel = 1; //par défaut le premier niveau
 	private float gravityLevel;
 	private float startFlyTime;
+	private Vector3 lastPlayerSpeed;
 
 	//private List<GameObject> listeObjectPoolers = new List<GameObject>();
 	private Dictionary<GameObject,string> dicoObjectPoolers = new Dictionary<GameObject,string>();
@@ -54,12 +56,14 @@ public class GameController : MonoBehaviour {
 			//Vector2 minMax = listeObjectPoolers[i].GetComponent<ObjectPooler>().getMinMax();
 			Vector2 minMax = entry.Key.GetComponent<ObjectPooler>().getMinMax();
 			//Debug.Log("Position du ForeLayer : "+foreLayer.transform.position.y*(-1)+" et min "+minMax.x+" et max "+minMax.y +" pour GO "+listeObjectPoolers[i].name);
-			if(foreLayer.transform.position.y * (-1) > minMax.x && foreLayer.transform.position.y * (-1 )< minMax.y){
+			//if(foreLayer.transform.position.y * (-1) > minMax.x && foreLayer.transform.position.y * (-1 )< minMax.y){
+			if(altitude > minMax.x && altitude < minMax.y){
 				GameObject obj = entry.Key.GetComponent<ObjectPooler>().GetPooledObject();
 				if(obj != null){
 					//Debug.Log(listeObjectPoolers[i].name +" crée !");
 					
-					obj.transform.position = new Vector3(Random.Range(-3,3),Random.Range(20,200),-4.6f);
+					//obj.transform.position = new Vector3(Random.Range(-3,3),Random.Range(20,200),-4.6f);
+					obj.transform.position = new Vector3(Random.Range(-3,3),Random.Range(-10,50),-4.6f);
 					obj.SetActive(true);
 					if(layerName == "foreGround")
 						obj.transform.parent = foreLayer.transform;
@@ -95,14 +99,16 @@ public class GameController : MonoBehaviour {
 			float gravityEffect = (float) 0.5f * gravityLevel * timeSinceStart * timeSinceStart /3000;//calcul savant de l'équation horaire !!
 		
 			Vector3 playerSpeed ;
+
 			if(!isInSpace){
 				//on calcule le vecteur vitesse du player ajusté
 				playerSpeed = new Vector3(PlayerController.vitesse.x,PlayerController.vitesse.y + gravityEffect, PlayerController.vitesse.z);
 				//Debug.Log("Vitesse globale : "+playerSpeed+" et temps écoulé depuis le lancement : "+timeSinceStart+ " effet de gravity : "+ gravityEffect);
-
+				lastPlayerSpeed = new Vector3(playerSpeed.x,playerSpeed.y,playerSpeed.z);
 			}
 			else{
-				playerSpeed = PlayerController.vitesse;
+				//playerSpeed = PlayerController.vitesse;
+				playerSpeed = lastPlayerSpeed;
 
 			}
 
@@ -165,6 +171,9 @@ public class GameController : MonoBehaviour {
 	/*** méthode de remise à zéro de toutes les variables pour pouvoir rejouer sur une meme session ****/
 	// à ce stade le nbre de pièces n'est pas remis à jour
 	public void resetGame(){
+		//altMaxForWinLevel = 8000f * coeffAltitude;
+		//altBeginOfSpace = 50f*coeffAltitude;//4000f à remettre
+
 		isWorldMoving = false;
 		isGameInPause = false;
 		isOverGUIPause = false;

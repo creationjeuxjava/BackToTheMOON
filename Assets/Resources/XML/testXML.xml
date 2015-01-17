@@ -5,8 +5,9 @@
     <tutorial>Evitez les obstacles et récupérez des bonus pour atteindre l'autre planète !!</tutorial>
 	
 	<!-- Si pool = true, le nombre n'est pas pris en compte !!   -->
-    <object name="world1/oiseau" nombre="15" pool="false" layer="foreGround">
-		<Altitude max="300" min="-10"></Altitude>
+    <object name="world1/oiseau" nombre="15" pool="true" layer="foreGround">
+		<!--<Altitude max="300" min="-10"></Altitude>-->
+		<Altitude max="1000" min="100"></Altitude>
     </object>
     <object name="world1/nuage" nombre="15" pool="true" layer="middleLayer"> 
 		<Altitude max="450" min="-20"></Altitude>

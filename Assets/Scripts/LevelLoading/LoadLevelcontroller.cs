@@ -70,7 +70,7 @@ public class LoadLevelcontroller : MonoBehaviour {
 									Object prefab = Resources.Load<Object>("Prefabs/"+name);
 									Object pooler = Resources.Load<Object>("Prefabs/ObjectPooler");
 
-									Vector3 pos = new Vector3 (Random.Range(-50,50),Random.Range(min,max),-4.6f);
+									Vector3 pos = new Vector3 (Random.Range(-3,3),Random.Range(min,max),-4.6f);
 									Quaternion rotation =  Quaternion.identity;
 									GameObject poolerObject = Instantiate(pooler, pos, rotation) as GameObject;
 									poolerObject.name = "poolerObjectFor"+name;
