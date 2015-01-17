@@ -63,15 +63,16 @@ public class PlayerController : MonoBehaviour {
 			}
 			else{
 				/*** correction si trop bas...suite aux collisions ****/
-				if(screenPos.y <= 100){//40
+				//if(screenPos.y <= 100){//40
+				if(transform.position.y <= -28){//voir ds le world (scene) directement
 					
-					transform.position = new Vector3(transform.position.x,-24,0);
+					transform.position = new Vector3(transform.position.x,-26,0);
 					rigidbody2D.velocity = Vector3.zero;
 				}
 				else{
 					transform.position = new Vector3(transform.position.x,transform.position.y,0);
 					rigidbody2D.velocity = Vector3.zero;
-					Debug.Log("PlayerController : on update normalement !");
+					//Debug.Log("PlayerController : on update normalement !");
 				}
 
 			}
