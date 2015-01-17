@@ -32,6 +32,9 @@
 	<object name="commonPrefabs/piece" nombre="50" pool="true" layer="foreGround">
 		<Altitude max="2000" min="100"></Altitude>
 	</object>
+	<object name="commonPrefabs/beans" nombre="50" pool="true" layer="foreGround">
+		<Altitude max="5000" min="0"></Altitude>
+	</object>
 	<object name="world1/colonne" nombre="10" pool="true" layer="foreGround">
 		<Altitude max="1000" min="300"></Altitude>
 	</object>

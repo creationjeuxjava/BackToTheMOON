@@ -182,6 +182,12 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive(false);
 		}
 
+		if(other.gameObject.tag == "Beans" ){
+			Debug.Log ("***************  collision avec beans ");
+			other.gameObject.SetActive(false);
+			//TOD : ajouter dans 'inventaire pour utilsation future !!
+		}
+
 	}
 
 
