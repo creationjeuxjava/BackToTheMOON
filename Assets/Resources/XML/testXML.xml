@@ -25,10 +25,7 @@
 	</object>
 	<object name="world1/shoe" nombre="30" pool="true" layer="foreGround">
 		<Altitude max="400" min="-20"></Altitude>
-	</object>
-	<object name="world1/sigmaLetter" nombre="5" pool="true" layer="foreGround">
-		<Altitude max="2500" min="500"></Altitude>
-	</object>
+	</object>	
 	<object name="commonPrefabs/piece" nombre="50" pool="true" layer="foreGround">
 		<Altitude max="2000" min="100"></Altitude>
 	</object>

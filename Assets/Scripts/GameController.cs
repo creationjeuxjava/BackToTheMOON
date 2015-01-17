@@ -25,9 +25,9 @@ public class GameController : MonoBehaviour {
 
 	public static float altitude;
 	public static int nbrePieces = 0;
-	private float altMaxForWinLevel = 6000f;
-	private float altBeginOfSpace = 3000f;//3000f à remettre
-	private int coeffAltitude = 10;
+	private float altMaxForWinLevel = 8000f * 100;
+	private float altBeginOfSpace = 500f*100;//4000f à remettre
+	private int coeffAltitude = 1000;
 	private int coeffVitesse = 1 * 3600; 
 	private int currentLevel = 1; //par défaut le premier niveau
 	private float gravityLevel;

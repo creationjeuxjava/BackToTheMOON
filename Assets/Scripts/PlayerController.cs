@@ -63,12 +63,15 @@ public class PlayerController : MonoBehaviour {
 			}
 			else{
 				/*** correction si trop bas...suite aux collisions ****/
-				if(screenPos.y <= 80){//40
+				if(screenPos.y <= 100){//40
 					
 					transform.position = new Vector3(transform.position.x,-24,0);
+					rigidbody2D.velocity = Vector3.zero;
 				}
 				else{
 					transform.position = new Vector3(transform.position.x,transform.position.y,0);
+					rigidbody2D.velocity = Vector3.zero;
+					Debug.Log("PlayerController : on update normalement !");
 				}
 
 			}
@@ -118,7 +121,7 @@ public class PlayerController : MonoBehaviour {
 	/**** détection des collisions avec les GO istrigger = false ****/
 	void OnCollisionEnter2D(Collision2D other){
 		
-		if(other.gameObject.tag == "Meteorite" || other.gameObject.tag == "Colonne"){
+		if(other.gameObject.tag == "Meteorite" || other.gameObject.tag == "Colonne" || other.gameObject.tag == "Triangle"){
 			//Debug.Log ("***************  collision avec un météorite ");
 			//on meurt ?
 			//if(isWithCask) Destroy(other.gameObject);
@@ -176,14 +179,14 @@ public class PlayerController : MonoBehaviour {
 			
 		}
 		if(other.gameObject.tag == "Piece" ){
-			Debug.Log ("***************  collision avec une piece ");
+			//Debug.Log ("***************  collision avec une piece ");
 			GameController.addPiece();
 			//Destroy(other.gameObject);
 			other.gameObject.SetActive(false);
 		}
 
 		if(other.gameObject.tag == "Beans" ){
-			Debug.Log ("***************  collision avec beans ");
+			//Debug.Log ("***************  collision avec beans ");
 			other.gameObject.SetActive(false);
 			//TOD : ajouter dans 'inventaire pour utilsation future !!
 		}
@@ -214,8 +217,10 @@ public class PlayerController : MonoBehaviour {
 		else if (isWithShoe && obj.tag == "Shoe")
 						vitesse.y += vitesse.y * 50 / 100;
 		else {
-			vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor;
-			//Debug.Log(obj.name+" : On réduit la vitesse");
+
+			//if(vitesse.y + obj.GetComponent<InteractionEnnemy>().speedReducingFactor <= 0)
+				vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor;
+			Debug.Log(obj.name+" : On réduit la vitesse"+vitesse.y + obj.GetComponent<InteractionEnnemy>().speedReducingFactor);
 		}
 	
 	}
