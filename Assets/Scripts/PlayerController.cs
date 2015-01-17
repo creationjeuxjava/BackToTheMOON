@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour {
 		isFlying = true;
 		isFlyBegin = true;
 		vitesse = new Vector3(0,-speedPlayer,0);
-		GameObject particules = Instantiate(fumee, new Vector3(transform.position.x,transform.position.y-1, -16f), transform.rotation) as GameObject; 
+		GameObject particules = Instantiate(fumee, new Vector3(transform.position.x,transform.position.y-2, -2f), transform.rotation) as GameObject; 
 		particules.transform.parent = this.transform;
 		anim.SetTrigger ("decollage");
 	}
