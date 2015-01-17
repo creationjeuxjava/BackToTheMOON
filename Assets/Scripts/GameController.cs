@@ -63,7 +63,9 @@ public class GameController : MonoBehaviour {
 					obj.SetActive(true);
 					if(layerName == "foreGround")
 						obj.transform.parent = foreLayer.transform;
-					else 
+					else if(layerName == "middleLayer")
+						obj.transform.parent = middleLayer.transform;
+					else
 						obj.transform.parent = backBackLayer.transform;
 				}
 				
