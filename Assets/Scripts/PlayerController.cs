@@ -190,6 +190,7 @@ public class PlayerController : MonoBehaviour {
 			//Debug.Log ("***************  collision avec beans ");
 			anim.SetTrigger("goFlageollet");
 			other.gameObject.SetActive(false);
+			updateVitesse(other.gameObject);
 			//TOD : ajouter dans 'inventaire pour utilsation future !!
 		}
 
@@ -217,7 +218,9 @@ public class PlayerController : MonoBehaviour {
 			vitesse.y += obj.GetComponent<InteractionEnnemy> ().speedReducingFactor * 50 / 100;
 		} 
 		else if (isWithShoe && obj.tag == "Shoe")
-						vitesse.y += vitesse.y * 50 / 100;
+			vitesse.y += vitesse.y * 50 / 100;
+		else if ( obj.tag == "Beans")
+			vitesse.y += vitesse.y * 20 / 100;
 		else {
 
 			//if(vitesse.y + obj.GetComponent<InteractionEnnemy>().speedReducingFactor <= 0)
