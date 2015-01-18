@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: da27d54d918b4bb4ba983e9a8305cbf6
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: oiseau_0
+    21300002: oiseau_1
+    21300004: oiseau_2
+    21300006: oiseau_3
+    21300008: oiseau_4
+    21300010: oiseau_5
+    21300012: oiseau_6
+    21300014: oiseau_7
+    21300016: oiseau_8
+    21300018: oiseau_9
+    21300020: oiseau_10
+    21300022: oiseau_11
+    21300024: oiseau_12
+    21300026: oiseau_13
+    21300028: oiseau_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: oiseau_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 375
+        width: 270
+        height: 317
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: oiseau_1
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 375
+        width: 277
+        height: 317
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: oiseau_2
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 375
+        width: 303
+        height: 317
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: oiseau_3
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 375
+        width: 305
+        height: 317
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: oiseau_4
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 375
+        width: 308
+        height: 317
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: oiseau_5
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 375
+        width: 305
+        height: 317
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: oiseau_6
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 375
+        width: 308
+        height: 317
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: oiseau_7
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 11
+        width: 308
+        height: 316
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: oiseau_8
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 11
+        width: 307
+        height: 316
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: oiseau_9
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 11
+        width: 305
+        height: 316
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: oiseau_10
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 11
+        width: 301
+        height: 316
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: oiseau_11
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 11
+        width: 272
+        height: 316
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: oiseau_12
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 13
+        width: 226
+        height: 314
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: oiseau_13
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 15
+        width: 169
+        height: 312
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: oiseau_14
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 15
+        width: 159
+        height: 312
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

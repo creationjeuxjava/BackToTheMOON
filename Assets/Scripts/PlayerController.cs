@@ -188,6 +188,7 @@ public class PlayerController : MonoBehaviour {
 
 		if(other.gameObject.tag == "Beans" ){
 			//Debug.Log ("***************  collision avec beans ");
+			anim.SetTrigger("goFlageollet");
 			other.gameObject.SetActive(false);
 			//TOD : ajouter dans 'inventaire pour utilsation future !!
 		}
