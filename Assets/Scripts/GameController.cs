@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour {
 	public static float altitude = 0;
 	public static int nbrePieces = 0;
 	private int coeffAltitude = 100;
-	private float altMaxForWinLevel = 80000f ;
+	private float altMaxForWinLevel = 22000f ;
 	private float altBeginOfSpace= 41000f;
 
 	private int coeffVitesse = 1 * 3600; 
@@ -232,15 +232,18 @@ public class GameController : MonoBehaviour {
 		}
 	}
 	void OnGUI() {
-		/*if(GUI.Button(new Rect(140, 40, 150, 50), Advertisement.isReady() ? "Montrer ADS" : "En chargement ADS...")) {
-			// Show with default zone, pause engine and print result to debug log
-			Advertisement.Show(null, new ShowOptions {
+				if (!isInGame) {
+						//if (GUI.Button (new Rect (140, 40, 150, 50), Advertisement.isReady () ? "Montrer ADS" : "En chargement ADS...")) {
+								// Show with default zone, pause engine and print result to debug log
+								Advertisement.Show (null, new ShowOptions {
 				pause = true,
 				resultCallback = result => {
 					Debug.Log(result.ToString());
 				}
 			});
-		}*/
-	}
+						//}
+				}
+		}
+
 
 }
