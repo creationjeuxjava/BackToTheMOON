@@ -5,7 +5,7 @@ using System.Collections;
 public class DebugInGame : MonoBehaviour {
 
 	private int startY;
-	Text isFly,isCask,isShoe,translation,vitesse,fpsText;
+	Text isFly,isCask,isShoe,translation,vitesse,fpsText, isGameFinish;
 
 	/*** pour le FPS ****/
 	public float updateInterval = 0.5F;	
@@ -22,6 +22,7 @@ public class DebugInGame : MonoBehaviour {
 		translation = GameObject.Find ("translation").GetComponent<Text> ();
 		vitesse = GameObject.Find ("vitesse").GetComponent<Text> ();
 		fpsText = GameObject.Find ("fps").GetComponent<Text> ();
+		isGameFinish = GameObject.Find ("isGameFinish").GetComponent<Text> ();
 
 
 		timeleft = updateInterval;
@@ -36,6 +37,7 @@ public class DebugInGame : MonoBehaviour {
 		translation.text = "translation :" + PlayerController.translation;
 		vitesse.text = "vitesse : " + PlayerController.vitesse;
 		fpsText.text = "FPS : "+format;
+		isGameFinish.text = "IsGameFinish : " + !GameController.isInGame;
 	}
 
 	private void updateFPS(){
