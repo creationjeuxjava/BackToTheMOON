@@ -74,6 +74,7 @@ public class GameController : MonoBehaviour {
 				}
 				
 			}
+			Debug.Log("altitude :"+altitude+" avec un min : "+minMax.x);
 
 		}
 
