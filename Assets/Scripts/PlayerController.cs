@@ -186,12 +186,12 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive(false);
 		}
 
-		if(other.gameObject.tag == "Beans" ){
+		if(other.gameObject.tag == "Beans" && !isItemActivated ){
 			//Debug.Log ("***************  collision avec beans ");
 			anim.SetTrigger("goFlageollet");
 			other.gameObject.SetActive(false);
 			updateVitesse(other.gameObject);
-			//TOD : ajouter dans 'inventaire pour utilsation future !!
+
 		}
 
 	}
