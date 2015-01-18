@@ -31,7 +31,7 @@ public class InGGameGUIController : MonoBehaviour {
 
 	}
 
-	public void launchInSpaceSequencce(){
+	public void makeAction(){
 
 
 	}

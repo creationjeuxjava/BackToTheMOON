@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour {
 	public static float altitude = 0;
 	public static int nbrePieces = 0;
 	private int coeffAltitude = 100;
-	private float altMaxForWinLevel = 22000f ;
+	private float altMaxForWinLevel = 80000f ;
 	private float altBeginOfSpace= 41000f;
 
 	private int coeffVitesse = 1 * 3600; 
@@ -57,13 +57,15 @@ public class GameController : MonoBehaviour {
 			Vector2 minMax = entry.Key.GetComponent<ObjectPooler>().getMinMax();
 			//Debug.Log("Position du ForeLayer : "+foreLayer.transform.position.y*(-1)+" et min "+minMax.x+" et max "+minMax.y +" pour GO "+listeObjectPoolers[i].name);
 			//if(foreLayer.transform.position.y * (-1) > minMax.x && foreLayer.transform.position.y * (-1 )< minMax.y){
+
+			GameObject obj = null;
 			if(altitude > minMax.x && altitude < minMax.y){
-				GameObject obj = entry.Key.GetComponent<ObjectPooler>().GetPooledObject();
+				obj = entry.Key.GetComponent<ObjectPooler>().GetPooledObject();
 				if(obj != null){
 					//Debug.Log(listeObjectPoolers[i].name +" crée !");
 					
 					//obj.transform.position = new Vector3(Random.Range(-3,3),Random.Range(20,200),-4.6f);
-					obj.transform.position = new Vector3(Random.Range(-3,3),Random.Range(-10,50),-4.6f);
+					obj.transform.position = new Vector3(Random.Range(-3,3),Random.Range(0,100),-4.6f);
 					obj.SetActive(true);
 					if(layerName == "foreGround")
 						obj.transform.parent = foreLayer.transform;
@@ -74,6 +76,8 @@ public class GameController : MonoBehaviour {
 				}
 				
 			}
+			//if(obj != null)
+			//Debug.Log("altitude :"+altitude+" avec un min : "+minMax.x+ " pour GO "+obj.name);
 
 		}
 

@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 02bbb60d812a13b46ac40686e6c04603
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: newmer_0
+    21300002: newmer_1
+    21300004: newmer_2
+    21300006: newmer_3
+    21300008: newmer_4
+    21300010: newmer_5
+    21300012: newmer_6
+    21300014: newmer_7
+    21300016: newmer_8
+    21300018: newmer_9
+    21300020: newmer_10
+    21300022: newmer_11
+    21300024: newmer_12
+    21300026: newmer_13
+    21300028: newmer_14
+    21300030: newmer_15
+    21300032: newmer_16
+    21300034: newmer_17
+    21300036: newmer_18
+    21300038: newmer_19
+    21300040: newmer_20
+    21300042: newmer_21
+    21300044: newmer_22
+    21300046: newmer_23
+    21300048: newmer_24
+    21300050: newmer_25
+    21300052: newmer_26
+    21300054: newmer_27
+    21300056: newmer_28
+    21300058: newmer_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: newmer_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 6207
+        width: 810
+        height: 1201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_1
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 6207
+        width: 803
+        height: 1201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_2
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 6207
+        width: 810
+        height: 1201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_3
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 6207
+        width: 803
+        height: 1201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_4
+      rect:
+        serializedVersion: 2
+        x: 3406
+        y: 6207
+        width: 810
+        height: 1201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4969
+        width: 810
+        height: 1194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_6
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 4969
+        width: 803
+        height: 1194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_7
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 4969
+        width: 810
+        height: 1194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_8
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 4969
+        width: 803
+        height: 1201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_9
+      rect:
+        serializedVersion: 2
+        x: 3406
+        y: 4969
+        width: 810
+        height: 1194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3731
+        width: 810
+        height: 1195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_11
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 3731
+        width: 803
+        height: 1195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_12
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 3731
+        width: 810
+        height: 1195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_13
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 3731
+        width: 803
+        height: 1195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_14
+      rect:
+        serializedVersion: 2
+        x: 3406
+        y: 3731
+        width: 810
+        height: 1195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_15
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2494
+        width: 810
+        height: 1194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_16
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 2494
+        width: 803
+        height: 1194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_17
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 2494
+        width: 810
+        height: 1194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_18
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 2494
+        width: 803
+        height: 1194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_19
+      rect:
+        serializedVersion: 2
+        x: 3406
+        y: 2494
+        width: 810
+        height: 1194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_20
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1249
+        width: 810
+        height: 1201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_21
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 1249
+        width: 803
+        height: 1201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_22
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 1249
+        width: 810
+        height: 1201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_23
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 1249
+        width: 803
+        height: 1201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_24
+      rect:
+        serializedVersion: 2
+        x: 3406
+        y: 1249
+        width: 810
+        height: 1201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_25
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 11
+        width: 810
+        height: 1201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_26
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 11
+        width: 803
+        height: 1201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_27
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 11
+        width: 810
+        height: 1194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_28
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 4
+        width: 803
+        height: 1201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newmer_29
+      rect:
+        serializedVersion: 2
+        x: 3406
+        y: 4
+        width: 810
+        height: 1201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
