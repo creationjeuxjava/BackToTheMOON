@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
 	public Animator anim;
 
 	/**** nvelle implémentation car le perso ne bouge pas ...c'est le niveau qui le fait ******/
-	private static bool isFlying;
+	public static bool isFlying;
 	public static Vector3 vitesse ;
 	public Camera camera;
 	public static Vector3 translation;

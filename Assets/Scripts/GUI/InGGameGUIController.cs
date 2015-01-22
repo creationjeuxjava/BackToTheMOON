@@ -9,7 +9,8 @@ public class InGGameGUIController : MonoBehaviour {
 	Image espaceIcone;
 	Animator iconeEspaceAnimator;
 	
-
+	GameObject panelVitesse;
+	Text vitessePlayer;
 
 
 	void Start () {
@@ -20,6 +21,9 @@ public class InGGameGUIController : MonoBehaviour {
 		iconeEspaceAnimator = GameObject.Find ("espaceIcone").GetComponent<Animator> ();
 		
 	
+		panelVitesse = GameObject.Find ("PanelInfosVitesse");
+		vitessePlayer = GameObject.Find ("infoVitesse").GetComponent<Text> ();
+		panelVitesse.SetActive (false);
 	}
 	
 
@@ -33,7 +37,10 @@ public class InGGameGUIController : MonoBehaviour {
 			iconeEspaceAnimator.SetTrigger("beginSpace");
 		} 
 
-		//on met à jour l'image du bouton action en fonction du player !!
+		if(GameController.lastPlayerSpeed.y >= -0.05f && PlayerController.isFlying){
+			vitessePlayer.text = "Votre vitesse est très basse : battez des ailes... !!";
+			panelVitesse.SetActive (true);
+		}
 
 
 	}
