@@ -42,9 +42,9 @@ public class InGameGUI : MonoBehaviour {
 
 
 		/***** retour à la carte  ****/
-		if (GUI.Button (new Rect (40,Screen.height - 80,buttonSize,buttonSize), iconCarte)) {
+		/*if (GUI.Button (new Rect (40,Screen.height - 80,buttonSize,buttonSize), iconCarte)) {
 			Application.LoadLevel (1);
-		}
+		}*/
 		/**** pause ****/
 		if (GUI.Button (pauseRect, iconPause)) {
 			GameController.tooglePauseGame();

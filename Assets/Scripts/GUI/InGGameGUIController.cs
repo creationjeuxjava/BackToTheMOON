@@ -8,6 +8,8 @@ public class InGGameGUIController : MonoBehaviour {
 	Text nbrPiecesText,nbrDiamantsText,altitudeText;
 	Image espaceIcone;
 	Animator iconeEspaceAnimator;
+	
+
 
 
 	void Start () {
@@ -16,6 +18,8 @@ public class InGGameGUIController : MonoBehaviour {
 		altitudeText = GameObject.Find ("altitudeText").GetComponent<Text> ();
 		espaceIcone = GameObject.Find ("espaceIcone").GetComponent<Image> ();
 		iconeEspaceAnimator = GameObject.Find ("espaceIcone").GetComponent<Animator> ();
+		
+	
 	}
 	
 
@@ -29,10 +33,9 @@ public class InGGameGUIController : MonoBehaviour {
 			iconeEspaceAnimator.SetTrigger("beginSpace");
 		} 
 
-	}
-
-	public void makeAction(){
+		//on met à jour l'image du bouton action en fonction du player !!
 
 
 	}
+
 }

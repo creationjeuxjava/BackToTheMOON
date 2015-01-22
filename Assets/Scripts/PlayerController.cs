@@ -24,6 +24,16 @@ public class PlayerController : MonoBehaviour {
 	private float timeLeft = 5.0f;
 	private float lateralDelta = 0.1f;
 
+	public enum State : byte
+	{
+		naked,	//battement "'ailes"
+		laser,   // donner des coups de sabre
+		noAction  //item sans action
+	}
+	
+	//The current mode the demo is in
+	public State currentState = State.noAction;
+
 	public void launchIntheAir(){
 		isFlying = true;
 		isFlyBegin = true;
@@ -159,7 +169,7 @@ public class PlayerController : MonoBehaviour {
 			GetComponent<SpriteRenderer>().sprite = casqueSprite;
 			
 			GetComponent<Inventory>().addItem(new Item("casque",1,Item.ItemType.Timer));
-			
+			currentState = State.noAction;
 		}
 
 		if(other.gameObject.tag == "Shoe" && !isItemActivated ){
@@ -177,7 +187,7 @@ public class PlayerController : MonoBehaviour {
 			GetComponent<Inventory>().addItem(new Item("shoes",2,Item.ItemType.Timer));
 			//boostVitesse(50/100);
 			updateVitesse(other.gameObject);
-			
+			currentState = State.noAction;
 		}
 		if(other.gameObject.tag == "Piece" ){
 			//Debug.Log ("***************  collision avec une piece ");
@@ -188,10 +198,11 @@ public class PlayerController : MonoBehaviour {
 
 		if(other.gameObject.tag == "Beans" && !isItemActivated ){
 			//Debug.Log ("***************  collision avec beans ");
+			isItemActivated = true;
 			anim.SetTrigger("goFlageollet");
 			other.gameObject.SetActive(false);
 			updateVitesse(other.gameObject);
-
+			currentState = State.noAction;
 		}
 
 	}
@@ -242,6 +253,8 @@ public class PlayerController : MonoBehaviour {
 			timeLeft = 5.0f;
 			resetPlayerState();
 			//TODO : supprimer l'item de l'inventaire !!
+
+			currentState = State.naked;
 		}
 	}
 
@@ -251,6 +264,7 @@ public class PlayerController : MonoBehaviour {
 		isWithCask = false;
 		anim.SetBool("withCask",false);
 		anim.SetBool("withShoes",false);
+		currentState = State.noAction;
 	}
 
 	/*** permet de savoir si la phase de décollage est terminée en animation ...****/
@@ -258,6 +272,29 @@ public class PlayerController : MonoBehaviour {
 	private void stopStartFly(){
 		//Debug.Log ("le fly enclanché !!");
 		isFlyBegin = false;
+		currentState = State.naked;
+	}
+
+
+	/*** méthode appelée par le script de controle de la GUI *****/
+	public void makeAction(){
+
+		switch (currentState) {
+
+			case State.naked:
+				anim.SetTrigger("battemets");
+				Debug.Log ("clic sur bouton action");
+				break;
+
+			case State.laser:
+				//anim setTrigger -> sabre
+				break;
+
+			case State.noAction:
+			Debug.Log ("clic sur bouton action  : noAction");
+				break;
+		
+		}
 	}
 
 
