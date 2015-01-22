@@ -24,6 +24,8 @@ public class ActionButtonManager : MonoBehaviour {
 			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/boutonaction",typeof(Sprite));
 		} 
 		else if (this.GetComponent<PlayerController> ().currentState == PlayerController.State.naked) {
+
+
 			buttonObject.SetActive (true);
 			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/helico", typeof(Sprite));
 		} 

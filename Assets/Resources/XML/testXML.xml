@@ -8,7 +8,7 @@
 	altitude espace = 41 000 m  et fin niveau 80 000m-->
 	
 	<!-- ************ *****  LEs items ******* -->
-	 <object name="world1/cask" nombre="10" pool="false" layer="foreGround"> 
+	 <!--<object name="world1/cask" nombre="10" pool="false" layer="foreGround"> 
 		<Altitude max="1500" min="300"></Altitude>
 	</object>
 	<object name="world1/shoe" nombre="30" pool="true" layer="foreGround">
@@ -19,15 +19,15 @@
 	</object>
 	<object name="commonPrefabs/piece" nombre="50" pool="true" layer="foreGround">
 		<Altitude max="81000" min="10"></Altitude>
-	</object>
+	</object>-->
 	
 	<!-- ** *****  Avant le ciel ******* -->		
-    <object name="world1/oiseau" nombre="15" pool="false" layer="foreGround">	
+    <!--<object name="world1/oiseau" nombre="15" pool="false" layer="foreGround">	
 		<Altitude max="20000" min="-10"></Altitude>
-    </object>
+    </object>-->
 	
 	<!-- ** *****  Juste après les montagnes et jusqu'au début de l'espace ******* -->	
-	<object name="world1/colonne" nombre="10" pool="true" layer="foreGround">
+	<!--<object name="world1/colonne" nombre="10" pool="true" layer="foreGround">
 		<Altitude max="20000" min="4500"></Altitude>
 	</object>
 	<object name="world1/triangle" nombre="5" pool="true" layer="foreGround">
@@ -39,11 +39,11 @@
 	</object>	
 	<object name="world1/nuage2" nombre="15" pool="true" layer="middleLayer"> 
 		<Altitude max="41000" min="-20"></Altitude>
-	</object>
+	</object>-->
 	
 	
 	<!--* *****  Dans l'espace ******-->
-    <object name="world1/meteorite" nombre="50" pool="true" layer="foreGround">
+    <!--<object name="world1/meteorite" nombre="50" pool="true" layer="foreGround">
 		<Altitude max="81000" min="40000"></Altitude>
 	</object>
 	<object name="world1/miniAsteroid" nombre="10" pool="false" layer="foreGround">
@@ -61,7 +61,7 @@
 	</object>
 	<object name="commonPrefabs/etoileBrillante" nombre="50" pool="true" layer="backGround">
 		<Altitude max="81000" min="40000"></Altitude>
-	</object>
+	</object>-->
 	
 	
 	

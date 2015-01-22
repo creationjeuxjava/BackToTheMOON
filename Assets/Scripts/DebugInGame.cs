@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class DebugInGame : MonoBehaviour {
 
@@ -14,7 +15,17 @@ public class DebugInGame : MonoBehaviour {
 	private float timeleft; // Left time for current interval
 	private string format;//valeur à afficher
 
+
+	/*** pour draw calls ****/
+	//private int drawcalls = 0;
+	
+	//GameObject[] allObjects;// = new GameObject[]();
+	//List<GameObject> allObjects = new List<GameObject>();
+
 	void Start () {
+		//GameObject.f
+		//allObjects = GameObject.FindObjectsOfType (GameObject);
+
 		startY = 80;
 		isFly = GameObject.Find ("isFlyBegin").GetComponent<Text> ();
 		isCask = GameObject.Find ("isWithCask").GetComponent<Text> ();
@@ -38,6 +49,19 @@ public class DebugInGame : MonoBehaviour {
 		vitesse.text = "vitesse : " + GameController.lastPlayerSpeed.y;
 		fpsText.text = "FPS : "+format;
 		isGameFinish.text = "IsGameFinish : " + !GameController.isInGame;
+
+		/*foreach(GameObject obj in allObjects){
+			Renderer rend = obj.GetComponent(Renderer);
+			if(rend && rend.isVisible){
+				drawcalls++;
+			}
+		}*/
+		
+		//print drawcalls
+		//Debug.Log(drawcalls);
+		
+		//reset drawcalls every update
+		//drawcalls = 0;
 	}
 
 	private void updateFPS(){
