@@ -32,7 +32,8 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	//The current mode the demo is in
-	public State currentState = State.noAction;
+	public  State currentState = State.noAction;
+	public static State state;
 
 	public void launchIntheAir(){
 		isFlying = true;
@@ -47,6 +48,7 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
+		state = currentState;
 
 		vitesse = Vector3.zero;
 		isFlying = false;
@@ -56,6 +58,7 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		state = currentState;
 		if (isFlying && !GameController.isGamePaused() && !GameController.isOverGUI()) {
 
 			if(!audio.isPlaying)	audio.Play();
@@ -198,10 +201,12 @@ public class PlayerController : MonoBehaviour {
 
 		if(other.gameObject.tag == "Beans" && !isItemActivated ){
 			//Debug.Log ("***************  collision avec beans ");
+			isWithShoe = false;
+			isWithCask = false;
 			isItemActivated = true;
 			anim.SetTrigger("goFlageollet");
 			other.gameObject.SetActive(false);
-			updateVitesse(other.gameObject);
+			//updateVitesse(other.gameObject);
 			currentState = State.noAction;
 		}
 
@@ -264,7 +269,7 @@ public class PlayerController : MonoBehaviour {
 		isWithCask = false;
 		anim.SetBool("withCask",false);
 		anim.SetBool("withShoes",false);
-		currentState = State.noAction;
+		currentState = State.naked;
 	}
 
 	/*** permet de savoir si la phase de décollage est terminée en animation ...****/
@@ -282,8 +287,14 @@ public class PlayerController : MonoBehaviour {
 		switch (currentState) {
 
 			case State.naked:
-				anim.SetTrigger("battemets");
-				Debug.Log ("clic sur bouton action");
+				
+				if(GameController.lastPlayerSpeed.y >= -0.05f){
+					anim.SetTrigger("battements");
+					vitesse.y += vitesse.y * 4 / 100;
+				}
+					
+				Debug.Log ("clic sur bouton action : battements");
+			//TODO limiter le nbre de clics possibles par un timer !!
 				break;
 
 			case State.laser:

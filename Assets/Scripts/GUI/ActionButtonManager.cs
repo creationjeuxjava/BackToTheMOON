@@ -19,8 +19,9 @@ public class ActionButtonManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (this.GetComponent<PlayerController> ().currentState == PlayerController.State.noAction) {
-			buttonObject.SetActive (false);
+		if (this.GetComponent<PlayerController>().currentState == PlayerController.State.noAction) {
+			//buttonObject.SetActive (false);
+			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/boutonaction",typeof(Sprite));
 		} 
 		else if (this.GetComponent<PlayerController> ().currentState == PlayerController.State.naked) {
 			buttonObject.SetActive (true);
@@ -33,14 +34,6 @@ public class ActionButtonManager : MonoBehaviour {
 		else {
 			Debug.Log("pas de state adapté !!!");
 		}
-
-		float realY =  Screen.height - Input.mousePosition.y;
-		Rect actionRect = new Rect (buttonObject.transform.position.x,buttonObject.transform.position.y,50,50);
-		if (actionRect.Contains (new Vector3(Input.mousePosition.x,realY,Input.mousePosition.z))) {
-			GameController.OverGUI(true);
-			
-		}
-		else GameController.OverGUI(false);
 	}
 
 

@@ -33,9 +33,9 @@ public class DebugInGame : MonoBehaviour {
 
 		isFly.text = "isBeginFly : "+PlayerController.isFlyBegin;
 		isCask.text = "isWithCask : "+PlayerController.isWithCask;
-		isShoe.text = "isWithShoe : "+PlayerController.isWithShoe;
+		isShoe.text = "state : "+PlayerController.state; //"isWithShoe : "+PlayerController.isWithShoe;
 		translation.text = "translation :" + PlayerController.translation;
-		vitesse.text = "vitesse : " + PlayerController.vitesse;
+		vitesse.text = "vitesse : " + GameController.lastPlayerSpeed;
 		fpsText.text = "FPS : "+format;
 		isGameFinish.text = "IsGameFinish : " + !GameController.isInGame;
 	}

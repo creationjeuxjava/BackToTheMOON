@@ -23,10 +23,10 @@ public class InGameGUI : MonoBehaviour {
 		//Debug.Log ("Mouse en : " + Input.mousePosition+" et Sreen : "+Screen.height);
 		//Debug.Log ("REct en : " + pauseRect.position + " et souris en "+realY);
 		if (pauseRect.Contains (new Vector3(Input.mousePosition.x,realY,Input.mousePosition.z))) {
-			GameController.OverGUI(true);
+			//GameController.OverGUI(true);
 		
 		}
-		else GameController.OverGUI(false);
+		//else GameController.OverGUI(false);
 	}
 
 	/**** Eléments GUI du jeu ****/

@@ -27,13 +27,13 @@ public class GameController : MonoBehaviour {
 	public static int nbrePieces = 0;
 	private int coeffAltitude = 100;
 	private float altMaxForWinLevel = 80000f ;
-	private float altBeginOfSpace = 410;//41000f;
+	private float altBeginOfSpace = 41000f;
 
 	private int coeffVitesse = 1 * 3600; 
 	private int currentLevel = 1; //par défaut le premier niveau
 	private float gravityLevel;
 	private float startFlyTime;
-	private Vector3 lastPlayerSpeed;
+	public static Vector3 lastPlayerSpeed;
 
 	//private List<GameObject> listeObjectPoolers = new List<GameObject>();
 	private Dictionary<GameObject,string> dicoObjectPoolers = new Dictionary<GameObject,string>();
@@ -219,8 +219,9 @@ public class GameController : MonoBehaviour {
 	}
 
 	//permetr de savoir si a cliqué sur un élément GUI
-	public static void OverGUI(bool value){		
+	public void OverGUI(bool value){		
 		isOverGUIPause = value;
+		Debug.Log("on est sur un element UI ? "+isOverGUIPause);
 	}
 
 
