@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class DebugInGame : MonoBehaviour {
 
 	private int startY;
-	Text isFly,isCask,isShoe,translation,vitesse,fpsText, isGameFinish;
+	Text isFly,isCask,isShoe,translation,vitesse,fpsText, isGameFinish,OSInfos;
 
 	/*** pour le FPS ****/
 	public float updateInterval = 0.5F;	
@@ -23,6 +23,10 @@ public class DebugInGame : MonoBehaviour {
 	//List<GameObject> allObjects = new List<GameObject>();
 
 	void Start () {
+		OSInfos = GameObject.Find ("operating system").GetComponent<Text> ();
+		OSInfos.text = "OS : " + SystemInfo.operatingSystem+" \n GraphicsMemory :"+SystemInfo.graphicsMemorySize+"\n systemMemory :"+SystemInfo.systemMemorySize;
+		print(SystemInfo.graphicsMemorySize);
+		/*print(SystemInfo.deviceModel);*/
 		//GameObject.f
 		//allObjects = GameObject.FindObjectsOfType (GameObject);
 

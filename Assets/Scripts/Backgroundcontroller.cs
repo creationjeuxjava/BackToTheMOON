@@ -9,6 +9,7 @@ public class Backgroundcontroller : MonoBehaviour {
 	void Start(){
 
 		planMat = GetComponent<MeshRenderer> ().materials [0];
+
 	}
 
 	void Update () {

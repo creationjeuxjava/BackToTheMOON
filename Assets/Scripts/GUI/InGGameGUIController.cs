@@ -24,6 +24,7 @@ public class InGGameGUIController : MonoBehaviour {
 		panelVitesse = GameObject.Find ("PanelInfosVitesse");
 		vitessePlayer = GameObject.Find ("infoVitesse").GetComponent<Text> ();
 		panelVitesse.SetActive (false);
+
 	}
 	
 

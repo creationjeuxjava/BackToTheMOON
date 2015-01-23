@@ -39,8 +39,8 @@ public class PlayerController : MonoBehaviour {
 		isFlying = true;
 		isFlyBegin = true;
 		vitesse = new Vector3(0,-speedPlayer,0);
-		GameObject particules = Instantiate(fumee, new Vector3(transform.position.x,transform.position.y-2, -2f), transform.rotation) as GameObject; 
-		particules.transform.parent = this.transform;
+		//GameObject particules = Instantiate(fumee, new Vector3(transform.position.x,transform.position.y-2, -2f), transform.rotation) as GameObject; 
+		//particules.transform.parent = this.transform;
 		anim.SetTrigger ("decollage");
 	}
 
@@ -173,6 +173,7 @@ public class PlayerController : MonoBehaviour {
 			
 			GetComponent<Inventory>().addItem(new Item("casque",1,Item.ItemType.Timer));
 			currentState = State.noAction;
+			//ActionButtonManager.updateIcon(currentState);
 		}
 
 		if(other.gameObject.tag == "Shoe" && !isItemActivated ){
@@ -191,6 +192,7 @@ public class PlayerController : MonoBehaviour {
 			//boostVitesse(50/100);
 			updateVitesse(other.gameObject);
 			currentState = State.noAction;
+			//ActionButtonManager.updateIcon(currentState);
 		}
 		if(other.gameObject.tag == "Piece" ){
 			//Debug.Log ("***************  collision avec une piece ");
@@ -208,6 +210,7 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive(false);
 			//updateVitesse(other.gameObject);
 			currentState = State.noAction;
+			//ActionButtonManager.updateIcon(currentState);
 		}
 
 	}
@@ -260,6 +263,7 @@ public class PlayerController : MonoBehaviour {
 			//TODO : supprimer l'item de l'inventaire !!
 
 			currentState = State.naked;
+			//ActionButtonManager.updateIcon(currentState);
 		}
 	}
 
@@ -270,6 +274,7 @@ public class PlayerController : MonoBehaviour {
 		anim.SetBool("withCask",false);
 		anim.SetBool("withShoes",false);
 		currentState = State.naked;
+		//ActionButtonManager.updateIcon(currentState);
 	}
 
 	/*** permet de savoir si la phase de décollage est terminée en animation ...****/
@@ -278,6 +283,7 @@ public class PlayerController : MonoBehaviour {
 		//Debug.Log ("le fly enclanché !!");
 		isFlyBegin = false;
 		currentState = State.naked;
+		//ActionButtonManager.updateIcon(currentState);
 	}
 
 
