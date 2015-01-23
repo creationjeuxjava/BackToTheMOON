@@ -17,21 +17,21 @@ public class CanonController : MonoBehaviour {
 	void Update () {
 
 		/**** version android et iphone ***/
-		int fingerCount = 0;
+		/*int fingerCount = 0;
 		foreach (Touch touch in Input.touches) {
 			if (touch.phase != TouchPhase.Ended && touch.phase != TouchPhase.Canceled)
 				fingerCount++;
 			
 		}
 		if (fingerCount > 0)
-			print("User has " + fingerCount + " finger(s) touching the screen");
+			print("User has " + fingerCount + " finger(s) touching the screen");*/
 		
 	}
 	
 	/*** au clic sur le canon on fait "décoller" le pplayer *****/
 	void OnMouseDown()//fonctionne aussi sur android !!
 	{
-		Debug.Log ("on touche le canon");
+		//Debug.Log ("on touche le canon");
 		anim.SetTrigger ("fire");//audio.Play();
 		animMoitie.SetTrigger ("fire");
 
@@ -49,7 +49,7 @@ public class CanonController : MonoBehaviour {
 		//particules.transform.parent = GameController.world.transform;
 
 
-		Debug.Log ("on launchIt");
+		//Debug.Log ("on launchIt");
 
 	}
 }

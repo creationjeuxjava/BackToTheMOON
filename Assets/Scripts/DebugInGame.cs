@@ -24,8 +24,9 @@ public class DebugInGame : MonoBehaviour {
 
 	void Start () {
 		OSInfos = GameObject.Find ("operating system").GetComponent<Text> ();
-		OSInfos.text = "OS : " + SystemInfo.operatingSystem+" \n GraphicsMemory :"+SystemInfo.graphicsMemorySize+"\n systemMemory :"+SystemInfo.systemMemorySize;
-		print(SystemInfo.graphicsMemorySize);
+		OSInfos.text = "OS : " + SystemInfo.operatingSystem+" \n GraphicsMemory :"+SystemInfo.graphicsMemorySize+"\n systemMemory :"+SystemInfo.systemMemorySize
+							+"\n support 3DTexture: "+SystemInfo.processorType;
+		//print(SystemInfo.graphicsMemorySize);
 		/*print(SystemInfo.deviceModel);*/
 		//GameObject.f
 		//allObjects = GameObject.FindObjectsOfType (GameObject);

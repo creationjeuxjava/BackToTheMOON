@@ -68,11 +68,11 @@ public class ActionButtonManager : MonoBehaviour {
 			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/boutonaction",typeof(Sprite));
 		} 
 		else if (state == PlayerController.State.naked) {			
-			buttonObject.SetActive (true);
+		//	buttonObject.SetActive (true);
 			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/helico", typeof(Sprite));
 		} 
 		else if (state == PlayerController.State.laser) {
-			buttonObject.SetActive (true);
+		//	buttonObject.SetActive (true);
 			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/sabrelaser", typeof(Sprite));
 		} 
 		else {
