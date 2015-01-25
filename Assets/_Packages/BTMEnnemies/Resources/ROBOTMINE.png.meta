@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: eae3adb4637f0e749afdd31bf0e6d4cd
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: "Robotaraign\xE9e_00001"
+    21300002: "Robotaraign\xE9e_00002"
+    21300004: "Robotaraign\xE9e_00003"
+    21300006: "Robotaraign\xE9e_00004"
+    21300008: "Robotaraign\xE9e_00005"
+    21300010: "Robotaraign\xE9e_00006"
+    21300012: "Robotaraign\xE9e_00007"
+    21300014: "Robotaraign\xE9e_00008"
+    21300016: "Robotaraign\xE9e_00009"
+    21300018: "Robotaraign\xE9e_00010"
+    21300020: "Robotaraign\xE9e_00011"
+    21300022: "Robotaraign\xE9e_00012"
+    21300024: "Robotaraign\xE9e_00013"
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: "Robotaraign\xE9e_00001"
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 699
+        width: 178
+        height: 179
+      alignment: 9
+      pivot: {x: -.915730357, y: -1.36871505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "Robotaraign\xE9e_00002"
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 701
+        width: 178
+        height: 177
+      alignment: 9
+      pivot: {x: -.915730357, y: -1.38983047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "Robotaraign\xE9e_00003"
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 698
+        width: 179
+        height: 180
+      alignment: 9
+      pivot: {x: -.91061455, y: -1.35555553}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "Robotaraign\xE9e_00004"
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 703
+        width: 175
+        height: 175
+      alignment: 9
+      pivot: {x: -.942857146, y: -1.41142857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "Robotaraign\xE9e_00005"
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 472
+        width: 175
+        height: 176
+      alignment: 9
+      pivot: {x: -.942857146, y: -1.39772725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "Robotaraign\xE9e_00006"
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 469
+        width: 179
+        height: 179
+      alignment: 9
+      pivot: {x: -.91061455, y: -1.36312854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "Robotaraign\xE9e_00007"
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 469
+        width: 179
+        height: 179
+      alignment: 9
+      pivot: {x: -.91061455, y: -1.36312854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "Robotaraign\xE9e_00008"
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 469
+        width: 178
+        height: 179
+      alignment: 9
+      pivot: {x: -.910112381, y: -1.36871505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "Robotaraign\xE9e_00009"
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 240
+        width: 178
+        height: 179
+      alignment: 9
+      pivot: {x: -.915730357, y: -1.36871505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "Robotaraign\xE9e_00010"
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 240
+        width: 179
+        height: 179
+      alignment: 9
+      pivot: {x: -.905027926, y: -1.36871505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "Robotaraign\xE9e_00011"
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 240
+        width: 179
+        height: 179
+      alignment: 9
+      pivot: {x: -.905027926, y: -1.36871505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "Robotaraign\xE9e_00012"
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 240
+        width: 178
+        height: 179
+      alignment: 9
+      pivot: {x: -.915730357, y: -1.36871505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "Robotaraign\xE9e_00013"
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 11
+        width: 178
+        height: 179
+      alignment: 9
+      pivot: {x: -.915730357, y: -1.36871505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

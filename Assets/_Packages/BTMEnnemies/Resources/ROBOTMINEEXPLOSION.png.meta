@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: 418dcc92d2f166541beeda4c9b72aead
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ROBOTMINEEXPLOSION0
+    21300002: ROBOTMINEEXPLOSION1
+    21300004: ROBOTMINEEXPLOSION10
+    21300006: ROBOTMINEEXPLOSION11
+    21300008: ROBOTMINEEXPLOSION12
+    21300010: ROBOTMINEEXPLOSION2
+    21300012: ROBOTMINEEXPLOSION3
+    21300014: ROBOTMINEEXPLOSION4
+    21300016: ROBOTMINEEXPLOSION5
+    21300018: ROBOTMINEEXPLOSION6
+    21300020: ROBOTMINEEXPLOSION7
+    21300022: ROBOTMINEEXPLOSION8
+    21300024: ROBOTMINEEXPLOSION9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ROBOTMINEEXPLOSION0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1554
+        width: 179
+        height: 180
+      alignment: 9
+      pivot: {x: .561452508, y: .497222215}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOTMINEEXPLOSION1
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1548
+        width: 207
+        height: 186
+      alignment: 9
+      pivot: {x: .543478251, y: .491935492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOTMINEEXPLOSION10
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1428
+        width: 289
+        height: 306
+      alignment: 9
+      pivot: {x: .52422148, y: .475490183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOTMINEEXPLOSION11
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1071
+        width: 284
+        height: 307
+      alignment: 9
+      pivot: {x: .51584506, y: .47719869}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOTMINEEXPLOSION12
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1070
+        width: 287
+        height: 308
+      alignment: 9
+      pivot: {x: .520905912, y: .472402602}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOTMINEEXPLOSION2
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1151
+        width: 212
+        height: 227
+      alignment: 9
+      pivot: {x: .544811308, y: .416299552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOTMINEEXPLOSION3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 802
+        width: 253
+        height: 218
+      alignment: 9
+      pivot: {x: .559288561, y: .451834857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOTMINEEXPLOSION4
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 750
+        width: 261
+        height: 270
+      alignment: 9
+      pivot: {x: .5, y: .427777767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOTMINEEXPLOSION5
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 734
+        width: 279
+        height: 286
+      alignment: 9
+      pivot: {x: .507168472, y: .417832166}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOTMINEEXPLOSION6
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 374
+        width: 285
+        height: 310
+      alignment: 9
+      pivot: {x: .517543852, y: .459677428}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOTMINEEXPLOSION7
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 382
+        width: 290
+        height: 302
+      alignment: 9
+      pivot: {x: .525862098, y: .448675483}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOTMINEEXPLOSION8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 11
+        width: 283
+        height: 313
+      alignment: 9
+      pivot: {x: .514134288, y: .464856237}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOTMINEEXPLOSION9
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 17
+        width: 290
+        height: 307
+      alignment: 9
+      pivot: {x: .525862098, y: .47719869}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
