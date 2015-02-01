@@ -1,0 +1,21 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: levelgrecelements.png (2048 x 2016)
+# $TexturePacker:SmartUpdate:d8959f19230c42745f6fcb5960f567c3:011e60cd32474590f83ee4f054f34460:31fde34faad5f5bd9abf8d6cd00f8fff$
+#
+
+arcenciel;1;87;805;355;0.5;0.5
+bateaugrand;983;1227;691;788;0.5;0.5076142131979695
+bateaupetit;1682;1332;286;331;0.5;0.5135951661631419
+colonne1;1208;349;394;870;0.5;0.5
+colonne2;1610;349;412;396;0.5;0.5
+lettreD;1610;753;432;466;0.5;0.5
+lettreE;814;3;354;439;0.5;0.5
+lettreL;1682;1671;232;344;0.5;0.5
+nuage;1;1175;974;840;0.4989733059548255;0.37916666666666665
+nuage3;1;450;1199;717;0.4991659716430359;0.32287308228730827
+nuagegrec;1176;199;769;142;0.5;0.5

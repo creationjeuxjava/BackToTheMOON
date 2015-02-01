@@ -1,0 +1,278 @@
+fileFormatVersion: 2
+guid: bfaf329f7487942ac85b04172a7fe9df
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: CANONFOND_00004
+    21300002: CANONFOND_00005
+    21300004: CANONFOND_00006
+    21300006: CANONFOND_00008
+    21300008: CANONFOND_00009
+    21300010: CANONFOND_00010
+    21300012: CANONFOND_00011
+    21300014: CANONFOND_00012
+    21300016: CANONFOND_00013
+    21300018: CANONFOND_00014
+    21300020: CANONFOND_00015
+    21300022: CANONFOND_00016
+    21300024: CANONFOND_00017
+    21300026: CANONFOND_00018
+    21300028: CANONFOND_00023
+    21300030: CANONFOND_00025
+    21300032: CANONFOND_00026
+    21300034: CANONFOND_00027
+    21300036: CANONFOND_00028
+    21300038: CANONFOND_00029
+    21300040: CANONFOND_00030
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: CANONFOND_00004
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1434
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00005
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 944
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00006
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 454
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00008
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1434
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00009
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 944
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00010
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 454
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00011
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1434
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00012
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 944
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00013
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 454
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00014
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 1434
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00015
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 967
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00016
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 501
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00017
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 11
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00018
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 944
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00023
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 477
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00025
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 991
+        width: 257
+        height: 428
+      alignment: 9
+      pivot: {x: 1.9922179, y: -.324766368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00026
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 1457
+        width: 268
+        height: 417
+      alignment: 9
+      pivot: {x: 1.95149255, y: -.333333343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00027
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 1469
+        width: 279
+        height: 405
+      alignment: 9
+      pivot: {x: 1.91397846, y: -.343209863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00028
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 292
+        height: 394
+      alignment: 9
+      pivot: {x: 1.87328768, y: -.352791876}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00029
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 22
+        width: 305
+        height: 382
+      alignment: 9
+      pivot: {x: 1.82622945, y: -.363874346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONFOND_00030
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 454
+        width: 248
+        height: 440
+      alignment: 9
+      pivot: {x: 2.0282259, y: -.315909088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

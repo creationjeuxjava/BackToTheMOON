@@ -1,0 +1,278 @@
+fileFormatVersion: 2
+guid: 06c4c201edca44db9b96f2020627b3be
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: CANONDEVANT_00004
+    21300002: CANONDEVANT_00005
+    21300004: CANONDEVANT_00006
+    21300006: CANONDEVANT_00008
+    21300008: CANONDEVANT_00009
+    21300010: CANONDEVANT_00010
+    21300012: CANONDEVANT_00011
+    21300014: CANONDEVANT_00012
+    21300016: CANONDEVANT_00013
+    21300018: CANONDEVANT_00014
+    21300020: CANONDEVANT_00015
+    21300022: CANONDEVANT_00016
+    21300024: CANONDEVANT_00017
+    21300026: CANONDEVANT_00018
+    21300028: CANONDEVANT_00023
+    21300030: CANONDEVANT_00025
+    21300032: CANONDEVANT_00026
+    21300034: CANONDEVANT_00027
+    21300036: CANONDEVANT_00028
+    21300038: CANONDEVANT_00029
+    21300040: CANONDEVANT_00030
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: CANONDEVANT_00004
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 280
+        width: 356
+        height: 438
+      alignment: 9
+      pivot: {x: 1.71629214, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00005
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 719
+        width: 358
+        height: 438
+      alignment: 9
+      pivot: {x: 1.71229053, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00006
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 719
+        width: 365
+        height: 438
+      alignment: 9
+      pivot: {x: 1.69863009, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00008
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 719
+        width: 380
+        height: 438
+      alignment: 9
+      pivot: {x: 1.67105258, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00009
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 719
+        width: 387
+        height: 438
+      alignment: 9
+      pivot: {x: 1.65891469, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00010
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 719
+        width: 395
+        height: 438
+      alignment: 9
+      pivot: {x: 1.64556956, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00011
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 1597
+        width: 402
+        height: 438
+      alignment: 9
+      pivot: {x: 1.63432837, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00012
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 1158
+        width: 409
+        height: 438
+      alignment: 9
+      pivot: {x: 1.62347186, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00013
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1158
+        width: 417
+        height: 438
+      alignment: 9
+      pivot: {x: 1.61151075, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00014
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 1597
+        width: 425
+        height: 438
+      alignment: 9
+      pivot: {x: 1.60000002, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00015
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1597
+        width: 434
+        height: 438
+      alignment: 9
+      pivot: {x: 1.58755755, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00016
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1158
+        width: 444
+        height: 438
+      alignment: 9
+      pivot: {x: 1.57432437, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00017
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1158
+        width: 453
+        height: 438
+      alignment: 9
+      pivot: {x: 1.56291389, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00018
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1597
+        width: 462
+        height: 438
+      alignment: 9
+      pivot: {x: 1.55194807, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00023
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1597
+        width: 283
+        height: 438
+      alignment: 9
+      pivot: {x: 1.9010601, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00025
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 292
+        width: 283
+        height: 426
+      alignment: 9
+      pivot: {x: 1.9010601, y: -.28403756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00026
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 304
+        width: 287
+        height: 414
+      alignment: 9
+      pivot: {x: 1.88850176, y: -.292270541}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00027
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 317
+        width: 301
+        height: 401
+      alignment: 9
+      pivot: {x: 1.84717607, y: -.301745623}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00028
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 329
+        width: 316
+        height: 389
+      alignment: 9
+      pivot: {x: 1.80696201, y: -.311053991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00029
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 341
+        width: 330
+        height: 377
+      alignment: 9
+      pivot: {x: 1.76363635, y: -.320954919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CANONDEVANT_00030
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1158
+        width: 283
+        height: 438
+      alignment: 9
+      pivot: {x: 1.9010601, y: -.276255697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
