@@ -180,7 +180,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100702, guid: 2d02954e5b6adda438a2fa6411069a98, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d02954e5b6adda438a2fa6411069a98, type: 2}
@@ -1987,7 +1987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &430387672
 Transform:
   m_ObjectHideFlags: 0
@@ -3176,7 +3176,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 13
-  m_Sprite: {fileID: 21300000, guid: b242073414f3c43debc1766822417c32, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bfaf329f7487942ac85b04172a7fe9df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &656816783
 GameObject:
@@ -3435,7 +3435,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100702, guid: 2d02954e5b6adda438a2fa6411069a98, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d02954e5b6adda438a2fa6411069a98, type: 2}
@@ -3479,7 +3479,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 432906, guid: a01f8d2845fb98b40851141abb6f42c5, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 21232906, guid: a01f8d2845fb98b40851141abb6f42c5, type: 2}
       propertyPath: m_SortingOrder
@@ -3493,6 +3493,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 21232906, guid: a01f8d2845fb98b40851141abb6f42c5, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 06c4c201edca44db9b96f2020627b3be,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a01f8d2845fb98b40851141abb6f42c5, type: 2}
   m_RootGameObject: {fileID: 1646134309}
@@ -3824,6 +3829,11 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 21287080, guid: a6b7d716d46427748b411f747ff89ebb, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bfaf329f7487942ac85b04172a7fe9df,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6b7d716d46427748b411f747ff89ebb, type: 2}
   m_RootGameObject: {fileID: 656015619}
@@ -6569,7 +6579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1353388014
 Transform:
   m_ObjectHideFlags: 0
@@ -7899,7 +7909,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 14
-  m_Sprite: {fileID: 21300000, guid: fd0c27f6c1fcc4634877c32be1ae60dc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 06c4c201edca44db9b96f2020627b3be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!50 &1646134316
 Rigidbody2D:
@@ -8600,7 +8610,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1832133589
 Transform:
   m_ObjectHideFlags: 0
