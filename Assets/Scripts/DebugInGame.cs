@@ -29,7 +29,7 @@ public class DebugInGame : MonoBehaviour {
 				+"\n maxText: "+SystemInfo.maxTextureSize+" Device :"+SystemInfo.deviceName
 				+"\n deviceModel: "+SystemInfo.deviceModel+" DeviceType :"+SystemInfo.deviceType
 				+"\n GraphicsdeviceName: "+SystemInfo.graphicsDeviceName+" \n GraphicsDeviceVersion :"+SystemInfo.graphicsDeviceVersion
-				+"\n nbreProcessor: "+SystemInfo.processorCount+" \n nPOTsupport:"+SystemInfo.npotSupport;
+				+"\n nbreProcessor: "+SystemInfo.processorCount+" \n pixelFillRate:"+SystemInfo.graphicsPixelFillrate;
 		/*SystemInfo.maxTextureSize;
 		SystemInfo.deviceName;
 		SystemInfo.deviceModel;*/
