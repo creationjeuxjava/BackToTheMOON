@@ -24,11 +24,12 @@ public class DebugInGame : MonoBehaviour {
 
 	void Start () {
 		OSInfos = GameObject.Find ("operating system").GetComponent<Text> ();
-		OSInfos.text = "OS : " + SystemInfo.operatingSystem+" \n GraphicsMemory :"+SystemInfo.graphicsMemorySize+"\n systemMemory :"+SystemInfo.systemMemorySize
+		OSInfos.text = "OS : " + SystemInfo.operatingSystem+" \n GraphicsMemory :"+SystemInfo.graphicsMemorySize+" systemMemory :"+SystemInfo.systemMemorySize
 			+"\n support processor: "+SystemInfo.processorType
 				+"\n maxText: "+SystemInfo.maxTextureSize+" Device :"+SystemInfo.deviceName
 				+"\n deviceModel: "+SystemInfo.deviceModel+" DeviceType :"+SystemInfo.deviceType
-				+"\n GraphicsdeviceName: "+SystemInfo.graphicsDeviceName+" GraphicsDeviceVersion :"+SystemInfo.graphicsDeviceVersion;
+				+"\n GraphicsdeviceName: "+SystemInfo.graphicsDeviceName+" \n GraphicsDeviceVersion :"+SystemInfo.graphicsDeviceVersion
+				+"\n nbreProcessor: "+SystemInfo.processorCount+" \n nPOTsupport:"+SystemInfo.npotSupport;
 		/*SystemInfo.maxTextureSize;
 		SystemInfo.deviceName;
 		SystemInfo.deviceModel;*/
