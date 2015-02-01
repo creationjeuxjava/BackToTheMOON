@@ -1,53 +1,53 @@
 fileFormatVersion: 2
-guid: 4e26c436c70eeb845a08911bbac4f029
+guid: bac738a2e0cd313488960dc87f5294a5
 TextureImporter:
   fileIDToRecycleName:
-    21300000: decollage_0
-    21300002: decollage_1
-    21300004: decollage_2
-    21300006: decollage_3
-    21300008: decollage_4
-    21300010: decollage_5
-    21300012: decollage_6
-    21300014: decollage_7
-    21300016: decollage_8
-    21300018: decollage_9
-    21300020: decollage_10
-    21300022: decollage_11
-    21300024: decollage_12
-    21300026: decollage_13
-    21300028: decollage_14
-    21300030: decollage_15
-    21300032: decollage_16
-    21300034: decollage_17
-    21300036: decollage_18
-    21300038: decollage_19
-    21300040: decollage_20
-    21300042: decollage_21
-    21300044: decollage_22
-    21300046: decollage_23
-    21300048: decollage_24
-    21300050: decollage_25
-    21300052: decollage_26
-    21300054: decollage_27
-    21300056: decollage_28
-    21300058: decollage_29
-    21300060: decollage_30
-    21300062: decollage_31
-    21300064: decollage_32
-    21300066: decollage_33
-    21300068: decollage_34
-    21300070: decollage_35
-    21300072: decollage_36
-    21300074: decollage_37
-    21300076: decollage_38
-    21300078: decollage_39
-    21300080: decollage_40
-    21300082: decollage_41
+    21300000: VERSIONFINALE_00001
+    21300002: VERSIONFINALE_00002
+    21300004: VERSIONFINALE_00003
+    21300006: VERSIONFINALE_00004
+    21300008: VERSIONFINALE_00005
+    21300010: VERSIONFINALE_00006
+    21300012: VERSIONFINALE_00007
+    21300014: VERSIONFINALE_00008
+    21300016: VERSIONFINALE_00009
+    21300018: VERSIONFINALE_00010
+    21300020: VERSIONFINALE_00011
+    21300022: VERSIONFINALE_00012
+    21300024: VERSIONFINALE_00013
+    21300026: VERSIONFINALE_00014
+    21300028: VERSIONFINALE_00015
+    21300030: VERSIONFINALE_00016
+    21300032: VERSIONFINALE_00017
+    21300034: VERSIONFINALE_00018
+    21300036: VERSIONFINALE_00019
+    21300038: VERSIONFINALE_00020
+    21300040: VERSIONFINALE_00021
+    21300042: VERSIONFINALE_00022
+    21300044: VERSIONFINALE_00023
+    21300046: VERSIONFINALE_00024
+    21300048: VERSIONFINALE_00025
+    21300050: VERSIONFINALE_00026
+    21300052: VERSIONFINALE_00027
+    21300054: VERSIONFINALE_00028
+    21300056: VERSIONFINALE_00029
+    21300058: VERSIONFINALE_00030
+    21300060: VERSIONFINALE_00031
+    21300062: VERSIONFINALE_00032
+    21300064: VERSIONFINALE_00033
+    21300066: VERSIONFINALE_00034
+    21300068: VERSIONFINALE_00035
+    21300070: VERSIONFINALE_00036
+    21300072: VERSIONFINALE_00037
+    21300074: VERSIONFINALE_00038
+    21300076: VERSIONFINALE_00039
+    21300078: VERSIONFINALE_00040
+    21300080: VERSIONFINALE_00041
+    21300082: VERSIONFINALE_00042
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -64,7 +64,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 2048
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -85,425 +85,425 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: decollage_0
+    - name: VERSIONFINALE_00001
       rect:
         serializedVersion: 2
-        x: 9
-        y: 1440
-        width: 159
-        height: 295
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 1
+        y: 968
+        width: 156
+        height: 307
+      alignment: 9
+      pivot: {x: .442307681, y: .921824098}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_1
+    - name: VERSIONFINALE_00002
       rect:
         serializedVersion: 2
-        x: 215
-        y: 1440
-        width: 159
-        height: 295
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 167
+        y: 968
+        width: 156
+        height: 307
+      alignment: 9
+      pivot: {x: .442307681, y: .921824098}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_2
+    - name: VERSIONFINALE_00003
       rect:
         serializedVersion: 2
-        x: 422
-        y: 1440
-        width: 154
-        height: 295
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 333
+        y: 968
+        width: 156
+        height: 307
+      alignment: 9
+      pivot: {x: .442307681, y: .921824098}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_3
+    - name: VERSIONFINALE_00004
       rect:
         serializedVersion: 2
-        x: 626
-        y: 1440
-        width: 151
-        height: 295
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 499
+        y: 967
+        width: 156
+        height: 308
+      alignment: 9
+      pivot: {x: .442307681, y: .922077894}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_4
+    - name: VERSIONFINALE_00005
       rect:
         serializedVersion: 2
-        x: 827
-        y: 1440
-        width: 151
-        height: 295
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 665
+        y: 967
+        width: 156
+        height: 308
+      alignment: 9
+      pivot: {x: .442307681, y: .922077894}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_5
+    - name: VERSIONFINALE_00006
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 967
+        width: 156
+        height: 308
+      alignment: 9
+      pivot: {x: .442307681, y: .922077894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VERSIONFINALE_00007
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 967
+        width: 156
+        height: 308
+      alignment: 9
+      pivot: {x: .442307681, y: .922077894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VERSIONFINALE_00008
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 966
+        width: 155
+        height: 309
+      alignment: 9
+      pivot: {x: .445161283, y: .922330081}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VERSIONFINALE_00009
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 966
+        width: 156
+        height: 309
+      alignment: 9
+      pivot: {x: .448717952, y: .922330081}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VERSIONFINALE_00010
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 965
+        width: 156
+        height: 310
+      alignment: 9
+      pivot: {x: .455128193, y: .922580659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VERSIONFINALE_00011
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 965
+        width: 156
+        height: 310
+      alignment: 9
+      pivot: {x: .455128193, y: .922580659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VERSIONFINALE_00012
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 965
+        width: 156
+        height: 310
+      alignment: 9
+      pivot: {x: .461538464, y: .922580659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VERSIONFINALE_00013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 644
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .467948705, y: .922829568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VERSIONFINALE_00014
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 644
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .467948705, y: .922829568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VERSIONFINALE_00015
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 644
+        width: 160
+        height: 311
+      alignment: 9
+      pivot: {x: .474999994, y: .922829568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VERSIONFINALE_00016
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 644
+        width: 165
+        height: 311
+      alignment: 9
+      pivot: {x: .472727269, y: .922829568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VERSIONFINALE_00017
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 644
+        width: 165
+        height: 311
+      alignment: 9
+      pivot: {x: .472727269, y: .922829568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VERSIONFINALE_00018
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 644
+        width: 163
+        height: 311
+      alignment: 9
+      pivot: {x: .466257662, y: .922829568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VERSIONFINALE_00019
       rect:
         serializedVersion: 2
         x: 1026
-        y: 1440
-        width: 148
-        height: 295
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        y: 644
+        width: 159
+        height: 311
+      alignment: 9
+      pivot: {x: .459119499, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_6
+    - name: VERSIONFINALE_00020
       rect:
         serializedVersion: 2
-        x: 1224
-        y: 1440
-        width: 148
-        height: 295
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 1195
+        y: 644
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .455128193, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_7
+    - name: VERSIONFINALE_00021
       rect:
         serializedVersion: 2
-        x: 1420
-        y: 1440
-        width: 149
-        height: 295
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 1361
+        y: 644
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .455128193, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_8
+    - name: VERSIONFINALE_00022
       rect:
         serializedVersion: 2
-        x: 9
-        y: 1098
-        width: 149
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 1527
+        y: 644
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .448717952, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_9
+    - name: VERSIONFINALE_00023
       rect:
         serializedVersion: 2
-        x: 205
-        y: 1098
-        width: 150
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 1693
+        y: 644
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .442307681, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_10
+    - name: VERSIONFINALE_00024
       rect:
         serializedVersion: 2
-        x: 403
-        y: 1098
-        width: 148
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 1859
+        y: 644
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .442307681, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_11
+    - name: VERSIONFINALE_00025
       rect:
         serializedVersion: 2
-        x: 600
-        y: 1098
-        width: 149
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 1
+        y: 323
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .442307681, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_12
+    - name: VERSIONFINALE_00026
       rect:
         serializedVersion: 2
-        x: 798
-        y: 1098
-        width: 148
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 167
+        y: 323
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .448717952, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_13
+    - name: VERSIONFINALE_00027
       rect:
         serializedVersion: 2
-        x: 995
-        y: 1098
-        width: 149
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 333
+        y: 323
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .455128193, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_14
+    - name: VERSIONFINALE_00028
       rect:
         serializedVersion: 2
-        x: 1191
-        y: 1098
-        width: 148
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 499
+        y: 323
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .461538464, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_15
+    - name: VERSIONFINALE_00029
       rect:
         serializedVersion: 2
-        x: 1389
-        y: 1098
-        width: 148
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 665
+        y: 323
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .467948705, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_16
+    - name: VERSIONFINALE_00030
       rect:
         serializedVersion: 2
-        x: 1586
-        y: 1098
-        width: 149
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 831
+        y: 323
+        width: 155
+        height: 311
+      alignment: 9
+      pivot: {x: .47096774, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_17
+    - name: VERSIONFINALE_00031
       rect:
         serializedVersion: 2
-        x: 9
-        y: 755
-        width: 149
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 996
+        y: 323
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .474358976, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_18
+    - name: VERSIONFINALE_00032
       rect:
         serializedVersion: 2
-        x: 207
-        y: 755
-        width: 146
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 1162
+        y: 323
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .474358976, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_19
+    - name: VERSIONFINALE_00033
       rect:
         serializedVersion: 2
-        x: 405
-        y: 755
-        width: 148
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 1328
+        y: 323
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .467948705, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_20
+    - name: VERSIONFINALE_00034
       rect:
         serializedVersion: 2
-        x: 600
-        y: 755
-        width: 149
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 1494
+        y: 323
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .467948705, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_21
+    - name: VERSIONFINALE_00035
       rect:
         serializedVersion: 2
-        x: 798
-        y: 755
-        width: 148
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 1660
+        y: 323
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .461538464, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_22
+    - name: VERSIONFINALE_00036
       rect:
         serializedVersion: 2
-        x: 994
-        y: 755
-        width: 148
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 1826
+        y: 323
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .461538464, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_23
+    - name: VERSIONFINALE_00037
       rect:
         serializedVersion: 2
-        x: 1191
-        y: 755
-        width: 148
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 1
+        y: 2
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .455128193, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_24
+    - name: VERSIONFINALE_00038
       rect:
         serializedVersion: 2
-        x: 1389
-        y: 755
-        width: 148
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 167
+        y: 2
+        width: 155
+        height: 311
+      alignment: 9
+      pivot: {x: .45161289, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_25
+    - name: VERSIONFINALE_00039
       rect:
         serializedVersion: 2
-        x: 1585
-        y: 755
-        width: 148
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 332
+        y: 2
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .448717952, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_26
+    - name: VERSIONFINALE_00040
       rect:
         serializedVersion: 2
-        x: 9
-        y: 413
-        width: 149
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 498
+        y: 2
+        width: 155
+        height: 311
+      alignment: 9
+      pivot: {x: .445161283, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_27
+    - name: VERSIONFINALE_00041
       rect:
         serializedVersion: 2
-        x: 207
-        y: 413
-        width: 148
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 663
+        y: 2
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .442307681, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_28
+    - name: VERSIONFINALE_00042
       rect:
         serializedVersion: 2
-        x: 403
-        y: 413
-        width: 148
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_29
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 413
-        width: 149
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_30
-      rect:
-        serializedVersion: 2
-        x: 798
-        y: 415
-        width: 148
-        height: 291
-      alignment: 2
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_31
-      rect:
-        serializedVersion: 2
-        x: 994
-        y: 415
-        width: 148
-        height: 291
-      alignment: 2
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_32
-      rect:
-        serializedVersion: 2
-        x: 1191
-        y: 411
-        width: 148
-        height: 295
-      alignment: 2
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_33
-      rect:
-        serializedVersion: 2
-        x: 1387
-        y: 413
-        width: 148
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_34
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 72
-        width: 149
-        height: 292
-      alignment: 2
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_35
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 69
-        width: 148
-        height: 295
-      alignment: 2
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_36
-      rect:
-        serializedVersion: 2
-        x: 403
-        y: 72
-        width: 148
-        height: 292
-      alignment: 2
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_37
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 71
-        width: 148
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_38
-      rect:
-        serializedVersion: 2
-        x: 798
-        y: 74
-        width: 148
-        height: 291
-      alignment: 2
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_39
-      rect:
-        serializedVersion: 2
-        x: 994
-        y: 72
-        width: 148
-        height: 293
-      alignment: 2
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_40
-      rect:
-        serializedVersion: 2
-        x: 1190
-        y: 72
-        width: 149
-        height: 290
-      alignment: 2
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: decollage_41
-      rect:
-        serializedVersion: 2
-        x: 1387
-        y: 74
-        width: 148
-        height: 290
-      alignment: 2
-      pivot: {x: 0, y: 0}
+        x: 829
+        y: 2
+        width: 156
+        height: 311
+      alignment: 9
+      pivot: {x: .442307681, y: .922829568}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

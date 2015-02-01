@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: 6ed340b1d137f466aafc586ba2f1267d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: VapeurVolante_00001
+    21300002: VapeurVolante_00002
+    21300004: VapeurVolante_00003
+    21300006: VapeurVolante_00004
+    21300008: VapeurVolante_00005
+    21300010: VapeurVolante_00006
+    21300012: VapeurVolante_00007
+    21300014: VapeurVolante_00008
+    21300016: VapeurVolante_00009
+    21300018: VapeurVolante_00010
+    21300020: VapeurVolante_00011
+    21300022: VapeurVolante_00012
+    21300024: VapeurVolante_00013
+    21300026: VapeurVolante_00014
+    21300028: VapeurVolante_00015
+    21300030: VapeurVolante_00016
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: VapeurVolante_00001
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 2030
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 400, y: -749}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VapeurVolante_00002
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 1495
+        width: 91
+        height: 122
+      alignment: 9
+      pivot: {x: 4.39560461, y: .147540987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VapeurVolante_00003
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 1622
+        width: 142
+        height: 146
+      alignment: 9
+      pivot: {x: 2.81690145, y: .0684931502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VapeurVolante_00004
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 1361
+        width: 176
+        height: 187
+      alignment: 9
+      pivot: {x: 2.27272725, y: .165775403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VapeurVolante_00005
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 1553
+        width: 289
+        height: 215
+      alignment: 9
+      pivot: {x: 1.38408303, y: .227906972}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VapeurVolante_00006
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 1773
+        width: 348
+        height: 258
+      alignment: 9
+      pivot: {x: 1.14942527, y: .100775197}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VapeurVolante_00007
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 594
+        width: 446
+        height: 282
+      alignment: 9
+      pivot: {x: .896860957, y: .354609936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VapeurVolante_00008
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 74
+        width: 570
+        height: 334
+      alignment: 9
+      pivot: {x: .701754391, y: .461077839}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VapeurVolante_00009
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 31
+        width: 650
+        height: 377
+      alignment: 9
+      pivot: {x: .615384638, y: .453580916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VapeurVolante_00010
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 459
+        width: 800
+        height: 417
+      alignment: 9
+      pivot: {x: .5, y: .441247016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VapeurVolante_00011
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 3
+        width: 735
+        height: 451
+      alignment: 9
+      pivot: {x: .544217706, y: .427937925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VapeurVolante_00012
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 413
+        width: 727
+        height: 483
+      alignment: 9
+      pivot: {x: .550206304, y: .41614908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VapeurVolante_00013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 901
+        width: 800
+        height: 515
+      alignment: 9
+      pivot: {x: .5, y: .392233014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VapeurVolante_00014
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 1437
+        width: 800
+        height: 594
+      alignment: 9
+      pivot: {x: .5, y: .323232323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VapeurVolante_00015
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1421
+        width: 800
+        height: 610
+      alignment: 9
+      pivot: {x: .5, y: .18360655}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VapeurVolante_00016
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 881
+        width: 800
+        height: 551
+      alignment: 9
+      pivot: {x: .5, y: .183303088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

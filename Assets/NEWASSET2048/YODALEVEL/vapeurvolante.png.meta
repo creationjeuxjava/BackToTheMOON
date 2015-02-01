@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: fd264b474d90a4f1baf6906182c7ab9f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MONDEFEU_00001
+    21300002: MONDEFEU_00002
+    21300004: MONDEFEU_00003
+    21300006: MONDEFEU_00004
+    21300008: MONDEFEU_00005
+    21300010: MONDEFEU_00006
+    21300012: MONDEFEU_00007
+    21300014: MONDEFEU_00008
+    21300016: MONDEFEU_00009
+    21300018: MONDEFEU_00010
+    21300020: MONDEFEU_00011
+    21300022: MONDEFEU_00012
+    21300024: MONDEFEU_00013
+    21300026: MONDEFEU_00014
+    21300028: MONDEFEU_00015
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MONDEFEU_00001
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 1798
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 400, y: -749}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEFEU_00002
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 1525
+        width: 90
+        height: 120
+      alignment: 9
+      pivot: {x: 4.44444466, y: .141666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEFEU_00003
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 1655
+        width: 141
+        height: 144
+      alignment: 9
+      pivot: {x: 2.83687949, y: .0625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEFEU_00004
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 1809
+        width: 175
+        height: 185
+      alignment: 9
+      pivot: {x: 2.28571439, y: .162162155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEFEU_00005
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 105
+        width: 289
+        height: 214
+      alignment: 9
+      pivot: {x: 1.38408303, y: .224299058}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEFEU_00006
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 329
+        width: 347
+        height: 256
+      alignment: 9
+      pivot: {x: 1.15273774, y: .09765625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEFEU_00007
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 595
+        width: 445
+        height: 278
+      alignment: 9
+      pivot: {x: .898876429, y: .356115103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEFEU_00008
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 541
+        width: 569
+        height: 332
+      alignment: 9
+      pivot: {x: .702987671, y: .460843384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEFEU_00009
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 117
+        width: 649
+        height: 375
+      alignment: 9
+      pivot: {x: .616332829, y: .456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEFEU_00010
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 961
+        width: 800
+        height: 415
+      alignment: 9
+      pivot: {x: .5, y: .440963864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEFEU_00011
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 502
+        width: 734
+        height: 449
+      alignment: 9
+      pivot: {x: .544959128, y: .427616924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEFEU_00012
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 726
+        height: 482
+      alignment: 9
+      pivot: {x: .550964177, y: .417012453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEFEU_00013
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 883
+        width: 800
+        height: 513
+      alignment: 9
+      pivot: {x: .5, y: .391812861}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEFEU_00014
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1406
+        width: 800
+        height: 588
+      alignment: 9
+      pivot: {x: .5, y: .324829936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEFEU_00015
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1386
+        width: 800
+        height: 608
+      alignment: 9
+      pivot: {x: .5, y: .182565793}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

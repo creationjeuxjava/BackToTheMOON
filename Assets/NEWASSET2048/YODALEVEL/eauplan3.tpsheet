@@ -1,0 +1,16 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: eauplan3.png (2048 x 2048)
+# $TexturePacker:SmartUpdate:ed4d285f6b0fe242c2091ad3138f80fd:b503cfd05ca8a5c91e33cb238b60d709:f8a7e327a9887d584d5c546a741d4002$
+#
+
+EAUYODAplan3_00001;10;1405;800;633;0.5;0.533175355450237
+EAUYODAplan3_00003;820;1405;800;633;0.5;0.533175355450237
+EAUYODAplan3_00004;10;762;800;633;0.5;0.533175355450237
+EAUYODAplan3_00006;820;762;800;633;0.5;0.533175355450237
+EAUYODAplan3_00007;10;119;800;633;0.5;0.533175355450237
+EAUYODAplan3_00009;820;119;800;633;0.5;0.533175355450237

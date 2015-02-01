@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: c8d454be215b54200b5205418ef25b68
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DEPARTYODAGO_00005
+    21300002: DEPARTYODAGO_00006
+    21300004: DEPARTYODAGO_00007
+    21300006: DEPARTYODAGO_00008
+    21300008: DEPARTYODAGO_00009
+    21300010: DEPARTYODAGO_00010
+    21300012: DEPARTYODAGO_00011
+    21300014: DEPARTYODAGO_00012
+    21300016: DEPARTYODAGO_00013
+    21300018: DEPARTYODAGO_00014
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: DEPARTYODAGO_00005
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1159
+        width: 438
+        height: 775
+      alignment: 9
+      pivot: {x: .728310525, y: 1.35741937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DEPARTYODAGO_00006
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1162
+        width: 438
+        height: 772
+      alignment: 9
+      pivot: {x: .728310525, y: 1.36269426}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DEPARTYODAGO_00007
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1185
+        width: 438
+        height: 749
+      alignment: 9
+      pivot: {x: .728310525, y: 1.40453935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DEPARTYODAGO_00008
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 1235
+        width: 438
+        height: 699
+      alignment: 9
+      pivot: {x: .728310525, y: 1.50500715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DEPARTYODAGO_00009
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 481
+        width: 438
+        height: 628
+      alignment: 9
+      pivot: {x: .728310525, y: 1.67515922}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DEPARTYODAGO_00010
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 566
+        width: 438
+        height: 543
+      alignment: 9
+      pivot: {x: .728310525, y: 1.93738484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DEPARTYODAGO_00011
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 655
+        width: 438
+        height: 454
+      alignment: 9
+      pivot: {x: .728310525, y: 2.31718063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DEPARTYODAGO_00012
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 688
+        width: 444
+        height: 421
+      alignment: 9
+      pivot: {x: .718468487, y: 2.49881244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DEPARTYODAGO_00013
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 446
+        height: 421
+      alignment: 9
+      pivot: {x: .715246618, y: 2.49881244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DEPARTYODAGO_00014
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 10
+        width: 443
+        height: 421
+      alignment: 9
+      pivot: {x: .72009027, y: 2.49881244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -1,0 +1,33 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: galaxielements.png (2048 x 664)
+# $TexturePacker:SmartUpdate:fd3cb20aacdd8a0a0a178c5ba51c0569:cb966050c1f43e56ffafd059662fafd9:7703907940b3c57b26448460710c9e3b$
+#
+
+Etoile;849;266;43;43;0.5;0.5
+Etoile10;1564;511;208;143;0.5;0.5
+Etoile11;1564;369;133;132;0.5;0.5
+Etoile12;1932;308;70;89;0.5;0.5
+Etoile13;1707;416;131;85;0.5;0.5
+Etoile14;1782;569;85;85;0.5;0.5
+Etoile2;1932;199;61;99;0.5;0.5
+Etoile3;1877;576;78;78;0.5;0.5
+Etoile4;58;15;30;30;0.5;0.5
+Etoile5;98;15;30;30;0.5;0.5
+Etoile6;10;10;38;35;0.5;0.5
+Etoile7;1848;407;152;152;0.5;0.5
+Etoile8;1965;602;52;52;0.5;0.5
+Etoile9;451;266;388;388;0.5;0.5
+etoile1;1034;24;280;285;0.5;0.5
+meteor;451;12;378;244;0.5;0.5
+meteor1;10;55;431;599;0.5;0.5
+meteor2;902;269;28;40;0.5;0.5
+meteor3;839;59;185;197;0.5;0.5
+meteor4;849;319;352;335;0.5;0.5
+meteor5;1656;22;266;337;0.5;0.5
+meteorgris;1211;354;343;300;0.5;0.5
+planet;1324;31;322;313;0.5;0.5

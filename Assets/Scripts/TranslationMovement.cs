@@ -13,7 +13,7 @@ public class TranslationMovement : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		//if(renderer.isVisible && !triggered) {
 			rigidbody2D.velocity = velocity;
 		//}

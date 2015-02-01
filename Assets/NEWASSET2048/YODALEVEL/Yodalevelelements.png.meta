@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: f582e21fc8b3a44b982f4ed8e3b134d0
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: branche
+    21300002: caisse
+    21300004: liane1
+    21300006: liane2
+    21300008: liane3
+    21300010: nuage1
+    21300012: nuage2
+    21300014: nuage3
+    21300016: soleil
+    21300018: vaisseau
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: branche
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 87
+        width: 460
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caisse
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 602
+        width: 309
+        height: 315
+      alignment: 9
+      pivot: {x: .5, y: .573015869}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: liane1
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 11
+        width: 673
+        height: 493
+      alignment: 9
+      pivot: {x: .439078748, y: .451318473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: liane2
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 771
+        width: 823
+        height: 499
+      alignment: 9
+      pivot: {x: .504860282, y: .565130234}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: liane3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 493
+        width: 691
+        height: 777
+      alignment: 9
+      pivot: {x: .398697525, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuage1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 188
+        width: 684
+        height: 295
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuage2
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 589
+        width: 356
+        height: 172
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuage3
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 514
+        width: 514
+        height: 247
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: soleil
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 927
+        width: 337
+        height: 343
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vaisseau
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 67
+        width: 461
+        height: 416
+      alignment: 9
+      pivot: {x: .49457702, y: .502403855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -1,0 +1,20 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: Yodalevelelements.png (2048 x 1280)
+# $TexturePacker:SmartUpdate:18ad5871e17f2c916f7b41bd83a0a74f:5effcad970b7a4e7a69d8bfd08a331aa:652398edd22374b161b73eaffc336557$
+#
+
+branche;10;87;460;91;0.5;0.5
+caisse;1601;602;309;315;0.5;0.573015873015873
+liane1;1175;11;673;493;0.4390787518573551;0.4513184584178499
+liane2;711;771;823;499;0.5048602673147023;0.5651302605210421
+liane3;10;493;691;777;0.3986975397973951;0.5
+nuage1;10;188;684;295;0.5;0.5
+nuage2;1235;589;356;172;0.5;0.5
+nuage3;711;514;514;247;0.5;0.5
+soleil;1544;927;337;343;0.5;0.5
+vaisseau;704;67;461;416;0.4945770065075922;0.5024038461538461

@@ -1,0 +1,113 @@
+fileFormatVersion: 2
+guid: 114ea61e6b1084e4684f32f4fd1a7c06
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MONDEYODA_00001
+    21300002: MONDEYODA_00002
+    21300004: MONDEYODA_00003
+    21300006: MONDEYODA_00004
+    21300008: MONDEYODA_00005
+    21300010: MONDEYODA_00006
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MONDEYODA_00001
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 274
+        width: 186
+        height: 116
+      alignment: 9
+      pivot: {x: .806451619, y: 5.37068987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEYODA_00002
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 21
+        width: 179
+        height: 117
+      alignment: 9
+      pivot: {x: .815642476, y: 5.33333349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEYODA_00003
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 148
+        width: 180
+        height: 116
+      alignment: 9
+      pivot: {x: .811111093, y: 5.37068987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEYODA_00004
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 141
+        width: 166
+        height: 116
+      alignment: 9
+      pivot: {x: .843373477, y: 5.37068987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEYODA_00005
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 13
+        width: 167
+        height: 118
+      alignment: 9
+      pivot: {x: .838323355, y: 5.27966118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MONDEYODA_00006
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 267
+        width: 149
+        height: 123
+      alignment: 9
+      pivot: {x: .879194617, y: 5.1219511}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

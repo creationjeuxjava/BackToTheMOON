@@ -1,0 +1,91 @@
+fileFormatVersion: 2
+guid: e6d80bfe780a54c2d89634f01c1d2e51
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sans titre - 30000
+    21300002: Sans titre - 30002
+    21300004: Sans titre - 30003
+    21300006: Sans titre - 30005
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sans titre - 30000
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 737
+        width: 800
+        height: 758
+      alignment: 9
+      pivot: {x: .5, y: .844327152}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 30002
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 764
+        width: 800
+        height: 731
+      alignment: 9
+      pivot: {x: .5, y: .875513017}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 30003
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5
+        width: 800
+        height: 722
+      alignment: 9
+      pivot: {x: .5, y: .886426568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sans titre - 30005
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 48
+        width: 800
+        height: 679
+      alignment: 9
+      pivot: {x: .5, y: .94256258}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
