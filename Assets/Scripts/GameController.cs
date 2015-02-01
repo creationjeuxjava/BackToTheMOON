@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour {
 
 	// création initiale
 	void Start () {
-		Application.targetFrameRate = 60;
+		//Application.targetFrameRate = 60;
 		resetGame ();
 
 		//Debug.Log (this.name + " méthode strat");
