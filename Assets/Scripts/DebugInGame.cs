@@ -27,7 +27,8 @@ public class DebugInGame : MonoBehaviour {
 		OSInfos.text = "OS : " + SystemInfo.operatingSystem+" \n GraphicsMemory :"+SystemInfo.graphicsMemorySize+"\n systemMemory :"+SystemInfo.systemMemorySize
 			+"\n support processor: "+SystemInfo.processorType
 				+"\n maxText: "+SystemInfo.maxTextureSize+" Device :"+SystemInfo.deviceName
-				+"\n deviceModel: "+SystemInfo.deviceModel+" DeviceType :"+SystemInfo.deviceType;
+				+"\n deviceModel: "+SystemInfo.deviceModel+" DeviceType :"+SystemInfo.deviceType
+				+"\n GraphicsdeviceName: "+SystemInfo.graphicsDeviceName+" GraphicsDeviceVersion :"+SystemInfo.graphicsDeviceVersion;
 		/*SystemInfo.maxTextureSize;
 		SystemInfo.deviceName;
 		SystemInfo.deviceModel;*/
