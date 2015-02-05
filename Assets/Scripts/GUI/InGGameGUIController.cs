@@ -42,8 +42,16 @@ public class InGGameGUIController : MonoBehaviour {
 			vitessePlayer.text = "Votre vitesse est très basse : battez des ailes... !!";
 			panelVitesse.SetActive (true);
 		}
+	}
 
+	public void replayLevel(){
 
+		Application.LoadLevel (0);
+	}
+
+	public void pauseGame(){
+
+		GameController.tooglePauseGame();
 	}
 
 }
