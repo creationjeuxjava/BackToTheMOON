@@ -62,6 +62,15 @@
 	<object name="commonPrefabs/etoileBrillante" nombre="50" pool="true" layer="backGround">
 		<Altitude max="81000" min="40000"></Altitude>
 	</object>
+	<object name="commonPrefabs/3etoiles" nombre="50" pool="true" layer="backGround">
+		<Altitude max="81000" min="40000"></Altitude>
+	</object>
+	<object name="commonPrefabs/2galaxies" nombre="50" pool="true" layer="backGround">
+		<Altitude max="81000" min="40000"></Altitude>
+	</object>
+	<object name="commonPrefabs/3etoilesBrillantes" nombre="50" pool="true" layer="backGround">
+		<Altitude max="81000" min="40000"></Altitude>
+	</object>
 	
 	
 	

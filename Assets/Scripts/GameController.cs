@@ -76,9 +76,6 @@ public class GameController : MonoBehaviour {
 				}
 				
 			}
-			//if(obj != null)
-			//Debug.Log("altitude :"+altitude+" avec un min : "+minMax.x+ " pour GO "+obj.name);
-
 		}
 
 
@@ -132,7 +129,7 @@ public class GameController : MonoBehaviour {
 
 
 			//if(PlayerController.vitesse.y > 0){
-			if(lastPlayerSpeed.y > 0.1f){
+			if(lastPlayerSpeed.y > 0.2f){
 				isInGame = false;
 				isGameOver = true;
 				Debug.Log (this.name + " on aperdu !!!!!!!!!!!!!!!!!!!!!!!!!!");
@@ -211,14 +208,12 @@ public class GameController : MonoBehaviour {
 	}
 
 	public static void addPiece(){
-
 		nbrePieces++;
 		//Debug.Log("au ajoute une pièce  "+ nbrePieces);
 	}
 
 	//mettre le jeu en pause ou le remettre
 	public static void tooglePauseGame(){
-
 		isGameInPause = !isGameInPause;
 	}
 

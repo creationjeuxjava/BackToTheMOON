@@ -300,7 +300,7 @@ public class PlayerController : MonoBehaviour {
 				}
 					
 				Debug.Log ("clic sur bouton action : battements");
-			//TODO limiter le nbre de clics possibles par un timer !!
+				//TODO limiter le nbre de clics possibles par un timer !!--> pas forcément intéréssant ?
 				break;
 
 			case State.laser:
@@ -308,7 +308,7 @@ public class PlayerController : MonoBehaviour {
 				break;
 
 			case State.noAction:
-			Debug.Log ("clic sur bouton action  : noAction");
+				Debug.Log ("clic sur bouton action  : noAction");
 				break;
 		
 		}
