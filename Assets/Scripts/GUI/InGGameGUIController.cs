@@ -12,6 +12,9 @@ public class InGGameGUIController : MonoBehaviour {
 	GameObject panelVitesse;
 	Text vitessePlayer;
 
+	GameObject endLevelPanel;
+	Text endText;
+
 
 	void Start () {
 		nbrPiecesText = GameObject.Find ("nbrePiecesText").GetComponent<Text> ();
@@ -24,6 +27,10 @@ public class InGGameGUIController : MonoBehaviour {
 		panelVitesse = GameObject.Find ("PanelInfosVitesse");
 		vitessePlayer = GameObject.Find ("infoVitesse").GetComponent<Text> ();
 		panelVitesse.SetActive (false);
+
+		endLevelPanel = GameObject.Find ("endLevelPanel");
+		endText = GameObject.Find ("endText").GetComponent<Text> ();
+		endLevelPanel.SetActive (false);
 
 	}
 	
@@ -38,19 +45,27 @@ public class InGGameGUIController : MonoBehaviour {
 			iconeEspaceAnimator.SetTrigger("beginSpace");
 		} 
 
-		if(GameController.lastPlayerSpeed.y >= -0.05f && PlayerController.isFlying){
+		if (GameController.lastPlayerSpeed.y >= -0.05f && PlayerController.isFlying) {
 			vitessePlayer.text = "Votre vitesse est très basse : battez des ailes... !!";
 			panelVitesse.SetActive (true);
+		}
+		else {
+			panelVitesse.SetActive (false);			
+		}
+
+		if (!GameController.isInGame) {
+			if(GameController.isGameOver) endText.text = "Vous avez lamentablement perdu...houuuuuu !";
+			else endText.text = " Bravo vous etes un dieu de ce jeu ...trop fort !";
+			endLevelPanel.SetActive (true);
 		}
 	}
 
 	public void replayLevel(){
-
-		Application.LoadLevel (0);
+		//Application.LoadLevel (0);
+		Application.LoadLevel ("firstLevel");
 	}
 
 	public void pauseGame(){
-
 		GameController.tooglePauseGame();
 	}
 

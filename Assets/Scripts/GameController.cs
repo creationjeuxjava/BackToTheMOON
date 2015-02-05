@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour {
 	public static float altitude = 0;
 	public static int nbrePieces = 0;
 	private int coeffAltitude = 100;
-	private float altMaxForWinLevel = 80000f ;
+	private float altMaxForWinLevel = 80000f;//80000f ;
 	private float altBeginOfSpace = 41000f;
 
 	private int coeffVitesse = 1 * 3600; 
@@ -42,7 +42,6 @@ public class GameController : MonoBehaviour {
 	void Start () {
 		//Application.targetFrameRate = 60;
 		resetGame ();
-
 		//Debug.Log (this.name + " méthode strat");
 	}
 	
@@ -130,9 +129,13 @@ public class GameController : MonoBehaviour {
 			float vitesse = PlayerController.vitesse.y*-1 * coeffVitesse;
 			//DebugInGame.setMessage("ISINSpace :"+isInSpace +" Altitude :"+altitude,"Vitesse Player : "+vitesse+" km/h et nbre pièces : "+nbrePieces);
 
-			if(PlayerController.vitesse.y > 0){
+
+
+			//if(PlayerController.vitesse.y > 0){
+			if(lastPlayerSpeed.y > 0.1f){
 				isInGame = false;
 				isGameOver = true;
+				Debug.Log (this.name + " on aperdu !!!!!!!!!!!!!!!!!!!!!!!!!!");
 			}
 			if(altitude >= altMaxForWinLevel){
 				isInGame = false;
