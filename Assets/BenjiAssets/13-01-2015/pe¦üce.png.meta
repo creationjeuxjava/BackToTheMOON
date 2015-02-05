@@ -1,15 +1,16 @@
 fileFormatVersion: 2
-guid: 7abc8541643d51348bfbf7bc7ca896e1
+guid: f0d13104c1b141d419628efcdc1b3874
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ALIENSPRITE_0
-    21300002: ALIENSPRITE_1
-    21300004: ALIENSPRITE_2
-    21300006: ALIENSPRITE_3
-    21300008: ALIENSPRITE_4
-    21300010: ALIENSPRITE_5
-    21300012: ALIENSPRITE_6
-    21300014: ALIENSPRITE_7
+    21300000: "pe\xA6\xFCce"
+    21300002: "pe\xA6\xFCce_0"
+    21300004: "pe\xA6\xFCce_1"
+    21300006: "pe\xA6\xFCce_2"
+    21300008: "pe\xA6\xFCce_3"
+    21300010: "pe\xA6\xFCce_4"
+    21300012: "pe\xA6\xFCce_5"
+    21300014: "pe\xA6\xFCce_6"
+    21300016: "pe\xA6\xFCce_7"
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +31,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 512
   textureSettings:
     filterMode: -1
     aniso: 1
@@ -51,85 +52,85 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: ALIENSPRITE_0
+    - name: "pe\xA6\xFCce_0"
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 245
-        height: 366
+        x: 12
+        y: 432
+        width: 64
+        height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+    - name: "pe\xA6\xFCce_1"
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 349
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ALIENSPRITE_1
+    - name: "pe\xA6\xFCce_2"
       rect:
         serializedVersion: 2
-        x: 290
-        y: 1
-        width: 245
-        height: 366
+        x: 80
+        y: 349
+        width: 7
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ALIENSPRITE_2
+    - name: "pe\xA6\xFCce_3"
       rect:
         serializedVersion: 2
-        x: 577
-        y: 1
-        width: 250
-        height: 366
+        x: 12
+        y: 266
+        width: 50
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ALIENSPRITE_3
+    - name: "pe\xA6\xFCce_4"
       rect:
         serializedVersion: 2
-        x: 872
-        y: 1
-        width: 250
-        height: 366
+        x: 12
+        y: 183
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ALIENSPRITE_4
+    - name: "pe\xA6\xFCce_5"
       rect:
         serializedVersion: 2
-        x: 1166
-        y: 1
-        width: 250
-        height: 366
+        x: 13
+        y: 100
+        width: 47
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ALIENSPRITE_5
+    - name: "pe\xA6\xFCce_6"
       rect:
         serializedVersion: 2
-        x: 1462
-        y: 1
-        width: 250
-        height: 366
+        x: 79
+        y: 100
+        width: 6
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ALIENSPRITE_6
+    - name: "pe\xA6\xFCce_7"
       rect:
         serializedVersion: 2
-        x: 1758
-        y: 1
-        width: 247
-        height: 366
+        x: 12
+        y: 16
+        width: 49
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ALIENSPRITE_7
-      rect:
-        serializedVersion: 2
-        x: 2051
-        y: 1
-        width: 250
-        height: 366
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
