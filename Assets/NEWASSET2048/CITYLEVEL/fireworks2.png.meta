@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: 98084fc9ed5f040d99c2c684e86e9432
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: firework200000
+    21300002: firework200001
+    21300004: firework200002
+    21300006: firework200003
+    21300008: firework200004
+    21300010: firework200005
+    21300012: firework200006
+    21300014: firework200007
+    21300016: firework200008
+    21300018: firework200009
+    21300020: firework200010
+    21300022: firework200011
+    21300024: firework200012
+    21300026: firework200013
+    21300028: firework200014
+    21300030: firework200015
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: firework200000
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1974
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 250.5, y: -249.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework200001
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 1591
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 250.5, y: -249.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework200002
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 5
+        width: 175
+        height: 180
+      alignment: 9
+      pivot: {x: .460000008, y: .352777779}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework200003
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 987
+        width: 255
+        height: 265
+      alignment: 9
+      pivot: {x: .472549021, y: .352830201}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework200004
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1262
+        width: 318
+        height: 330
+      alignment: 9
+      pivot: {x: .476415098, y: .353030294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework200005
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 1602
+        width: 356
+        height: 373
+      alignment: 9
+      pivot: {x: .478932589, y: .373994648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework200006
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 195
+        width: 390
+        height: 411
+      alignment: 9
+      pivot: {x: .478205115, y: .397810221}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework200007
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 616
+        width: 402
+        height: 433
+      alignment: 9
+      pivot: {x: .478855729, y: .423787534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework200008
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 149
+        width: 406
+        height: 439
+      alignment: 9
+      pivot: {x: .479064047, y: .445330292}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework200009
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 598
+        width: 403
+        height: 451
+      alignment: 9
+      pivot: {x: .482630283, y: .451219499}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework200010
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1059
+        width: 413
+        height: 452
+      alignment: 9
+      pivot: {x: .470944315, y: .470132738}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework200011
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1521
+        width: 413
+        height: 454
+      alignment: 9
+      pivot: {x: .475786924, y: .483480185}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework200012
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1522
+        width: 406
+        height: 453
+      alignment: 9
+      pivot: {x: .479064047, y: .502207518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework200013
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1069
+        width: 409
+        height: 443
+      alignment: 9
+      pivot: {x: .475550115, y: .511286676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework200014
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 130
+        width: 403
+        height: 433
+      alignment: 9
+      pivot: {x: .472704709, y: .51616627}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework200015
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 573
+        width: 401
+        height: 404
+      alignment: 9
+      pivot: {x: .477556109, y: .488861382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

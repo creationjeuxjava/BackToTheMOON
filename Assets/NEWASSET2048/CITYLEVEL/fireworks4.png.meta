@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: a3697abee64d4433aa016e3340b429b2
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: firework4_00000
+    21300002: firework4_00001
+    21300004: firework4_00002
+    21300006: firework4_00003
+    21300008: firework4_00004
+    21300010: firework4_00005
+    21300012: firework4_00006
+    21300014: firework4_00007
+    21300016: firework4_00008
+    21300018: firework4_00009
+    21300020: firework4_00010
+    21300022: firework4_00011
+    21300024: firework4_00012
+    21300026: firework4_00013
+    21300028: firework4_00014
+    21300030: firework4_00015
+    21300032: firework4_00016
+    21300034: firework4_00017
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: firework4_00000
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 855
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 250.5, y: -249.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00001
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 849
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 250.5, y: -249.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00002
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 142
+        width: 213
+        height: 221
+      alignment: 9
+      pivot: {x: .476525813, y: .454751134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00003
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 23
+        width: 377
+        height: 368
+      alignment: 9
+      pivot: {x: .492042452, y: .466032594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00004
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1325
+        width: 501
+        height: 477
+      alignment: 9
+      pivot: {x: .5, y: .483228505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00005
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1314
+        width: 497
+        height: 488
+      alignment: 9
+      pivot: {x: .495975852, y: .486680329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00006
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 837
+        width: 493
+        height: 472
+      alignment: 9
+      pivot: {x: .491886407, y: .481991529}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00007
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 1333
+        width: 484
+        height: 469
+      alignment: 9
+      pivot: {x: .482438028, y: .485074639}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00008
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 368
+        width: 483
+        height: 464
+      alignment: 9
+      pivot: {x: .481366456, y: .494612068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00009
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 861
+        width: 478
+        height: 459
+      alignment: 9
+      pivot: {x: .47594142, y: .497821361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00010
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 396
+        width: 476
+        height: 460
+      alignment: 9
+      pivot: {x: .473739505, y: .507608712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00011
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 866
+        width: 476
+        height: 462
+      alignment: 9
+      pivot: {x: .473739505, y: .514069259}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00012
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 1343
+        width: 474
+        height: 459
+      alignment: 9
+      pivot: {x: .475738406, y: .513071895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00013
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 878
+        width: 472
+        height: 460
+      alignment: 9
+      pivot: {x: .473516941, y: .516304374}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00014
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 430
+        width: 471
+        height: 443
+      alignment: 9
+      pivot: {x: .474522293, y: .538374722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00015
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 416
+        width: 470
+        height: 445
+      alignment: 9
+      pivot: {x: .473404258, y: .542696655}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00016
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 16
+        width: 468
+        height: 409
+      alignment: 9
+      pivot: {x: .473290592, y: .522004902}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework4_00017
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 22
+        width: 464
+        height: 389
+      alignment: 9
+      pivot: {x: .47306034, y: .546272516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

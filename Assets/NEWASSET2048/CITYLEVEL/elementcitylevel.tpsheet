@@ -1,0 +1,17 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: elementcitylevel.png (1628 x 648)
+# $TexturePacker:SmartUpdate:32a1bf2fd49edda16fb8aadbd0aa81f2:2e0e6b85e5228ee97f623fc59842d93c:c6a1250baaad72a6add64c62135c4512$
+#
+
+fil1;533;13;1056;80;0.5;0.5
+fil2;10;323;1197;315;0.5;0.5
+nuage;1217;467;356;171;0.5;0.5
+nuage2;1217;309;342;148;0.5;0.5
+nuage3;10;66;513;247;0.5;0.5
+police;533;103;491;210;0.5;0.5
+taxi;1034;135;581;164;0.5008605851979346;0.5

@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: 6174e682985d74a09ae9f90fa8bd427c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fil1
+    21300002: fil2
+    21300004: nuage
+    21300006: nuage2
+    21300008: nuage3
+    21300010: police
+    21300012: taxi
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: fil1
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 13
+        width: 1056
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fil2
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 323
+        width: 1197
+        height: 315
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuage
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 467
+        width: 356
+        height: 171
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuage2
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 309
+        width: 342
+        height: 148
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuage3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 66
+        width: 513
+        height: 247
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: police
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 103
+        width: 491
+        height: 210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: taxi
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 135
+        width: 581
+        height: 164
+      alignment: 9
+      pivot: {x: .500860572, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

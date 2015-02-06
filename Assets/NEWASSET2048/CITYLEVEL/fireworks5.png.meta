@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: b00c2bd5b673943038dbc0d244eb3b30
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: firework5_00001
+    21300002: firework5_00002
+    21300004: firework5_00003
+    21300006: firework5_00004
+    21300008: firework5_00005
+    21300010: firework5_00006
+    21300012: firework5_00007
+    21300014: firework5_00008
+    21300016: firework5_00009
+    21300018: firework5_00010
+    21300020: firework5_00011
+    21300022: firework5_00012
+    21300024: firework5_00013
+    21300026: firework5_00014
+    21300028: firework5_00015
+    21300030: firework5_00016
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: firework5_00001
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1559
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 250.5, y: -249.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework5_00002
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1755
+        width: 202
+        height: 207
+      alignment: 9
+      pivot: {x: .497524738, y: .437198073}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework5_00003
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 855
+        width: 304
+        height: 308
+      alignment: 9
+      pivot: {x: .498355269, y: .472402602}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework5_00004
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1570
+        width: 392
+        height: 392
+      alignment: 9
+      pivot: {x: .508928597, y: .475765318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework5_00005
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1559
+        width: 398
+        height: 403
+      alignment: 9
+      pivot: {x: .503768861, y: .490074456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework5_00006
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1152
+        width: 389
+        height: 397
+      alignment: 9
+      pivot: {x: .497429311, y: .497481108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework5_00007
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 751
+        width: 382
+        height: 391
+      alignment: 9
+      pivot: {x: .496073306, y: .497442454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework5_00008
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 362
+        width: 375
+        height: 379
+      alignment: 9
+      pivot: {x: .5, y: .507915556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework5_00009
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1173
+        width: 369
+        height: 376
+      alignment: 9
+      pivot: {x: .494579941, y: .519946814}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework5_00010
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 789
+        width: 367
+        height: 374
+      alignment: 9
+      pivot: {x: .494550407, y: .53342247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework5_00011
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 412
+        width: 354
+        height: 367
+      alignment: 9
+      pivot: {x: .518361568, y: .524523139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework5_00012
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 42
+        width: 347
+        height: 360
+      alignment: 9
+      pivot: {x: .508645535, y: .554166675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework5_00013
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 436
+        width: 318
+        height: 343
+      alignment: 9
+      pivot: {x: .507861614, y: .558309019}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework5_00014
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 11
+        width: 310
+        height: 341
+      alignment: 9
+      pivot: {x: .514516115, y: .567448676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework5_00015
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 11
+        width: 305
+        height: 341
+      alignment: 9
+      pivot: {x: .51311475, y: .573313773}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: firework5_00016
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 1271
+        width: 302
+        height: 289
+      alignment: 9
+      pivot: {x: .511589408, y: .676470578}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
