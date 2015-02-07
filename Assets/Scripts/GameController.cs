@@ -132,7 +132,7 @@ public class GameController : MonoBehaviour {
 			if(lastPlayerSpeed.y > 0.2f){
 				isInGame = false;
 				isGameOver = true;
-				//Debug.Log (this.name + " on aperdu !!!!!!!!!!!!!!!!!!!!!!!!!!");
+				Debug.Log (this.name + " on aperdu !!!!!!!!!!!!!!!!!!!!!!!!!!");
 			}
 			if(altitude >= altMaxForWinLevel){
 				isInGame = false;
