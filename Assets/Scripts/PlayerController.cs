@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour {
 	private float speedPlayer = 0.3f;//0.7f;
 	public static bool isWithCask = false;
 	public static bool isWithShoe = false;
+	public static bool isWithBeans = false;
 	private bool isItemActivated = false;
 	public static bool isFlyBegin = false;
 
@@ -165,6 +166,7 @@ public class PlayerController : MonoBehaviour {
 			Destroy(other.gameObject);
 			isWithCask = true;
 			isWithShoe = false;
+			timeLeft = 5f;
 			isItemActivated = true;
 			anim.SetBool("withCask",true);
 			
@@ -182,6 +184,7 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive(false);
 			isWithShoe = true;
 			isWithCask = false;
+			timeLeft = 5f;
 			isItemActivated = true;
 			anim.SetBool("withShoes",true);
 			
@@ -205,6 +208,8 @@ public class PlayerController : MonoBehaviour {
 			//Debug.Log ("***************  collision avec beans ");
 			isWithShoe = false;
 			isWithCask = false;
+			isWithBeans = true;
+			timeLeft = 1f;
 			isItemActivated = true;
 			anim.SetTrigger("goFlageollet");
 			other.gameObject.SetActive(false);
@@ -271,6 +276,7 @@ public class PlayerController : MonoBehaviour {
 
 		isWithShoe = false;
 		isWithCask = false;
+		isWithBeans = false;
 		anim.SetBool("withCask",false);
 		anim.SetBool("withShoes",false);
 		currentState = State.naked;
