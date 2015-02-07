@@ -55,7 +55,6 @@
      <Compile Include="Assets\Scripts\GUI\ActionButtonManager.cs" />
      <Compile Include="Assets\Scripts\GUI\InGGameGUIController.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
-     <Compile Include="Assets\Scripts\InGameGUI.cs" />
      <Compile Include="Assets\Scripts\InteractionEnnemy.cs" />
      <Compile Include="Assets\Scripts\Inventory\GUInventory.cs" />
      <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
@@ -63,6 +62,7 @@
      <Compile Include="Assets\Scripts\LevelLoading\LoadLevelcontroller.cs" />
      <Compile Include="Assets\Scripts\Localization\Internalization.cs" />
      <Compile Include="Assets\Scripts\NoUseButNODelete\HUDFPS.cs" />
+     <Compile Include="Assets\Scripts\NoUseButNODelete\InGameGUI.cs" />
      <Compile Include="Assets\Scripts\NoUseButNODelete\Inputglisser.cs" />
      <Compile Include="Assets\Scripts\NoUseButNODelete\MenuGUI.cs" />
      <Compile Include="Assets\Scripts\NoUseButNODelete\Parallax.cs" />
