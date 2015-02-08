@@ -3,11 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
-    /*Nettoyage à faire */
-	/*private bool isMoving;
-	private float speed = 0.75F;*/
-
-	public GameObject fumee;
+   	public GameObject fumee;
 	public Animator anim;
 
 	/**** nvelle implémentation car le perso ne bouge pas ...c'est le niveau qui le fait ******/
@@ -24,6 +20,7 @@ public class PlayerController : MonoBehaviour {
 
 	private float timeLeft = 5.0f;
 	private float lateralDelta = 0.1f;
+	public static Vector3 actualPosition;
 
 	public enum State : byte
 	{
@@ -69,11 +66,12 @@ public class PlayerController : MonoBehaviour {
 			if(screenPos.x >= Screen.width ) {
 				translation.x = 0;
 				transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
+				rigidbody2D.velocity = Vector3.zero;
 			}
 			else if(screenPos.x <= 0){
 				translation.x = 0;
 				transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
-				
+				rigidbody2D.velocity = Vector3.zero;
 			}
 			else{
 				/*** correction si trop bas...suite aux collisions ****/
@@ -101,9 +99,7 @@ public class PlayerController : MonoBehaviour {
 				//Debug.Log("*************   Clic en  : "+touchPos+" et player en : "+transform.position.x);
 
 				if(gameObject.collider2D.bounds.Contains (touchPos)){
-					//translation.x = 0;
 					translation = Vector3.zero;
-
 				}
 				else{
 					if(!isFlyBegin){
@@ -123,6 +119,7 @@ public class PlayerController : MonoBehaviour {
 			} 			
 
 			transform.Translate(translation);
+			actualPosition = transform.position;
 
 			if(isItemActivated) this.checkTimeItemLeft();
 		}
@@ -131,6 +128,12 @@ public class PlayerController : MonoBehaviour {
 
 
 
+	}
+
+	/** méthode statique appelée par Gamecontroller lors de l'entrée ds l'espace ****/
+	public static void setVitesseEnterInSpace(float vitesseY){
+		vitesse.y = vitesseY;	
+		Debug.Log ("***************  vitesse en entrant ds l'espace : "+vitesseY);
 	}
 
 	/**** détection des collisions avec les GO istrigger = false ****/
@@ -161,11 +164,12 @@ public class PlayerController : MonoBehaviour {
 	 *****    permet de pouvoir passer au travers !!      ****/
 	void OnTriggerEnter2D(Collider2D other) {
 
-		if(other.gameObject.tag == "Cask"  && !isItemActivated ){
+		if(other.gameObject.tag == "Cask"  && !isItemActivated && !isFlyBegin){
 			//Debug.Log ("***************  collision avec un cask ");
 			Destroy(other.gameObject);
 			isWithCask = true;
 			isWithShoe = false;
+			isWithBeans = false;
 			timeLeft = 5f;
 			isItemActivated = true;
 			anim.SetBool("withCask",true);
@@ -178,12 +182,13 @@ public class PlayerController : MonoBehaviour {
 			ActionButtonManager.updateIcon(currentState);
 		}
 
-		if(other.gameObject.tag == "Shoe" && !isItemActivated ){
+		if(other.gameObject.tag == "Shoe" && !isItemActivated && !isFlyBegin ){
 			//Debug.Log ("***************  collision avec une shoe ");
 			//Destroy(other.gameObject);
 			other.gameObject.SetActive(false);
 			isWithShoe = true;
 			isWithCask = false;
+			isWithBeans = false;
 			timeLeft = 5f;
 			isItemActivated = true;
 			anim.SetBool("withShoes",true);
@@ -204,7 +209,7 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive(false);
 		}
 
-		if(other.gameObject.tag == "Beans" && !isItemActivated ){
+		if(other.gameObject.tag == "Beans" && !isItemActivated && !isFlyBegin){
 			//Debug.Log ("***************  collision avec beans ");
 			isWithShoe = false;
 			isWithCask = false;
@@ -213,7 +218,7 @@ public class PlayerController : MonoBehaviour {
 			isItemActivated = true;
 			anim.SetTrigger("goFlageollet");
 			other.gameObject.SetActive(false);
-			//updateVitesse(other.gameObject);
+			updateVitesse(other.gameObject);
 			currentState = State.noAction;
 			ActionButtonManager.updateIcon(currentState);
 		}
@@ -249,7 +254,7 @@ public class PlayerController : MonoBehaviour {
 
 			//if(vitesse.y + obj.GetComponent<InteractionEnnemy>().speedReducingFactor <= 0)
 				vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor;
-			Debug.Log(obj.name+" : On réduit la vitesse"+vitesse.y + obj.GetComponent<InteractionEnnemy>().speedReducingFactor);
+			//Debug.Log(obj.name+" : On réduit la vitesse"+vitesse.y + obj.GetComponent<InteractionEnnemy>().speedReducingFactor);
 		}
 	
 	}

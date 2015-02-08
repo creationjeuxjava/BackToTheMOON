@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class InGGameGUIController : MonoBehaviour {
 
+	public Camera camera;
+
 	Text nbrPiecesText,nbrDiamantsText,altitudeText;
 	Image espaceIcone;
 	Animator iconeEspaceAnimator;
@@ -14,6 +16,7 @@ public class InGGameGUIController : MonoBehaviour {
 
 	GameObject endLevelPanel;
 	Text endText;
+	GameObject NextLevelButton;
 
 
 	void Start () {
@@ -28,9 +31,12 @@ public class InGGameGUIController : MonoBehaviour {
 		vitessePlayer = GameObject.Find ("infoVitesse").GetComponent<Text> ();
 		panelVitesse.SetActive (false);
 
+		NextLevelButton = GameObject.Find ("NextLevelButton");
+		NextLevelButton.SetActive (false);
 		endLevelPanel = GameObject.Find ("endLevelPanel");
 		endText = GameObject.Find ("endText").GetComponent<Text> ();
 		endLevelPanel.SetActive (false);
+
 
 	}
 	
@@ -45,17 +51,21 @@ public class InGGameGUIController : MonoBehaviour {
 			iconeEspaceAnimator.SetTrigger("beginSpace");
 		} 
 
-		if (GameController.lastPlayerSpeed.y >= -0.05f && PlayerController.isFlying) {
-			vitessePlayer.text = "Votre vitesse est très basse : battez des ailes... !!";
+		if (GameController.playerSpeed.y >= -0.05f && PlayerController.isFlying) {
+			vitessePlayer.text = "Votre vitesse est très basse : battez des ailes... !!\n Temps restant avt GameOver : "+(int)GameController.timeLeftToGameOver;
 			panelVitesse.SetActive (true);
 		}
 		else {
+			panelVitesse.transform.position = camera.WorldToScreenPoint(PlayerController.actualPosition);
 			panelVitesse.SetActive (false);			
 		}
 
 		if (!GameController.isInGame) {
 			if(GameController.isGameOver) endText.text = "Vous avez lamentablement perdu...houuuuuu !";
-			else endText.text = " Bravo vous etes un dieu de ce jeu ...trop fort !";
+			else {
+				endText.text = " Bravo vous etes un dieu de ce jeu ...trop fort !";
+				NextLevelButton.SetActive (true);
+			}
 			endLevelPanel.SetActive (true);
 		}
 	}
@@ -63,6 +73,11 @@ public class InGGameGUIController : MonoBehaviour {
 	public void replayLevel(){
 		//Application.LoadLevel (0);
 		Application.LoadLevel ("firstLevel");
+	}
+
+	public void changeLevel(string levelName){
+		Application.LoadLevel ("FIRELEVEL2048");
+	
 	}
 
 	public void pauseGame(){

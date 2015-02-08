@@ -60,7 +60,7 @@ public class ActionButtonManager : MonoBehaviour {
 	}
 
 	public static void updateIcon(PlayerController.State currentstate){
-		Debug.Log ("ActionButton : on update l'icone !!");
+		//Debug.Log ("ActionButton : on update l'icone !!");
 
 		PlayerController.State state = currentstate; 
 		if (state == PlayerController.State.noAction) {
@@ -76,7 +76,7 @@ public class ActionButtonManager : MonoBehaviour {
 			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/sabrelaser", typeof(Sprite));
 		} 
 		else {
-			Debug.Log("pas de state adapté !!!");
+			//Debug.Log("pas de state adapté !!!");
 		}
 	}
 

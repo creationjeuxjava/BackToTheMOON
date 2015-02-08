@@ -26,14 +26,18 @@ public class GameController : MonoBehaviour {
 	public static float altitude = 0;
 	public static int nbrePieces = 0;
 	private int coeffAltitude = 100;
-	private float altMaxForWinLevel = 80000f;//80000f ;
-	private float altBeginOfSpace = 41000f;
+	private float altMaxForWinLevel = 150000f;//80000f ou 150000f ;
+	private float altBeginOfSpace = 41000f; //10000f; test   //41000f;  realité
 
 	private int coeffVitesse = 1 * 3600; 
 	private int currentLevel = 1; //par défaut le premier niveau
 	private float gravityLevel;
 	private float startFlyTime;
-	public static Vector3 lastPlayerSpeed;
+	public static Vector3 lastPlayerSpeed,playerSpeed;
+
+
+	private const float TIME_TO_GAME_OVER = 3f;
+	public static float timeLeftToGameOver = TIME_TO_GAME_OVER;
 
 	//private List<GameObject> listeObjectPoolers = new List<GameObject>();
 	private Dictionary<GameObject,string> dicoObjectPoolers = new Dictionary<GameObject,string>();
@@ -71,7 +75,9 @@ public class GameController : MonoBehaviour {
 						obj.transform.parent = foreLayer.transform;
 					else if(layerName == "middleLayer")
 						obj.transform.parent = middleLayer.transform;
-					else
+					else if(layerName == "backGround")
+						obj.transform.parent = backLayer.transform;
+					else if(layerName == "backBackGround")
 						obj.transform.parent = backBackLayer.transform;
 				}
 				
@@ -99,7 +105,7 @@ public class GameController : MonoBehaviour {
 			float timeSinceStart = Time.time - startFlyTime;
 			float gravityEffect = (float) 0.5f * gravityLevel * timeSinceStart * timeSinceStart /3000;//calcul savant de l'équation horaire !!
 		
-			Vector3 playerSpeed ;
+
 
 			if(!isInSpace){
 				//on calcule le vecteur vitesse du player ajusté
@@ -108,9 +114,9 @@ public class GameController : MonoBehaviour {
 				lastPlayerSpeed = new Vector3(playerSpeed.x,playerSpeed.y,playerSpeed.z);
 			}
 			else{
-				//playerSpeed = PlayerController.vitesse;
-				playerSpeed = lastPlayerSpeed;
-
+				playerSpeed.x = PlayerController.vitesse.x;
+				playerSpeed.y = PlayerController.vitesse.y;
+				playerSpeed.z = PlayerController.vitesse.z;
 			}
 
 
@@ -124,28 +130,44 @@ public class GameController : MonoBehaviour {
 			//calcul de l'altitude
 			altitude = foreLayer.transform.position.y * -1 * coeffAltitude;
 			float vitesse = PlayerController.vitesse.y*-1 * coeffVitesse;
-			//DebugInGame.setMessage("ISINSpace :"+isInSpace +" Altitude :"+altitude,"Vitesse Player : "+vitesse+" km/h et nbre pièces : "+nbrePieces);
+			//Debug.Log("ISINSpace :"+isInSpace +" Altitude :"+altitude+"Vitesse Player : "+vitesse+" km/h et nbre pièces : "+nbrePieces);
 
 
 
 			//if(PlayerController.vitesse.y > 0){
-			if(lastPlayerSpeed.y > 0.2f){
-				isInGame = false;
-				isGameOver = true;
-				Debug.Log (this.name + " on aperdu !!!!!!!!!!!!!!!!!!!!!!!!!!");
+			//if(lastPlayerSpeed.y > 0.2f){
+			/*if((!isInSpace && playerSpeed.y > 0.2f) || (isInSpace && playerSpeed.y >= 0)){
+				checkTimeToGameOverLeft();
+			}*/
+			if(playerSpeed.y >= 0){
+				checkTimeToGameOverLeft();
+			}
+			else{
+				timeLeftToGameOver = TIME_TO_GAME_OVER;
 			}
 			if(altitude >= altMaxForWinLevel){
 				isInGame = false;
 			}
-			if(altitude >= altBeginOfSpace) {
+			if(altitude >= altBeginOfSpace && !isInSpace) { 
 				isInSpace = true;
+				PlayerController.setVitesseEnterInSpace(lastPlayerSpeed.y);
 			}
 
 		}
 	}
 
 
-
+	/*** vérifie s'il reste du temps avant de lancer le gameOVER ...utile qd le perso redescend ****/
+	private void checkTimeToGameOverLeft(){
+		
+		timeLeftToGameOver -= Time.deltaTime;
+		if(timeLeftToGameOver < 0)
+		{
+			isInGame = false;
+			isGameOver = true;
+			//Debug.Log (this.name + " on aperdu !!!!!!!!!!!!!!!!!!!!!!!!!!");
+		}
+	}
 	/** méthode d'apel por la création d'un niveau *****/
 	void createWorld(){
 		this.GetComponent<LoadLevelcontroller> ().loadLevel (currentLevel);
@@ -193,6 +215,7 @@ public class GameController : MonoBehaviour {
 		foreLayer = GameObject.FindGameObjectWithTag ("ForeLayer");
 		backBackLayer = GameObject.FindGameObjectWithTag ("BackBackLayer");
 
+		timeLeftToGameOver = TIME_TO_GAME_OVER;
 		createWorld ();
 	
 	}
