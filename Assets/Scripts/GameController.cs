@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour {
 	private float altBeginOfSpace = 41000f; //10000f; test   //41000f;  realité
 
 	private int coeffVitesse = 1 * 3600; 
-	private int currentLevel = 1; //par défaut le premier niveau
+	public int currentLevel = 1; //par défaut le premier niveau
 	private float gravityLevel;
 	private float startFlyTime;
 	public static Vector3 lastPlayerSpeed,playerSpeed;
@@ -170,6 +170,7 @@ public class GameController : MonoBehaviour {
 	}
 	/** méthode d'apel por la création d'un niveau *****/
 	void createWorld(){
+		Debug.Log ("on charge le niveau :" + currentLevel);
 		this.GetComponent<LoadLevelcontroller> ().loadLevel (currentLevel);
 	}
 
