@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canonFire: {fileID: 100000, guid: 30d3737bb91c4f748ac990b8991fdafb, type: 2}
-  gameController: {fileID: 0}
+  gameController: {fileID: 193272, guid: dc639b337b9b8f2408e9e472e0fe7efd, type: 2}
   anim: {fileID: 0}
   animMoitie: {fileID: 0}
 --- !u!212 &21256110

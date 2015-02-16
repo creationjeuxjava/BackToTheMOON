@@ -19,7 +19,8 @@ public class LoadLevelcontroller : MonoBehaviour {
 	public void loadLevel(int levelNum){
 
 		Debug.Log (this + " on charge le monde " + levelNum);
-		TextAsset textAsset = (TextAsset)Resources.Load("XML/testXML", typeof(TextAsset));
+		//TextAsset textAsset = (TextAsset)Resources.Load("XML/testXML", typeof(TextAsset));
+		TextAsset textAsset = (TextAsset)Resources.Load("XML/level"+levelNum, typeof(TextAsset));
 		XmlDocument xmldoc = new XmlDocument ();
 		xmldoc.LoadXml ( textAsset.text );//on charge le fichier
 		
@@ -51,7 +52,7 @@ public class LoadLevelcontroller : MonoBehaviour {
 
 						if(isPoolNeeded == "true")	needPooling = true;//Convert.ToBoolean();
 						else needPooling = false;
-						//Debug.Log("Valeur de attribut name: "+name);
+						Debug.Log("Valeur de attribut name: "+name);
 						//Debug.Log("nbre à créer: "+number);
 						
 						XmlNodeList objectcontent = levelsItens.ChildNodes;//récup de ses enfants !!
