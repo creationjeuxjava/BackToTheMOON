@@ -1468,7 +1468,6 @@ GameObject:
   - 61: {fileID: 313015604}
   - 50: {fileID: 313015605}
   - 82: {fileID: 313015606}
-  - 114: {fileID: 313015607}
   - 95: {fileID: 313015608}
   - 114: {fileID: 313015609}
   m_Layer: 0
@@ -1526,7 +1525,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fumee: {fileID: 115168, guid: 5a97962f7d5ba4df0823334b52c7c02c, type: 2}
-  anim: {fileID: 0}
   camera: {fileID: 276706956}
   currentState: 2
 --- !u!61 &313015604
@@ -1616,18 +1614,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &313015607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11481010, guid: d0e8516c41cce0749b67ab215344a914,
-    type: 2}
-  m_PrefabInternal: {fileID: 2010089714}
-  m_GameObject: {fileID: 313015600}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d893b47a366c734e9156ca5e1bc46c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &313015608
 Animator:
   serializedVersion: 3
@@ -10407,7 +10393,8 @@ Prefab:
       propertyPath: camera
       value: 
       objectReference: {fileID: 276706956}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11481010, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
   m_RootGameObject: {fileID: 313015600}
   m_IsPrefabParent: 0
