@@ -20,6 +20,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: enableFlyAction
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
@@ -32,6 +38,26 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+--- !u!1101 &110129398
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110209468}
+  m_DstState: {fileID: 110217714}
+  m_TransitionDuration: 14.999999
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: enableFlyAction
+    m_EventTreshold: 0
+    m_ExitTime: 0
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1101 &110136046
 Transition:
   serializedVersion: 2
@@ -65,14 +91,14 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: enableFlyAction
     m_EventTreshold: 0
     m_ExitTime: .835164845
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
---- !u!1101 &110173792
+--- !u!1101 &110190004
 Transition:
   serializedVersion: 2
   m_ObjectHideFlags: 3
@@ -80,12 +106,12 @@ Transition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_SrcState: {fileID: 110207594}
-  m_DstState: {fileID: 110217714}
+  m_DstState: {fileID: 110209468}
   m_TransitionDuration: .166666672
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: openFly
+    m_ConditionEvent: enableFlyAction
     m_EventTreshold: 0
     m_ExitTime: .833333313
   m_Atomic: 1
@@ -108,6 +134,26 @@ Transition:
     m_ConditionEvent: close
     m_EventTreshold: 0
     m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1101 &110196000
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110209468}
+  m_DstState: {fileID: 110252792}
+  m_TransitionDuration: 14.999999
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: close
+    m_EventTreshold: 0
+    m_ExitTime: 0
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -138,7 +184,22 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 2fc045c7cb0056f4d9342d0f7cac8f9d, type: 2}
   m_ParentStateMachine: {fileID: 110717714}
-  m_Position: {x: 276, y: 216, z: 0}
+  m_Position: {x: 300, y: 12, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110209468
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FlyActionBlocked
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 4bffa7112e969e647b81d0603821b6b9, type: 2}
+  m_ParentStateMachine: {fileID: 110717714}
+  m_Position: {x: 264, y: 276, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -153,7 +214,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 8d8651a582e8a495d96dfd4794e673d3, type: 2}
   m_ParentStateMachine: {fileID: 110717714}
-  m_Position: {x: 48, y: 216, z: 0}
+  m_Position: {x: -24, y: 276, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -168,7 +229,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 205b770a46b18fd408cb8fb624d942cd, type: 2}
   m_ParentStateMachine: {fileID: 110717714}
-  m_Position: {x: -192, y: 276, z: 0}
+  m_Position: {x: -312, y: 204, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -201,9 +262,15 @@ StateMachine:
   - {fileID: 110208594}
   - {fileID: 110207594}
   - {fileID: 110252792}
+  - {fileID: 110209468}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
+    data:
+      first: {fileID: 110209468}
+      second:
+      - {fileID: 110129398}
+      - {fileID: 110196000}
     data:
       first: {fileID: 110252792}
       second:
@@ -211,7 +278,7 @@ StateMachine:
     data:
       first: {fileID: 110207594}
       second:
-      - {fileID: 110173792}
+      - {fileID: 110190004}
     data:
       first: {fileID: 110208594}
       second: []

@@ -62,7 +62,7 @@ public class ActionButtonManager : MonoBehaviour {
 	}
 
 	public static void updateIcon(PlayerController.State currentstate){
-		//Debug.Log ("ActionButton : on update l'icone !!");
+		Debug.Log ("ActionButton : vitesse joueur "+GameController.lastPlayerSpeed.y);
 
 		PlayerController.State state = currentstate; 
 		if (state == PlayerController.State.noAction) {
@@ -70,10 +70,16 @@ public class ActionButtonManager : MonoBehaviour {
 			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/boutonaction",typeof(Sprite));
 			anim.SetTrigger("close");
 		} 
-		else if (state == PlayerController.State.naked) {			
+		//else if (state == PlayerController.State.naked && GameController.lastPlayerSpeed.y >= -0.05f) {
+		else if (state == PlayerController.State.naked && GameController.lastPlayerSpeed.y < -0.05f) {
 		//	buttonObject.SetActive (true);
 			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/helico", typeof(Sprite));
 			anim.SetTrigger("openFly");
+		} 
+		else if (state == PlayerController.State.naked &&  GameController.lastPlayerSpeed.y >= -0.1f) {
+			//	buttonObject.SetActive (true);
+			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/helico", typeof(Sprite));
+			anim.SetTrigger("enableFlyAction");
 		} 
 		else if (state == PlayerController.State.laser) {
 		//	buttonObject.SetActive (true);

@@ -126,7 +126,7 @@ public class PlayerController : MonoBehaviour {
 		if (GameController.isGamePaused ())
 						audio.Pause ();
 
-
+		ActionButtonManager.updateIcon(currentState);
 
 	}
 
@@ -177,7 +177,7 @@ public class PlayerController : MonoBehaviour {
 			Sprite casqueSprite = Resources.Load("Sprites/persocasque", typeof(Sprite)) as Sprite;
 			GetComponent<SpriteRenderer>().sprite = casqueSprite;
 			
-			GetComponent<Inventory>().addItem(new Item("casque",1,Item.ItemType.Timer));
+			//GetComponent<Inventory>().addItem(new Item("casque",1,Item.ItemType.Timer));
 			currentState = State.noAction;
 			ActionButtonManager.updateIcon(currentState);
 		}
@@ -196,7 +196,7 @@ public class PlayerController : MonoBehaviour {
 			Sprite shoeSprite = Resources.Load("Sprites/persoshoes", typeof(Sprite)) as Sprite;
 			GetComponent<SpriteRenderer>().sprite = shoeSprite;
 			
-			GetComponent<Inventory>().addItem(new Item("shoes",2,Item.ItemType.Timer));
+			//GetComponent<Inventory>().addItem(new Item("shoes",2,Item.ItemType.Timer));
 			//boostVitesse(50/100);
 			updateVitesse(other.gameObject);
 			currentState = State.noAction;
@@ -310,7 +310,7 @@ public class PlayerController : MonoBehaviour {
 					vitesse.y += vitesse.y * 4 / 100;
 				}
 					
-				Debug.Log ("clic sur bouton action : battements");
+				//Debug.Log ("clic sur bouton action : battements");
 				//TODO limiter le nbre de clics possibles par un timer !!--> pas forcément intéréssant ?
 				break;
 
@@ -319,7 +319,7 @@ public class PlayerController : MonoBehaviour {
 				break;
 
 			case State.noAction:
-				Debug.Log ("clic sur bouton action  : noAction");
+				//Debug.Log ("clic sur bouton action  : noAction");
 				break;
 		
 		}

@@ -131,7 +131,7 @@ public class GameController : MonoBehaviour {
 			altitude = foreLayer.transform.position.y * -1 * coeffAltitude;
 			float vitesse = PlayerController.vitesse.y*-1 * coeffVitesse;
 			//Debug.Log("ISINSpace :"+isInSpace +" Altitude :"+altitude+"Vitesse Player : "+vitesse+" km/h et nbre pièces : "+nbrePieces);
-
+			Debug.Log (this+" vitesse joueur "+lastPlayerSpeed.y);
 
 
 			//if(PlayerController.vitesse.y > 0){
