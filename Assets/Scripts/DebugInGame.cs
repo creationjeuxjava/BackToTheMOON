@@ -34,11 +34,11 @@ public class DebugInGame : MonoBehaviour {
 
 
 		startY = 80;
-		isFly = GameObject.Find ("isFlyBegin").GetComponent<Text> ();
+		/*isFly = GameObject.Find ("isFlyBegin").GetComponent<Text> ();
 		isCask = GameObject.Find ("isWithCask").GetComponent<Text> ();
 		isShoe = GameObject.Find ("isWithShoe").GetComponent<Text> ();
 		translation = GameObject.Find ("translation").GetComponent<Text> ();
-		vitesse = GameObject.Find ("vitesse").GetComponent<Text> ();
+		vitesse = GameObject.Find ("vitesse").GetComponent<Text> ();*/
 		fpsText = GameObject.Find ("fps").GetComponent<Text> ();
 		//isGameFinish = GameObject.Find ("isGameFinish").GetComponent<Text> ();
 
@@ -49,11 +49,11 @@ public class DebugInGame : MonoBehaviour {
 	void Update(){
 		updateFPS ();
 
-		isFly.text = "isBeginFly : "+PlayerController.isFlyBegin;
+		/*isFly.text = "isBeginFly : "+PlayerController.isFlyBegin;
 		isCask.text = "isWithCask : "+PlayerController.isWithCask;
 		isShoe.text = "state : "+PlayerController.state; //"isWithShoe : "+PlayerController.isWithShoe;
 		translation.text = "translation :" + PlayerController.translation;
-		vitesse.text = "vitesse : " + GameController.playerSpeed.y;
+		vitesse.text = "vitesse : " + GameController.playerSpeed.y;*/
 		fpsText.text = "FPS : "+format;
 	//	isGameFinish.text = "IsGameFinish : " + !GameController.isInGame;
 
