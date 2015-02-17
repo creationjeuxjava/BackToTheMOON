@@ -71,12 +71,12 @@ public class ActionButtonManager : MonoBehaviour {
 			anim.SetTrigger("close");
 		} 
 		//else if (state == PlayerController.State.naked && GameController.lastPlayerSpeed.y >= -0.05f) {
-		else if (state == PlayerController.State.naked && GameController.lastPlayerSpeed.y < -0.05f) {
+		else if (state == PlayerController.State.naked && GameController.lastPlayerSpeed.y < -0.05f &&  !GameController.isInSpace) {
 		//	buttonObject.SetActive (true);
 			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/helico", typeof(Sprite));
 			anim.SetTrigger("openFly");
 		} 
-		else if (state == PlayerController.State.naked &&  GameController.lastPlayerSpeed.y >= -0.1f) {
+		else if (state == PlayerController.State.naked &&  GameController.lastPlayerSpeed.y >= -0.05f &&  !GameController.isInSpace) {
 			//	buttonObject.SetActive (true);
 			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/helico", typeof(Sprite));
 			anim.SetTrigger("enableFlyAction");
@@ -86,7 +86,7 @@ public class ActionButtonManager : MonoBehaviour {
 			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/sabrelaser", typeof(Sprite));
 		} 
 		else {
-			//Debug.Log("pas de state adapté !!!");
+			anim.SetTrigger("close");
 		}
 	}
 
