@@ -1,0 +1,102 @@
+fileFormatVersion: 2
+guid: bede82cb638fa4ee786df1b964e2b320
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Calque-2
+    21300002: Calque-3
+    21300004: Calque-4
+    21300006: Calque-5
+    21300008: Calque-6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Calque-2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 13
+        width: 141
+        height: 429
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Calque-3
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 45
+        width: 204
+        height: 397
+      alignment: 9
+      pivot: {x: .502451003, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Calque-4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 12
+        width: 364
+        height: 430
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Calque-5
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 46
+        width: 151
+        height: 396
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Calque-6
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 45
+        width: 209
+        height: 397
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

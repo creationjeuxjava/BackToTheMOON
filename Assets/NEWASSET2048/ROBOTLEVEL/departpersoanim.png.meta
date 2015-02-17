@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: 2dd83d3230b82409099ead29ca4e3f04
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: persoanim_00001
+    21300002: persoanim_00002
+    21300004: persoanim_00003
+    21300006: persoanim_00004
+    21300008: persoanim_00005
+    21300010: persoanim_00006
+    21300012: persoanim_00007
+    21300014: persoanim_00008
+    21300016: persoanim_00009
+    21300018: persoanim_00010
+    21300020: persoanim_00011
+    21300022: persoanim_00012
+    21300024: persoanim_00013
+    21300026: persoanim_00014
+    21300028: persoanim_00015
+    21300030: persoanim_00016
+    21300032: persoanim_00017
+    21300034: persoanim_00018
+    21300036: spiderrobot_00001
+    21300038: spiderrobot_00002
+    21300040: spiderrobot_00003
+    21300042: spiderrobot_00004
+    21300044: spiderrobot_00005
+    21300046: spiderrobot_00006
+    21300048: spiderrobot_00007
+    21300050: spiderrobot_00008
+    21300052: spiderrobot_00009
+    21300054: spiderrobot_00010
+    21300056: spiderrobot_00011
+    21300058: spiderrobot_00012
+    21300060: spiderrobot_00013
+    21300062: spiderrobot_00014
+    21300064: spiderrobot_00015
+    21300066: spiderrobot_00016
+    21300068: spiderrobot_00017
+    21300070: spiderrobot_00018
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spiderrobot_00001
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1652
+        width: 233
+        height: 342
+      alignment: 9
+      pivot: {x: .583691001, y: .947368443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00002
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 876
+        width: 233
+        height: 342
+      alignment: 9
+      pivot: {x: .583691001, y: .947368443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00003
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1300
+        width: 233
+        height: 342
+      alignment: 9
+      pivot: {x: .583691001, y: .947368443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00004
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 948
+        width: 233
+        height: 342
+      alignment: 9
+      pivot: {x: .583691001, y: .947368443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00005
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 419
+        width: 233
+        height: 342
+      alignment: 9
+      pivot: {x: .583691001, y: .947368443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00006
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 524
+        width: 233
+        height: 342
+      alignment: 9
+      pivot: {x: .583691001, y: .947368443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00007
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1228
+        width: 233
+        height: 344
+      alignment: 9
+      pivot: {x: .583691001, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00008
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 233
+        height: 341
+      alignment: 9
+      pivot: {x: .583691001, y: 1.12023461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00009
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 174
+        width: 233
+        height: 340
+      alignment: 9
+      pivot: {x: .583691001, y: 1.23823524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00010
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 247
+        width: 233
+        height: 339
+      alignment: 9
+      pivot: {x: .583691001, y: 1.359882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00011
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 71
+        width: 233
+        height: 338
+      alignment: 9
+      pivot: {x: .583691001, y: 1.47928989}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00012
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 596
+        width: 233
+        height: 342
+      alignment: 9
+      pivot: {x: .583691001, y: 1.52923977}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00013
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1582
+        width: 233
+        height: 412
+      alignment: 9
+      pivot: {x: .583691001, y: 1.16019416}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00014
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 79
+        width: 319
+        height: 272
+      alignment: 9
+      pivot: {x: .586206913, y: 1.81617641}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00015
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 361
+        width: 588
+        height: 400
+      alignment: 9
+      pivot: {x: .539115667, y: 1.28750002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00016
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 771
+        width: 800
+        height: 540
+      alignment: 9
+      pivot: {x: .5, y: 1.07407403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spiderrobot_00017
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1321
+        width: 800
+        height: 673
+      alignment: 9
+      pivot: {x: .5, y: .922734022}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

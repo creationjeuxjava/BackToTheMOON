@@ -1,0 +1,15 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: departpinceanim.png (1568 x 572)
+# $TexturePacker:SmartUpdate:f588c8e4a00bd661762dbeb225cefe74:762356fba95dd795bf55a7f277c8aa17:93da506695068547c9c33e8835f463c6$
+#
+
+animgopince_00005;10;12;285;550;0.5333333333333333;0.3418181818181818
+animgopince_00006;305;12;285;550;0.5333333333333333;0.3418181818181818
+animgopince_00007;600;17;296;545;0.5371621621621622;0.33577981651376143
+animgopince_00008;906;28;315;534;0.546031746031746;0.32209737827715357
+animgopince_00009;1231;33;324;529;0.5493827160493827;0.31568998109640833

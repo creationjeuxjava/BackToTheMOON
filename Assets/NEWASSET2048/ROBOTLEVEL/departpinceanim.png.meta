@@ -1,0 +1,102 @@
+fileFormatVersion: 2
+guid: c7988c84ebebb404b808a846dc97f653
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: animgopince_00005
+    21300002: animgopince_00006
+    21300004: animgopince_00007
+    21300006: animgopince_00008
+    21300008: animgopince_00009
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: animgopince_00005
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 12
+        width: 285
+        height: 550
+      alignment: 9
+      pivot: {x: .533333361, y: .341818184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animgopince_00006
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 12
+        width: 285
+        height: 550
+      alignment: 9
+      pivot: {x: .533333361, y: .341818184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animgopince_00007
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 17
+        width: 296
+        height: 545
+      alignment: 9
+      pivot: {x: .537162185, y: .335779816}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animgopince_00008
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 28
+        width: 315
+        height: 534
+      alignment: 9
+      pivot: {x: .546031773, y: .322097391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animgopince_00009
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 33
+        width: 324
+        height: 529
+      alignment: 9
+      pivot: {x: .549382687, y: .315689981}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

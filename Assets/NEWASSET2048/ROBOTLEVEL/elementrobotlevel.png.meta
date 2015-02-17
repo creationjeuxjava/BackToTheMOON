@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: 11cc0f2f7c4b448b789b76757e1ac105
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fenetre
+    21300002: fil1
+    21300004: fil2
+    21300006: machine
+    21300008: passerelle
+    21300010: plafond
+    21300012: poutre
+    21300014: robotscasses
+    21300016: sol
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: fenetre
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 1191
+        width: 894
+        height: 799
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fil1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 753
+        width: 1056
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fil2
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 843
+        width: 1196
+        height: 146
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: machine
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 999
+        width: 925
+        height: 991
+      alignment: 9
+      pivot: {x: .481081069, y: .489909172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: passerelle
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 16
+        width: 917
+        height: 436
+      alignment: 9
+      pivot: {x: .500545263, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: plafond
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 1033
+        width: 818
+        height: 148
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: poutre
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 13
+        width: 899
+        height: 540
+      alignment: 9
+      pivot: {x: .5, y: .499074072}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: robotscasses
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 462
+        width: 821
+        height: 281
+      alignment: 9
+      pivot: {x: .485383689, y: .540925264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sol
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 563
+        width: 973
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

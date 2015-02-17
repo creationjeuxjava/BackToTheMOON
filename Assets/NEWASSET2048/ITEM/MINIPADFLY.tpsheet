@@ -1,0 +1,14 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: MINIPADFLY.png (1096 x 336)
+# $TexturePacker:SmartUpdate:5855ca579cc2688a4f45f012fd4d4075:6bceaeed46ce88b6b144b637c5e5b62f:a19495b287e4ee37444be931fb2185ee$
+#
+
+minipad_00000;10;11;261;315;0.6398467432950191;0.5222222222222221
+minipad_00001;281;11;261;315;0.6398467432950191;0.5222222222222221
+minipad_00002;552;11;261;315;0.6398467432950191;0.5222222222222221
+minipad_00003;823;11;261;315;0.6398467432950191;0.5222222222222221

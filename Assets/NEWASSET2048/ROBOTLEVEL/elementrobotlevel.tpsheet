@@ -1,0 +1,19 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: elementrobotlevel.png (1876 x 2000)
+# $TexturePacker:SmartUpdate:2377843323f1063231cc4e827dfd99e0:7fd6e2fc77a7ef862ad3fe559ccf9092:ee25ebbf424da659ea7d9d6db7d318a3$
+#
+
+fenetre;945;1191;894;799;0.5;0.5
+fil1;10;753;1056;80;0.5;0.5
+fil2;10;843;1196;146;0.5;0.5
+machine;10;999;925;991;0.4810810810810811;0.4899091826437941
+passerelle;919;16;917;436;0.5005452562704471;0.5
+plafond;945;1033;818;148;0.5;0.5
+poutre;10;13;899;540;0.5;0.4990740740740741
+robotscasses;993;462;821;281;0.4853836784409257;0.5409252669039146
+sol;10;563;973;180;0.5;0.5

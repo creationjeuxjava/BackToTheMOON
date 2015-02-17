@@ -1,0 +1,278 @@
+fileFormatVersion: 2
+guid: 49c9aa0b501684980a2872a205e83cf1
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ASTRONAUTE_00001
+    21300002: ASTRONAUTE_00002
+    21300004: ASTRONAUTE_00003
+    21300006: ASTRONAUTE_00004
+    21300008: ASTRONAUTE_00005
+    21300010: ASTRONAUTE_00006
+    21300012: ASTRONAUTE_00007
+    21300014: ASTRONAUTE_00008
+    21300016: ASTRONAUTE_00009
+    21300018: ASTRONAUTE_00010
+    21300020: ASTRONAUTE_00011
+    21300022: ASTRONAUTE_00012
+    21300024: ASTRONAUTE_00013
+    21300026: ASTRONAUTE_00014
+    21300028: ASTRONAUTE_00015
+    21300030: ASTRONAUTE_00016
+    21300032: ASTRONAUTE_00017
+    21300034: ASTRONAUTE_00018
+    21300036: ASTRONAUTE_00019
+    21300038: ASTRONAUTE_00020
+    21300040: ASTRONAUTE_00021
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ASTRONAUTE_00001
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 308
+        width: 191
+        height: 310
+      alignment: 9
+      pivot: {x: .450261772, y: .922580659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00002
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 322
+        width: 191
+        height: 310
+      alignment: 9
+      pivot: {x: .450261772, y: .922580659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00003
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 329
+        width: 191
+        height: 310
+      alignment: 9
+      pivot: {x: .450261772, y: .922580659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00004
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 323
+        width: 191
+        height: 310
+      alignment: 9
+      pivot: {x: .450261772, y: .922580659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00005
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 318
+        width: 191
+        height: 310
+      alignment: 9
+      pivot: {x: .450261772, y: .922580659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00006
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 11
+        width: 156
+        height: 308
+      alignment: 9
+      pivot: {x: .467948705, y: .925324678}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00007
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 18
+        width: 156
+        height: 621
+      alignment: 9
+      pivot: {x: .602564096, y: .45571658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00008
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 649
+        width: 164
+        height: 668
+      alignment: 9
+      pivot: {x: .774390221, y: .417664677}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00009
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 649
+        width: 175
+        height: 679
+      alignment: 9
+      pivot: {x: .817142844, y: .406480104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00010
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1338
+        width: 183
+        height: 676
+      alignment: 9
+      pivot: {x: .715847015, y: .40680474}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00011
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 642
+        width: 182
+        height: 674
+      alignment: 9
+      pivot: {x: .609890103, y: .406528205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00012
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 643
+        width: 164
+        height: 674
+      alignment: 9
+      pivot: {x: .554878056, y: .405044496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00013
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1336
+        width: 166
+        height: 678
+      alignment: 9
+      pivot: {x: .427710831, y: .402654856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00014
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 651
+        width: 164
+        height: 675
+      alignment: 9
+      pivot: {x: .323170722, y: .404444456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00015
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 638
+        width: 162
+        height: 679
+      alignment: 9
+      pivot: {x: .234567896, y: .40206185}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00016
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1329
+        width: 165
+        height: 685
+      alignment: 9
+      pivot: {x: .187878788, y: .398540139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00017
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1326
+        width: 178
+        height: 688
+      alignment: 9
+      pivot: {x: .151685387, y: .396802336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00018
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1326
+        width: 186
+        height: 688
+      alignment: 9
+      pivot: {x: .182795703, y: .399709314}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00019
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 628
+        width: 182
+        height: 688
+      alignment: 9
+      pivot: {x: .274725288, y: .40552327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00020
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 1327
+        width: 164
+        height: 687
+      alignment: 9
+      pivot: {x: .426829278, y: .411935955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ASTRONAUTE_00021
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1327
+        width: 166
+        height: 687
+      alignment: 9
+      pivot: {x: .4759036, y: .414847165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
