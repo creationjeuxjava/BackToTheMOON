@@ -7,6 +7,7 @@ public class ActionButtonManager : MonoBehaviour {
 	/*** pour le bouton action ****/
 	public static GameObject buttonObject;
 	static Image  iconeBoutonAction;
+	private static Animator anim;
 	//PlayerController controller;
 
 	// Use this for initialization
@@ -18,6 +19,7 @@ public class ActionButtonManager : MonoBehaviour {
 		//iconeBoutonAction.sprite = (Sprite)Resources.Load ("None",typeof(Sprite));
 
 		//controller = this.GetComponent<PlayerController> ();
+		anim = GameObject.Find ("actionButton").GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -65,15 +67,17 @@ public class ActionButtonManager : MonoBehaviour {
 		PlayerController.State state = currentstate; 
 		if (state == PlayerController.State.noAction) {
 			//buttonObject.SetActive (false);
-			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/boutonaction",typeof(Sprite));
+			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/boutonaction",typeof(Sprite));
+			anim.SetTrigger("close");
 		} 
 		else if (state == PlayerController.State.naked) {			
 		//	buttonObject.SetActive (true);
-			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/helico", typeof(Sprite));
+			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/helico", typeof(Sprite));
+			anim.SetTrigger("openFly");
 		} 
 		else if (state == PlayerController.State.laser) {
 		//	buttonObject.SetActive (true);
-			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/sabrelaser", typeof(Sprite));
+			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/sabrelaser", typeof(Sprite));
 		} 
 		else {
 			//Debug.Log("pas de state adapté !!!");
