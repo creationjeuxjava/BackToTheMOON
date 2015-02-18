@@ -28,6 +28,7 @@ public class GameController : MonoBehaviour {
 	private int coeffAltitude = 100;
 	private float altMaxForWinLevel = 150000f;//80000f ou 150000f ;
 	private float altBeginOfSpace = 41000f; //10000f; test   //41000f;  realité
+	private const float MAX_VITESSE = -0.3f;
 
 	private int coeffVitesse = 1 * 3600; 
 	public int currentLevel = 1; //par défaut le premier niveau
@@ -112,11 +113,13 @@ public class GameController : MonoBehaviour {
 				playerSpeed = new Vector3(PlayerController.vitesse.x,PlayerController.vitesse.y + gravityEffect, PlayerController.vitesse.z);
 				//Debug.Log("Vitesse globale : "+playerSpeed+" et temps écoulé depuis le lancement : "+timeSinceStart+ " effet de gravity : "+ gravityEffect);
 				lastPlayerSpeed = new Vector3(playerSpeed.x,playerSpeed.y,playerSpeed.z);
+				controlMaxVitessePlayer();
 			}
 			else{
 				playerSpeed.x = PlayerController.vitesse.x;
 				playerSpeed.y = PlayerController.vitesse.y;
 				playerSpeed.z = PlayerController.vitesse.z;
+				controlMaxVitessePlayer();
 			}
 
 
@@ -131,7 +134,7 @@ public class GameController : MonoBehaviour {
 			altitude = foreLayer.transform.position.y * -1 * coeffAltitude;
 			float vitesse = PlayerController.vitesse.y*-1 * coeffVitesse;
 			//Debug.Log("ISINSpace :"+isInSpace +" Altitude :"+altitude+"Vitesse Player : "+vitesse+" km/h et nbre pièces : "+nbrePieces);
-			Debug.Log (this+" vitesse joueur "+lastPlayerSpeed.y);
+			Debug.Log (this+" vitesse joueur "+playerSpeed.y);
 
 
 			//if(PlayerController.vitesse.y > 0){
@@ -156,7 +159,12 @@ public class GameController : MonoBehaviour {
 		}
 	}
 
-
+	private void controlMaxVitessePlayer(){
+		if( playerSpeed.y  < MAX_VITESSE){
+			playerSpeed.y = MAX_VITESSE;
+		}
+	
+	}
 	/*** vérifie s'il reste du temps avant de lancer le gameOVER ...utile qd le perso redescend ****/
 	private void checkTimeToGameOverLeft(){
 		
