@@ -10,7 +10,7 @@ public class InGGameGUIController : MonoBehaviour {
 	Text nbrPiecesText,nbrDiamantsText,altitudeText;
 	Image espaceIcone;
 	Animator iconeEspaceAnimator;
-	
+
 	GameObject panelVitesse;
 	Text vitessePlayer;
 
