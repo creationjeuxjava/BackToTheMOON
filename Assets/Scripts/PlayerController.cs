@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
 	public static bool isFlying;
 	public static Vector3 vitesse ;
 	public Camera camera;
-	public float gravityReductionfactor = 100000;
+	public float gravityReductionfactor = 300000;
 
 	public static Vector3 translation;
 	private float speedPlayer = 0.3f;//0.7f;
@@ -360,7 +360,7 @@ public class PlayerController : MonoBehaviour {
 				
 				if(vitesse.y >= -0.05f){
 					anim.SetTrigger("battements");
-					vitesse.y += vitesse.y * 4 / 100;
+					vitesse.y += vitesse.y * 10 / 100;
 				}
 					
 				//Debug.Log ("clic sur bouton action : battements");

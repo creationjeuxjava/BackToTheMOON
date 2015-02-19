@@ -52,16 +52,16 @@ public class LoadLevelcontroller : MonoBehaviour {
 
 						if(isPoolNeeded == "true")	needPooling = true;//Convert.ToBoolean();
 						else needPooling = false;
-						Debug.Log("Valeur de attribut name: "+name);
-						Debug.Log("nbre à créer: "+number);
+						//Debug.Log("Valeur de attribut name: "+name);
+						//Debug.Log("nbre à créer: "+number);
 						
 						XmlNodeList objectcontent = levelsItens.ChildNodes;//récup de ses enfants !!
 						foreach (XmlNode child in objectcontent) 
 						{														
 							if(child.Name == "Altitude")
 							{
-								Debug.Log("--> MAX : "+child.Attributes["max"].Value);
-								Debug.Log("--> MIN : "+child.Attributes["min"].Value);
+								//Debug.Log("--> MAX : "+child.Attributes["max"].Value);
+								//Debug.Log("--> MIN : "+child.Attributes["min"].Value);
 								int max = int.Parse(child.Attributes["max"].Value);
 								int min = int.Parse(child.Attributes["min"].Value);
 

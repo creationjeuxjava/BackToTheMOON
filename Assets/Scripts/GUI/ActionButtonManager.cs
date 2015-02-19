@@ -26,7 +26,7 @@ public class ActionButtonManager : MonoBehaviour {
 
 	public static void updateIcon(PlayerController.State currentstate){
 		//Debug.Log ("ActionButton : vitesse joueur "+GameController.lastPlayerSpeed.y);
-		Debug.Log ("ActionButton : etat du joueur :"+currentstate);
+		//Debug.Log ("ActionButton : etat du joueur :"+currentstate);
 
 		PlayerController.State state = currentstate; 
 		if (state == PlayerController.State.noAction) {

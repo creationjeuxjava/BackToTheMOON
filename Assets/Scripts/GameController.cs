@@ -41,7 +41,7 @@ public class GameController : MonoBehaviour {
 
 	// création initiale
 	void Start () {
-		//Application.targetFrameRate = 60;
+		//Application.targetFrameRate = 40;
 		resetGame ();
 		//Debug.Log (this.name + " méthode strat");
 	}
@@ -85,18 +85,20 @@ public class GameController : MonoBehaviour {
 		if (isWorldMoving == true && !isGameInPause && isInGame) {
 
 			if(!isInSpace){
-				playerSpeed = PlayerController.vitesse;
-				lastPlayerSpeed = new Vector3(playerSpeed.x,playerSpeed.y,playerSpeed.z);
+				playerSpeed = PlayerController.vitesse * Time.smoothDeltaTime * 50;
+				//lastPlayerSpeed = new Vector3(playerSpeed.x,playerSpeed.y,playerSpeed.z);
+
 				//Debug.Log("Vitesse globale avt control: "+playerSpeed.y);
 				//controlMaxVitessePlayer();
 			}
 			else{
-				playerSpeed.x = PlayerController.vitesse.x;
-				playerSpeed.y = PlayerController.vitesse.y;
-				playerSpeed.z = PlayerController.vitesse.z;
+				/*playerSpeed.x = PlayerController.vitesse.x * Time.deltaTime * 50 ;
+				playerSpeed.y = PlayerController.vitesse.y * Time.deltaTime * 50;
+				playerSpeed.z = PlayerController.vitesse.z * Time.deltaTime * 50;*/
+				playerSpeed = PlayerController.vitesse * Time.deltaTime * 50;
 
 			}
-
+			//Debug.Log(this+"Time delta : "+Time.deltaTime);
 
 
 			//chaque partie avance à une vitesse différente == parallax

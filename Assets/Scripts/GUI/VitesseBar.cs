@@ -36,10 +36,10 @@ public class VitesseBar : MonoBehaviour {
 		//Debug.Log ("*********************"+this + "vitesse player " + GameController.playerSpeed.y);
 		//Debug.Log ("--> valeur transform " + vitesseContentTransform.offsetMax.y);
 
-		if(GameController.playerSpeed.y > -0.1f){
+		if(PlayerController.vitesse.y > -0.1f){
 			vitesseContent.color = alert;
 		}
-		else if(GameController.playerSpeed.y <= -0.1f && GameController.playerSpeed.y > -0.2f){
+		else if(PlayerController.vitesse.y <= -0.1f && PlayerController.vitesse.y > -0.2f){
 			vitesseContent.color = middle;
 		}
 		else{
@@ -49,7 +49,7 @@ public class VitesseBar : MonoBehaviour {
 	}
 
 	private void convertVitesseForIHM(){
-		currentBarRectSize.y = GameController.playerSpeed.y * maxHeight / maxVitesse;
+		currentBarRectSize.y = PlayerController.vitesse.y * maxHeight / maxVitesse;
 
 	}
 }
