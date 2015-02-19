@@ -35,6 +35,7 @@ public class GameController : MonoBehaviour {
 	private float gravityLevel;
 	private float startFlyTime;
 	public static Vector3 lastPlayerSpeed,playerSpeed;
+	public static float vitessePlayerTransormee;
 
 
 	private const float TIME_TO_GAME_OVER = 3f;
@@ -113,12 +114,15 @@ public class GameController : MonoBehaviour {
 				playerSpeed = new Vector3(PlayerController.vitesse.x,PlayerController.vitesse.y + gravityEffect, PlayerController.vitesse.z);
 				//Debug.Log("Vitesse globale : "+playerSpeed+" et temps écoulé depuis le lancement : "+timeSinceStart+ " effet de gravity : "+ gravityEffect);
 				lastPlayerSpeed = new Vector3(playerSpeed.x,playerSpeed.y,playerSpeed.z);
+				//Debug.Log("Vitesse globale avt control: "+playerSpeed.y);
 				controlMaxVitessePlayer();
 			}
 			else{
 				playerSpeed.x = PlayerController.vitesse.x;
 				playerSpeed.y = PlayerController.vitesse.y;
 				playerSpeed.z = PlayerController.vitesse.z;
+
+				//Debug.Log("Vitesse globale avt control (inSpace): "+playerSpeed.y);
 				controlMaxVitessePlayer();
 			}
 
@@ -132,9 +136,10 @@ public class GameController : MonoBehaviour {
 
 			//calcul de l'altitude
 			altitude = foreLayer.transform.position.y * -1 * coeffAltitude;
-			float vitesse = PlayerController.vitesse.y*-1 * coeffVitesse;
+			vitessePlayerTransormee = PlayerController.vitesse.y*-1 * coeffVitesse;
 			//Debug.Log("ISINSpace :"+isInSpace +" Altitude :"+altitude+"Vitesse Player : "+vitesse+" km/h et nbre pièces : "+nbrePieces);
 			Debug.Log (this+" vitesse joueur "+playerSpeed.y);
+			Debug.Log ("***************"+this+" vitesse joueur transformée"+vitessePlayerTransormee);
 
 
 			//if(PlayerController.vitesse.y > 0){
@@ -162,8 +167,9 @@ public class GameController : MonoBehaviour {
 	private void controlMaxVitessePlayer(){
 		if( playerSpeed.y  < MAX_VITESSE){
 			playerSpeed.y = MAX_VITESSE;
+			//Debug.Log("control: on limite la vitesse à "+MAX_VITESSE);
 		}
-	
+		//Debug.Log(" ************** CONTROLE --> Vitesse globale après control: "+playerSpeed.y);
 	}
 	/*** vérifie s'il reste du temps avant de lancer le gameOVER ...utile qd le perso redescend ****/
 	private void checkTimeToGameOverLeft(){
