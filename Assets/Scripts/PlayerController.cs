@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour {
 	public static bool isFlying;
 	public static Vector3 vitesse ;
 	public Camera camera;
+	public float gravityReductionfactor = 100000;
+
 	public static Vector3 translation;
 	private float speedPlayer = 0.3f;//0.7f;
 	public static bool isWithCask = false;
@@ -68,11 +70,11 @@ public class PlayerController : MonoBehaviour {
 		state = currentState;
 		//Debug.Log("*********************"+this+" Vtesse player : "+vitesse.y);
 
-		if (isFlying && !GameController.isGamePaused() && !GameController.isOverGUI()) {
+		if (isFlying && !GameController.isGamePaused() ) {
 
 			/*** on met à jour la vitesse du joueur ***/
 			timeSinceStart = Time.time - startFlyTime;
-			gravityEffect = (float) 0.5f * gravityLevel * timeSinceStart  /100000;//calcul "savant" de l'équation horaire !! * timeSinceStart
+			gravityEffect = (float) 0.5f * gravityLevel * timeSinceStart  / gravityReductionfactor;//calcul "savant" de l'équation horaire !! * timeSinceStart
 			
 			if(!GameController.isInSpace){
 				//on calcule le vecteur vitesse du player ajusté
@@ -91,70 +93,73 @@ public class PlayerController : MonoBehaviour {
 				controlMaxVitessePlayer();
 			}
 
-
-			if(!audio.isPlaying)	audio.Play();
-
-			/*****************   control out of Map	*********************/
-			Vector3 screenPos = camera.WorldToScreenPoint(transform.position);
-			if(screenPos.x >= Screen.width ) {
-				translation.x = 0;
-				transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
-				rigidbody2D.velocity = Vector3.zero;
-			}
-			else if(screenPos.x <= 0){
-				translation.x = 0;
-				transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
-				rigidbody2D.velocity = Vector3.zero;
-			}
-			else{
-				/*** correction si trop bas...suite aux collisions ****/
-				//if(screenPos.y <= 100){//40
-				if(transform.position.y <= -28){//voir ds le world (scene) directement
+			if(!GameController.isOverGUI()){
+				if(!audio.isPlaying)	audio.Play();
+				
+				/*****************   control out of Map	*********************/
+				Vector3 screenPos = camera.WorldToScreenPoint(transform.position);
+				if(screenPos.x >= Screen.width ) {
+					translation.x = 0;
+					transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
+					rigidbody2D.velocity = Vector3.zero;
+				}
+				else if(screenPos.x <= 0){
+					translation.x = 0;
+					transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
+					rigidbody2D.velocity = Vector3.zero;
+				}
+				else{
+					/*** correction si trop bas...suite aux collisions ****/
+					//if(screenPos.y <= 100){//40
+					if(transform.position.y <= -28){//voir ds le world (scene) directement
+						
+						transform.position = new Vector3(transform.position.x,-26,0);
+						rigidbody2D.velocity = Vector3.zero;
+					}
+					else{
+						transform.position = new Vector3(transform.position.x,transform.position.y,0);
+						rigidbody2D.velocity = Vector3.zero;
+						//Debug.Log("PlayerController : on update normalement !");
+					}
 					
-					transform.position = new Vector3(transform.position.x,-26,0);
-					rigidbody2D.velocity = Vector3.zero;
 				}
-				else{
-					transform.position = new Vector3(transform.position.x,transform.position.y,0);
-					rigidbody2D.velocity = Vector3.zero;
-					//Debug.Log("PlayerController : on update normalement !");
-				}
-
-			}
-
-
-
-
-			/******************  déplacement droite/gauche du player  *************/
-			if (Input.GetMouseButtonDown (0)){//fonctionne aussi sur Android !!
-
-				Vector2 touchPos = camera.ScreenToWorldPoint(Input.mousePosition );
-				//Debug.Log("*************   Clic en  : "+touchPos+" et player en : "+transform.position.x);
-
-				if(gameObject.collider2D.bounds.Contains (touchPos)){
-					translation = Vector3.zero;
-				}
-				else{
-					if(!isFlyBegin){
-						if(touchPos.x < transform.position.x ){
-							translation.x = -lateralDelta;
-							anim.SetTrigger ("toLeft");
+				
+				
+				
+				
+				/******************  déplacement droite/gauche du player  *************/
+				if (Input.GetMouseButtonDown (0)){//fonctionne aussi sur Android !!
+					
+					Vector2 touchPos = camera.ScreenToWorldPoint(Input.mousePosition );
+					//Debug.Log("*************   Clic en  : "+touchPos+" et player en : "+transform.position.x);
+					
+					if(gameObject.collider2D.bounds.Contains (touchPos)){
+						translation = Vector3.zero;
+					}
+					else{
+						if(!isFlyBegin){
+							if(touchPos.x < transform.position.x ){
+								translation.x = -lateralDelta;
+								anim.SetTrigger ("toLeft");
+								
+							}
+							else if(touchPos.x > (transform.position.x + collider2D.bounds.max.x )  ){
+								translation.x = lateralDelta;
+								anim.SetTrigger ("toRight");
+							}
 							
 						}
-						else if(touchPos.x > (transform.position.x + collider2D.bounds.max.x )  ){
-							translation.x = lateralDelta;
-							anim.SetTrigger ("toRight");
-						}
-
+						
 					}
+				} 			
+				
+				transform.Translate(translation);
+				actualPosition = transform.position;
+				
+				if(isItemActivated) this.checkTimeItemLeft();
 
-				}
-			} 			
+			}
 
-			transform.Translate(translation);
-			actualPosition = transform.position;
-
-			if(isItemActivated) this.checkTimeItemLeft();
 		}
 		if (GameController.isGamePaused ())
 						audio.Pause ();
@@ -349,7 +354,7 @@ public class PlayerController : MonoBehaviour {
 				
 				if(vitesse.y >= -0.05f){
 					anim.SetTrigger("battements");
-					vitesse.y += vitesse.y * 4 / 100 + gravityEffect;
+					vitesse.y += vitesse.y * 4 / 100;
 				}
 					
 				//Debug.Log ("clic sur bouton action : battements");

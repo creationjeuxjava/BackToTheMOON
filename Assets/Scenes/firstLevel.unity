@@ -1767,6 +1767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fumee: {fileID: 115168, guid: 5a97962f7d5ba4df0823334b52c7c02c, type: 2}
   camera: {fileID: 276706956}
+  gravityReductionfactor: 100000
   currentState: 2
 --- !u!61 &313015604
 BoxCollider2D:
@@ -8434,6 +8435,10 @@ Prefab:
       propertyPath: camera
       value: 
       objectReference: {fileID: 276706956}
+    - target: {fileID: 5081008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
   m_RootGameObject: {fileID: 313015600}
