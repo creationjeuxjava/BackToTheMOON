@@ -129,10 +129,15 @@ public class GameController : MonoBehaviour {
 
 
 			//chaque partie avance à une vitesse différente == parallax
-			backBackLayer.transform.Translate (playerSpeed / 3f);
+			/*backBackLayer.transform.Translate (playerSpeed / 3f);
 			backLayer.transform.Translate (playerSpeed / 2);
 			middleLayer.transform.Translate (playerSpeed / 1.5f);
-			foreLayer.transform.Translate (playerSpeed);
+			foreLayer.transform.Translate (playerSpeed);*/
+
+			backBackLayer.transform.Translate (playerSpeed / 5f);
+			backLayer.transform.Translate (playerSpeed / 4f);
+			middleLayer.transform.Translate (playerSpeed / 3f);
+			foreLayer.transform.Translate (playerSpeed/2f);
 
 			//calcul de l'altitude
 			altitude = foreLayer.transform.position.y * -1 * coeffAltitude;

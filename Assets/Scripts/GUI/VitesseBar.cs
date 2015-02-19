@@ -5,36 +5,35 @@ using UnityEngine.UI;
 public class VitesseBar : MonoBehaviour {
 
 	public float maxVitesse;
-	public float maxHeight = 200;
 	public Color alert,middle,ok;
 
 	public Color contentColor; //pour debug !!
 
-	Vector3 offSetMaxValue;
+	float maxHeight;
+	Vector2 currentBarRectSize;
 	Image vitesseContent;
-	RectTransform vitesseContentTransform;
+	RectTransform vitesseContentTransform,parentBar;
 
 	// Use this for initialization
 	void Start () {
 		vitesseContent = GameObject.Find ("vitesseContent").GetComponent<Image> ();
 		vitesseContentTransform = GameObject.Find ("vitesseContent").GetComponent<RectTransform> ();
+		parentBar = GameObject.Find ("barreVitesse").GetComponent<RectTransform> ();
 
-		//offSetMaxValue = new Vector3(2.8f,200,0);
-		offSetMaxValue = new Vector3(0,0,0);
-		vitesseContentTransform.offsetMax = Vector3.zero;
+		currentBarRectSize = new Vector2(0.05f,0f);
+		vitesseContentTransform.sizeDelta = currentBarRectSize;
+		maxHeight = parentBar.rect.height;
 
-		//vitesseContentTransform.rect.Set (0,0,5,10);
+		contentColor = vitesseContent.color;//pour debug
 
-		contentColor = vitesseContent.color;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		convertVitesseForIHM();
-		vitesseContentTransform.offsetMax = offSetMaxValue;
+		vitesseContentTransform.sizeDelta = currentBarRectSize;
 
 		Debug.Log ("*********************"+this + "vitesse player " + GameController.playerSpeed.y);
-		Debug.Log ("--> valeur offsetMAx " + offSetMaxValue.y);
 		Debug.Log ("--> valeur transform " + vitesseContentTransform.offsetMax.y);
 
 		if(GameController.playerSpeed.y > -0.1f){
@@ -50,10 +49,7 @@ public class VitesseBar : MonoBehaviour {
 	}
 
 	private void convertVitesseForIHM(){
-		//offSetMaxValue.y = -1 * GameController.playerSpeed.y * maxHeight / maxVitesse;
-
-		offSetMaxValue.y =  GameController.playerSpeed.y * maxHeight / maxVitesse;
-
+		currentBarRectSize.y = GameController.playerSpeed.y * maxHeight / maxVitesse;
 
 	}
 }

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class TranslationMovement : MonoBehaviour {
 
-	public float speed = 10f;
+	public float speed = 2f;
 	public Vector2 velocity;
 	public bool triggered = false;
 

@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour {
 	public static bool isFlyBegin = false;
 
 	private float timeLeft = 5.0f;
-	private float lateralDelta = 0.1f;
+	private float lateralDelta = 0.15f;
 	public static Vector3 actualPosition;
 
 	public enum State : byte
