@@ -146,6 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fumee: {fileID: 115168, guid: 5a97962f7d5ba4df0823334b52c7c02c, type: 2}
   camera: {fileID: 0}
+  gravityReductionfactor: 100000
   currentState: 2
 --- !u!114 &11481012
 MonoBehaviour:
