@@ -18,12 +18,12 @@ public class VitesseBar : MonoBehaviour {
 	void Start () {
 		vitesseContent = GameObject.Find ("vitesseContent").GetComponent<Image> ();
 		vitesseContentTransform = GameObject.Find ("vitesseContent").GetComponent<RectTransform> ();
-		//vitesseContentTransform.offsetMax = Vector3.zero;
 
 		//offSetMaxValue = new Vector3(2.8f,200,0);
 		offSetMaxValue = new Vector3(0,0,0);
 		vitesseContentTransform.offsetMax = Vector3.zero;
 
+		//vitesseContentTransform.rect.Set (0,0,5,10);
 
 		contentColor = vitesseContent.color;
 	}

@@ -230,6 +230,8 @@ public class GameController : MonoBehaviour {
 		foreLayer = GameObject.FindGameObjectWithTag ("ForeLayer");
 		backBackLayer = GameObject.FindGameObjectWithTag ("BackBackLayer");
 
+		playerSpeed = new Vector3(0,0,0);
+
 		timeLeftToGameOver = TIME_TO_GAME_OVER;
 		createWorld ();
 	
