@@ -20,7 +20,14 @@ public class PlayerController : MonoBehaviour {
 
 	private float timeLeft = 5.0f;
 	private float lateralDelta = 0.15f;
+
 	public static Vector3 actualPosition;
+
+	private float gravityLevel;
+	private float startFlyTime;
+	private const float MAX_VITESSE = -0.3f;
+	private float gravityEffect;
+	private float timeSinceStart;
 
 	public enum State : byte
 	{
@@ -33,10 +40,12 @@ public class PlayerController : MonoBehaviour {
 	public  State currentState = State.noAction;
 	public static State state;
 
-	public void launchIntheAir(){
+	public void launchIntheAir(float gravity){
+		gravityLevel = gravity;
 		isFlying = true;
 		isFlyBegin = true;
 		vitesse = new Vector3(0,-speedPlayer,0);
+		startFlyTime = Time.time;
 		//GameObject particules = Instantiate(fumee, new Vector3(transform.position.x,transform.position.y-2, -2f), transform.rotation) as GameObject; 
 		//particules.transform.parent = this.transform;
 		anim.SetTrigger ("decollage");
@@ -57,7 +66,31 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		state = currentState;
+		//Debug.Log("*********************"+this+" Vtesse player : "+vitesse.y);
+
 		if (isFlying && !GameController.isGamePaused() && !GameController.isOverGUI()) {
+
+			/*** on met à jour la vitesse du joueur ***/
+			timeSinceStart = Time.time - startFlyTime;
+			gravityEffect = (float) 0.5f * gravityLevel * timeSinceStart  /100000;//calcul "savant" de l'équation horaire !! * timeSinceStart
+			
+			if(!GameController.isInSpace){
+				//on calcule le vecteur vitesse du player ajusté
+				vitesse.y = vitesse.y + gravityEffect;
+				//Debug.Log("*************Vitesse globale : "+vitesse.y+" et temps écoulé depuis le lancement : "+timeSinceStart+ " effet de gravity : "+ gravityEffect);
+				//lastPlayerSpeed = new Vector3(playerSpeed.x,playerSpeed.y,playerSpeed.z);
+				//Debug.Log("Vitesse globale avt control: "+playerSpeed.y);
+				controlMaxVitessePlayer();
+			}
+			else{
+				/*playerSpeed.x = PlayerController.vitesse.x;
+			playerSpeed.y = PlayerController.vitesse.y;
+			playerSpeed.z = PlayerController.vitesse.z;*/
+				
+				//Debug.Log("Vitesse globale avt control (inSpace): "+playerSpeed.y);
+				controlMaxVitessePlayer();
+			}
+
 
 			if(!audio.isPlaying)	audio.Play();
 
@@ -256,7 +289,16 @@ public class PlayerController : MonoBehaviour {
 				vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor;
 			//Debug.Log(obj.name+" : On réduit la vitesse"+vitesse.y + obj.GetComponent<InteractionEnnemy>().speedReducingFactor);
 		}
-	
+		//Debug.Log("*********************"+this+" Vitesse player avt control : "+vitesse.y);
+		//controlMaxVitessePlayer();
+	}
+
+	private void controlMaxVitessePlayer(){
+		if( vitesse.y  < MAX_VITESSE){
+			vitesse.y = MAX_VITESSE;
+			//Debug.Log("control: on limite la vitesse à "+MAX_VITESSE);
+		}
+		//Debug.Log(" ************** CONTROLE --> Vitesse globale après control: "+vitesse.y);
 	}
 
 	/*** vérifie si l'item est encore valide en fonction du temps restant ****/
@@ -305,9 +347,9 @@ public class PlayerController : MonoBehaviour {
 
 			case State.naked:
 				
-				if(GameController.lastPlayerSpeed.y >= -0.05f){
+				if(vitesse.y >= -0.05f){
 					anim.SetTrigger("battements");
-					vitesse.y += vitesse.y * 4 / 100;
+					vitesse.y += vitesse.y * 4 / 100 + gravityEffect;
 				}
 					
 				//Debug.Log ("clic sur bouton action : battements");

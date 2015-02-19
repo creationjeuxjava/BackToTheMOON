@@ -13,53 +13,16 @@ public class ActionButtonManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		/*** pour le bouton action ****/
-		iconeBoutonAction = GameObject.Find ("actionButton").GetComponent<Image> ();
+		//iconeBoutonAction = GameObject.Find ("actionButton").GetComponent<Image> ();
 		//iconeBoutonAction = buttonObject.GetComponent<Image> ();
-		iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/boutonaction",typeof(Sprite));
+		//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/boutonaction",typeof(Sprite));
 		//iconeBoutonAction.sprite = (Sprite)Resources.Load ("None",typeof(Sprite));
 
 		//controller = this.GetComponent<PlayerController> ();
 		anim = GameObject.Find ("actionButton").GetComponent<Animator> ();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		/*if (this.GetComponent<PlayerController>().currentState == PlayerController.State.noAction) {
-			//buttonObject.SetActive (false);
-			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/boutonaction",typeof(Sprite));
-		} 
-		else if (this.GetComponent<PlayerController> ().currentState == PlayerController.State.naked) {
 
-
-			buttonObject.SetActive (true);
-			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/helico", typeof(Sprite));
-		} 
-		else if (this.GetComponent<PlayerController> ().currentState == PlayerController.State.laser) {
-			buttonObject.SetActive (true);
-			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/sabrelaser", typeof(Sprite));
-		} 
-		else {
-			Debug.Log("pas de state adapté !!!");
-		}*/
-
-		/*if (controller.currentState == PlayerController.State.noAction) {
-			//buttonObject.SetActive (false);
-			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/boutonaction",typeof(Sprite));
-		} 
-		else if (controller.currentState == PlayerController.State.naked) {
-			
-			
-			buttonObject.SetActive (true);
-			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/helico", typeof(Sprite));
-		} 
-		else if (controller.currentState == PlayerController.State.laser) {
-			buttonObject.SetActive (true);
-			iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/sabrelaser", typeof(Sprite));
-		} 
-		else {
-			Debug.Log("pas de state adapté !!!");
-		}*/
-	}
 
 	public static void updateIcon(PlayerController.State currentstate){
 		//Debug.Log ("ActionButton : vitesse joueur "+GameController.lastPlayerSpeed.y);
@@ -67,28 +30,20 @@ public class ActionButtonManager : MonoBehaviour {
 
 		PlayerController.State state = currentstate; 
 		if (state == PlayerController.State.noAction) {
-			//buttonObject.SetActive (false);
-			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/boutonaction",typeof(Sprite));
 			anim.SetTrigger("close");
 		} 
 		//else if (state == PlayerController.State.naked && GameController.lastPlayerSpeed.y >= -0.05f) {
-		else if (state == PlayerController.State.naked && GameController.lastPlayerSpeed.y < -0.05f &&  !GameController.isInSpace) {
-		//	buttonObject.SetActive (true);
-			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/helico", typeof(Sprite));
+		else if (state == PlayerController.State.naked && PlayerController.vitesse.y < -0.05f &&  !GameController.isInSpace) {
 			anim.SetTrigger("openFly");
 		} 
-		else if (state == PlayerController.State.naked &&  GameController.lastPlayerSpeed.y >= -0.05f &&  !GameController.isInSpace) {
-			//	buttonObject.SetActive (true);
-			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/helico", typeof(Sprite));
+		else if (state == PlayerController.State.naked &&  PlayerController.vitesse.y >= -0.05f &&  !GameController.isInSpace) {
 			anim.SetTrigger("enableFlyAction");
 		} 
 		else if (state == PlayerController.State.naked &&  GameController.isInSpace) {
-			//	buttonObject.SetActive (true);
-			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/helico", typeof(Sprite));
 			anim.SetTrigger("close");
 		}
 		else if (state == PlayerController.State.laser) {
-		//	buttonObject.SetActive (true);
+			//	buttonObject.SetActive (true);
 			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/sabrelaser", typeof(Sprite));
 		} 
 		else {
