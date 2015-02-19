@@ -43,7 +43,7 @@ public class InGGameGUIController : MonoBehaviour {
 
 	void Update () {
 		nbrPiecesText.text = "x "+GameController.nbrePieces;
-		nbrDiamantsText.text = "nonImpl";
+		nbrDiamantsText.text = "x "+GameController.nbreDiamond;
 		altitudeText.text = GameController.altitude + " m ";
 
 

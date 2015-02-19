@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour {
 
 	public static float altitude = 0;
 	public static int nbrePieces = 0;
+	public static int nbreDiamond = 0;
 	private int coeffAltitude = 100;
 	private float altMaxForWinLevel = 150000f;//80000f ou 150000f ;
 	private float altBeginOfSpace = 41000f; //10000f; test   //41000f;  realité
@@ -206,6 +207,11 @@ public class GameController : MonoBehaviour {
 
 	public static void addPiece(){
 		nbrePieces++;
+		//Debug.Log("au ajoute une pièce  "+ nbrePieces);
+	}
+
+	public static void addDiamond(){
+		nbreDiamond++;
 		//Debug.Log("au ajoute une pièce  "+ nbrePieces);
 	}
 

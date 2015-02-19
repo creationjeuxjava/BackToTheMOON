@@ -20,6 +20,9 @@
 	<object name="commonPrefabs/piece" nombre="50" pool="true" layer="foreGround">
 		<Altitude max="150000" min="10"></Altitude>
 	</object>
+	<object name="commonPrefabs/diamond" nombre="50" pool="true" layer="foreGround">
+		<Altitude max="150000" min="400"></Altitude>
+	</object>
 	
 	<!-- ** *****  Avant le ciel ******* -->		
     <!--<object name="world1/oiseau" nombre="15" pool="false" layer="foreGround">	

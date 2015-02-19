@@ -246,6 +246,12 @@ public class PlayerController : MonoBehaviour {
 			//Destroy(other.gameObject);
 			other.gameObject.SetActive(false);
 		}
+		if(other.gameObject.tag == "Diamond" ){
+			//Debug.Log ("***************  collision avec une piece ");
+			GameController.addDiamond();
+			//Destroy(other.gameObject);
+			other.gameObject.SetActive(false);
+		}
 
 		if(other.gameObject.tag == "Beans" && !isItemActivated && !isFlyBegin){
 			//Debug.Log ("***************  collision avec beans ");
