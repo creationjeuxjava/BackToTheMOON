@@ -134,6 +134,7 @@ public class GameController : MonoBehaviour {
 			middleLayer.transform.Translate (playerSpeed / 1.5f);
 			foreLayer.transform.Translate (playerSpeed);*/
 
+			//tests de jouabilité !!
 			backBackLayer.transform.Translate (playerSpeed / 5f);
 			backLayer.transform.Translate (playerSpeed / 4f);
 			middleLayer.transform.Translate (playerSpeed / 3f);

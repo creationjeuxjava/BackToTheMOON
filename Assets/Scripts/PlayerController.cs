@@ -179,7 +179,7 @@ public class PlayerController : MonoBehaviour {
 			
 			//GetComponent<Inventory>().addItem(new Item("casque",1,Item.ItemType.Timer));
 			currentState = State.noAction;
-			ActionButtonManager.updateIcon(currentState);
+			//ActionButtonManager.updateIcon(currentState);
 		}
 
 		if(other.gameObject.tag == "Shoe" && !isItemActivated && !isFlyBegin ){
@@ -200,7 +200,7 @@ public class PlayerController : MonoBehaviour {
 			//boostVitesse(50/100);
 			updateVitesse(other.gameObject);
 			currentState = State.noAction;
-			ActionButtonManager.updateIcon(currentState);
+			//ActionButtonManager.updateIcon(currentState);
 		}
 		if(other.gameObject.tag == "Piece" ){
 			//Debug.Log ("***************  collision avec une piece ");
@@ -220,7 +220,7 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive(false);
 			updateVitesse(other.gameObject);
 			currentState = State.noAction;
-			ActionButtonManager.updateIcon(currentState);
+			//ActionButtonManager.updateIcon(currentState);
 		}
 
 	}
@@ -273,7 +273,7 @@ public class PlayerController : MonoBehaviour {
 			//TODO : supprimer l'item de l'inventaire !!
 
 			currentState = State.naked;
-			ActionButtonManager.updateIcon(currentState);
+			//ActionButtonManager.updateIcon(currentState);
 		}
 	}
 
@@ -294,7 +294,7 @@ public class PlayerController : MonoBehaviour {
 		//Debug.Log ("le fly enclanché !!");
 		isFlyBegin = false;
 		currentState = State.naked;
-		ActionButtonManager.updateIcon(currentState);
+		//ActionButtonManager.updateIcon(currentState);
 	}
 
 

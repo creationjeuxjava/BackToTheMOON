@@ -52,7 +52,7 @@ public class InGGameGUIController : MonoBehaviour {
 		} 
 
 		if (GameController.playerSpeed.y >= -0.05f && PlayerController.isFlying) {
-			vitessePlayer.text = "Votre vitesse est très basse : battez des ailes... !!\n Temps restant avt GameOver : "+(int)GameController.timeLeftToGameOver;
+			vitessePlayer.text = "Votre vitesse est très basse : battez des ailes... !!\n Temps restant avt GameOver : \n"+(int)GameController.timeLeftToGameOver;
 			panelVitesse.SetActive (true);
 		}
 		else {

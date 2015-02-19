@@ -63,6 +63,7 @@ public class ActionButtonManager : MonoBehaviour {
 
 	public static void updateIcon(PlayerController.State currentstate){
 		//Debug.Log ("ActionButton : vitesse joueur "+GameController.lastPlayerSpeed.y);
+		Debug.Log ("ActionButton : etat du joueur :"+currentstate);
 
 		PlayerController.State state = currentstate; 
 		if (state == PlayerController.State.noAction) {
@@ -81,6 +82,11 @@ public class ActionButtonManager : MonoBehaviour {
 			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/helico", typeof(Sprite));
 			anim.SetTrigger("enableFlyAction");
 		} 
+		else if (state == PlayerController.State.naked &&  GameController.isInSpace) {
+			//	buttonObject.SetActive (true);
+			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/helico", typeof(Sprite));
+			anim.SetTrigger("close");
+		}
 		else if (state == PlayerController.State.laser) {
 		//	buttonObject.SetActive (true);
 			//iconeBoutonAction.sprite = (Sprite)Resources.Load ("Sprites/ui/sabrelaser", typeof(Sprite));

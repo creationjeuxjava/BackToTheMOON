@@ -33,8 +33,8 @@ public class VitesseBar : MonoBehaviour {
 		convertVitesseForIHM();
 		vitesseContentTransform.sizeDelta = currentBarRectSize;
 
-		Debug.Log ("*********************"+this + "vitesse player " + GameController.playerSpeed.y);
-		Debug.Log ("--> valeur transform " + vitesseContentTransform.offsetMax.y);
+		//Debug.Log ("*********************"+this + "vitesse player " + GameController.playerSpeed.y);
+		//Debug.Log ("--> valeur transform " + vitesseContentTransform.offsetMax.y);
 
 		if(GameController.playerSpeed.y > -0.1f){
 			vitesseContent.color = alert;
