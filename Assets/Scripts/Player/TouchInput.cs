@@ -11,6 +11,7 @@ public class TouchInput : MonoBehaviour {
 	private Vector3 translation;
 	private Animator anim;
 	private float lateralDelta = 2f;//0.15f
+	private Vector3 screenPos;
 
 	// Use this for initialization
 	void Start () {
@@ -22,7 +23,7 @@ public class TouchInput : MonoBehaviour {
 	void Update () {
 		if (isInputActive) {
 			if (PlayerController.isFlying && !GameController.isGamePaused () && GameController.isInGame 
-			    && !GameController.isGameOver && !GameController.isOverGUI()) {
+			    && !GameController.isGameOver && !GameController.isOverGUI() && !PlayerController.isFlyBegin) {
 
 				if (Input.GetMouseButtonDown (0)){//fonctionne aussi sur Android !!
 					touchPos = camera.ScreenToWorldPoint(Input.mousePosition );
@@ -48,10 +49,32 @@ public class TouchInput : MonoBehaviour {
 					}
 				}//fin input
 				//transform.Translate(translation);
-				rigidbody2D.velocity = translation * Time.smoothDeltaTime * speed;
+				if(!isGoingOutScreen()){
+					rigidbody2D.velocity = translation * Time.smoothDeltaTime * speed;
+				}
+
 
 			}	
 			
 		}
+	}
+
+	private bool isGoingOutScreen(){
+		
+		bool isGoingOut = false;
+		/*****************   control out of Map	*********************/
+		screenPos = camera.WorldToScreenPoint(transform.position);
+		
+		if (screenPos.x >= Screen.width - 40) {
+			//transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
+			//rigidbody2D.velocity = Vector3.zero;
+			isGoingOut = true;
+		} 
+		else if (screenPos.x <= 40) {
+			//transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
+			//rigidbody2D.velocity = Vector3.zero;
+			isGoingOut = true;
+		} 
+		return isGoingOut;
 	}
 }

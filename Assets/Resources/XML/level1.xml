@@ -26,7 +26,7 @@
 	
 	<!-- ************ *****  LEs signaux ******* -->
 	 <object name="commonPrefabs/signalFin" nombre="1" pool="false" layer="foreGround"> 
-		<Altitude max="1490" min="1489"></Altitude>
+		<Altitude max="1400" min="1399"></Altitude>
 	</object>
 	 <object name="commonPrefabs/signalFinProche" nombre="1" pool="false" layer="foreGround"> 
 		<Altitude max="800" min="799"></Altitude>

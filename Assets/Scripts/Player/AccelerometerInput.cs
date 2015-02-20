@@ -5,9 +5,11 @@ public class AccelerometerInput : MonoBehaviour {
 
 	public bool isInputActive = false;
 	public float speed = 50f;
+	public Camera camera;
 
 	private Vector3 dir;
 	private Animator anim;
+	private Vector3 screenPos;
 
 	// Use this for initialization
 	void Start () {
@@ -35,12 +37,34 @@ public class AccelerometerInput : MonoBehaviour {
 					anim.SetTrigger ("toRight");
 					//transform.Translate (dir * speed);
 				}
-				transform.Translate (dir * speed);
-				//rigidbody2D.velocity = dir * speed;
+				//TODO : vérifier si on est pas outOffScreen à droite ou à gauche
+				if(!isGoingOutScreen()){
+					transform.Translate (dir * speed);
+					//rigidbody2D.velocity = dir * speed;
+				}
 			}	
 		
 		}
 
 
+	}
+
+	private bool isGoingOutScreen(){
+
+		bool isGoingOut = false;
+		/*****************   control out of Map	*********************/
+		screenPos = camera.WorldToScreenPoint(transform.position);
+
+		if (screenPos.x >= Screen.width) {
+				//transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
+				//rigidbody2D.velocity = Vector3.zero;
+				isGoingOut = true;
+		} 
+		else if (screenPos.x <= 0) {
+				//transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
+				//rigidbody2D.velocity = Vector3.zero;
+				isGoingOut = true;
+		} 
+		return isGoingOut;
 	}
 }

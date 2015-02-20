@@ -14,8 +14,11 @@ public class TranslationMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if(GameController.isInGame && !GameController.isGamePaused () && !GameController.isGameOver) {
+		if (GameController.isInGame && !GameController.isGamePaused () && !GameController.isGameOver) {
 			rigidbody2D.velocity = velocity;
+		} 
+		else {
+			rigidbody2D.velocity = Vector2.zero;
 		}
 
 	}
