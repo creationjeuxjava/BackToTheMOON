@@ -147,7 +147,8 @@ public class PlayerController : MonoBehaviour {
 	/**** détection des collisions avec les GO istrigger = false ****/
 	void OnCollisionEnter2D(Collision2D other){
 		
-		if(other.gameObject.tag == "Meteorite" || other.gameObject.tag == "Colonne" || other.gameObject.tag == "Triangle"){
+		if(other.gameObject.tag == "Meteorite" || other.gameObject.tag == "Colonne" 
+		   || other.gameObject.tag == "Triangle" || other.gameObject.tag == "MiniMeteorite"){
 			//Debug.Log ("***************  collision avec un météorite ");
 			//on meurt ?
 			//if(isWithCask) Destroy(other.gameObject);
