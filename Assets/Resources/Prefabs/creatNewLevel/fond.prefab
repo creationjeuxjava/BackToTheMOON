@@ -42,7 +42,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   col1: {r: .631372571, g: .776470602, b: .90196079, a: 1}
   col2: {r: .796078444, g: .549019635, b: .513725519, a: 1}
-  col3: {r: 0, g: 0, b: 0, a: 0}
+  col3: {r: 0, g: 0, b: 0, a: 1}
   altCght: 40000
   altFin: 80000
 --- !u!212 &21258624
