@@ -21,7 +21,6 @@ public class PlayerController : MonoBehaviour {
 	public static bool isFlyBegin = false;
 
 	private float timeLeft = 5.0f;
-	private float lateralDelta = 0.15f;
 
 	public static Vector3 actualPosition;
 
@@ -81,7 +80,7 @@ public class PlayerController : MonoBehaviour {
 				vitesse.y = vitesse.y + gravityEffect;
 				//Debug.Log("*************Vitesse globale : "+vitesse.y+" et temps écoulé depuis le lancement : "+timeSinceStart+ " effet de gravity : "+ gravityEffect);
 				//lastPlayerSpeed = new Vector3(playerSpeed.x,playerSpeed.y,playerSpeed.z);
-				//Debug.Log("Vitesse globale avt control: "+playerSpeed.y);
+				//Debug.Log("------------------------ isflybegin: "+isFlyBegin + " item activated ? "+isItemActivated);
 				controlMaxVitessePlayer();
 			}
 			else{
@@ -124,36 +123,7 @@ public class PlayerController : MonoBehaviour {
 					
 				}
 				
-				
-				
-				
-				/******************  déplacement droite/gauche du player  *************/
-				if (Input.GetMouseButtonDown (0)){//fonctionne aussi sur Android !!
-					
-					Vector2 touchPos = camera.ScreenToWorldPoint(Input.mousePosition );
-					//Debug.Log("*************   Clic en  : "+touchPos+" et player en : "+transform.position.x);
-					
-					if(gameObject.collider2D.bounds.Contains (touchPos)){
-						translation = Vector3.zero;
-					}
-					else{
-						if(!isFlyBegin){
-							if(touchPos.x < transform.position.x ){
-								translation.x = -lateralDelta;
-								anim.SetTrigger ("toLeft");
-								
-							}
-							else if(touchPos.x > (transform.position.x + collider2D.bounds.max.x )  ){
-								translation.x = lateralDelta;
-								anim.SetTrigger ("toRight");
-							}
-							
-						}
-						
-					}
-				} 			
-				
-				transform.Translate(translation);
+				//transform.Translate(translation);
 				actualPosition = transform.position;
 				
 				if(isItemActivated) this.checkTimeItemLeft();
@@ -171,7 +141,7 @@ public class PlayerController : MonoBehaviour {
 	/** méthode statique appelée par Gamecontroller lors de l'entrée ds l'espace ****/
 	public static void setVitesseEnterInSpace(float vitesseY){
 		vitesse.y = vitesseY;	
-		Debug.Log ("***************  vitesse en entrant ds l'espace : "+vitesseY);
+		//Debug.Log ("***************  vitesse en entrant ds l'espace : "+vitesseY);
 	}
 
 	/**** détection des collisions avec les GO istrigger = false ****/
@@ -188,7 +158,6 @@ public class PlayerController : MonoBehaviour {
 		}
 		if(other.gameObject.tag == "Oiseau" ){
 			//Debug.Log ("***************  collision avec un oiseau ");
-			//on meurt ?
 			updateVitesse(other.gameObject);
 			
 		}
@@ -212,8 +181,8 @@ public class PlayerController : MonoBehaviour {
 			isItemActivated = true;
 			anim.SetBool("withCask",true);
 			
-			Sprite casqueSprite = Resources.Load("Sprites/persocasque", typeof(Sprite)) as Sprite;
-			GetComponent<SpriteRenderer>().sprite = casqueSprite;
+			//Sprite casqueSprite = Resources.Load("Sprites/persocasque", typeof(Sprite)) as Sprite;
+			//GetComponent<SpriteRenderer>().sprite = casqueSprite;
 			
 			//GetComponent<Inventory>().addItem(new Item("casque",1,Item.ItemType.Timer));
 			currentState = State.noAction;
@@ -231,8 +200,8 @@ public class PlayerController : MonoBehaviour {
 			isItemActivated = true;
 			anim.SetBool("withShoes",true);
 			
-			Sprite shoeSprite = Resources.Load("Sprites/persoshoes", typeof(Sprite)) as Sprite;
-			GetComponent<SpriteRenderer>().sprite = shoeSprite;
+			//Sprite shoeSprite = Resources.Load("Sprites/persoshoes", typeof(Sprite)) as Sprite;
+			//GetComponent<SpriteRenderer>().sprite = shoeSprite;
 			
 			//GetComponent<Inventory>().addItem(new Item("shoes",2,Item.ItemType.Timer));
 			//boostVitesse(50/100);
@@ -344,7 +313,7 @@ public class PlayerController : MonoBehaviour {
 	/*** permet de savoir si la phase de décollage est terminée en animation ...****/
 	/*** fonction appelée par l'animator ****/
 	private void stopStartFly(){
-		//Debug.Log ("le fly enclanché !!");
+		//Debug.Log ("le fly enclenché !!");
 		isFlyBegin = false;
 		currentState = State.naked;
 		//ActionButtonManager.updateIcon(currentState);

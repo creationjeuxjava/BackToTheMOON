@@ -1767,7 +1767,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: 1.32000005, y: 2.26999998}
-  m_Center: {x: .0799999982, y: 0}
+  m_Center: {x: .0799999982, y: -.810000002}
 --- !u!50 &313015605
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1854,7 +1854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da19fd3dbac8f4e4991273f3a7398428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInputActive: 0
+  isInputActive: 1
   speed: 50
 --- !u!95 &313015608
 Animator:
@@ -1896,7 +1896,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInputActive: 0
-  speed: 50
+  speed: 120
+  camera: {fileID: 276706956}
 --- !u!1 &332840838
 GameObject:
   m_ObjectHideFlags: 0
@@ -7312,6 +7313,10 @@ Prefab:
       propertyPath: gravityReductionfactor
       value: 500000
       objectReference: {fileID: 0}
+    - target: {fileID: 6181008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
+      propertyPath: m_Center.y
+      value: -.810000002
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
   m_RootGameObject: {fileID: 313015600}
@@ -10544,7 +10549,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 14
+  m_SortingOrder: 16
   m_Sprite: {fileID: 21300000, guid: 81cd9af85ac28428892e56a0a72e5a6e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1903252477

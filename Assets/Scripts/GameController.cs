@@ -86,7 +86,7 @@ public class GameController : MonoBehaviour {
 
 			if(!isInSpace){
 				playerSpeed = PlayerController.vitesse * Time.smoothDeltaTime * 50;
-				//lastPlayerSpeed = new Vector3(playerSpeed.x,playerSpeed.y,playerSpeed.z);
+				lastPlayerSpeed = new Vector3(playerSpeed.x,playerSpeed.y,playerSpeed.z);
 
 				//Debug.Log("Vitesse globale avt control: "+playerSpeed.y);
 				//controlMaxVitessePlayer();
@@ -95,7 +95,7 @@ public class GameController : MonoBehaviour {
 				/*playerSpeed.x = PlayerController.vitesse.x * Time.deltaTime * 50 ;
 				playerSpeed.y = PlayerController.vitesse.y * Time.deltaTime * 50;
 				playerSpeed.z = PlayerController.vitesse.z * Time.deltaTime * 50;*/
-				playerSpeed = PlayerController.vitesse * Time.deltaTime * 50;
+				playerSpeed = PlayerController.vitesse * Time.smoothDeltaTime * 50;
 
 			}
 			//Debug.Log(this+"Time delta : "+Time.deltaTime);
