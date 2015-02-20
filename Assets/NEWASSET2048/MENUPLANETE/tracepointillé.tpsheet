@@ -1,0 +1,14 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: tracepointillé.png (2020 x 1032)
+# $TexturePacker:SmartUpdate:90ebf7a32716f6684956b9b2761a40fe:648ed149f966932b1ef85819bd7b2cc0:2c7f3dbfb564036ea973a584f9af6906$
+#
+
+trajet;533;254;683;768;0.5007320644216691;0.5
+trajet2;1226;10;767;530;0.5;0.5
+trajet3;1226;550;783;472;0.49936143039591313;0.5010593220338984
+trajet4;10;145;513;877;0.5;0.500570125427594

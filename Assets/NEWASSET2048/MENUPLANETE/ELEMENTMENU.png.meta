@@ -1,0 +1,454 @@
+fileFormatVersion: 2
+guid: 159f2d202441b41c68177b413aac35b4
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: back
+    21300002: backbrillant
+    21300004: backjaune
+    21300006: barrehorizontale
+    21300008: barreverticale
+    21300010: carre
+    21300012: carrebrillant
+    21300014: carrevide
+    21300016: carrrejaune
+    21300018: croix
+    21300020: croixbriallante
+    21300022: croixjaune
+    21300024: diamant
+    21300026: fenetreinfo
+    21300028: fleche
+    21300030: flechebrillante
+    21300032: flechejaune
+    21300034: level1,1
+    21300036: level1
+    21300038: level2,2
+    21300040: level2
+    21300042: level3,3
+    21300044: level3
+    21300046: level4,4
+    21300048: level4
+    21300050: level5,2
+    21300052: logonb
+    21300054: piece
+    21300056: planet5
+    21300058: start
+    21300060: startbrillant
+    21300062: startjaune
+    21300064: tiret
+    21300066: tiretbrillant
+    21300068: tiretjaune
+    21300070: titre
+    21300072: uhere
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: back
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 1300
+        width: 72
+        height: 23
+      alignment: 9
+      pivot: {x: .479166657, y: .456521749}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: backbrillant
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1144
+        width: 158
+        height: 117
+      alignment: 9
+      pivot: {x: .509493649, y: .487179488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: backjaune
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 27
+        width: 158
+        height: 117
+      alignment: 9
+      pivot: {x: .509493649, y: .491452992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: barrehorizontale
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 1333
+        width: 555
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: barreverticale
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1064
+        width: 5
+        height: 910
+      alignment: 9
+      pivot: {x: .5, y: .501098931}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: carre
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 1082
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: carrebrillant
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 26
+        width: 119
+        height: 118
+      alignment: 9
+      pivot: {x: .50420171, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: carrevide
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 1276
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: carrrejaune
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 1317
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: croix
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 1283
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: croixbriallante
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 24
+        width: 121
+        height: 120
+      alignment: 9
+      pivot: {x: .495867759, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: croixjaune
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 1272
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: diamant
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 1310
+        width: 38
+        height: 31
+      alignment: 9
+      pivot: {x: .592105269, y: .354838699}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fenetreinfo
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 13
+        width: 336
+        height: 359
+      alignment: 9
+      pivot: {x: .502976179, y: .44846797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fleche
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 176
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flechebrillante
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 23
+        width: 122
+        height: 121
+      alignment: 9
+      pivot: {x: .495901644, y: .495867759}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flechejaune
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 142
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1,1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1220
+        width: 650
+        height: 650
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 419
+        width: 650
+        height: 650
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level2,2
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1414
+        width: 494
+        height: 494
+      alignment: 9
+      pivot: {x: .498402566, y: .507188499}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level2
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 729
+        width: 495
+        height: 495
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level3,3
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 1571
+        width: 348
+        height: 348
+      alignment: 9
+      pivot: {x: .498905897, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level3
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 140
+        width: 348
+        height: 348
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level4,4
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 534
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level4
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 22
+        width: 417
+        height: 417
+      alignment: 9
+      pivot: {x: .498673737, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level5,2
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 1279
+        width: 296
+        height: 228
+      alignment: 9
+      pivot: {x: .5625, y: .524122834}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: logonb
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 119
+        width: 259
+        height: 253
+      alignment: 9
+      pivot: {x: .501930475, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: piece
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 1306
+        width: 35
+        height: 35
+      alignment: 9
+      pivot: {x: .5, y: .514285743}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planet5
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 154
+        width: 548
+        height: 517
+      alignment: 9
+      pivot: {x: .477189779, y: .484526098}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1083
+        width: 83
+        height: 23
+      alignment: 9
+      pivot: {x: .493975908, y: .434782594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: startbrillant
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 82
+        width: 164
+        height: 118
+      alignment: 9
+      pivot: {x: .503048778, y: .478813559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: startjaune
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 1143
+        width: 164
+        height: 118
+      alignment: 9
+      pivot: {x: .503048778, y: .483050853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tiret
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 1139
+        width: 123
+        height: 122
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tiretbrillant
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 142
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tiretjaune
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 176
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: titre
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 1271
+        width: 537
+        height: 52
+      alignment: 9
+      pivot: {x: .499068916, y: .355769217}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: uhere
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 1351
+        width: 137
+        height: 156
+      alignment: 9
+      pivot: {x: .5, y: .467948705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

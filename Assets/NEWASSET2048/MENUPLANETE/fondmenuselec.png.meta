@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: 307a4e030fbf246f4a672c4dcb9c73d8
+guid: df68f7a4a6efc42abbe3a7373692fc46
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: dino1
-    21300002: dino2
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -23,8 +21,8 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -3
-  maxTextureSize: 2048
+  textureFormat: -1
+  maxTextureSize: 1024
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -33,7 +31,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -44,26 +42,6 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: dino1
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 13
-        width: 1012
-        height: 2905
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dino2
-      rect:
-        serializedVersion: 2
-        x: 1072
-        y: 14
-        width: 1013
-        height: 2904
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 
