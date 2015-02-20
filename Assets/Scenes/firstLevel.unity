@@ -4453,6 +4453,7 @@ GameObject:
   - 4: {fileID: 740875251}
   - 114: {fileID: 740875249}
   - 61: {fileID: 740875250}
+  - 50: {fileID: 740875252}
   m_Layer: 0
   m_Name: Boundary
   m_TagString: Untagged
@@ -4496,6 +4497,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!50 &740875252
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 740875248}
+  m_Mass: 10000
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &782022813
 GameObject:
   m_ObjectHideFlags: 0
