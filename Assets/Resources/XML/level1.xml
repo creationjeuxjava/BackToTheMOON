@@ -15,7 +15,7 @@
 		<Altitude max="60000" min="-20"></Altitude>
 	</object>	
 	<object name="commonPrefabs/beans" nombre="50" pool="true" layer="foreGround">
-		<Altitude max="81000" min="0"></Altitude>
+		<Altitude max="150000" min="0"></Altitude>
 	</object>
 	<object name="commonPrefabs/piece" nombre="50" pool="true" layer="foreGround">
 		<Altitude max="150000" min="10"></Altitude>
@@ -49,7 +49,13 @@
     <object name="world1/meteorite" nombre="50" pool="true" layer="foreGround">
 		<Altitude max="150000" min="40000"></Altitude>
 	</object>
-	<object name="world1/miniAsteroid" nombre="10" pool="false" layer="foreGround">
+	<object name="world1/miniAsteroid" nombre="10" pool="false" layer="backGround">
+		<Altitude max="150000" min="40000"></Altitude>
+	</object>
+	<object name="world1/enormousMeteor" nombre="10" pool="true" layer="foreGround">
+		<Altitude max="150000" min="70000"></Altitude>
+	</object>
+	<object name="world1/littleMeteor" nombre="10" pool="true" layer="foreGround">
 		<Altitude max="150000" min="40000"></Altitude>
 	</object>
 	
