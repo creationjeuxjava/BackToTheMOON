@@ -1,0 +1,498 @@
+fileFormatVersion: 2
+guid: f870b96ec93dc425ea07883f5380e07e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Calque-2
+    21300002: Calque-3
+    21300004: Calque-4
+    21300006: Calque-5
+    21300008: Calque-6
+    21300010: Etoile
+    21300012: Etoile10
+    21300014: Etoile11
+    21300016: Etoile12
+    21300018: Etoile13
+    21300020: Etoile14
+    21300022: Etoile2
+    21300024: Etoile3
+    21300026: Etoile4
+    21300028: Etoile5
+    21300030: Etoile6
+    21300032: Etoile7
+    21300034: Etoile8
+    21300036: Etoile9
+    21300038: casque
+    21300040: "casquetteh\xE9lico"
+    21300042: close1
+    21300044: close2
+    21300046: etoile1
+    21300048: jetpack
+    21300050: meteor
+    21300052: meteor1
+    21300054: meteor2
+    21300056: meteor3
+    21300058: meteor4
+    21300060: meteor5
+    21300062: meteorgris
+    21300064: panneauloose
+    21300066: panneauwin
+    21300068: planet
+    21300070: return1
+    21300072: return2
+    21300074: sabrelaser
+    21300076: shoes
+    21300078: suivant1
+    21300080: suivant2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Calque-2
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 359
+        width: 141
+        height: 429
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Calque-3
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 447
+        width: 204
+        height: 397
+      alignment: 9
+      pivot: {x: .502451003, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Calque-4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 59
+        width: 364
+        height: 430
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Calque-5
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 448
+        width: 151
+        height: 396
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Calque-6
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 391
+        width: 209
+        height: 397
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Etoile
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 710
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Etoile10
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 238
+        width: 208
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Etoile11
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 217
+        width: 133
+        height: 132
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Etoile12
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 914
+        width: 70
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Etoile13
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 352
+        width: 131
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Etoile14
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1013
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Etoile2
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 447
+        width: 61
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Etoile3
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 359
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Etoile4
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 814
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Etoile5
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 80
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Etoile6
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 14
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Etoile7
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 76
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Etoile8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 437
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Etoile9
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 710
+        width: 388
+        height: 388
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: casque
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 114
+        width: 109
+        height: 93
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "casquetteh\xE9lico"
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 261
+        width: 109
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: close1
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 204
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: close2
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 390
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: etoile1
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 415
+        width: 280
+        height: 285
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jetpack
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 120
+        width: 46
+        height: 108
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteor
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 854
+        width: 378
+        height: 244
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteor1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 499
+        width: 431
+        height: 599
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteor2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 387
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteor3
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 556
+        width: 185
+        height: 197
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteor4
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 763
+        width: 352
+        height: 335
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteor5
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 40
+        width: 266
+        height: 337
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorgris
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 798
+        width: 343
+        height: 300
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: panneauloose
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 10
+        width: 279
+        height: 367
+      alignment: 9
+      pivot: {x: .501792133, y: .497275203}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: panneauwin
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 36
+        width: 279
+        height: 369
+      alignment: 9
+      pivot: {x: .501792133, y: .497289985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planet
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 387
+        width: 322
+        height: 313
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: return1
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 854
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: return2
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 16
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sabrelaser
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 238
+        width: 31
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shoes
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 422
+        width: 114
+        height: 124
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: suivant1
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 390
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: suivant2
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 19
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

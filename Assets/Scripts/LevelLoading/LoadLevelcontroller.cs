@@ -18,7 +18,9 @@ public class LoadLevelcontroller : MonoBehaviour {
 	 */
 	public void loadLevel(int levelNum){
 
-		TextAsset textAsset = (TextAsset)Resources.Load("XML/testXML", typeof(TextAsset));
+		//Debug.Log (this + " on charge le monde " + levelNum);
+		//TextAsset textAsset = (TextAsset)Resources.Load("XML/testXML", typeof(TextAsset));
+		TextAsset textAsset = (TextAsset)Resources.Load("XML/level"+levelNum, typeof(TextAsset));
 		XmlDocument xmldoc = new XmlDocument ();
 		xmldoc.LoadXml ( textAsset.text );//on charge le fichier
 		

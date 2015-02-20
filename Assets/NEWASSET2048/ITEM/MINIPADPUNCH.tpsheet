@@ -1,0 +1,14 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: MINIPADPUNCH.png (1096 x 336)
+# $TexturePacker:SmartUpdate:57e38f84edde8f26b4f2286f12875b29:ee3da1efdd3535f6b1362c653e7b8e6d:97db4e40dcdd581330e956855d73a9e8$
+#
+
+minipad_00000;10;11;261;315;0.6398467432950191;0.5222222222222221
+minipad_00001;281;11;261;315;0.6398467432950191;0.5222222222222221
+minipad_00002;552;11;261;315;0.6398467432950191;0.5222222222222221
+minipad_00003;823;11;261;315;0.6398467432950191;0.5222222222222221

@@ -10,7 +10,7 @@ public class InGGameGUIController : MonoBehaviour {
 	Text nbrPiecesText,nbrDiamantsText,altitudeText;
 	Image espaceIcone;
 	Animator iconeEspaceAnimator;
-	
+
 	GameObject panelVitesse;
 	Text vitessePlayer;
 
@@ -43,23 +43,56 @@ public class InGGameGUIController : MonoBehaviour {
 
 	void Update () {
 		nbrPiecesText.text = "x "+GameController.nbrePieces;
-		nbrDiamantsText.text = "nonImpl";
+		nbrDiamantsText.text = "x "+GameController.nbreDiamond;
 		altitudeText.text = GameController.altitude + " m ";
 
-
+		/**** gestion de l'icone indiquant si on est dans l'espace ****/
 		if (GameController.isInSpace) {
 			iconeEspaceAnimator.SetTrigger("beginSpace");
 		} 
 
-		if (GameController.playerSpeed.y >= -0.05f && PlayerController.isFlying) {
-			vitessePlayer.text = "Votre vitesse est très basse : battez des ailes... !!\n Temps restant avt GameOver : "+(int)GameController.timeLeftToGameOver;
+		/*** gestion du message du panel d'alerte de vitesse ***/
+		if (PlayerController.vitesse.y >= -0.08f && PlayerController.vitesse.y < 0f && PlayerController.isFlying ) {
+			if (GameController.isInSpace) {
+				vitessePlayer.text = "Votre vitesse est très basse : \n Vous risquez le GameOver !!";
+			} 
+			else{
+				vitessePlayer.text = "Votre vitesse est très basse : battez des ailes... !!";
+			}
 			panelVitesse.SetActive (true);
+		}
+		else if(PlayerController.vitesse.y >= 0f && PlayerController.isFlying ){
+			if (GameController.isInSpace) {
+				vitessePlayer.text = "Votre vitesse est très basse : \n Temps restant avt GameOver : "+(int)GameController.timeLeftToGameOver+" s";
+			} 
+			else{
+				vitessePlayer.text = "Votre vitesse est très basse, battez des ailes... !!\n Temps restant avant GameOver : "+(int)GameController.timeLeftToGameOver+" s";
+			}
+			panelVitesse.SetActive (true);
+
 		}
 		else {
 			panelVitesse.transform.position = camera.WorldToScreenPoint(PlayerController.actualPosition);
 			panelVitesse.SetActive (false);			
 		}
 
+
+
+		/*if (PlayerController.vitesse.y >= -0.08f && PlayerController.isFlying && !GameController.isInSpace) {
+			vitessePlayer.text = "Votre vitesse est très basse : battez des ailes... !!\n Temps restant avt GameOver : "+(int)GameController.timeLeftToGameOver+" s";
+			panelVitesse.SetActive (true);
+		}
+		else if(PlayerController.vitesse.y >= -0.08f && PlayerController.isFlying && GameController.isInSpace){
+			vitessePlayer.text = "Votre vitesse est très basse : \n Temps restant avt GameOver : "+(int)GameController.timeLeftToGameOver+" s";
+			panelVitesse.SetActive (true);
+
+		}
+		else {
+			panelVitesse.transform.position = camera.WorldToScreenPoint(PlayerController.actualPosition);
+			panelVitesse.SetActive (false);			
+		}*/
+
+		/*** gestion du message du panel de fin de partie *****/
 		if (!GameController.isInGame) {
 			if(GameController.isGameOver) endText.text = "Vous avez lamentablement perdu...houuuuuu !";
 			else {

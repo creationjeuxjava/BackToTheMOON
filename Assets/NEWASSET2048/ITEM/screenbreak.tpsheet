@@ -1,0 +1,12 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: screenbreak.png (1632 x 1324)
+# $TexturePacker:SmartUpdate:0f908177c3dbae2fd2df2f83bbaaf983:d240e06349c3bf432ee07006c56ca6d2:3ada2f39a15b8dfd2ac0cadb1bf3e26f$
+#
+
+TV STATIC_00070;10;34;800;1280;0.5;0.5
+TV STATIC_00072;820;34;800;1280;0.5;0.5

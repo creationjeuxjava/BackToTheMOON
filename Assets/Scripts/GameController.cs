@@ -21,30 +21,27 @@ public class GameController : MonoBehaviour {
 	public static bool isInSpace;
 	private GameObject backLayer, middleLayer, foreLayer,backBackLayer;
 
-
-
 	public static float altitude = 0;
 	public static int nbrePieces = 0;
+	public static int nbreDiamond = 0;
 	private int coeffAltitude = 100;
 	private float altMaxForWinLevel = 150000f;//80000f ou 150000f ;
 	private float altBeginOfSpace = 41000f; //10000f; test   //41000f;  realité
 
 	private int coeffVitesse = 1 * 3600; 
-	private int currentLevel = 1; //par défaut le premier niveau
+	public int currentLevel = 1; //par défaut le premier niveau
 	private float gravityLevel;
-	private float startFlyTime;
 	public static Vector3 lastPlayerSpeed,playerSpeed;
-
+	public static float vitessePlayerTransormee;
 
 	private const float TIME_TO_GAME_OVER = 3f;
 	public static float timeLeftToGameOver = TIME_TO_GAME_OVER;
 
-	//private List<GameObject> listeObjectPoolers = new List<GameObject>();
 	private Dictionary<GameObject,string> dicoObjectPoolers = new Dictionary<GameObject,string>();
 
 	// création initiale
 	void Start () {
-		//Application.targetFrameRate = 60;
+		//Application.targetFrameRate = 40;
 		resetGame ();
 		//Debug.Log (this.name + " méthode strat");
 	}
@@ -85,60 +82,39 @@ public class GameController : MonoBehaviour {
 		}
 
 
-		/*for (int i = 0; i < listeObjectPoolers.Count; i++) {
-
-			Vector2 minMax = listeObjectPoolers[i].GetComponent<ObjectPooler>().getMinMax();
-			if(foreLayer.transform.position.y * (-1) > minMax.x && foreLayer.transform.position.y * (-1 )< minMax.y){
-				GameObject obj = listeObjectPoolers[i].GetComponent<ObjectPooler>().GetPooledObject();
-				if(obj != null){
-					obj.transform.position = new Vector3(Random.Range(-14,14),Random.Range(20,200),-4.6f);
-					obj.SetActive(true);
-					obj.transform.parent = foreLayer.transform;
-				}
-
-			}
-		}*/
-
 		if (isWorldMoving == true && !isGameInPause && isInGame) {
 
-			//temps écoulé depuis le début du lancement
-			float timeSinceStart = Time.time - startFlyTime;
-			float gravityEffect = (float) 0.5f * gravityLevel * timeSinceStart * timeSinceStart /3000;//calcul savant de l'équation horaire !!
-		
-
-
 			if(!isInSpace){
-				//on calcule le vecteur vitesse du player ajusté
-				playerSpeed = new Vector3(PlayerController.vitesse.x,PlayerController.vitesse.y + gravityEffect, PlayerController.vitesse.z);
-				//Debug.Log("Vitesse globale : "+playerSpeed+" et temps écoulé depuis le lancement : "+timeSinceStart+ " effet de gravity : "+ gravityEffect);
+				playerSpeed = PlayerController.vitesse * Time.smoothDeltaTime * 50;
 				lastPlayerSpeed = new Vector3(playerSpeed.x,playerSpeed.y,playerSpeed.z);
+
+				//Debug.Log("Vitesse globale avt control: "+playerSpeed.y);
+				//controlMaxVitessePlayer();
 			}
 			else{
-				playerSpeed.x = PlayerController.vitesse.x;
-				playerSpeed.y = PlayerController.vitesse.y;
-				playerSpeed.z = PlayerController.vitesse.z;
-			}
+				/*playerSpeed.x = PlayerController.vitesse.x * Time.deltaTime * 50 ;
+				playerSpeed.y = PlayerController.vitesse.y * Time.deltaTime * 50;
+				playerSpeed.z = PlayerController.vitesse.z * Time.deltaTime * 50;*/
+				playerSpeed = PlayerController.vitesse * Time.smoothDeltaTime * 50;
 
+			}
+			//Debug.Log(this+"Time delta : "+Time.deltaTime);
 
 
 			//chaque partie avance à une vitesse différente == parallax
-			backBackLayer.transform.Translate (playerSpeed / 3f);
-			backLayer.transform.Translate (playerSpeed / 2);
-			middleLayer.transform.Translate (playerSpeed / 1.5f);
-			foreLayer.transform.Translate (playerSpeed);
+			backBackLayer.transform.Translate (playerSpeed / 5f);
+			backLayer.transform.Translate (playerSpeed / 4f);
+			middleLayer.transform.Translate (playerSpeed / 3f);
+			foreLayer.transform.Translate (playerSpeed/2f);
 
 			//calcul de l'altitude
 			altitude = foreLayer.transform.position.y * -1 * coeffAltitude;
-			float vitesse = PlayerController.vitesse.y*-1 * coeffVitesse;
+			//vitessePlayerTransormee = PlayerController.vitesse.y*-1 * coeffVitesse;
 			//Debug.Log("ISINSpace :"+isInSpace +" Altitude :"+altitude+"Vitesse Player : "+vitesse+" km/h et nbre pièces : "+nbrePieces);
+			//Debug.Log (this+" vitesse joueur "+playerSpeed.y);
+			//Debug.Log ("***************"+this+" vitesse joueur transformée"+vitessePlayerTransormee);
 
 
-
-			//if(PlayerController.vitesse.y > 0){
-			//if(lastPlayerSpeed.y > 0.2f){
-			/*if((!isInSpace && playerSpeed.y > 0.2f) || (isInSpace && playerSpeed.y >= 0)){
-				checkTimeToGameOverLeft();
-			}*/
 			if(playerSpeed.y >= 0){
 				checkTimeToGameOverLeft();
 			}
@@ -152,7 +128,7 @@ public class GameController : MonoBehaviour {
 				isInSpace = true;
 				PlayerController.setVitesseEnterInSpace(lastPlayerSpeed.y);
 			}
-
+			//ActionButtonManager.updateIcon();
 		}
 	}
 
@@ -168,8 +144,9 @@ public class GameController : MonoBehaviour {
 			//Debug.Log (this.name + " on aperdu !!!!!!!!!!!!!!!!!!!!!!!!!!");
 		}
 	}
-	/** méthode d'apel por la création d'un niveau *****/
+	/** méthode d'appel por la création d'un niveau *****/
 	void createWorld(){
+		Debug.Log ("on charge le niveau :" + currentLevel);
 		this.GetComponent<LoadLevelcontroller> ().loadLevel (currentLevel);
 	}
 
@@ -215,6 +192,8 @@ public class GameController : MonoBehaviour {
 		foreLayer = GameObject.FindGameObjectWithTag ("ForeLayer");
 		backBackLayer = GameObject.FindGameObjectWithTag ("BackBackLayer");
 
+		playerSpeed = new Vector3(0,0,0);
+
 		timeLeftToGameOver = TIME_TO_GAME_OVER;
 		createWorld ();
 	
@@ -224,14 +203,17 @@ public class GameController : MonoBehaviour {
 
 	//lancer le joueur et donc faire avancer le monde !!
 	public void LaunchPlayer (){
-		player.GetComponent <PlayerController>().launchIntheAir ();
+		player.GetComponent <PlayerController>().launchIntheAir (gravityLevel);
 		isWorldMoving = true;
-		startFlyTime = Time.time;//on note le temps du démarrage du vol !!
-		//Debug.Log("au démarre le vol au temps : "+ startFlyTime);
 	}
 
 	public static void addPiece(){
 		nbrePieces++;
+		//Debug.Log("au ajoute une pièce  "+ nbrePieces);
+	}
+
+	public static void addDiamond(){
+		nbreDiamond++;
 		//Debug.Log("au ajoute une pièce  "+ nbrePieces);
 	}
 
@@ -240,10 +222,10 @@ public class GameController : MonoBehaviour {
 		isGameInPause = !isGameInPause;
 	}
 
-	//permetr de savoir si a cliqué sur un élément GUI
+	//permet de savoir si a cliqué sur un élément GUI
 	public void OverGUI(bool value){		
 		isOverGUIPause = value;
-		Debug.Log("on est sur un element UI ? "+isOverGUIPause);
+		//Debug.Log("on est sur un element UI ? "+isOverGUIPause);
 	}
 
 

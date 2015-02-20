@@ -4,12 +4,14 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
    	public GameObject fumee;
-	public Animator anim;
+	private Animator anim;
 
 	/**** nvelle implémentation car le perso ne bouge pas ...c'est le niveau qui le fait ******/
 	public static bool isFlying;
 	public static Vector3 vitesse ;
 	public Camera camera;
+	public float gravityReductionfactor = 300000;
+
 	public static Vector3 translation;
 	private float speedPlayer = 0.3f;//0.7f;
 	public static bool isWithCask = false;
@@ -19,8 +21,14 @@ public class PlayerController : MonoBehaviour {
 	public static bool isFlyBegin = false;
 
 	private float timeLeft = 5.0f;
-	private float lateralDelta = 0.1f;
+
 	public static Vector3 actualPosition;
+
+	private float gravityLevel;
+	private float startFlyTime;
+	private const float MAX_VITESSE = -0.3f;
+	private float gravityEffect;
+	private float timeSinceStart;
 
 	public enum State : byte
 	{
@@ -33,10 +41,12 @@ public class PlayerController : MonoBehaviour {
 	public  State currentState = State.noAction;
 	public static State state;
 
-	public void launchIntheAir(){
+	public void launchIntheAir(float gravity){
+		gravityLevel = gravity;
 		isFlying = true;
 		isFlyBegin = true;
 		vitesse = new Vector3(0,-speedPlayer,0);
+		startFlyTime = Time.time;
 		//GameObject particules = Instantiate(fumee, new Vector3(transform.position.x,transform.position.y-2, -2f), transform.rotation) as GameObject; 
 		//particules.transform.parent = this.transform;
 		anim.SetTrigger ("decollage");
@@ -57,89 +67,89 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		state = currentState;
-		if (isFlying && !GameController.isGamePaused() && !GameController.isOverGUI()) {
+		//Debug.Log("*********************"+this+" Vtesse player : "+vitesse.y);
 
-			if(!audio.isPlaying)	audio.Play();
+		if (isFlying && !GameController.isGamePaused() ) {
 
-			/*****************   control out of Map	*********************/
-			Vector3 screenPos = camera.WorldToScreenPoint(transform.position);
-			if(screenPos.x >= Screen.width ) {
-				translation.x = 0;
-				transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
-				rigidbody2D.velocity = Vector3.zero;
-			}
-			else if(screenPos.x <= 0){
-				translation.x = 0;
-				transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
-				rigidbody2D.velocity = Vector3.zero;
+			/*** on met à jour la vitesse du joueur ***/
+			timeSinceStart = Time.time - startFlyTime;
+			gravityEffect = (float) 0.5f * gravityLevel * timeSinceStart  / gravityReductionfactor;//calcul "savant" de l'équation horaire !! * timeSinceStart
+			
+			if(!GameController.isInSpace){
+				//on calcule le vecteur vitesse du player ajusté
+				vitesse.y = vitesse.y + gravityEffect;
+				//Debug.Log("*************Vitesse globale : "+vitesse.y+" et temps écoulé depuis le lancement : "+timeSinceStart+ " effet de gravity : "+ gravityEffect);
+				//lastPlayerSpeed = new Vector3(playerSpeed.x,playerSpeed.y,playerSpeed.z);
+				//Debug.Log("------------------------ isflybegin: "+isFlyBegin + " item activated ? "+isItemActivated);
+				controlMaxVitessePlayer();
 			}
 			else{
-				/*** correction si trop bas...suite aux collisions ****/
-				//if(screenPos.y <= 100){//40
-				if(transform.position.y <= -28){//voir ds le world (scene) directement
+				/*playerSpeed.x = PlayerController.vitesse.x;
+			playerSpeed.y = PlayerController.vitesse.y;
+			playerSpeed.z = PlayerController.vitesse.z;*/
+				
+				//Debug.Log("Vitesse globale avt control (inSpace): "+playerSpeed.y);
+				controlMaxVitessePlayer();
+			}
+
+			if(!GameController.isOverGUI()){
+				if(!audio.isPlaying)	audio.Play();
+				
+				/*****************   control out of Map	*********************/
+				/*Vector3 screenPos = camera.WorldToScreenPoint(transform.position);
+				if(screenPos.x >= Screen.width ) {
+					translation.x = 0;
+					transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
+					rigidbody2D.velocity = Vector3.zero;
+				}
+				else if(screenPos.x <= 0){
+					translation.x = 0;
+					transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
+					rigidbody2D.velocity = Vector3.zero;
+				}*/
+				//else{
+
+					/*** correction si trop bas...suite aux collisions ****/
+					//if(screenPos.y <= 100){//40
+					if(transform.position.y <= -28){//voir ds le world (scene) directement
+						
+						transform.position = new Vector3(transform.position.x,-26,0);
+						rigidbody2D.velocity = Vector3.zero;
+					}
+					else{
+						transform.position = new Vector3(transform.position.x,transform.position.y,0);
+						rigidbody2D.velocity = Vector3.zero;
+						//Debug.Log("PlayerController : on update normalement !");
+					}
 					
-					transform.position = new Vector3(transform.position.x,-26,0);
-					rigidbody2D.velocity = Vector3.zero;
-				}
-				else{
-					transform.position = new Vector3(transform.position.x,transform.position.y,0);
-					rigidbody2D.velocity = Vector3.zero;
-					//Debug.Log("PlayerController : on update normalement !");
-				}
+				//}
+				
+				//transform.Translate(translation);
+				actualPosition = transform.position;
+				
+				if(isItemActivated) this.checkTimeItemLeft();
 
 			}
 
-
-
-
-			/******************  déplacement droite/gauche du player  *************/
-			if (Input.GetMouseButtonDown (0)){//fonctionne aussi sur Android !!
-
-				Vector2 touchPos = camera.ScreenToWorldPoint(Input.mousePosition );
-				//Debug.Log("*************   Clic en  : "+touchPos+" et player en : "+transform.position.x);
-
-				if(gameObject.collider2D.bounds.Contains (touchPos)){
-					translation = Vector3.zero;
-				}
-				else{
-					if(!isFlyBegin){
-						if(touchPos.x < transform.position.x ){
-							translation.x = -lateralDelta;
-							anim.SetTrigger ("toLeft");
-							
-						}
-						else if(touchPos.x > (transform.position.x + collider2D.bounds.max.x )  ){
-							translation.x = lateralDelta;
-							anim.SetTrigger ("toRight");
-						}
-
-					}
-
-				}
-			} 			
-
-			transform.Translate(translation);
-			actualPosition = transform.position;
-
-			if(isItemActivated) this.checkTimeItemLeft();
 		}
 		if (GameController.isGamePaused ())
 						audio.Pause ();
 
-
+		ActionButtonManager.updateIcon(currentState);
 
 	}
 
 	/** méthode statique appelée par Gamecontroller lors de l'entrée ds l'espace ****/
 	public static void setVitesseEnterInSpace(float vitesseY){
 		vitesse.y = vitesseY;	
-		Debug.Log ("***************  vitesse en entrant ds l'espace : "+vitesseY);
+		//Debug.Log ("***************  vitesse en entrant ds l'espace : "+vitesseY);
 	}
 
 	/**** détection des collisions avec les GO istrigger = false ****/
 	void OnCollisionEnter2D(Collision2D other){
 		
-		if(other.gameObject.tag == "Meteorite" || other.gameObject.tag == "Colonne" || other.gameObject.tag == "Triangle"){
+		if(other.gameObject.tag == "Meteorite" || other.gameObject.tag == "Colonne" 
+		   || other.gameObject.tag == "Triangle" || other.gameObject.tag == "MiniMeteorite"){
 			//Debug.Log ("***************  collision avec un météorite ");
 			//on meurt ?
 			//if(isWithCask) Destroy(other.gameObject);
@@ -150,7 +160,6 @@ public class PlayerController : MonoBehaviour {
 		}
 		if(other.gameObject.tag == "Oiseau" ){
 			//Debug.Log ("***************  collision avec un oiseau ");
-			//on meurt ?
 			updateVitesse(other.gameObject);
 			
 		}
@@ -174,12 +183,12 @@ public class PlayerController : MonoBehaviour {
 			isItemActivated = true;
 			anim.SetBool("withCask",true);
 			
-			Sprite casqueSprite = Resources.Load("Sprites/persocasque", typeof(Sprite)) as Sprite;
-			GetComponent<SpriteRenderer>().sprite = casqueSprite;
+			//Sprite casqueSprite = Resources.Load("Sprites/persocasque", typeof(Sprite)) as Sprite;
+			//GetComponent<SpriteRenderer>().sprite = casqueSprite;
 			
-			GetComponent<Inventory>().addItem(new Item("casque",1,Item.ItemType.Timer));
+			//GetComponent<Inventory>().addItem(new Item("casque",1,Item.ItemType.Timer));
 			currentState = State.noAction;
-			ActionButtonManager.updateIcon(currentState);
+			//ActionButtonManager.updateIcon(currentState);
 		}
 
 		if(other.gameObject.tag == "Shoe" && !isItemActivated && !isFlyBegin ){
@@ -193,18 +202,24 @@ public class PlayerController : MonoBehaviour {
 			isItemActivated = true;
 			anim.SetBool("withShoes",true);
 			
-			Sprite shoeSprite = Resources.Load("Sprites/persoshoes", typeof(Sprite)) as Sprite;
-			GetComponent<SpriteRenderer>().sprite = shoeSprite;
+			//Sprite shoeSprite = Resources.Load("Sprites/persoshoes", typeof(Sprite)) as Sprite;
+			//GetComponent<SpriteRenderer>().sprite = shoeSprite;
 			
-			GetComponent<Inventory>().addItem(new Item("shoes",2,Item.ItemType.Timer));
+			//GetComponent<Inventory>().addItem(new Item("shoes",2,Item.ItemType.Timer));
 			//boostVitesse(50/100);
 			updateVitesse(other.gameObject);
 			currentState = State.noAction;
-			ActionButtonManager.updateIcon(currentState);
+			//ActionButtonManager.updateIcon(currentState);
 		}
 		if(other.gameObject.tag == "Piece" ){
 			//Debug.Log ("***************  collision avec une piece ");
 			GameController.addPiece();
+			//Destroy(other.gameObject);
+			other.gameObject.SetActive(false);
+		}
+		if(other.gameObject.tag == "Diamond" ){
+			//Debug.Log ("***************  collision avec une piece ");
+			GameController.addDiamond();
 			//Destroy(other.gameObject);
 			other.gameObject.SetActive(false);
 		}
@@ -220,7 +235,7 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive(false);
 			updateVitesse(other.gameObject);
 			currentState = State.noAction;
-			ActionButtonManager.updateIcon(currentState);
+			//ActionButtonManager.updateIcon(currentState);
 		}
 
 	}
@@ -256,7 +271,16 @@ public class PlayerController : MonoBehaviour {
 				vitesse.y += obj.GetComponent<InteractionEnnemy>().speedReducingFactor;
 			//Debug.Log(obj.name+" : On réduit la vitesse"+vitesse.y + obj.GetComponent<InteractionEnnemy>().speedReducingFactor);
 		}
-	
+		//Debug.Log("*********************"+this+" Vitesse player avt control : "+vitesse.y);
+		//controlMaxVitessePlayer();
+	}
+
+	private void controlMaxVitessePlayer(){
+		if( vitesse.y  < MAX_VITESSE){
+			vitesse.y = MAX_VITESSE;
+			//Debug.Log("control: on limite la vitesse à "+MAX_VITESSE);
+		}
+		//Debug.Log(" ************** CONTROLE --> Vitesse globale après control: "+vitesse.y);
 	}
 
 	/*** vérifie si l'item est encore valide en fonction du temps restant ****/
@@ -273,7 +297,7 @@ public class PlayerController : MonoBehaviour {
 			//TODO : supprimer l'item de l'inventaire !!
 
 			currentState = State.naked;
-			ActionButtonManager.updateIcon(currentState);
+			//ActionButtonManager.updateIcon(currentState);
 		}
 	}
 
@@ -291,10 +315,10 @@ public class PlayerController : MonoBehaviour {
 	/*** permet de savoir si la phase de décollage est terminée en animation ...****/
 	/*** fonction appelée par l'animator ****/
 	private void stopStartFly(){
-		//Debug.Log ("le fly enclanché !!");
+		//Debug.Log ("le fly enclenché !!");
 		isFlyBegin = false;
 		currentState = State.naked;
-		ActionButtonManager.updateIcon(currentState);
+		//ActionButtonManager.updateIcon(currentState);
 	}
 
 
@@ -305,12 +329,12 @@ public class PlayerController : MonoBehaviour {
 
 			case State.naked:
 				
-				if(GameController.lastPlayerSpeed.y >= -0.05f){
+				if(vitesse.y >= -0.05f){
 					anim.SetTrigger("battements");
-					vitesse.y += vitesse.y * 4 / 100;
+					vitesse.y += vitesse.y * 50 / 100;//avt 10
 				}
 					
-				Debug.Log ("clic sur bouton action : battements");
+				//Debug.Log ("clic sur bouton action : battements");
 				//TODO limiter le nbre de clics possibles par un timer !!--> pas forcément intéréssant ?
 				break;
 
@@ -319,7 +343,7 @@ public class PlayerController : MonoBehaviour {
 				break;
 
 			case State.noAction:
-				Debug.Log ("clic sur bouton action  : noAction");
+				//Debug.Log ("clic sur bouton action  : noAction");
 				break;
 		
 		}
