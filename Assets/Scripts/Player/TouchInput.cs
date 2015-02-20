@@ -21,7 +21,8 @@ public class TouchInput : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (isInputActive) {
-			if (PlayerController.isFlying && !GameController.isGamePaused () && !GameController.isOverGUI()) {
+			if (PlayerController.isFlying && !GameController.isGamePaused () && GameController.isInGame 
+			    && !GameController.isGameOver && !GameController.isOverGUI()) {
 
 				if (Input.GetMouseButtonDown (0)){//fonctionne aussi sur Android !!
 					touchPos = camera.ScreenToWorldPoint(Input.mousePosition );

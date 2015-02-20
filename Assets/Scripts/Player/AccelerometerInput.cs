@@ -18,7 +18,8 @@ public class AccelerometerInput : MonoBehaviour {
 	void Update () {
 
 		if (isInputActive) {
-			if (PlayerController.isFlying && !GameController.isGamePaused () && GameController.isInGame && !GameController.isGameOver) {
+			if (PlayerController.isFlying && !GameController.isGamePaused () && GameController.isInGame 
+			    && !GameController.isGameOver && !GameController.isOverGUI()) {
 
 				/**** récupère la valeur de l'accélération sur axe Ox ***/
 				dir.x = Input.acceleration.x;

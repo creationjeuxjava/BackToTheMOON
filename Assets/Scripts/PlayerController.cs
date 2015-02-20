@@ -330,7 +330,7 @@ public class PlayerController : MonoBehaviour {
 				
 				if(vitesse.y >= -0.05f){
 					anim.SetTrigger("battements");
-					vitesse.y += vitesse.y * 10 / 100;
+					vitesse.y += vitesse.y * 50 / 100;//avt 10
 				}
 					
 				//Debug.Log ("clic sur bouton action : battements");

@@ -20,7 +20,7 @@ public class VitesseBar : MonoBehaviour {
 		vitesseContentTransform = GameObject.Find ("vitesseContent").GetComponent<RectTransform> ();
 		parentBar = GameObject.Find ("barreVitesse").GetComponent<RectTransform> ();
 
-		currentBarRectSize = new Vector2(0.05f,0f);
+		currentBarRectSize = new Vector2(parentBar.rect.width,0f);
 		vitesseContentTransform.sizeDelta = currentBarRectSize;
 		maxHeight = parentBar.rect.height;
 
@@ -49,7 +49,11 @@ public class VitesseBar : MonoBehaviour {
 	}
 
 	private void convertVitesseForIHM(){
-		currentBarRectSize.y = PlayerController.vitesse.y * maxHeight / maxVitesse;
+		//évite à la barre de dépasser le max autorisé !!
+		if(PlayerController.vitesse.y < maxVitesse) 
+			currentBarRectSize.y = maxHeight;
+		else
+			currentBarRectSize.y = PlayerController.vitesse.y * maxHeight / maxVitesse;
 
 	}
 }
