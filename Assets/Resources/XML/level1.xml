@@ -24,6 +24,17 @@
 		<Altitude max="150000" min="400"></Altitude>
 	</object>
 	
+	<!-- ************ *****  LEs signaux ******* -->
+	 <object name="commonPrefabs/signalFin" nombre="1" pool="false" layer="foreGround"> 
+		<Altitude max="1490" min="1489"></Altitude>
+	</object>
+	 <object name="commonPrefabs/signalFinProche" nombre="1" pool="false" layer="foreGround"> 
+		<Altitude max="800" min="799"></Altitude>
+	</object>
+	 <object name="commonPrefabs/signalEspace" nombre="1" pool="false" layer="foreGround"> 
+		<Altitude max="410" min="409"></Altitude>
+	</object>
+	
 	<!-- ** *****  Avant le ciel ******* -->		
     <!--<object name="world1/oiseau" nombre="15" pool="false" layer="foreGround">	
 		<Altitude max="20000" min="-10"></Altitude>

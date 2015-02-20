@@ -1883,7 +1883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da19fd3dbac8f4e4991273f3a7398428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInputActive: 0
+  isInputActive: 1
   speed: 50
 --- !u!95 &313015608
 Animator:
@@ -1924,7 +1924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba9dddb7807c4642b7146e3aaf00114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInputActive: 1
+  isInputActive: 0
   speed: 120
   camera: {fileID: 276706956}
 --- !u!1 &332840838

@@ -33,10 +33,10 @@ public class ActionButtonManager : MonoBehaviour {
 			anim.SetTrigger("close");
 		} 
 		//else if (state == PlayerController.State.naked && GameController.lastPlayerSpeed.y >= -0.05f) {
-		else if (state == PlayerController.State.naked && PlayerController.vitesse.y < -0.05f &&  !GameController.isInSpace) {
+		else if (state == PlayerController.State.naked && PlayerController.vitesse.y < -0.08f &&  !GameController.isInSpace) {
 			anim.SetTrigger("openFly");
 		} 
-		else if (state == PlayerController.State.naked &&  PlayerController.vitesse.y >= -0.05f &&  !GameController.isInSpace) {
+		else if (state == PlayerController.State.naked &&  PlayerController.vitesse.y >= -0.08f &&  !GameController.isInSpace) {
 			anim.SetTrigger("enableFlyAction");
 		} 
 		else if (state == PlayerController.State.naked &&  GameController.isInSpace) {
