@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour {
 	public static int nbreDiamond = 0;
 	private int coeffAltitude = 100;
 	private float altMaxForWinLevel = 150000f;//80000f ou 150000f ;
-	private float altBeginOfSpace = 1000f; //10000f; test   //41000f;  realité
+	private float altBeginOfSpace = 41000f; //10000f; test   //41000f;  realité
 
 	private int coeffVitesse = 1 * 3600; 
 	public int currentLevel = 1; //par défaut le premier niveau
