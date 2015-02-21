@@ -157,7 +157,10 @@ public class GameController : MonoBehaviour {
 	}
 	/** méthode d'appel por la création d'un niveau *****/
 	void createWorld(){
-		GameController.Load ();
+
+		if (hasSaved) {
+						GameController.Load ();
+				}
 		Debug.Log ("on charge le niveau :" + currentLevel);
 		this.GetComponent<LoadLevelcontroller> ().loadLevel (currentLevel);
 	}
