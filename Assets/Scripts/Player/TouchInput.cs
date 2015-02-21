@@ -52,17 +52,6 @@ public class TouchInput : MonoBehaviour {
 				if(!isGoingOutScreen()){
 					rigidbody2D.velocity = translation * Time.smoothDeltaTime * speed;
 				}
-				/*Vector3 screenPos = camera.WorldToScreenPoint(transform.position);
-				if(screenPos.x >= Screen.width ) {
-					translation.x = 0;
-					transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
-					rigidbody2D.velocity = Vector3.zero;
-				}
-				else if(screenPos.x <= 0){
-					translation.x = 0;
-					transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
-					rigidbody2D.velocity = Vector3.zero;
-				}*/
 
 			}	
 			
@@ -78,11 +67,14 @@ public class TouchInput : MonoBehaviour {
 		if (screenPos.x >= Screen.width) {
 			transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
 			rigidbody2D.velocity = Vector3.zero;
+			translation = Vector3.zero;
 			isGoingOut = true;
 		} 
 		else if (screenPos.x <= 0) {
+			Debug.Log("vers gauche se cogne...met à zéro");
 			transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
 			rigidbody2D.velocity = Vector3.zero;
+			translation = Vector3.zero;
 			isGoingOut = true;
 		} 
 		return isGoingOut;

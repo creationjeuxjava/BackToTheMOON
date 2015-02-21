@@ -37,7 +37,7 @@ public class AccelerometerInput : MonoBehaviour {
 					anim.SetTrigger ("toRight");
 					//transform.Translate (dir * speed);
 				}
-				//TODO : vérifier si on est pas outOffScreen à droite ou à gauche
+				//vérifie si on est pas outOffScreen à droite ou à gauche
 				if(!isGoingOutScreen()){
 					transform.Translate (dir * speed);
 					//rigidbody2D.velocity = dir * speed;
@@ -56,13 +56,15 @@ public class AccelerometerInput : MonoBehaviour {
 		screenPos = camera.WorldToScreenPoint(transform.position);
 
 		if (screenPos.x >= Screen.width) {
-				//transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
-				//rigidbody2D.velocity = Vector3.zero;
+				transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
+				rigidbody2D.velocity = Vector3.zero;
+				dir.x = 0f;
 				isGoingOut = true;
 		} 
 		else if (screenPos.x <= 0) {
-				//transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
-				//rigidbody2D.velocity = Vector3.zero;
+				transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
+				rigidbody2D.velocity = Vector3.zero;
+				dir.x = 0f;
 				isGoingOut = true;
 		} 
 		return isGoingOut;

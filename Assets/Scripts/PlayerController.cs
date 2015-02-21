@@ -95,21 +95,7 @@ public class PlayerController : MonoBehaviour {
 			if(!GameController.isOverGUI()){
 				if(!audio.isPlaying)	audio.Play();
 				
-				/*****************   control out of Map	*********************/
-				/*Vector3 screenPos = camera.WorldToScreenPoint(transform.position);
-				if(screenPos.x >= Screen.width ) {
-					translation.x = 0;
-					transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
-					rigidbody2D.velocity = Vector3.zero;
-				}
-				else if(screenPos.x <= 0){
-					translation.x = 0;
-					transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
-					rigidbody2D.velocity = Vector3.zero;
-				}*/
-				//else{
-
-					/*** correction si trop bas...suite aux collisions ****/
+				/*** correction si trop bas...suite aux collisions ****/
 					//if(screenPos.y <= 100){//40
 					if(transform.position.y <= -28){//voir ds le world (scene) directement
 						
@@ -122,7 +108,7 @@ public class PlayerController : MonoBehaviour {
 						//Debug.Log("PlayerController : on update normalement !");
 					}
 					
-				//}
+
 				
 				//transform.Translate(translation);
 				actualPosition = transform.position;
