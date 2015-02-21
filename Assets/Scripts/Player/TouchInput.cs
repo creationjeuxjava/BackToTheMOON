@@ -71,7 +71,6 @@ public class TouchInput : MonoBehaviour {
 			isGoingOut = true;
 		} 
 		else if (screenPos.x <= 0) {
-			Debug.Log("vers gauche se cogne...met à zéro");
 			transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
 			rigidbody2D.velocity = Vector3.zero;
 			translation = Vector3.zero;

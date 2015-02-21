@@ -10,6 +10,7 @@ public class AccelerometerInput : MonoBehaviour {
 	private Vector3 dir;
 	private Animator anim;
 	private Vector3 screenPos;
+	private bool isOutOffScreen = false;
 
 	// Use this for initialization
 	void Start () {
@@ -23,25 +24,37 @@ public class AccelerometerInput : MonoBehaviour {
 			if (PlayerController.isFlying && !GameController.isGamePaused () && GameController.isInGame 
 			    && !GameController.isGameOver && !GameController.isOverGUI() && !PlayerController.isFlyBegin) {
 
+				/*** récupère la position à l'écran ***/
+				screenPos = camera.WorldToScreenPoint(transform.position);
+				Debug.Log(" pos ecran : "+screenPos.x+ " largeur ecran "+Screen.width);
 				/**** récupère la valeur de l'accélération sur axe Ox ***/
 				dir.x = Input.acceleration.x;
 				dir *= Time.deltaTime;
 
 
 				/*** met à jour l'animation de déplacement ****/
-				if(dir.x <= -0.1f ){
+				if(dir.x <= -0.1f && screenPos.x > 10){
 					anim.SetTrigger ("toLeft");	
+					isOutOffScreen = false;
 					//transform.Translate (dir * speed);
 				}
-				else if(dir.x >= 0.1f  ){
+				else if(dir.x <= -0.1f && screenPos.x <= 10 ){
+					isOutOffScreen = true;
+				}
+				else if(dir.x >= 0.1f && screenPos.x < Screen.width-10 ){
 					anim.SetTrigger ("toRight");
+					isOutOffScreen = false;
 					//transform.Translate (dir * speed);
+				}
+				else if(dir.x >= 0.1f && screenPos.x >= Screen.width-10 ){
+					isOutOffScreen = true;
 				}
 				//vérifie si on est pas outOffScreen à droite ou à gauche
-				if(!isGoingOutScreen()){
+				if(!isOutOffScreen){
 					transform.Translate (dir * speed);
 					//rigidbody2D.velocity = dir * speed;
 				}
+
 			}	
 		
 		}
