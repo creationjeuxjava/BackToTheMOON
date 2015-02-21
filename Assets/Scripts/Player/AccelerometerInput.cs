@@ -33,23 +33,25 @@ public class AccelerometerInput : MonoBehaviour {
 
 
 				/*** met à jour l'animation de déplacement ****/
-				if(dir.x <= -0.1f ){
-					if(screenPos.x > 10){
+				if(dir.x <= -0.0001f ){
+					if(screenPos.x > 20){
 
 						anim.SetTrigger ("toLeft");
 					}	
 					else{
 						dir.x = 0f;
+						Debug.Log(" on est hors screen gauche !!");
 					}
 				}
-				else if(dir.x >= 0.1f ){
+				else if(dir.x >= 0.0001f ){
 
-					if(screenPos.x < Screen.width-10 ){
+					if(screenPos.x < Screen.width-30 ){
 						
 						anim.SetTrigger ("toRight");
 					}	
 					else{
 						dir.x = 0f;
+						Debug.Log(" on est hors screen gauche !!");
 					}
 				}
 
