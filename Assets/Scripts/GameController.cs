@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour {
 
 	public GameObject player;
 
-	public static bool hasSaved = false; //A t'il au moins joué une fois ? 
+	public static bool hasSaved ; //A t'il au moins joué une fois ? 
 
 	public static GameObject world;//conteneur du world
 	private static bool isWorldMoving = false;
@@ -52,6 +52,8 @@ public class GameController : MonoBehaviour {
 	// création initiale
 	void Start () {
 		//Application.targetFrameRate = 40;
+		//GameController.Load ();
+		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		resetGame ();
 		//Debug.Log (this.name + " méthode strat");
 	}
@@ -158,9 +160,6 @@ public class GameController : MonoBehaviour {
 	/** méthode d'appel por la création d'un niveau *****/
 	void createWorld(){
 
-		if (hasSaved) {
-						GameController.Load ();
-				}
 		Debug.Log ("on charge le niveau :" + currentLevel);
 		this.GetComponent<LoadLevelcontroller> ().loadLevel (currentLevel);
 	}
