@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.Advertisements;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using System;
 //using UnityEditor;
 
 /*
@@ -11,6 +12,9 @@ using System.IO;
  *    de pooling !!
  * */
 
+
+
+[Serializable]
 public class GameController : MonoBehaviour {
 
 	public GameObject player;
@@ -26,8 +30,10 @@ public class GameController : MonoBehaviour {
 	private GameObject backLayer, middleLayer, foreLayer,backBackLayer;
 
 	public static float altitude = 0;
-	public static int nbrePieces = 0;
+
+	public  static int nbrePieces = 0;
 	public static int nbreDiamond = 0;
+
 	private int coeffAltitude = 100;
 	private float altMaxForWinLevel = 150000f;//80000f ou 150000f ;
 	private float altBeginOfSpace = 41000f; //10000f; test   //41000f;  realité
