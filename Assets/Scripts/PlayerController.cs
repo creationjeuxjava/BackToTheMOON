@@ -13,7 +13,8 @@ public class PlayerController : MonoBehaviour {
 	public static Vector3 vitesse ;
 	public Camera camera;
 	public float gravityReductionfactor = 300000;
-
+	public int nbrePieces;
+	public int nbreDiamants;
 	public static Vector3 translation;
 	private float speedPlayer = 0.3f;//0.7f;
 	public static bool isWithCask = false;

@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour {
 
 	public GameObject player;
 
+	public static bool hasSaved = false; //A t'il au moins joué une fois ? 
+
 	public static GameObject world;//conteneur du world
 	private static bool isWorldMoving = false;
 	private static bool isGameInPause = false;
@@ -143,6 +145,7 @@ public class GameController : MonoBehaviour {
 		{
 			isInGame = false;
 			isGameOver = true;
+			GameController.Save();
 			//Debug.Log (this.name + " on aperdu !!!!!!!!!!!!!!!!!!!!!!!!!!");
 		}
 	}
@@ -180,6 +183,9 @@ public class GameController : MonoBehaviour {
 		//altMaxForWinLevel = 8000f * coeffAltitude;
 		//altBeginOfSpace = 50f*coeffAltitude;//4000f à remettre
 
+		if (hasSaved) {
+			GameController.Load ();
+				}
 		isWorldMoving = false;
 		isGameInPause = false;
 		isOverGUIPause = false;
@@ -242,7 +248,7 @@ public class GameController : MonoBehaviour {
 			Debug.Log("Platform not supported");
 		}*/
 	}
-	void OnGUI() {
+/*	void OnGUI() {
 				if (!isInGame) {
 						//if (GUI.Button (new Rect (140, 40, 150, 50), Advertisement.isReady () ? "Montrer ADS" : "En chargement ADS...")) {
 								// Show with default zone, pause engine and print result to debug log
@@ -253,8 +259,8 @@ public class GameController : MonoBehaviour {
 				}
 			});*/
 						//}
-				}
-		}
+		//		}
+		//}
 
 
 
@@ -262,29 +268,34 @@ public class GameController : MonoBehaviour {
 
 
 
-	public void Save(){
+	public  static void  Save(){
 
 		BinaryFormatter bf = new BinaryFormatter ();
 		FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.bttm");
-
+		
 		//Ajout des choses a serializer 
-		//PlayerController playerdata = new 
-		// playerData.nbrePiece = nbrpieces;
-	//	bf.Serialize (file, playerData);
+		PlayerController playerData = new PlayerController (); 
+		playerData.nbrePieces = nbrePieces;
+		playerData.nbreDiamants = nbreDiamond;
+		bf.Serialize (file, playerData);
+		Debug.Log ("Saving game into " + Application.persistentDataPath);
 		file.Close();
+		hasSaved = true;
 		}
 
 
 
-	public void Load(){
+	public static void Load(){
 
 		if(File.Exists(Application.persistentDataPath + "playerInfo.bttm"));
 		{
 						BinaryFormatter bf = new BinaryFormatter ();
 						FileStream file = File.Open (Application.persistentDataPath + "/playerInfo.bttm", FileMode.Open);
-			//Playercontroller playerData = (PlayerController) bf.Deserialize(file);
+						PlayerController playerData = (PlayerController) bf.Deserialize(file);
 						file.Close ();
-			//   nbrPiece = playerData.nbrpieces;
+						Debug.Log ("Loading game from " + Application.persistentDataPath);
+			   			nbrePieces = playerData.nbrePieces;
+						nbreDiamond = playerData.nbreDiamants;
 		}
 	}
 
