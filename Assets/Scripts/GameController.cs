@@ -1,7 +1,9 @@
-﻿ using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Advertisements;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 //using UnityEditor;
 
 /*
@@ -253,6 +255,41 @@ public class GameController : MonoBehaviour {
 						//}
 				}
 		}
+
+
+
+
+
+
+
+	public void Save(){
+
+		BinaryFormatter bf = new BinaryFormatter ();
+		FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.bttm");
+
+		//Ajout des choses a serializer 
+		//PlayerController playerdata = new 
+		// playerData.nbrePiece = nbrpieces;
+	//	bf.Serialize (file, playerData);
+		file.Close();
+		}
+
+
+
+	public void Load(){
+
+		if(File.Exists(Application.persistentDataPath + "playerInfo.bttm"));
+		{
+						BinaryFormatter bf = new BinaryFormatter ();
+						FileStream file = File.Open (Application.persistentDataPath + "/playerInfo.bttm", FileMode.Open);
+			//Playercontroller playerData = (PlayerController) bf.Deserialize(file);
+						file.Close ();
+			//   nbrPiece = playerData.nbrpieces;
+		}
+	}
+
+
+
 
 
 }
