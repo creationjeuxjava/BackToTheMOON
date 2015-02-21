@@ -10,7 +10,7 @@ public class AccelerometerInput : MonoBehaviour {
 	private Vector3 dir;
 	private Animator anim;
 	private Vector3 screenPos;
-	private bool isOutOffScreen = false;
+	//private bool isOutOffScreen = false;
 
 	// Use this for initialization
 	void Start () {
@@ -33,28 +33,32 @@ public class AccelerometerInput : MonoBehaviour {
 
 
 				/*** met à jour l'animation de déplacement ****/
-				if(dir.x <= -0.1f && screenPos.x > 10){
-					anim.SetTrigger ("toLeft");	
-					isOutOffScreen = false;
-					//transform.Translate (dir * speed);
+				if(dir.x <= -0.1f ){
+					if(screenPos.x > 10){
+
+						anim.SetTrigger ("toLeft");
+					}	
+					else{
+						dir.x = 0f;
+					}
 				}
-				else if(dir.x <= -0.1f && screenPos.x <= 10 ){
-					isOutOffScreen = true;
-				}
-				else if(dir.x >= 0.1f && screenPos.x < Screen.width-10 ){
-					anim.SetTrigger ("toRight");
-					isOutOffScreen = false;
-					//transform.Translate (dir * speed);
-				}
-				else if(dir.x >= 0.1f && screenPos.x >= Screen.width-10 ){
-					isOutOffScreen = true;
-				}
-				//vérifie si on est pas outOffScreen à droite ou à gauche
-				if(!isOutOffScreen){
-					transform.Translate (dir * speed);
-					//rigidbody2D.velocity = dir * speed;
+				else if(dir.x >= 0.1f ){
+
+					if(screenPos.x < Screen.width-10 ){
+						
+						anim.SetTrigger ("toRight");
+					}	
+					else{
+						dir.x = 0f;
+					}
 				}
 
+				//vérifie si on est pas outOffScreen à droite ou à gauche
+				//if(!isOutOffScreen){
+					transform.Translate (dir * speed);
+					//rigidbody2D.velocity = dir * speed;
+				//}
+				//Debug.Log(" pos ecran : "+screenPos.x+ " largeur ecran "+Screen.width+" outScrree ?"+this.isOutOffScreen);
 			}	
 		
 		}
