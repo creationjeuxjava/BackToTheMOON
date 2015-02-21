@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.Advertisements;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using System;
+
 //using UnityEditor;
 
 /*
@@ -14,7 +14,7 @@ using System;
 
 
 
-[Serializable]
+
 public class GameController : MonoBehaviour {
 
 	public GameObject player;
@@ -151,12 +151,13 @@ public class GameController : MonoBehaviour {
 		{
 			isInGame = false;
 			isGameOver = true;
-			//GameController.Save();
+			GameController.Save();
 			//Debug.Log (this.name + " on aperdu !!!!!!!!!!!!!!!!!!!!!!!!!!");
 		}
 	}
 	/** méthode d'appel por la création d'un niveau *****/
 	void createWorld(){
+		GameController.Load ();
 		Debug.Log ("on charge le niveau :" + currentLevel);
 		this.GetComponent<LoadLevelcontroller> ().loadLevel (currentLevel);
 	}
@@ -280,9 +281,9 @@ public class GameController : MonoBehaviour {
 		FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.bttm");
 		
 		//Ajout des choses a serializer 
-		PlayerController playerData = new PlayerController (); 
-		playerData.nbrePieces = nbrePieces;
-		playerData.nbreDiamants = nbreDiamond;
+		PlayerData playerData = new PlayerData (); 
+		playerData.coins = nbrePieces;
+		playerData.diamonds = nbreDiamond;
 		bf.Serialize (file, playerData);
 		Debug.Log ("Saving game into " + Application.persistentDataPath);
 		file.Close();
@@ -297,11 +298,11 @@ public class GameController : MonoBehaviour {
 		{
 						BinaryFormatter bf = new BinaryFormatter ();
 						FileStream file = File.Open (Application.persistentDataPath + "/playerInfo.bttm", FileMode.Open);
-						PlayerController playerData = (PlayerController) bf.Deserialize(file);
+						PlayerData playerData = (PlayerData) bf.Deserialize(file);
 						file.Close ();
 						Debug.Log ("Loading game from " + Application.persistentDataPath);
-			   			nbrePieces = playerData.nbrePieces;
-						nbreDiamond = playerData.nbreDiamants;
+			   			nbrePieces = playerData.coins;
+						nbreDiamond = playerData.diamonds;
 		}
 	}
 
