@@ -27,6 +27,7 @@ public class LoadingScreenController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Debug.Log("lancement de la coroutine");
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		if(isPreloadingRequire){
 			StartCoroutine(waitSeconds (waitTime));
 
