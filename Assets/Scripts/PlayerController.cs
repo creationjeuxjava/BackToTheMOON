@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-[Serializable]
+//[Serializable]
 public class PlayerController : MonoBehaviour {
 
    	public GameObject fumee;
@@ -22,7 +22,8 @@ public class PlayerController : MonoBehaviour {
 	public static bool isWithBeans = false;
 	private bool isItemActivated = false;
 	public static bool isFlyBegin = false;
-
+    public AudioClip coinTaken;
+    public AudioClip diamondTaken;
 	private float timeLeft = 5.0f;
 
 	public static Vector3 actualPosition;
@@ -203,6 +204,7 @@ public class PlayerController : MonoBehaviour {
 		if(other.gameObject.tag == "Piece" ){
 			//Debug.Log ("***************  collision avec une piece ");
 			GameController.addPiece();
+            audio.PlayOneShot(coinTaken);
 			//Destroy(other.gameObject);
 			other.gameObject.SetActive(false);
 		}
@@ -210,6 +212,7 @@ public class PlayerController : MonoBehaviour {
 			//Debug.Log ("***************  collision avec une piece ");
 			GameController.addDiamond();
 			//Destroy(other.gameObject);
+            audio.PlayOneShot(diamondTaken);
 			other.gameObject.SetActive(false);
 		}
 
