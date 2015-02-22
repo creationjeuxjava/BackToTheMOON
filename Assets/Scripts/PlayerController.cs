@@ -204,7 +204,7 @@ public class PlayerController : MonoBehaviour {
 		if(other.gameObject.tag == "Piece" ){
 			//Debug.Log ("***************  collision avec une piece ");
 			GameController.addPiece();
-            audio.PlayOneShot(coinTaken);
+            audio.PlayOneShot(coinTaken, 0.4f);
 			//Destroy(other.gameObject);
 			other.gameObject.SetActive(false);
 		}
@@ -212,7 +212,7 @@ public class PlayerController : MonoBehaviour {
 			//Debug.Log ("***************  collision avec une piece ");
 			GameController.addDiamond();
 			//Destroy(other.gameObject);
-            audio.PlayOneShot(diamondTaken);
+            audio.PlayOneShot(diamondTaken, 0.3f);
 			other.gameObject.SetActive(false);
 		}
 
