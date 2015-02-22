@@ -186,6 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 2
+  isPreloadingRequire: 1
 --- !u!4 &1076418039
 Transform:
   m_ObjectHideFlags: 0

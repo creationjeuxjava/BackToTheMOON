@@ -3504,6 +3504,10 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 313015600}
+    - target: {fileID: 11493272, guid: dc639b337b9b8f2408e9e472e0fe7efd, type: 2}
+      propertyPath: currentLevel
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc639b337b9b8f2408e9e472e0fe7efd, type: 2}
   m_RootGameObject: {fileID: 1620950173}

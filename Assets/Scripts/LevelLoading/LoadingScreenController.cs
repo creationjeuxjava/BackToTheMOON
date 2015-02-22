@@ -8,7 +8,7 @@ public class LoadingScreenController : MonoBehaviour {
 	public bool isPreloadingRequire = true;
 
 
-	public static int numLevel;
+	public static int numLevel = 1;
 	public static LoadingScreenController control;// c'est la clé pour passer des infos aux autres scènes !!
 
 
@@ -35,33 +35,25 @@ public class LoadingScreenController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		/*if (!Application.isLoadingLevel) {
-				
-			Debug.Log("level en cours de chargement !!");
-		}*/
-
-		/*if (async.isDone) {
-				
-			Debug.Log("level chargé mon pote !! !!");
-		}*/
+		//TODO : passage en aléatoire des infos : descriptif d'items ou autre du jeu (tutoriel en attente !!)
 	}
 
 	IEnumerator waitSeconds (float waitTime)
 	{
 		yield return new WaitForSeconds (waitTime);
-		StartCoroutine(LoadLevel (0));//TODO : à remplacer par la variable "numLevel"
+		StartCoroutine(LoadLevel (numLevel));//TODO : à remplacer par la variable "numLevel"
 	}
 
 	IEnumerator LoadLevel(int numLevel) {
 		//AsyncOperation async = Application.LoadLevelAsync("firstLevel");
-		//async = Application.LoadLevelAsync(numLevel);
+		async = Application.LoadLevelAsync(numLevel);
 
-		async = Application.LoadLevelAsync("firstLevel");//TODO à changer  par le numéro du bon monde à charger
+		//async = Application.LoadLevelAsync("firstLevel");//TODO à changer  par le numéro du bon monde à charger
 		yield return async;
 		Debug.Log("Loading complete");
 	}
 
-	/*** appel statique depuis le screen des Level ****/
+	/*** appel static depuis le screen des Level, juste avant le chargement de la scène "loadingScreen" ****/
 	public static void setNumLevel(int numeroLevel){
 
 		numLevel = numeroLevel;
