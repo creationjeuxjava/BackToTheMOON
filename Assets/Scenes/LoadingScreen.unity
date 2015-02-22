@@ -845,7 +845,9 @@ MonoBehaviour:
       year: 0
       month: 0
       day: 0
-    keywords: []
+    keywords:
+    - game
+    - role player game
     location:
       latitude: NaN
       longitude: NaN
@@ -1008,6 +1010,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 148408364}
     m_Modifications:
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: target.keywords.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1051,6 +1057,14 @@ Prefab:
     - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
       propertyPath: size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: target.keywords.Array.data[0]
+      value: game
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: target.keywords.Array.data[1]
+      value: role player game
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
