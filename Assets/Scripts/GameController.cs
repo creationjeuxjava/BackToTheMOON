@@ -49,10 +49,18 @@ public class GameController : MonoBehaviour {
 
 	private Dictionary<GameObject,string> dicoObjectPoolers = new Dictionary<GameObject,string>();
 
+    
+
 	// création initiale
 	void Start () {
+        Debug.Log(File.Exists(Application.persistentDataPath + "/playerInfo.bttm"));
 		//Application.targetFrameRate = 40;
-		//GameController.Load ();
+        if (File.Exists(Application.persistentDataPath + "/playerInfo.bttm"))
+        {
+            GameController.Load();
+        }
+        else Debug.Log("File doesn't exist or cant reache the file");
+		
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		resetGame ();
 		//Debug.Log (this.name + " méthode strat");
@@ -286,6 +294,7 @@ public class GameController : MonoBehaviour {
 		PlayerData playerData = new PlayerData (); 
 		playerData.coins = nbrePieces;
 		playerData.diamonds = nbreDiamond;
+		playerData.hasSavedGame = hasSaved;
 		bf.Serialize (file, playerData);
 		Debug.Log ("Saving game into " + Application.persistentDataPath);
 		file.Close();
@@ -296,15 +305,17 @@ public class GameController : MonoBehaviour {
 
 	public static void Load(){
 
-		if(File.Exists(Application.persistentDataPath + "playerInfo.bttm"));
+		if(File.Exists(Application.persistentDataPath + "/playerInfo.bttm"));
 		{
 						BinaryFormatter bf = new BinaryFormatter ();
 						FileStream file = File.Open (Application.persistentDataPath + "/playerInfo.bttm", FileMode.Open);
 						PlayerData playerData = (PlayerData) bf.Deserialize(file);
+						nbrePieces = playerData.coins;
+						nbreDiamond = playerData.diamonds;
+						hasSaved = playerData.hasSavedGame;
 						file.Close ();
 						Debug.Log ("Loading game from " + Application.persistentDataPath);
-			   			nbrePieces = playerData.coins;
-						nbreDiamond = playerData.diamonds;
+			   			
 		}
 	}
 
