@@ -40,7 +40,7 @@ public class DebugInGame : MonoBehaviour {
 		translation = GameObject.Find ("translation").GetComponent<Text> ();
 		vitesse = GameObject.Find ("vitesse").GetComponent<Text> ();*/
 		fpsText = GameObject.Find ("fps").GetComponent<Text> ();
-		isGameFinish = GameObject.Find ("isGameFinish").GetComponent<Text> ();
+		//isGameFinish = GameObject.Find ("isGameFinish").GetComponent<Text> ();
 
 
 		timeleft = updateInterval;
@@ -55,7 +55,7 @@ public class DebugInGame : MonoBehaviour {
 		translation.text = "translation :" + PlayerController.translation;
 		vitesse.text = "vitesse : " + GameController.playerSpeed.y;*/
 		fpsText.text = "FPS : "+format;
-		isGameFinish.text = "ecceleration z : " + Input.acceleration.z + " \n et en x"+Input.acceleration.x;
+		//isGameFinish.text = "ecceleration z : " + Input.acceleration.z + " \n et en x"+Input.acceleration.x;
 
 		/*foreach(GameObject obj in allObjects){
 			Renderer rend = obj.GetComponent(Renderer);

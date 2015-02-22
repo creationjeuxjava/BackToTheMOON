@@ -168,7 +168,7 @@ GameObject:
   - 4: {fileID: 1076418039}
   - 114: {fileID: 1076418038}
   m_Layer: 0
-  m_Name: ScreenHolder
+  m_Name: LoadingHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -185,6 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3d4b006926c4e549aaa73e83f9442b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 2
 --- !u!4 &1076418039
 Transform:
   m_ObjectHideFlags: 0

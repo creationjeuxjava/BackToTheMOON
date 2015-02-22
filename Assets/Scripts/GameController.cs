@@ -49,8 +49,6 @@ public class GameController : MonoBehaviour {
 
 	private Dictionary<GameObject,string> dicoObjectPoolers = new Dictionary<GameObject,string>();
 
-    
-
 	// création initiale
 	void Start () {
         Debug.Log(File.Exists(Application.persistentDataPath + "/playerInfo.bttm"));
