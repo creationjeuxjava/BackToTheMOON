@@ -1398,7 +1398,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 484118, guid: a1ee4cb3339fb6c4aa9386f7b0329ca6, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 11484146, guid: a1ee4cb3339fb6c4aa9386f7b0329ca6, type: 2}
       propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1784,6 +1784,10 @@ MonoBehaviour:
   fumee: {fileID: 115168, guid: 5a97962f7d5ba4df0823334b52c7c02c, type: 2}
   camera: {fileID: 276706956}
   gravityReductionfactor: 700000
+  nbrePieces: 0
+  nbreDiamants: 0
+  coinTaken: {fileID: 8300000, guid: b4f58bdf228c6bc45b46a0066aae25f6, type: 3}
+  diamondTaken: {fileID: 8300000, guid: 886c7093936cb6b46b0932640e5e900a, type: 3}
   currentState: 2
 --- !u!61 &313015604
 BoxCollider2D:
@@ -1806,7 +1810,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 313015600}
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: .0199999996
   m_GravityScale: 0
   m_FixedAngle: 1
   m_IsKinematic: 0
@@ -1822,13 +1826,13 @@ AudioSource:
   m_GameObject: {fileID: 313015600}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: dcec7965603c4c645872e5a0c771941e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5e9c50e58fb20534b9c29cd730d4c998, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .197999999
+  m_Volume: .5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
-  Priority: 128
+  Priority: 57
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1883,7 +1887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da19fd3dbac8f4e4991273f3a7398428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInputActive: 1
+  isInputActive: 0
   speed: 50
   camera: {fileID: 276706956}
 --- !u!95 &313015608
@@ -1925,7 +1929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba9dddb7807c4642b7146e3aaf00114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInputActive: 0
+  isInputActive: 1
   speed: 120
   camera: {fileID: 276706956}
 --- !u!1 &332840838
@@ -7363,6 +7367,38 @@ Prefab:
     - target: {fileID: 6181008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
       propertyPath: m_Center.y
       value: -.810000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 11481008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
+      propertyPath: coinTaken
+      value: 
+      objectReference: {fileID: 8300000, guid: b4f58bdf228c6bc45b46a0066aae25f6, type: 3}
+    - target: {fileID: 11481008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
+      propertyPath: diamondTaken
+      value: 
+      objectReference: {fileID: 8300000, guid: 886c7093936cb6b46b0932640e5e900a, type: 3}
+    - target: {fileID: 8281008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e9c50e58fb20534b9c29cd730d4c998, type: 3}
+    - target: {fileID: 8281008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
+      propertyPath: m_Volume
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
+      propertyPath: rolloffMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
+      propertyPath: m_AngularDrag
+      value: .0199999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
+      propertyPath: Priority
+      value: 57
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
