@@ -294,7 +294,7 @@ public class GameController : MonoBehaviour {
 		PlayerData playerData = new PlayerData (); 
 		playerData.coins = nbrePieces;
 		playerData.diamonds = nbreDiamond;
-		playerData.hasSavedGame = hasSaved;
+		//playerData.hasSavedGame = hasSaved;
 		bf.Serialize (file, playerData);
 		Debug.Log ("Saving game into " + Application.persistentDataPath);
 		file.Close();
@@ -312,7 +312,7 @@ public class GameController : MonoBehaviour {
 						PlayerData playerData = (PlayerData) bf.Deserialize(file);
 						nbrePieces = playerData.coins;
 						nbreDiamond = playerData.diamonds;
-						hasSaved = playerData.hasSavedGame;
+						//hasSaved = playerData.hasSavedGame;
 						file.Close ();
 						Debug.Log ("Loading game from " + Application.persistentDataPath);
 			   			
