@@ -248,7 +248,7 @@ public class PlayerController : MonoBehaviour {
 					Destroy (obj);
 			} 
 			//explose le météorite ==> methode spawnAsteroid !!
-			if(obj.tag == "Meteorite" "){
+			if(obj.tag == "Meteorite"){
 				GameObject gameControlller = GameObject.FindGameObjectWithTag ("GameController");
 				gameControlller.GetComponent<LoadLevelcontroller> ().spawnAsteroid (obj);
 			}	
