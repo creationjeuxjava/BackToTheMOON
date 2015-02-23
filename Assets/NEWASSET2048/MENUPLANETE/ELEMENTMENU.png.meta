@@ -39,6 +39,61 @@ TextureImporter:
     21300068: tiretjaune
     21300070: titre
     21300072: uhere
+    21300074: level1,1
+    21300076: ELEMENTMENU_1
+    21300078: level2,2
+    21300080: level3,3
+    21300082: level5
+    21300084: ELEMENTMENU_5
+    21300086: ELEMENTMENU_6
+    21300088: ELEMENTMENU_7
+    21300090: ELEMENTMENU_8
+    21300092: ELEMENTMENU_9
+    21300094: ELEMENTMENU_10
+    21300096: ELEMENTMENU_11
+    21300098: ELEMENTMENU_12
+    21300100: ELEMENTMENU_13
+    21300102: ELEMENTMENU_14
+    21300104: ELEMENTMENU_15
+    21300106: ELEMENTMENU_16
+    21300108: ELEMENTMENU_17
+    21300110: ELEMENTMENU_18
+    21300112: ELEMENTMENU_19
+    21300114: ELEMENTMENU_20
+    21300116: ELEMENTMENU_21
+    21300118: ELEMENTMENU_22
+    21300120: ELEMENTMENU_23
+    21300122: ELEMENTMENU_24
+    21300124: ELEMENTMENU_25
+    21300126: ELEMENTMENU_26
+    21300128: ELEMENTMENU_27
+    21300130: ELEMENTMENU_28
+    21300132: ELEMENTMENU_29
+    21300134: ELEMENTMENU_30
+    21300136: ELEMENTMENU_31
+    21300138: ELEMENTMENU_32
+    21300140: level2
+    21300142: level1
+    21300144: ELEMENTMENU_35
+    21300146: ELEMENTMENU_36
+    21300148: ELEMENTMENU_37
+    21300150: ELEMENTMENU_38
+    21300152: ELEMENTMENU_39
+    21300154: level4
+    21300156: level5,5
+    21300158: Noteplanet
+    21300160: ELEMENTMENU_43
+    21300162: level4,4
+    21300164: level3
+    21300166: ELEMENTMENU_46
+    21300168: ELEMENTMENU_47
+    21300170: ELEMENTMENU_48
+    21300172: ELEMENTMENU_49
+    21300174: ELEMENTMENU_50
+    21300176: ELEMENTMENU_51
+    21300178: ELEMENTMENU_52
+    21300180: ELEMENTMENU_53
+    21300182: ELEMENTMENU_54
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -80,37 +135,67 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: back
+    - name: level1,1
       rect:
         serializedVersion: 2
-        x: 1436
-        y: 1300
-        width: 72
-        height: 23
-      alignment: 9
-      pivot: {x: .479166657, y: .456521749}
+        x: 98
+        y: 1206
+        width: 690
+        height: 690
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: backbrillant
+    - name: ELEMENTMENU_1
       rect:
         serializedVersion: 2
-        x: 1063
-        y: 1144
-        width: 158
-        height: 117
-      alignment: 9
-      pivot: {x: .509493649, y: .487179488}
+        x: 874
+        y: 1064
+        width: 5
+        height: 910
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: backjaune
+    - name: level2,2
       rect:
         serializedVersion: 2
-        x: 1374
-        y: 27
-        width: 158
-        height: 117
-      alignment: 9
-      pivot: {x: .509493649, y: .491452992}
+        x: 889
+        y: 1348
+        width: 626
+        height: 626
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrehorizontale
+    - name: level3,3
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 1517
+        width: 457
+        height: 457
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level5
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 1279
+        width: 296
+        height: 228
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_5
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 1351
+        width: 137
+        height: 156
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_6
       rect:
         serializedVersion: 2
         x: 889
@@ -120,57 +205,207 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barreverticale
-      rect:
-        serializedVersion: 2
-        x: 874
-        y: 1064
-        width: 5
-        height: 910
-      alignment: 9
-      pivot: {x: .5, y: .501098931}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: carre
-      rect:
-        serializedVersion: 2
-        x: 835
-        y: 1082
-        width: 26
-        height: 24
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: carrebrillant
-      rect:
-        serializedVersion: 2
-        x: 1805
-        y: 26
-        width: 119
-        height: 118
-      alignment: 9
-      pivot: {x: .50420171, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: carrevide
+    - name: ELEMENTMENU_7
       rect:
         serializedVersion: 2
         x: 1831
-        y: 1276
-        width: 26
-        height: 24
+        y: 1310
+        width: 38
+        height: 31
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: carrrejaune
+    - name: ELEMENTMENU_8
       rect:
         serializedVersion: 2
-        x: 1924
-        y: 1317
-        width: 26
-        height: 24
+        x: 1879
+        y: 1306
+        width: 35
+        height: 35
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: croix
+    - name: ELEMENTMENU_9
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 1324
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_10
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 1271
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_11
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 1271
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_12
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1271
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_13
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 1271
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_14
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 1271
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_15
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1271
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_16
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 1271
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_17
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 1271
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_18
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1271
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_19
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 1271
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_20
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 1271
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_21
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 1271
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_22
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 1271
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_23
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 1300
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_24
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1301
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_25
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 1300
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_26
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 1301
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_27
       rect:
         serializedVersion: 2
         x: 1924
@@ -180,17 +415,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: croixbriallante
+    - name: ELEMENTMENU_28
       rect:
         serializedVersion: 2
-        x: 1674
-        y: 24
-        width: 121
-        height: 120
-      alignment: 9
-      pivot: {x: .495867759, y: .5}
+        x: 1831
+        y: 1276
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: croixjaune
+    - name: ELEMENTMENU_29
       rect:
         serializedVersion: 2
         x: 1867
@@ -200,207 +435,27 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: diamant
-      rect:
-        serializedVersion: 2
-        x: 1831
-        y: 1310
-        width: 38
-        height: 31
-      alignment: 9
-      pivot: {x: .592105269, y: .354838699}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: fenetreinfo
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 13
-        width: 336
-        height: 359
-      alignment: 9
-      pivot: {x: .502976179, y: .44846797}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: fleche
-      rect:
-        serializedVersion: 2
-        x: 1303
-        y: 176
-        width: 26
-        height: 24
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: flechebrillante
-      rect:
-        serializedVersion: 2
-        x: 1542
-        y: 23
-        width: 122
-        height: 121
-      alignment: 9
-      pivot: {x: .495901644, y: .495867759}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: flechejaune
-      rect:
-        serializedVersion: 2
-        x: 1339
-        y: 142
-        width: 25
-        height: 24
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: level1,1
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 1220
-        width: 650
-        height: 650
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: level1
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 419
-        width: 650
-        height: 650
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: level2,2
-      rect:
-        serializedVersion: 2
-        x: 955
-        y: 1414
-        width: 494
-        height: 494
-      alignment: 9
-      pivot: {x: .498402566, y: .507188499}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: level2
-      rect:
-        serializedVersion: 2
-        x: 1426
-        y: 729
-        width: 495
-        height: 495
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: level3,3
-      rect:
-        serializedVersion: 2
-        x: 1581
-        y: 1571
-        width: 348
-        height: 348
-      alignment: 9
-      pivot: {x: .498905897, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: level3
-      rect:
-        serializedVersion: 2
-        x: 1059
-        y: 140
-        width: 348
-        height: 348
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: level4,4
-      rect:
-        serializedVersion: 2
-        x: 847
-        y: 534
-        width: 417
-        height: 417
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: level4
-      rect:
-        serializedVersion: 2
-        x: 723
-        y: 22
-        width: 417
-        height: 417
-      alignment: 9
-      pivot: {x: .498673737, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: level5,2
-      rect:
-        serializedVersion: 2
-        x: 1525
-        y: 1279
-        width: 296
-        height: 228
-      alignment: 9
-      pivot: {x: .5625, y: .524122834}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: logonb
-      rect:
-        serializedVersion: 2
-        x: 356
-        y: 119
-        width: 259
-        height: 253
-      alignment: 9
-      pivot: {x: .501930475, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: piece
-      rect:
-        serializedVersion: 2
-        x: 1879
-        y: 1306
-        width: 35
-        height: 35
-      alignment: 9
-      pivot: {x: .5, y: .514285743}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: planet5
-      rect:
-        serializedVersion: 2
-        x: 1379
-        y: 154
-        width: 548
-        height: 517
-      alignment: 9
-      pivot: {x: .477189779, y: .484526098}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: start
-      rect:
-        serializedVersion: 2
-        x: 742
-        y: 1083
-        width: 83
-        height: 23
-      alignment: 9
-      pivot: {x: .493975908, y: .434782594}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: startbrillant
-      rect:
-        serializedVersion: 2
-        x: 1129
-        y: 82
-        width: 164
-        height: 118
-      alignment: 9
-      pivot: {x: .503048778, y: .478813559}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: startjaune
+    - name: ELEMENTMENU_30
       rect:
         serializedVersion: 2
         x: 889
         y: 1143
         width: 164
         height: 118
-      alignment: 9
-      pivot: {x: .503048778, y: .483050853}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: tiret
+    - name: ELEMENTMENU_31
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1144
+        width: 158
+        height: 117
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_32
       rect:
         serializedVersion: 2
         x: 1231
@@ -410,17 +465,157 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: tiretbrillant
+    - name: level2
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 681
+        width: 580
+        height: 580
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 415
+        width: 650
+        height: 650
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_35
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1083
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_36
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 1083
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_37
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 1083
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_38
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 1083
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_39
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 1089
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level4
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 480
+        width: 510
+        height: 510
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level5,5
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 218
+        width: 380
+        height: 380
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Noteplanet
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 13
+        width: 336
+        height: 359
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_43
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 119
+        width: 259
+        height: 253
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level4,4
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 41
+        width: 377
+        height: 377
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level3
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 210
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_46
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 82
+        width: 164
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_47
       rect:
         serializedVersion: 2
         x: 1303
-        y: 142
+        y: 176
         width: 26
         height: 24
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: tiretjaune
+    - name: ELEMENTMENU_48
       rect:
         serializedVersion: 2
         x: 1339
@@ -430,25 +625,65 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: titre
+    - name: ELEMENTMENU_49
       rect:
         serializedVersion: 2
-        x: 889
-        y: 1271
-        width: 537
-        height: 52
-      alignment: 9
-      pivot: {x: .499068916, y: .355769217}
+        x: 1303
+        y: 142
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: uhere
+    - name: ELEMENTMENU_50
       rect:
         serializedVersion: 2
-        x: 1831
-        y: 1351
-        width: 137
-        height: 156
-      alignment: 9
-      pivot: {x: .5, y: .467948705}
+        x: 1339
+        y: 142
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_51
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 27
+        width: 158
+        height: 117
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_52
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 23
+        width: 122
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_53
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 24
+        width: 121
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ELEMENTMENU_54
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 26
+        width: 119
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
