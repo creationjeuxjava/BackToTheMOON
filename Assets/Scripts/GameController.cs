@@ -1,7 +1,10 @@
-﻿ using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Advertisements;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+
 //using UnityEditor;
 
 /*
@@ -9,9 +12,14 @@ using UnityEngine.Advertisements;
  *    de pooling !!
  * */
 
+
+
+
 public class GameController : MonoBehaviour {
 
 	public GameObject player;
+
+	public static bool hasSaved ; //A t'il au moins joué une fois ? 
 
 	public static GameObject world;//conteneur du world
 	private static bool isWorldMoving = false;
@@ -22,8 +30,10 @@ public class GameController : MonoBehaviour {
 	private GameObject backLayer, middleLayer, foreLayer,backBackLayer;
 
 	public static float altitude = 0;
-	public static int nbrePieces = 0;
+
+	public  static int nbrePieces = 0;
 	public static int nbreDiamond = 0;
+
 	private int coeffAltitude = 100;
 	private float altMaxForWinLevel = 150000f;//80000f ou 150000f ;
 	private float altBeginOfSpace = 41000f; //10000f; test   //41000f;  realité
@@ -41,7 +51,15 @@ public class GameController : MonoBehaviour {
 
 	// création initiale
 	void Start () {
+        Debug.Log(File.Exists(Application.persistentDataPath + "/playerInfo.bttm"));
 		//Application.targetFrameRate = 40;
+        if (File.Exists(Application.persistentDataPath + "/playerInfo.bttm"))
+        {
+            GameController.Load();
+        }
+        else Debug.Log("File doesn't exist or cant reache the file");
+		
+		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		resetGame ();
 		//Debug.Log (this.name + " méthode strat");
 	}
@@ -141,11 +159,13 @@ public class GameController : MonoBehaviour {
 		{
 			isInGame = false;
 			isGameOver = true;
+			GameController.Save();
 			//Debug.Log (this.name + " on aperdu !!!!!!!!!!!!!!!!!!!!!!!!!!");
 		}
 	}
 	/** méthode d'appel por la création d'un niveau *****/
 	void createWorld(){
+
 		Debug.Log ("on charge le niveau :" + currentLevel);
 		this.GetComponent<LoadLevelcontroller> ().loadLevel (currentLevel);
 	}
@@ -178,6 +198,9 @@ public class GameController : MonoBehaviour {
 		//altMaxForWinLevel = 8000f * coeffAltitude;
 		//altBeginOfSpace = 50f*coeffAltitude;//4000f à remettre
 
+		if (hasSaved) {
+			GameController.Load ();
+				}
 		isWorldMoving = false;
 		isGameInPause = false;
 		isOverGUIPause = false;
@@ -240,7 +263,7 @@ public class GameController : MonoBehaviour {
 			Debug.Log("Platform not supported");
 		}*/
 	}
-	void OnGUI() {
+/*	void OnGUI() {
 				if (!isInGame) {
 						//if (GUI.Button (new Rect (140, 40, 150, 50), Advertisement.isReady () ? "Montrer ADS" : "En chargement ADS...")) {
 								// Show with default zone, pause engine and print result to debug log
@@ -251,8 +274,51 @@ public class GameController : MonoBehaviour {
 				}
 			});*/
 						//}
-				}
+		//		}
+		//}
+
+
+
+
+
+
+
+	public  static void  Save(){
+
+		BinaryFormatter bf = new BinaryFormatter ();
+		FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.bttm");
+		
+		//Ajout des choses a serializer 
+		PlayerData playerData = new PlayerData (); 
+		playerData.coins = nbrePieces;
+		playerData.diamonds = nbreDiamond;
+		//playerData.hasSavedGame = hasSaved;
+		bf.Serialize (file, playerData);
+		Debug.Log ("Saving game into " + Application.persistentDataPath);
+		file.Close();
+		hasSaved = true;
 		}
+
+
+
+	public static void Load(){
+
+		if(File.Exists(Application.persistentDataPath + "/playerInfo.bttm"));
+		{
+						BinaryFormatter bf = new BinaryFormatter ();
+						FileStream file = File.Open (Application.persistentDataPath + "/playerInfo.bttm", FileMode.Open);
+						PlayerData playerData = (PlayerData) bf.Deserialize(file);
+						nbrePieces = playerData.coins;
+						nbreDiamond = playerData.diamonds;
+						//hasSaved = playerData.hasSavedGame;
+						file.Close ();
+						Debug.Log ("Loading game from " + Application.persistentDataPath);
+			   			
+		}
+	}
+
+
+
 
 
 }

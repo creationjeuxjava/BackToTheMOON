@@ -53,7 +53,6 @@ public class TouchInput : MonoBehaviour {
 					rigidbody2D.velocity = translation * Time.smoothDeltaTime * speed;
 				}
 
-
 			}	
 			
 		}
@@ -65,14 +64,16 @@ public class TouchInput : MonoBehaviour {
 		/*****************   control out of Map	*********************/
 		screenPos = camera.WorldToScreenPoint(transform.position);
 		
-		if (screenPos.x >= Screen.width - 40) {
-			//transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
-			//rigidbody2D.velocity = Vector3.zero;
+		if (screenPos.x >= Screen.width) {
+			transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
+			rigidbody2D.velocity = Vector3.zero;
+			translation = Vector3.zero;
 			isGoingOut = true;
 		} 
-		else if (screenPos.x <= 40) {
-			//transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
-			//rigidbody2D.velocity = Vector3.zero;
+		else if (screenPos.x <= 0) {
+			transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
+			rigidbody2D.velocity = Vector3.zero;
+			translation = Vector3.zero;
 			isGoingOut = true;
 		} 
 		return isGoingOut;

@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
+//[Serializable]
 public class PlayerController : MonoBehaviour {
 
    	public GameObject fumee;
@@ -11,7 +13,8 @@ public class PlayerController : MonoBehaviour {
 	public static Vector3 vitesse ;
 	public Camera camera;
 	public float gravityReductionfactor = 300000;
-
+	public int nbrePieces;
+	public int nbreDiamants;
 	public static Vector3 translation;
 	private float speedPlayer = 0.3f;//0.7f;
 	public static bool isWithCask = false;
@@ -19,7 +22,8 @@ public class PlayerController : MonoBehaviour {
 	public static bool isWithBeans = false;
 	private bool isItemActivated = false;
 	public static bool isFlyBegin = false;
-
+    public AudioClip coinTaken;
+    public AudioClip diamondTaken;
 	private float timeLeft = 5.0f;
 
 	public static Vector3 actualPosition;
@@ -95,21 +99,7 @@ public class PlayerController : MonoBehaviour {
 			if(!GameController.isOverGUI()){
 				if(!audio.isPlaying)	audio.Play();
 				
-				/*****************   control out of Map	*********************/
-				/*Vector3 screenPos = camera.WorldToScreenPoint(transform.position);
-				if(screenPos.x >= Screen.width ) {
-					translation.x = 0;
-					transform.position = new Vector3(transform.position.x - 1f,transform.position.y,0);
-					rigidbody2D.velocity = Vector3.zero;
-				}
-				else if(screenPos.x <= 0){
-					translation.x = 0;
-					transform.position = new Vector3(transform.position.x + 1f,transform.position.y,0);
-					rigidbody2D.velocity = Vector3.zero;
-				}*/
-				//else{
-
-					/*** correction si trop bas...suite aux collisions ****/
+				/*** correction si trop bas...suite aux collisions ****/
 					//if(screenPos.y <= 100){//40
 					if(transform.position.y <= -28){//voir ds le world (scene) directement
 						
@@ -122,7 +112,7 @@ public class PlayerController : MonoBehaviour {
 						//Debug.Log("PlayerController : on update normalement !");
 					}
 					
-				//}
+
 				
 				//transform.Translate(translation);
 				actualPosition = transform.position;
@@ -214,6 +204,7 @@ public class PlayerController : MonoBehaviour {
 		if(other.gameObject.tag == "Piece" ){
 			//Debug.Log ("***************  collision avec une piece ");
 			GameController.addPiece();
+            audio.PlayOneShot(coinTaken);
 			//Destroy(other.gameObject);
 			other.gameObject.SetActive(false);
 		}
@@ -221,6 +212,7 @@ public class PlayerController : MonoBehaviour {
 			//Debug.Log ("***************  collision avec une piece ");
 			GameController.addDiamond();
 			//Destroy(other.gameObject);
+            audio.PlayOneShot(diamondTaken);
 			other.gameObject.SetActive(false);
 		}
 
@@ -256,8 +248,10 @@ public class PlayerController : MonoBehaviour {
 					Destroy (obj);
 			} 
 			//explose le météorite ==> methode spawnAsteroid !!
-			GameObject gameControlller = GameObject.FindGameObjectWithTag ("GameController");
-			gameControlller.GetComponent<LoadLevelcontroller> ().spawnAsteroid (obj);
+			if(obj.tag == "Meteorite"){
+				GameObject gameControlller = GameObject.FindGameObjectWithTag ("GameController");
+				gameControlller.GetComponent<LoadLevelcontroller> ().spawnAsteroid (obj);
+			}	
 
 			vitesse.y += obj.GetComponent<InteractionEnnemy> ().speedReducingFactor * 50 / 100;
 		} 
