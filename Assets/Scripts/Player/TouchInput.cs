@@ -12,6 +12,11 @@ public class TouchInput : MonoBehaviour {
 	private Animator anim;
 	private float lateralDelta = 2f;//0.15f
 	private Vector3 screenPos,futurScreenPos;
+	private float lastClickTime = 0;
+	private float catchTime = 0.25f;
+
+	private const float DOUBLE_LATERAL = 4f;
+	private const float SIMPLE_LATERAL = 2f;
 
 	// Use this for initialization
 	void Start () {
@@ -29,7 +34,19 @@ public class TouchInput : MonoBehaviour {
 				if (Input.GetMouseButtonDown (0)){//fonctionne aussi sur Android !!
 					touchPos = camera.ScreenToWorldPoint(Input.mousePosition );
 					//Debug.Log("*************   Clic en  : "+touchPos+" et player en : "+transform.position.x);
-					
+
+					/*** est-ce un double-clic ?****/
+					//double click
+					if(Time.time - lastClickTime < catchTime ){
+						Debug.Log ("double click");
+						lateralDelta = DOUBLE_LATERAL;
+					}
+					//simple click
+					else{
+						Debug.Log ("single click");
+						lateralDelta = SIMPLE_LATERAL;
+					}
+
 					if(gameObject.collider2D.bounds.Contains (touchPos)){
 						translation = Vector3.zero;
 					}
@@ -48,6 +65,7 @@ public class TouchInput : MonoBehaviour {
 						}
 						
 					}
+					lastClickTime = Time.time;
 				}//fin input
 				//transform.Translate(translation);
 				if(!isGoingOutScreen()){
