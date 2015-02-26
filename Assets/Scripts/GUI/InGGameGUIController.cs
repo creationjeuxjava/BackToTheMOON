@@ -46,7 +46,7 @@ public class InGGameGUIController : MonoBehaviour {
 		nbrPiecesText.text = "x "+GameController.nbrePieces;
 		nbrDiamantsText.text = "x "+GameController.nbreDiamond;
 		altitudeText.text = GameController.altitude + " m ";
-		score.text = "200";
+		score.text = GameController.score.ToString();
 
 		/**** gestion de l'icone indiquant si on est dans l'espace ****/
 		if (GameController.isInSpace) {

@@ -34,6 +34,8 @@ public class PlayerController : MonoBehaviour {
 	private float gravityEffect;
 	private float timeSinceStart;
 
+
+
 	public enum State : byte
 	{
 		naked,	//battement "'ailes"
@@ -172,7 +174,8 @@ public class PlayerController : MonoBehaviour {
 			timeLeft = 5f;
 			isItemActivated = true;
 			anim.SetBool("withCask",true);
-			
+
+			GameController.addScore (50);
 			//Sprite casqueSprite = Resources.Load("Sprites/persocasque", typeof(Sprite)) as Sprite;
 			//GetComponent<SpriteRenderer>().sprite = casqueSprite;
 			
@@ -191,7 +194,8 @@ public class PlayerController : MonoBehaviour {
 			timeLeft = 5f;
 			isItemActivated = true;
 			anim.SetBool("withShoes",true);
-			
+
+			GameController.addScore (10);
 			//Sprite shoeSprite = Resources.Load("Sprites/persoshoes", typeof(Sprite)) as Sprite;
 			//GetComponent<SpriteRenderer>().sprite = shoeSprite;
 			
@@ -227,6 +231,8 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive(false);
 			updateVitesse(other.gameObject);
 			currentState = State.noAction;
+
+
 			//ActionButtonManager.updateIcon(currentState);
 		}
 
