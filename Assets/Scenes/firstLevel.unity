@@ -1626,6 +1626,10 @@ MonoBehaviour:
   nbreDiamants: 0
   coinTaken: {fileID: 8300000, guid: b4f58bdf228c6bc45b46a0066aae25f6, type: 3}
   diamondTaken: {fileID: 8300000, guid: 886c7093936cb6b46b0932640e5e900a, type: 3}
+  impact: {fileID: 8300000, guid: f982986206176df4cb9845b56861c5c1, type: 3}
+  beanTaken: {fileID: 8300000, guid: 4a46182ce36a1804e98334a5737416d6, type: 3}
+  shoesTaken: {fileID: 8300000, guid: 85786f92f35d88d489c3fdfd29b1d512, type: 3}
+  caskTaken: {fileID: 8300000, guid: 30be6d4a288c6054084ed908ddfffdc7, type: 3}
   currentState: 2
 --- !u!61 &313015604
 BoxCollider2D:
@@ -1666,7 +1670,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 5e9c50e58fb20534b9c29cd730d4c998, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .5
+  m_Volume: .100000001
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -7462,7 +7466,7 @@ Prefab:
       objectReference: {fileID: 8300000, guid: 5e9c50e58fb20534b9c29cd730d4c998, type: 3}
     - target: {fileID: 8281008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
       propertyPath: m_Volume
-      value: .5
+      value: .100000001
       objectReference: {fileID: 0}
     - target: {fileID: 8281008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
       propertyPath: rolloffMode
@@ -7480,6 +7484,22 @@ Prefab:
       propertyPath: Priority
       value: 57
       objectReference: {fileID: 0}
+    - target: {fileID: 11481008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
+      propertyPath: impact
+      value: 
+      objectReference: {fileID: 8300000, guid: f982986206176df4cb9845b56861c5c1, type: 3}
+    - target: {fileID: 11481008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
+      propertyPath: beanTaken
+      value: 
+      objectReference: {fileID: 8300000, guid: 4a46182ce36a1804e98334a5737416d6, type: 3}
+    - target: {fileID: 11481008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
+      propertyPath: shoesTaken
+      value: 
+      objectReference: {fileID: 8300000, guid: 85786f92f35d88d489c3fdfd29b1d512, type: 3}
+    - target: {fileID: 11481008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
+      propertyPath: caskTaken
+      value: 
+      objectReference: {fileID: 8300000, guid: 30be6d4a288c6054084ed908ddfffdc7, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
   m_RootGameObject: {fileID: 313015600}

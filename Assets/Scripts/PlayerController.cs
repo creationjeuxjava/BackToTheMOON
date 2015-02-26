@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour {
 	public static bool isFlyBegin = false;
     public AudioClip coinTaken;
     public AudioClip diamondTaken;
+	public AudioClip impact,beanTaken,shoesTaken,caskTaken;
 	private float timeLeft = 5.0f;
 
 	public static Vector3 actualPosition;
@@ -146,6 +147,7 @@ public class PlayerController : MonoBehaviour {
 			//on meurt ?
 			//if(isWithCask) Destroy(other.gameObject);
 			//else 
+			audio.PlayOneShot(impact,15.0f);
 
 			updateVitesse(other.gameObject);
 			GameController.addScore (-5);
@@ -167,6 +169,7 @@ public class PlayerController : MonoBehaviour {
 
 		if(other.gameObject.tag == "Cask"  && !isItemActivated && !isFlyBegin){
 			//Debug.Log ("***************  collision avec un cask ");
+			audio.PlayOneShot(caskTaken,25.0f);
 			Destroy(other.gameObject);
 			isWithCask = true;
 			isWithShoe = false;
@@ -187,6 +190,7 @@ public class PlayerController : MonoBehaviour {
 		if(other.gameObject.tag == "Shoe" && !isItemActivated && !isFlyBegin ){
 			//Debug.Log ("***************  collision avec une shoe ");
 			//Destroy(other.gameObject);
+			audio.PlayOneShot(shoesTaken,20.0f);
 			other.gameObject.SetActive(false);
 			isWithShoe = true;
 			isWithCask = false;
@@ -208,7 +212,7 @@ public class PlayerController : MonoBehaviour {
 		if(other.gameObject.tag == "Piece" ){
 			//Debug.Log ("***************  collision avec une piece ");
 			GameController.addPiece();
-            audio.PlayOneShot(coinTaken);
+            audio.PlayOneShot(coinTaken,5.0f);
 			//Destroy(other.gameObject);
 			other.gameObject.SetActive(false);
 		}
@@ -222,6 +226,8 @@ public class PlayerController : MonoBehaviour {
 
 		if(other.gameObject.tag == "Beans" && !isItemActivated && !isFlyBegin){
 			//Debug.Log ("***************  collision avec beans ");
+			//audio.PlayOneShot(beanTaken);
+			audio.PlayOneShot(beanTaken,20.0f);
 			isWithShoe = false;
 			isWithCask = false;
 			isWithBeans = true;
