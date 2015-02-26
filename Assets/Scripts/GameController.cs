@@ -34,6 +34,7 @@ public class GameController : MonoBehaviour {
 	public  static int nbrePieces = 0;
 	public static int nbreDiamond = 0;
 	public static int score = 0;
+	public const int DIAMOND_FOR_PHOENIX_EFFECT = 5;
 
 	private int coeffAltitude = 100;
 	private float altMaxForWinLevel = 150000f;//80000f ou 150000f ;

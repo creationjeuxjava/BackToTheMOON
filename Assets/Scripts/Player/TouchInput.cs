@@ -38,12 +38,12 @@ public class TouchInput : MonoBehaviour {
 					/*** est-ce un double-clic ?****/
 					//double click
 					if(Time.time - lastClickTime < catchTime ){
-						Debug.Log ("double click");
+						//Debug.Log ("double click");
 						lateralDelta = DOUBLE_LATERAL;
 					}
 					//simple click
 					else{
-						Debug.Log ("single click");
+						//Debug.Log ("single click");
 						lateralDelta = SIMPLE_LATERAL;
 					}
 

@@ -148,7 +148,7 @@ public class PlayerController : MonoBehaviour {
 			//else 
 
 			updateVitesse(other.gameObject);
-			
+			GameController.addScore (-5);
 		}
 		if(other.gameObject.tag == "Oiseau" ){
 			//Debug.Log ("***************  collision avec un oiseau ");
