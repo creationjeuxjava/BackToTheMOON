@@ -7,7 +7,7 @@ public class InGGameGUIController : MonoBehaviour {
 
 	public Camera camera;
 
-	Text nbrPiecesText,nbrDiamantsText,altitudeText;
+	Text nbrPiecesText,nbrDiamantsText,altitudeText,score;
 	Image espaceIcone;
 	Animator iconeEspaceAnimator;
 
@@ -25,6 +25,7 @@ public class InGGameGUIController : MonoBehaviour {
 		altitudeText = GameObject.Find ("altitudeText").GetComponent<Text> ();
 		espaceIcone = GameObject.Find ("espaceIcone").GetComponent<Image> ();
 		iconeEspaceAnimator = GameObject.Find ("espaceIcone").GetComponent<Animator> ();
+		score = GameObject.Find ("score").GetComponent<Text> ();
 		
 	
 		panelVitesse = GameObject.Find ("PanelInfosVitesse");
@@ -45,6 +46,7 @@ public class InGGameGUIController : MonoBehaviour {
 		nbrPiecesText.text = "x "+GameController.nbrePieces;
 		nbrDiamantsText.text = "x "+GameController.nbreDiamond;
 		altitudeText.text = GameController.altitude + " m ";
+		score.text = "200";
 
 		/**** gestion de l'icone indiquant si on est dans l'espace ****/
 		if (GameController.isInSpace) {
