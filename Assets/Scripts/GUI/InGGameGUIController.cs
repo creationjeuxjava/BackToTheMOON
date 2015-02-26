@@ -18,6 +18,8 @@ public class InGGameGUIController : MonoBehaviour {
 	Text endText;
 	GameObject NextLevelButton;
 
+	GameObject PhoenixButton;
+
 
 	void Start () {
 		nbrPiecesText = GameObject.Find ("nbrePiecesText").GetComponent<Text> ();
@@ -32,6 +34,8 @@ public class InGGameGUIController : MonoBehaviour {
 		vitessePlayer = GameObject.Find ("infoVitesse").GetComponent<Text> ();
 		panelVitesse.SetActive (false);
 
+		PhoenixButton =  GameObject.Find ("PhoenixButton");
+		PhoenixButton.SetActive (false);
 		NextLevelButton = GameObject.Find ("NextLevelButton");
 		NextLevelButton.SetActive (false);
 		endLevelPanel = GameObject.Find ("endLevelPanel");
@@ -96,14 +100,31 @@ public class InGGameGUIController : MonoBehaviour {
 
 		/*** gestion du message du panel de fin de partie *****/
 		if (!GameController.isInGame) {
-			if(GameController.isGameOver) endText.text = "Vous avez lamentablement perdu...houuuuuu !";
+			if (GameController.isGameOver) {
+				endText.text = "Vous avez lamentablement perdu...houuuuuu !";
+				/** si on a assez de diamants on peut faire effet Phoenix ***/
+				if (GameController.nbreDiamond >= GameController.getDiamondForPhoenix ()) {
+					PhoenixButton.SetActive (true);
+					PhoenixButton.GetComponent<Button>().interactable = true;
+				}
+				else{
+					PhoenixButton.SetActive (true);
+					PhoenixButton.GetComponent<Button>().interactable = false;
+				}
+
+			} 
 			else {
 				endText.text = " Bravo vous etes un dieu de ce jeu ...trop fort !";
 				NextLevelButton.SetActive (true);
 			}
 			endLevelPanel.SetActive (true);
+		} 
+		else {
+			endLevelPanel.SetActive (false);
+			PhoenixButton.SetActive (false);
 		}
 	}
+
 
 	public void replayLevel(){
 		//Application.LoadLevel (0);

@@ -35,6 +35,7 @@ public class GameController : MonoBehaviour {
 	public static int nbreDiamond = 0;
 	public static int score = 0;
 	public const int DIAMOND_FOR_PHOENIX_EFFECT = 5;
+	public const int PHOENIX_EFFECT_COST = 5;
 
 	private int coeffAltitude = 100;
 	private float altMaxForWinLevel = 150000f;//80000f ou 150000f ;
@@ -131,7 +132,7 @@ public class GameController : MonoBehaviour {
 			altitude = foreLayer.transform.position.y * -1 * coeffAltitude;
 			//vitessePlayerTransormee = PlayerController.vitesse.y*-1 * coeffVitesse;
 			//Debug.Log("ISINSpace :"+isInSpace +" Altitude :"+altitude+"Vitesse Player : "+vitesse+" km/h et nbre pièces : "+nbrePieces);
-			//Debug.Log (this+" vitesse joueur "+playerSpeed.y);
+			Debug.Log (this+" vitesse joueur "+playerSpeed.y+" et isInGame : "+isInGame);
 			//Debug.Log ("***************"+this+" vitesse joueur transformée"+vitessePlayerTransormee);
 
 
@@ -232,6 +233,18 @@ public class GameController : MonoBehaviour {
 		isWorldMoving = true;
 	}
 
+	public void makePhoenixEffect(){
+		
+		isInGame = true;
+		isGameOver = false;
+		timeLeftToGameOver = TIME_TO_GAME_OVER;
+		nbreDiamond -= PHOENIX_EFFECT_COST;
+		PlayerController.setVitesseEnterInSpace(-0.3f);
+	}
+
+	public static int getDiamondForPhoenix(){
+		return DIAMOND_FOR_PHOENIX_EFFECT;
+	} 
 	public static void addPiece(){
 		nbrePieces++;
 		GameController.addScore (10);
