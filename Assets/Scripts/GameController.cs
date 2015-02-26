@@ -242,6 +242,7 @@ public class GameController : MonoBehaviour {
 		nbreDiamond -= PHOENIX_EFFECT_COST;
 		PlayerController.setVitesseEnterInSpace(-0.3f);
 		this.GetComponent<SoundsManagerController> ().playSound ("phoenix", 10f);
+		//TODO faire un effet de particules !!
 	}
 
 	public static int getDiamondForPhoenix(){

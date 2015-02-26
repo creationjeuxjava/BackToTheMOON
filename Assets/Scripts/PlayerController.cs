@@ -169,7 +169,7 @@ public class PlayerController : MonoBehaviour {
 
 		if(other.gameObject.tag == "Cask"  && !isItemActivated && !isFlyBegin){
 			//Debug.Log ("***************  collision avec un cask ");
-			audio.PlayOneShot(caskTaken,25.0f);
+			audio.PlayOneShot(caskTaken,35.0f);
 			Destroy(other.gameObject);
 			isWithCask = true;
 			isWithShoe = false;
