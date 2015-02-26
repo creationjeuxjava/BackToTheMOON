@@ -54,6 +54,9 @@
 	<object name="world1/nuage2" nombre="15" pool="true" layer="middleLayer"> 
 		<Altitude max="41000" min="-20"></Altitude>
 	</object>
+	<object name="world1/nuageblanc" nombre="15" pool="true" layer="backGround"> 
+		<Altitude max="50000" min="20000"></Altitude>
+	</object>
 	
 	
 	<!--* *****  Dans l'espace ******-->
