@@ -5,7 +5,7 @@
     <tutorial>Evitez les obstacles et récupérez des bonus pour atteindre l'autre planète !!</tutorial>
 	
 	<!-- Si pool = true, le nombre n'est pas pris en compte !!   
-	altitude espace = 41 000 m  et fin niveau 80 000m-->
+	altitude espace = 41 000 m  et fin niveau 150 000m-->
 	
 	<!-- ************ *****  LEs items ******* -->
 	 <object name="world1/cask" nombre="10" pool="false" layer="foreGround"> 
