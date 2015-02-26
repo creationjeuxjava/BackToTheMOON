@@ -27,7 +27,7 @@ public class TouchInput : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (isInputActive) {
+		if (isInputActive && !SystemInfo.supportsAccelerometer) {
 			if (PlayerController.isFlying && !GameController.isGamePaused () && GameController.isInGame 
 			    && !GameController.isGameOver && !GameController.isOverGUI() && !PlayerController.isFlyBegin) {
 

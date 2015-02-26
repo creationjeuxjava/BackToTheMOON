@@ -20,7 +20,7 @@ public class AccelerometerInput : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (isInputActive) {
+		if (isInputActive && SystemInfo.supportsAccelerometer) { //
 			if (PlayerController.isFlying && !GameController.isGamePaused () && GameController.isInGame 
 			    && !GameController.isGameOver && !GameController.isOverGUI() && !PlayerController.isFlyBegin) {
 
@@ -34,7 +34,7 @@ public class AccelerometerInput : MonoBehaviour {
 
 				/*** met à jour l'animation de déplacement ****/
 				if(dir.x <= -0.0001f ){
-					if(screenPos.x > 20){
+					if(screenPos.x > 30){
 
 						anim.SetTrigger ("toLeft");
 					}	
@@ -45,7 +45,7 @@ public class AccelerometerInput : MonoBehaviour {
 				}
 				else if(dir.x >= 0.0001f ){
 
-					if(screenPos.x < Screen.width-30 ){
+					if(screenPos.x < Screen.width-40 ){
 						
 						anim.SetTrigger ("toRight");
 					}	
