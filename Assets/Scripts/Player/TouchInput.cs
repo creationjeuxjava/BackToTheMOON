@@ -11,12 +11,13 @@ public class TouchInput : MonoBehaviour {
 	private Vector3 translation;
 	private Animator anim;
 	private float lateralDelta = 2f;//0.15f
-	private Vector3 screenPos;
+	private Vector3 screenPos,futurScreenPos;
 
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
 		translation = Vector3.zero;
+		futurScreenPos = Vector3.zero;
 	}
 	
 	// Update is called once per frame
@@ -50,7 +51,13 @@ public class TouchInput : MonoBehaviour {
 				}//fin input
 				//transform.Translate(translation);
 				if(!isGoingOutScreen()){
-					rigidbody2D.velocity = translation * Time.smoothDeltaTime * speed;
+					if (  (translation.x < 0 && transform.position.x > touchPos.x) ||
+					    (translation.x > 0 && transform.position.x < touchPos.x) ){
+
+							rigidbody2D.velocity = translation * Time.smoothDeltaTime * speed;
+					}
+
+
 				}
 
 			}	
