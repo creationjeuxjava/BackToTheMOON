@@ -241,6 +241,7 @@ public class GameController : MonoBehaviour {
 		timeLeftToGameOver = TIME_TO_GAME_OVER;
 		nbreDiamond -= PHOENIX_EFFECT_COST;
 		PlayerController.setVitesseEnterInSpace(-0.3f);
+		this.GetComponent<SoundsManagerController> ().playSound ("phoenix", 10f);
 	}
 
 	public static int getDiamondForPhoenix(){
