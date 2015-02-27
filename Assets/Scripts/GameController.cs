@@ -156,7 +156,7 @@ public class GameController : MonoBehaviour {
 
 	/*** vérifie s'il reste du temps avant de lancer le gameOVER ...utile qd le perso redescend ****/
 	private void checkTimeToGameOverLeft(){
-		
+		if(!audio.isPlaying && !isGameOver)audio.Play ();
 		timeLeftToGameOver -= Time.deltaTime;
 		if(timeLeftToGameOver < 0)
 		{

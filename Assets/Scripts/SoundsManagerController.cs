@@ -4,12 +4,13 @@ using System.Collections.Generic;
 
 public class SoundsManagerController : MonoBehaviour {
 
-	public AudioClip phoenix;
+	public AudioClip phoenix,alertGameOver;
 
 	private Dictionary<string,AudioClip> dicoSounds = new Dictionary<string,AudioClip>();
 	// Use this for initialization
 	void Start () {
 		dicoSounds.Add ("phoenix",phoenix);
+		dicoSounds.Add ("alertGameOver",alertGameOver);
 	}
 	
 

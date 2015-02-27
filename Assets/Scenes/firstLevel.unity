@@ -4636,6 +4636,22 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 313015600}
+    - target: {fileID: 8251598, guid: dc639b337b9b8f2408e9e472e0fe7efd, type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251598, guid: dc639b337b9b8f2408e9e472e0fe7efd, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f7a86f66f64320d4c86c9b039d889fbc, type: 3}
+    - target: {fileID: 11451598, guid: dc639b337b9b8f2408e9e472e0fe7efd, type: 2}
+      propertyPath: alertGameOver
+      value: 
+      objectReference: {fileID: 8300000, guid: f7a86f66f64320d4c86c9b039d889fbc, type: 3}
+    - target: {fileID: 8251598, guid: dc639b337b9b8f2408e9e472e0fe7efd, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc639b337b9b8f2408e9e472e0fe7efd, type: 2}
   m_RootGameObject: {fileID: 1620950173}
@@ -9152,6 +9168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phoenix: {fileID: 8300000, guid: fb65ef441d9cda54a9f17102503b1156, type: 3}
+  alertGameOver: {fileID: 8300000, guid: f7a86f66f64320d4c86c9b039d889fbc, type: 3}
 --- !u!114 &1620950176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9173,11 +9190,11 @@ AudioSource:
   m_GameObject: {fileID: 1620950173}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: f7a86f66f64320d4c86c9b039d889fbc, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Priority: 128
   DopplerLevel: 1
