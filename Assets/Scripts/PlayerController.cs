@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour {
 	public static bool isFlyBegin = false;
     public AudioClip coinTaken;
     public AudioClip diamondTaken;
-	public AudioClip impact,beanTaken,shoesTaken,caskTaken;
+	public AudioClip impact,beanTaken,shoesTaken,caskTaken,casseMeteor;
 	private float timeLeft = 5.0f;
 
 	public static Vector3 actualPosition;
@@ -153,7 +153,9 @@ public class PlayerController : MonoBehaviour {
 			//on meurt ?
 			//if(isWithCask) Destroy(other.gameObject);
 			//else 
-			audio.PlayOneShot(impact,15.0f);
+			if(!isWithCask)
+				audio.PlayOneShot(impact,15.0f);
+			//TODO else   jouer un autre son du style "aie un moustique m'a piqué !!"
 
 			updateVitesse(other.gameObject);
 			GameController.addScore (-5);
@@ -288,6 +290,7 @@ public class PlayerController : MonoBehaviour {
 			} 
 			//explose le météorite ==> methode spawnAsteroid !!
 			if(obj.tag == "Meteorite"){
+				audio.PlayOneShot(casseMeteor,20.0f);
 				GameObject gameControlller = GameObject.FindGameObjectWithTag ("GameController");
 				gameControlller.GetComponent<LoadLevelcontroller> ().spawnAsteroid (obj);
 			}	

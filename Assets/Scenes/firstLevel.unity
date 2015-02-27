@@ -1630,6 +1630,7 @@ MonoBehaviour:
   beanTaken: {fileID: 8300000, guid: 4a46182ce36a1804e98334a5737416d6, type: 3}
   shoesTaken: {fileID: 8300000, guid: 85786f92f35d88d489c3fdfd29b1d512, type: 3}
   caskTaken: {fileID: 8300000, guid: 30be6d4a288c6054084ed908ddfffdc7, type: 3}
+  casseMeteor: {fileID: 8300000, guid: 5d1d0a6a30f77a641b2aa82329e5cf6a, type: 3}
   currentState: 2
 --- !u!61 &313015604
 BoxCollider2D:
@@ -4652,6 +4653,10 @@ Prefab:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8251598, guid: dc639b337b9b8f2408e9e472e0fe7efd, type: 2}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc639b337b9b8f2408e9e472e0fe7efd, type: 2}
   m_RootGameObject: {fileID: 1620950173}
@@ -7464,6 +7469,10 @@ Prefab:
       propertyPath: caskTaken
       value: 
       objectReference: {fileID: 8300000, guid: 30be6d4a288c6054084ed908ddfffdc7, type: 3}
+    - target: {fileID: 11481008, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
+      propertyPath: casseMeteor
+      value: 
+      objectReference: {fileID: 8300000, guid: 5d1d0a6a30f77a641b2aa82329e5cf6a, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0e8516c41cce0749b67ab215344a914, type: 2}
   m_RootGameObject: {fileID: 313015600}
