@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour {
 	public static bool isWithShoe = false;
 	public static bool isWithBeans = false;
 	private bool isItemActivated = false;
+	public static bool isInvicible = false;
 	public static bool isFlyBegin = false;
     public AudioClip coinTaken;
     public AudioClip diamondTaken;
@@ -32,6 +33,8 @@ public class PlayerController : MonoBehaviour {
 	private float gravityLevel;
 	private float startFlyTime;
 	private const float MAX_VITESSE = -0.3f;
+	private const float INVICIBILTY_TIME = 2f;
+	private float timeLeftInvicibility;
 	private float gravityEffect;
 	private float timeSinceStart;
 
@@ -69,6 +72,8 @@ public class PlayerController : MonoBehaviour {
 		isFlying = false;
 		isFlyBegin = false;
 		translation = Vector3.zero;
+
+		timeLeftInvicibility = INVICIBILTY_TIME;
 	}
 	
 	// Update is called once per frame
@@ -121,6 +126,7 @@ public class PlayerController : MonoBehaviour {
 				actualPosition = transform.position;
 				
 				if(isItemActivated) this.checkTimeItemLeft();
+				if(isInvicible) this.checkTimeInvicibility();
 
 			}
 
@@ -141,8 +147,8 @@ public class PlayerController : MonoBehaviour {
 	/**** détection des collisions avec les GO istrigger = false ****/
 	void OnCollisionEnter2D(Collision2D other){
 		
-		if(other.gameObject.tag == "Meteorite" || other.gameObject.tag == "Colonne" 
-		   || other.gameObject.tag == "Triangle" || other.gameObject.tag == "MiniMeteorite"){
+		if( (other.gameObject.tag == "Meteorite" || other.gameObject.tag == "Colonne" 
+		   || other.gameObject.tag == "Triangle" || other.gameObject.tag == "MiniMeteorite") && !isInvicible){
 			//Debug.Log ("***************  collision avec un météorite ");
 			//on meurt ?
 			//if(isWithCask) Destroy(other.gameObject);
@@ -152,7 +158,7 @@ public class PlayerController : MonoBehaviour {
 			updateVitesse(other.gameObject);
 			GameController.addScore (-5);
 		}
-		if(other.gameObject.tag == "Oiseau" ){
+		if(other.gameObject.tag == "Oiseau" && !isInvicible){
 			//Debug.Log ("***************  collision avec un oiseau ");
 			updateVitesse(other.gameObject);
 			
@@ -243,7 +249,16 @@ public class PlayerController : MonoBehaviour {
 		}
 
 	}
-
+	private void checkTimeInvicibility(){
+		
+		timeLeftInvicibility -= Time.deltaTime;
+		if(timeLeftInvicibility < 0)
+		{
+			isInvicible = false;
+			timeLeftInvicibility = INVICIBILTY_TIME;
+			//Debug.Log (this.name + " on aperdu !!!!!!!!!!!!!!!!!!!!!!!!!!");
+		}
+	}
 
 	private void boostVitesse(float boostValue){
 		vitesse.y += vitesse.y * boostValue;

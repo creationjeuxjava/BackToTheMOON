@@ -56,6 +56,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: isInvicible
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
@@ -104,6 +110,46 @@ Transition:
     m_ConditionEvent: battements
     m_EventTreshold: 0
     m_ExitTime: .75
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1101 &110109594
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110281510}
+  m_DstState: {fileID: 110271410}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isInvicible
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1101 &110109768
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110271410}
+  m_DstState: {fileID: 110281510}
+  m_TransitionDuration: .166666672
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: isInvicible
+    m_EventTreshold: 0
+    m_ExitTime: .833333313
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -405,7 +451,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: isInvicible
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -465,7 +511,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: isInvicible
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -849,6 +895,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110271410
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: playerInvicible
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 76a51e88d2ac04a43b56bf465e8c6d8b, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: -288, y: -288, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110281510
 State:
   m_ObjectHideFlags: 3
@@ -961,9 +1022,14 @@ StateMachine:
   - {fileID: 110293129}
   - {fileID: 110233187}
   - {fileID: 110212386}
+  - {fileID: 110271410}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
+    data:
+      first: {fileID: 110271410}
+      second:
+      - {fileID: 110109768}
     data:
       first: {fileID: 110281510}
       second:
@@ -975,6 +1041,7 @@ StateMachine:
       - {fileID: 110140122}
       - {fileID: 110118800}
       - {fileID: 110189512}
+      - {fileID: 110109594}
     data:
       first: {fileID: 110200000}
       second:
