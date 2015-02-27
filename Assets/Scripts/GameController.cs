@@ -163,6 +163,7 @@ public class GameController : MonoBehaviour {
 			isInGame = false;
 			isGameOver = true;
 			GameController.Save();
+			audio.Stop();
 			//Debug.Log (this.name + " on aperdu !!!!!!!!!!!!!!!!!!!!!!!!!!");
 		}
 	}
