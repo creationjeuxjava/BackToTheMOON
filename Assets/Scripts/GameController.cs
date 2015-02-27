@@ -242,9 +242,8 @@ public class GameController : MonoBehaviour {
 		nbreDiamond -= PHOENIX_EFFECT_COST;
 		PlayerController.setVitesseEnterInSpace(-0.3f);
 		this.GetComponent<SoundsManagerController> ().playSound ("phoenix", 10f);
-		//TODO faire un effet de particules !!
-		//TODO le rendre invicible sur 2 à 3 s
-		PlayerController.isInvicible = true;
+
+		GameObject.Find ("Player").GetComponent<PlayerController> ().setInvicibility ();
 	}
 
 	public static int getDiamondForPhoenix(){

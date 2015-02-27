@@ -183,6 +183,7 @@ public class PlayerController : MonoBehaviour {
 			timeLeft = 5f;
 			isItemActivated = true;
 			anim.SetBool("withCask",true);
+			anim.SetBool("withShoes",false);
 
 			GameController.addScore (50);
 			//Sprite casqueSprite = Resources.Load("Sprites/persocasque", typeof(Sprite)) as Sprite;
@@ -204,6 +205,7 @@ public class PlayerController : MonoBehaviour {
 			timeLeft = 5f;
 			isItemActivated = true;
 			anim.SetBool("withShoes",true);
+			anim.SetBool("withCask",false);
 
 			GameController.addScore (10);
 			//Sprite shoeSprite = Resources.Load("Sprites/persoshoes", typeof(Sprite)) as Sprite;
@@ -249,6 +251,15 @@ public class PlayerController : MonoBehaviour {
 		}
 
 	}
+
+	public void setInvicibility(){
+		resetPlayerState ();
+		//TODO faire un effet de particules !!
+		//Rend invicible sur 2 à 3 s
+		isInvicible = true;
+		anim.SetBool("isInvicible",true);
+		Debug.Log (this.name + " le player est invicible pour : "+INVICIBILTY_TIME+" s");
+	}
 	private void checkTimeInvicibility(){
 		
 		timeLeftInvicibility -= Time.deltaTime;
@@ -256,7 +267,8 @@ public class PlayerController : MonoBehaviour {
 		{
 			isInvicible = false;
 			timeLeftInvicibility = INVICIBILTY_TIME;
-			//Debug.Log (this.name + " on aperdu !!!!!!!!!!!!!!!!!!!!!!!!!!");
+			anim.SetBool("isInvicible",false);
+			Debug.Log (this.name + " le player n'est plus invicible !!");
 		}
 	}
 
