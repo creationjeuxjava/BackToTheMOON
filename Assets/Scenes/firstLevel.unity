@@ -135,7 +135,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400702, guid: 2d02954e5b6adda438a2fa6411069a98, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -328.399994
+      value: -282.5
       objectReference: {fileID: 0}
     - target: {fileID: 400702, guid: 2d02954e5b6adda438a2fa6411069a98, type: 2}
       propertyPath: m_LocalRotation.x
@@ -7763,7 +7763,7 @@ Camera:
   field of view: 60
   orthographic: 1
   orthographic size: 6.12719345
-  m_Depth: 1
+  m_Depth: 4
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -8912,6 +8912,10 @@ Prefab:
     - target: {fileID: 430624, guid: ebd2b0b797295a34591be7ef6cb19865, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2030622, guid: ebd2b0b797295a34591be7ef6cb19865, type: 2}
+      propertyPath: m_Depth
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ebd2b0b797295a34591be7ef6cb19865, type: 2}
@@ -10595,7 +10599,7 @@ Transform:
   m_PrefabInternal: {fileID: 12450707}
   m_GameObject: {fileID: 1832133588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -33.7000008, y: 25.8999996, z: -328.399994}
+  m_LocalPosition: {x: -33.7000008, y: 25.8999996, z: -282.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1527438062}
