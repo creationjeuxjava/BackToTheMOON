@@ -14,8 +14,4 @@ public class PlayButtonManager : MonoBehaviour {
 	public void loadFirstLevel() {
 		Application.LoadLevel ("firstLevel");
 	}
-
-	public void loadSecondLevel() {
-		Application.LoadLevel ("secondLevel");
-	}
 }
