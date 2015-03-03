@@ -4,26 +4,34 @@ using System.Collections;
 public class PlayButtonManager : MonoBehaviour {
 
 	private string selectedLevel;
-
+	private GameObject barSelection;
+	
 	// Use this for initialization
-	public void StartGame () {
-
+	public void Start () {
+		barSelection = GameObject.Find("/Canvas/HandBackground/LevelScreen/BarSelection");
+		barSelection.SetActive(false);
 	}
 
-	public void loadLevel(string refLevel) {
+	public void LoadLevel(string refLevel) {
 		if (refLevel == selectedLevel) {
-			loadSelectedLevel();
+			LoadSelectedLevel();
 		} else {
-			selectedLevel = refLevel;
+			SelectLevel(refLevel);
 		}
 	}
 
-	public void loadSelectedLevel() {
+	public void LoadSelectedLevel() {
 		if(selectedLevel != null)
 			Application.LoadLevel (selectedLevel);
 	}
 
-	public void unsetSelectedLevel() {
+	public void SelectLevel(string levelName) {
+		selectedLevel = levelName;
+		barSelection.SetActive (true);
+	}
+
+	public void UnsetSelectedLevel() {
 		selectedLevel = null;
+		barSelection.SetActive (false);
 	}
 }
