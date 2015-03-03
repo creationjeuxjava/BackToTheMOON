@@ -5,11 +5,15 @@ public class PlayButtonManager : MonoBehaviour {
 
 	private string selectedLevel;
 	private GameObject barSelection;
+	private GameObject levelScreen;
 	
 	// Use this for initialization
 	public void Start () {
+
 		barSelection = GameObject.Find("/Canvas/HandBackground/LevelScreen/BarSelection");
 		barSelection.SetActive(false);
+		levelScreen = GameObject.Find ("/Canvas/HandBackground/LevelScreen");
+		levelScreen.SetActive(false);
 	}
 
 	public void LoadLevel(string refLevel) {
@@ -33,5 +37,9 @@ public class PlayButtonManager : MonoBehaviour {
 	public void UnsetSelectedLevel() {
 		selectedLevel = null;
 		barSelection.SetActive (false);
+	}
+
+	public void FadeInLevelScreen() {
+		levelScreen.SetActive (true);
 	}
 }
