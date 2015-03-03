@@ -3,15 +3,27 @@ using System.Collections;
 
 public class PlayButtonManager : MonoBehaviour {
 
-	public Animator zoomAnimator;
+	private string selectedLevel;
+
 	// Use this for initialization
 	public void StartGame () {
-		zoomAnimator = GameObject.Find ("Canvas/HandBackground").GetComponent<Animator>();
-		zoomAnimator.SetBool ("zoom", false);
-		Invoke ("loadFirstLevel",1);
+
 	}
 
-	public void loadFirstLevel() {
-		Application.LoadLevel ("firstLevel");
+	public void loadLevel(string refLevel) {
+		if (refLevel == selectedLevel) {
+			loadSelectedLevel();
+		} else {
+			selectedLevel = refLevel;
+		}
+	}
+
+	public void loadSelectedLevel() {
+		if(selectedLevel != null)
+			Application.LoadLevel (selectedLevel);
+	}
+
+	public void unsetSelectedLevel() {
+		selectedLevel = null;
 	}
 }
