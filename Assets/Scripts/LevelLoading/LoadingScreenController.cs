@@ -8,7 +8,7 @@ public class LoadingScreenController : MonoBehaviour {
 	public bool isPreloadingRequire = true;
 
 
-	public static int numLevel = 1;
+	public static int numLevel = 2;
 	public static LoadingScreenController control;// c'est la clé pour passer des infos aux autres scènes !!
 
 
