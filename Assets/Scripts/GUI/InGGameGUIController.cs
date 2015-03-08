@@ -128,6 +128,7 @@ public class InGGameGUIController : MonoBehaviour {
 
 	public void replayLevel(){
 		//Application.LoadLevel (0);
+        GameController.Save();
 		Application.LoadLevel ("firstLevel");
 	}
 
