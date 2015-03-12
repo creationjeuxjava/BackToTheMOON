@@ -75,7 +75,7 @@ public class TouchInput : MonoBehaviour {
 					    //(translation.x > 0 && transform.position.x < touchPos.x) ){
 
 							rigidbody2D.velocity = translation * Time.smoothDeltaTime * speed;
-					Debug.Log("*************   on deplace le player  translation : "+rigidbody2D.velocity.x);
+					//Debug.Log("*************   on deplace le player  translation : "+rigidbody2D.velocity.x);
 					//}
 
 

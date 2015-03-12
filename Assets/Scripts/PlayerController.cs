@@ -95,11 +95,7 @@ public class PlayerController : MonoBehaviour {
 				//Debug.Log("------------------------ isflybegin: "+isFlyBegin + " item activated ? "+isItemActivated);
 				controlMaxVitessePlayer();
 			}
-			else{
-				/*playerSpeed.x = PlayerController.vitesse.x;
-			playerSpeed.y = PlayerController.vitesse.y;
-			playerSpeed.z = PlayerController.vitesse.z;*/
-				
+			else{				
 				//Debug.Log("Vitesse globale avt control (inSpace): "+playerSpeed.y);
 				controlMaxVitessePlayer();
 			}
@@ -107,17 +103,18 @@ public class PlayerController : MonoBehaviour {
 			if(!GameController.isOverGUI()){
 				if(!audio.isPlaying)	audio.Play();
 				
-				/*** correction si trop bas...suite aux collisions ****/
-					//if(screenPos.y <= 100){//40
-					if(transform.position.y <= -28){//voir ds le world (scene) directement
+				/*** correction si trop bas...suite aux collisions ****/					
+					Vector2 screenPlayerPos = camera.WorldToScreenPoint(transform.position);
+					if(screenPlayerPos.y < (2 * Screen.height / 10) ){
 						
-						transform.position = new Vector3(transform.position.x,-26,0);
-						rigidbody2D.velocity = Vector3.zero;
+						//transform.position = new Vector3(transform.position.x,-26,0);
+						transform.position = new Vector3(transform.position.x,camera.ScreenToViewportPoint(new Vector3(0,2 * Screen.height / 10,0)).y,0);
+						//rigidbody2D.velocity = Vector3.zero;
 					}
 					else{
 						transform.position = new Vector3(transform.position.x,transform.position.y,0);
-						rigidbody2D.velocity = Vector3.zero;
-						//Debug.Log("PlayerController : on update normalement !");
+						//rigidbody2D.velocity = Vector3.zero;
+						
 					}
 					
 
