@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LauncherController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerController.cs">
     <Files>
-      <File FileName="Assets\Scripts\LauncherController.cs" Line="23" Column="39" />
+      <File FileName="Assets\Scripts\LauncherController.cs" Line="43" Column="1" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="111" Column="86" />
+      <File FileName="Assets\Scripts\Player\TouchInput.cs" Line="74" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
