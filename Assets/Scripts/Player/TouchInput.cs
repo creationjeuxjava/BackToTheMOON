@@ -52,7 +52,7 @@ public class TouchInput : MonoBehaviour {
 					}
 					else{
 						if(!PlayerController.isFlyBegin){
-							Debug.Log("*************   on deplace le player !");
+
 							if(touchPos.x < transform.position.x ){
 								translation.x = -lateralDelta;
 								anim.SetTrigger ("toLeft");
@@ -70,11 +70,13 @@ public class TouchInput : MonoBehaviour {
 				}//fin input
 				//transform.Translate(translation);
 				if(!isGoingOutScreen()){
-					if (  (translation.x < 0 && transform.position.x > touchPos.x) ||
-					    (translation.x > 0 && transform.position.x < touchPos.x) ){
+
+					//if (  (translation.x < 0 && transform.position.x > touchPos.x) ||
+					    //(translation.x > 0 && transform.position.x < touchPos.x) ){
 
 							rigidbody2D.velocity = translation * Time.smoothDeltaTime * speed;
-					}
+					Debug.Log("*************   on deplace le player  translation : "+rigidbody2D.velocity.x);
+					//}
 
 
 				}
