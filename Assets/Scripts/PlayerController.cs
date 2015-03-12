@@ -351,7 +351,7 @@ public class PlayerController : MonoBehaviour {
 	/*** permet de savoir si la phase de décollage est terminée en animation ...****/
 	/*** fonction appelée par l'animator ****/
 	private void stopStartFly(){
-		//Debug.Log ("le fly enclenché !!");
+		//Debug.Log ("le fly terminé !!");
 		isFlyBegin = false;
 		currentState = State.naked;
 		//ActionButtonManager.updateIcon(currentState);

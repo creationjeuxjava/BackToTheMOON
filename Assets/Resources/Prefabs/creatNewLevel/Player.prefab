@@ -15,6 +15,8 @@ GameObject:
   - 82: {fileID: 8281008}
   - 95: {fileID: 9581008}
   - 114: {fileID: 11481012}
+  - 114: {fileID: 11411616}
+  - 114: {fileID: 11411618}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -29,7 +31,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0599999987, y: -27.6000004, z: -12.2600002}
+  m_LocalPosition: {x: -.0599999987, y: -27.5100002, z: -12.2600002}
   m_LocalScale: {x: .699999988, y: .699999988, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -42,7 +44,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 181008}
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: .0199999996
   m_GravityScale: 0
   m_FixedAngle: 1
   m_IsKinematic: 0
@@ -59,7 +61,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: 1.32000005, y: 2.26999998}
-  m_Center: {x: .0799999982, y: 0}
+  m_Center: {x: .0799999982, y: -.810000002}
 --- !u!82 &8281008
 AudioSource:
   m_ObjectHideFlags: 1
@@ -68,13 +70,13 @@ AudioSource:
   m_GameObject: {fileID: 181008}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: dcec7965603c4c645872e5a0c771941e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5e9c50e58fb20534b9c29cd730d4c998, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .197999999
+  m_Volume: .100000001
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
-  Priority: 128
+  Priority: 57
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -133,6 +135,34 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11411616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da19fd3dbac8f4e4991273f3a7398428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInputActive: 1
+  speed: 50
+  camera: {fileID: 0}
+--- !u!114 &11411618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba9dddb7807c4642b7146e3aaf00114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInputActive: 1
+  speed: 120
+  camera: {fileID: 0}
 --- !u!114 &11481008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,7 +176,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fumee: {fileID: 115168, guid: 5a97962f7d5ba4df0823334b52c7c02c, type: 2}
   camera: {fileID: 0}
-  gravityReductionfactor: 100000
+  gravityReductionfactor: 700000
+  nbrePieces: 0
+  nbreDiamants: 0
+  coinTaken: {fileID: 8300000, guid: b4f58bdf228c6bc45b46a0066aae25f6, type: 3}
+  diamondTaken: {fileID: 8300000, guid: 886c7093936cb6b46b0932640e5e900a, type: 3}
+  impact: {fileID: 8300000, guid: f982986206176df4cb9845b56861c5c1, type: 3}
+  beanTaken: {fileID: 8300000, guid: 4a46182ce36a1804e98334a5737416d6, type: 3}
+  shoesTaken: {fileID: 8300000, guid: 85786f92f35d88d489c3fdfd29b1d512, type: 3}
+  caskTaken: {fileID: 8300000, guid: 30be6d4a288c6054084ed908ddfffdc7, type: 3}
+  casseMeteor: {fileID: 8300000, guid: 5d1d0a6a30f77a641b2aa82329e5cf6a, type: 3}
   currentState: 2
 --- !u!114 &11481012
 MonoBehaviour:

@@ -33,7 +33,7 @@ public class TouchInput : MonoBehaviour {
 
 				if (Input.GetMouseButtonDown (0)){//fonctionne aussi sur Android !!
 					touchPos = camera.ScreenToWorldPoint(Input.mousePosition );
-					//Debug.Log("*************   Clic en  : "+touchPos+" et player en : "+transform.position.x);
+					Debug.Log("*************   Clic en  : "+touchPos+" et player en : "+transform.position.x);
 
 					/*** est-ce un double-clic ?****/
 					//double click
@@ -52,6 +52,7 @@ public class TouchInput : MonoBehaviour {
 					}
 					else{
 						if(!PlayerController.isFlyBegin){
+							Debug.Log("*************   on deplace le player !");
 							if(touchPos.x < transform.position.x ){
 								translation.x = -lateralDelta;
 								anim.SetTrigger ("toLeft");

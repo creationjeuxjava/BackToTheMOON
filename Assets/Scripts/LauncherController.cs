@@ -20,7 +20,7 @@ public class LauncherController : MonoBehaviour {
 	/*** au clic sur le canon on fait "décoller" le pplayer *****/
 	void OnMouseDown()//fonctionne aussi sur android !!
 	{
-		Debug.Log ("on touche le launcher");
+		//Debug.Log ("on touche le launcher");
 		anim.SetTrigger ("fire");
 		
 	}
@@ -36,7 +36,7 @@ public class LauncherController : MonoBehaviour {
 		//particules.transform.parent = GameController.world.transform;
 		
 		
-		Debug.Log ("on launchIt");
+		//Debug.Log ("on launchIt");
 		
 	}
 }
