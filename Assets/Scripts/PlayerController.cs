@@ -108,7 +108,7 @@ public class PlayerController : MonoBehaviour {
 					if(screenPlayerPos.y < (2 * Screen.height / 10) ){
 						
 						//transform.position = new Vector3(transform.position.x,-26,0);
-						transform.position = new Vector3(transform.position.x,camera.ScreenToViewportPoint(new Vector3(0,2 * Screen.height / 10,0)).y,0);
+						transform.position = new Vector3(transform.position.x,camera.ScreenToWorldPoint(new Vector3(0,2 * Screen.height / 10,0)).y,0);
 						//rigidbody2D.velocity = Vector3.zero;
 					}
 					else{
