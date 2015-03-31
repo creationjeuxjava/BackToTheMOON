@@ -10,13 +10,19 @@
 	</object>-->
 	<object name="world1/shoe" nombre="30" pool="true" layer="foreGround">
 		<Altitude max="60000" min="-20"></Altitude>
-	</object>	
-	<object name="commonPrefabs/beans" nombre="50" pool="true" layer="foreGround">
+	</object>
+  	<object name="commonPrefabs/beans" nombre="50" pool="true" layer="foreGround">
 		<Altitude max="81000" min="0"></Altitude>
 	</object>
 	<object name="commonPrefabs/piece" nombre="50" pool="true" layer="foreGround">
 		<Altitude max="81000" min="10"></Altitude>
 	</object>
+    <object name="world2/fireBall" nombre="150" pool="true" layer="foreGround">
+      <Altitude max="81000" min="10"></Altitude>
+    </object>
+    <object name="world2/steam" nombre="150" pool="true" layer="foreGround">
+      <Altitude max="81000" min="10"></Altitude>
+    </object>
 	
 	<!-- ** *****  Avant le ciel ******* -->		
     <!--<object name="world1/oiseau" nombre="15" pool="false" layer="foreGround">	
@@ -37,6 +43,7 @@
 	<object name="world1/nuage2" nombre="15" pool="true" layer="middleLayer"> 
 		<Altitude max="41000" min="-20"></Altitude>
 	</object>
+    
 	
 	
 	<!--* *****  Dans l'espace ******-->
