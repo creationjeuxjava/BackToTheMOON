@@ -30,23 +30,24 @@ public class LoadingScreenController : MonoBehaviour {
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		if(isPreloadingRequire){
 			StartCoroutine(waitSeconds (waitTime));
-
 		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
 		//TODO : passage en aléatoire des infos : descriptif d'items ou autre du jeu (tutoriel en attente !!)
 	}
 
 	IEnumerator waitSeconds (float waitTime)
 	{
 		yield return new WaitForSeconds (waitTime);
-		StartCoroutine(LoadLevel (numLevel));//TODO : à remplacer par la variable "numLevel"
+		StartCoroutine(LoadLevel (numLevel));
 	}
 
 	IEnumerator LoadLevel(int numLevel) {
 		//AsyncOperation async = Application.LoadLevelAsync("firstLevel");
+		Debug.Log (numLevel);
 		async = Application.LoadLevelAsync(numLevel);
 
 		//async = Application.LoadLevelAsync("firstLevel");//TODO à changer  par le numéro du bon monde à charger
@@ -56,7 +57,6 @@ public class LoadingScreenController : MonoBehaviour {
 
 	/*** appel static depuis le screen des Level, juste avant le chargement de la scène "loadingScreen" ****/
 	public static void setNumLevel(int numeroLevel){
-
 		numLevel = numeroLevel;
 	}
 }
