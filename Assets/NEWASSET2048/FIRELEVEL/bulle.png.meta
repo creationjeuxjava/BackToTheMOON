@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: 6f4fb27a51ede49629ac3712a91cd5f8
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mondefeu_00001
+    21300002: mondefeu_00002
+    21300004: mondefeu_00003
+    21300006: mondefeu_00004
+    21300008: mondefeu_00005
+    21300010: mondefeu_00006
+    21300012: mondefeu_00007
+    21300014: mondefeu_00008
+    21300016: mondefeu_00009
+    21300018: mondefeu_00010
+    21300020: mondefeu_00011
+    21300022: mondefeu_00012
+    21300024: mondefeu_00013
+    21300026: mondefeu_00014
+    21300028: mondefeu_00015
+    21300030: mondefeu_00016
+    21300032: mondefeu_00017
+    21300034: mondefeu_00018
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: mondefeu_00001
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 16
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 65, y: 280}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00002
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 11
+        width: 5
+        height: 3
+      alignment: 9
+      pivot: {x: 13.3999996, y: 93.3333359}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00003
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 7
+        height: 4
+      alignment: 9
+      pivot: {x: 9.71428585, y: 70}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00004
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 11
+        width: 11
+        height: 6
+      alignment: 9
+      pivot: {x: 6.36363649, y: 46.6666679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00005
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 10
+        width: 15
+        height: 8
+      alignment: 9
+      pivot: {x: 4.80000019, y: 35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00006
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 23
+        width: 19
+        height: 10
+      alignment: 9
+      pivot: {x: 3.89473677, y: 28}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00007
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 20
+        width: 23
+        height: 13
+      alignment: 9
+      pivot: {x: 3.30434775, y: 21.5384617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00008
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 18
+        width: 28
+        height: 15
+      alignment: 9
+      pivot: {x: 2.78571439, y: 18.666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00009
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 83
+        width: 32
+        height: 17
+      alignment: 9
+      pivot: {x: 2.5, y: 16.4705887}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00010
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 83
+        width: 36
+        height: 19
+      alignment: 9
+      pivot: {x: 2.27777767, y: 14.7368422}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00011
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 152
+        width: 40
+        height: 22
+      alignment: 9
+      pivot: {x: 2.0999999, y: 12.727273}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00012
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 150
+        width: 44
+        height: 24
+      alignment: 9
+      pivot: {x: 1.9545455, y: 11.666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00013
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 149
+        width: 47
+        height: 25
+      alignment: 9
+      pivot: {x: 1.87234044, y: 11.1999998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00014
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 68
+        width: 50
+        height: 27
+      alignment: 9
+      pivot: {x: 1.77999997, y: 10.3703699}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00015
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 67
+        width: 53
+        height: 28
+      alignment: 9
+      pivot: {x: 1.71698117, y: 10}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00016
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 145
+        width: 55
+        height: 29
+      alignment: 9
+      pivot: {x: 1.67272723, y: 9.65517235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00017
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 144
+        width: 56
+        height: 30
+      alignment: 9
+      pivot: {x: 1.64285719, y: 9.33333302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mondefeu_00018
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 64
+        width: 56
+        height: 30
+      alignment: 9
+      pivot: {x: 1.64285719, y: 9.33333302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
