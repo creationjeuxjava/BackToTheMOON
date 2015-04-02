@@ -6,9 +6,7 @@ public class LoadingScreenController : MonoBehaviour {
 	AsyncOperation async;
 	public float waitTime = 2f;
 	public bool isPreloadingRequire = true;
-
-
-	public static int numLevel = 1;
+	public static string nameLevel = "loadingScreen";
 	public static LoadingScreenController control;// c'est la clé pour passer des infos aux autres scènes !!
 
 
@@ -18,7 +16,6 @@ public class LoadingScreenController : MonoBehaviour {
 			control = this;
 		} 
 		else if(control != this){
-			
 			Destroy(gameObject);//un seul possible sinon static ne fonctionnera pas !!
 		}
 		
@@ -42,13 +39,13 @@ public class LoadingScreenController : MonoBehaviour {
 	IEnumerator waitSeconds (float waitTime)
 	{
 		yield return new WaitForSeconds (waitTime);
-		StartCoroutine(LoadLevel (numLevel));
+		StartCoroutine(LoadLevel (nameLevel));
 	}
 
-	IEnumerator LoadLevel(int numLevel) {
+	IEnumerator LoadLevel(string level) {
 		//AsyncOperation async = Application.LoadLevelAsync("firstLevel");
-		Debug.Log (numLevel);
-		async = Application.LoadLevelAsync(numLevel);
+		Debug.Log (level);
+		async = Application.LoadLevelAsync(level);
 
 		//async = Application.LoadLevelAsync("firstLevel");//TODO à changer  par le numéro du bon monde à charger
 		yield return async;
@@ -56,7 +53,7 @@ public class LoadingScreenController : MonoBehaviour {
 	}
 
 	/*** appel static depuis le screen des Level, juste avant le chargement de la scène "loadingScreen" ****/
-	public static void setNumLevel(int numeroLevel){
-		numLevel = numeroLevel;
+	public static void setLevelName(string level){
+		nameLevel = level;
 	}
 }

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayButtonManager : MonoBehaviour {
 
-	private int selectedLevel;
+	private string selectedLevel;
 	private GameObject barSelection;
 	private GameObject levelScreen;
 	
@@ -16,8 +16,8 @@ public class PlayButtonManager : MonoBehaviour {
 		levelScreen.SetActive(false);
 	}
 
-	public void LoadLevel(int refLevel) {
-		LoadingScreenController.setNumLevel (refLevel);
+	public void LoadLevel(string refLevel) {
+		LoadingScreenController.setLevelName (refLevel);
 		if (refLevel == selectedLevel) {
 			LoadSelectedLevel();
 		} else {
@@ -26,17 +26,17 @@ public class PlayButtonManager : MonoBehaviour {
 	}
 
 	public void LoadSelectedLevel() {
-		if(selectedLevel != -1)
+		if(selectedLevel != null) 
 			Application.LoadLevel ("LoadingScreen");
 	}
 
-	public void SelectLevel(int levelName) {
+	public void SelectLevel(string levelName) {
 		selectedLevel = levelName;
 		barSelection.SetActive (true);
 	}
 
 	public void UnsetSelectedLevel() {
-		selectedLevel = -1;
+		selectedLevel = null;
 		barSelection.SetActive (false);
 	}
 
