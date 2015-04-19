@@ -20,8 +20,9 @@
 	<object name="commonPrefabs/piece" nombre="50" pool="true" layer="foreGround">
 		<Altitude max="81000" min="3000"></Altitude>
 	</object>
-	
-	
+	<object name="world1/shoe" nombre="20" pool="true" layer="foreGround">
+		<Altitude max="81000" min="3000"></Altitude>
+	</object>	
 	
 	<!-- ** *****  Avant le ciel ******* -->		
     <!--<object name="world1/oiseau" nombre="15" pool="false" layer="foreGround">	
@@ -42,6 +43,9 @@
 	<!--* *****  Dans l'espace ******-->
     <object name="world1/meteorite" nombre="50" pool="true" layer="foreGround">
 		<Altitude max="81000" min="12000"></Altitude>
+	</object>
+	<object name="world3/vaisseau" nombre="5" pool="true" layer="foreGround">
+		<Altitude max="81000" min="50000"></Altitude>
 	</object>
 	<object name="world1/miniAsteroid" nombre="10" pool="false" layer="foreGround">
 		<Altitude max="81000" min="12000"></Altitude>

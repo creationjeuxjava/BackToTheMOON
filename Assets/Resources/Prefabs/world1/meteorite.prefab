@@ -14,8 +14,9 @@ GameObject:
   - 61: {fileID: 6137322}
   - 114: {fileID: 11437326}
   - 50: {fileID: 5037322}
-  - 114: {fileID: 11437324}
   - 114: {fileID: 11437322}
+  - 114: {fileID: 11423116}
+  - 114: {fileID: 11437324}
   m_Layer: 0
   m_Name: meteorite
   m_TagString: Meteorite
@@ -46,7 +47,7 @@ Rigidbody2D:
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_FixedAngle: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -61,6 +62,20 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1.82564259, y: 1.74700928}
   m_Center: {x: .0196580887, y: -.0589752197}
+--- !u!114 &11423116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33107e471fa9a6246a72a4012f8c8eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  velocity: {x: 0, y: 0}
+  triggered: 0
 --- !u!114 &11437322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -74,7 +89,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &11437324
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137322}
