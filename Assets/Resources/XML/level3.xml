@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<levels>
+  
+  <level indice="3" gravity="5.89">
+    <name>Daboga</name>
+    <tutorial>Evitez les obstacles et récupérez des bonus pour atteindre l'autre planète !!</tutorial>
+    <!-- ************ *****  LEs items ******* -->
+	 <!--<object name="world1/cask" nombre="10" pool="false" layer="foreGround"> 
+		<Altitude max="1500" min="300"></Altitude>
+	</object>-->
+	<!--<object name="world1/shoe" nombre="30" pool="true" layer="foreGround">
+		<Altitude max="60000" min="-20"></Altitude>
+	</object>-->
+  	<object name="commonPrefabs/beans" nombre="50" pool="true" layer="foreGround">
+		<Altitude max="81000" min="5000"></Altitude>
+	</object>
+	<object name="commonPrefabs/diamond" nombre="150" pool="true" layer="foreGround">
+		<Altitude max="81000" min="3000"></Altitude>
+	</object>
+	<object name="commonPrefabs/piece" nombre="50" pool="true" layer="foreGround">
+		<Altitude max="81000" min="3000"></Altitude>
+	</object>
+	
+	
+	
+	<!-- ** *****  Avant le ciel ******* -->		
+    <!--<object name="world1/oiseau" nombre="15" pool="false" layer="foreGround">	
+		<Altitude max="20000" min="-10"></Altitude>
+    </object>-->
+	
+	
+    <object name="world3/nuage1" nombre="10" pool="true" layer="foreground"> 
+		<Altitude max="41000" min="5000"></Altitude>
+	</object>	
+	<object name="world3/nuage2" nombre="10" pool="true" layer="backGround"> 
+		<Altitude max="41000" min="5000"></Altitude>
+	</object>
+	<object name="world3/nuage3" nombre="10" pool="true" layer="backGround"> 
+		<Altitude max="41000" min="5000"></Altitude>
+	</object>
+	
+	<!--* *****  Dans l'espace ******-->
+    <object name="world1/meteorite" nombre="50" pool="true" layer="foreGround">
+		<Altitude max="81000" min="12000"></Altitude>
+	</object>
+	<object name="world1/miniAsteroid" nombre="10" pool="false" layer="foreGround">
+		<Altitude max="81000" min="12000"></Altitude>
+	</object>
+	<object name="world3/branche" nombre="150" pool="true" layer="foreGround">
+		<Altitude max="11000" min="0"></Altitude>
+	</object>
+   <object name="commonPrefabs/galaxie" nombre="50" pool="true" layer="backBackGround">
+		<Altitude max="21000" min="12000"></Altitude>
+	</object>
+	<object name="commonPrefabs/etoilesAmas" nombre="50" pool="true" layer="backBackGround">
+		<Altitude max="81000" min="12000"></Altitude>
+	</object>
+	<object name="commonPrefabs/twoStars" nombre="50" pool="true" layer="backGround">
+		<Altitude max="81000" min="12000"></Altitude>
+	</object>
+	<object name="commonPrefabs/etoileBrillante" nombre="50" pool="true" layer="backGround">
+		<Altitude max="81000" min="12000"></Altitude>
+	</object>
+	<object name="commonPrefabs/3etoiles" nombre="50" pool="true" layer="backGround">
+		<Altitude max="81000" min="12000"></Altitude>
+	</object>
+	<object name="commonPrefabs/2galaxies" nombre="50" pool="true" layer="backBackGround">
+		<Altitude max="81000" min="12000"></Altitude>
+	</object>
+	<object name="commonPrefabs/3etoilesBrillantes" nombre="50" pool="true" layer="backGround">
+		<Altitude max="81000" min="12000"></Altitude>
+	</object>
+  </level>
+</levels>
