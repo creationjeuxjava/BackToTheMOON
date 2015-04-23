@@ -5,7 +5,8 @@ using System;
 //[Serializable]
 public class PlayerController : MonoBehaviour {
 
-	public GameObject fumee,particules;
+	public GameObject fumee, phoenixEffect;
+	private GameObject particules;
 	private Animator anim;
 
 	/**** nvelle implémentation car le perso ne bouge pas ...c'est le niveau qui le fait ******/
@@ -74,6 +75,8 @@ public class PlayerController : MonoBehaviour {
 		translation = Vector3.zero;
 
 		timeLeftInvicibility = INVICIBILTY_TIME;
+
+
 	}
 	
 	// Update is called once per frame
@@ -267,6 +270,10 @@ public class PlayerController : MonoBehaviour {
 	public void setInvicibility(){
 		resetPlayerState ();
 		//TODO faire un effet de particules !!
+		phoenixEffect = Instantiate(fumee, new Vector3(transform.position.x+0.25f,transform.position.y-1.8f, -2.2f), transform.rotation) as GameObject; 
+		phoenixEffect.transform.parent = this.transform;
+		Destroy (phoenixEffect, 1f);
+
 		//Rend invicible sur 2 à 3 s
 		isInvicible = true;
 		anim.SetBool("isInvicible",true);
