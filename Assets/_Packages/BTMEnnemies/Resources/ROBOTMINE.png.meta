@@ -64,7 +64,7 @@ TextureImporter:
         width: 178
         height: 179
       alignment: 9
-      pivot: {x: -.915730357, y: -1.36871505}
+      pivot: {x: .561452508, y: .497222215}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Robotaraign\xE9e_00002"
       rect:
@@ -74,7 +74,7 @@ TextureImporter:
         width: 178
         height: 177
       alignment: 9
-      pivot: {x: -.915730357, y: -1.38983047}
+      pivot: {x: .561452508, y: .497222215}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Robotaraign\xE9e_00003"
       rect:
@@ -84,7 +84,7 @@ TextureImporter:
         width: 179
         height: 180
       alignment: 9
-      pivot: {x: -.91061455, y: -1.35555553}
+      pivot: {x: .561452508, y: .497222215}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Robotaraign\xE9e_00004"
       rect:
@@ -94,7 +94,7 @@ TextureImporter:
         width: 175
         height: 175
       alignment: 9
-      pivot: {x: -.942857146, y: -1.41142857}
+      pivot: {x: .561452508, y: .497222215}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Robotaraign\xE9e_00005"
       rect:
@@ -104,7 +104,7 @@ TextureImporter:
         width: 175
         height: 176
       alignment: 9
-      pivot: {x: -.942857146, y: -1.39772725}
+      pivot: {x: .561452508, y: .497222215}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Robotaraign\xE9e_00006"
       rect:
@@ -114,7 +114,7 @@ TextureImporter:
         width: 179
         height: 179
       alignment: 9
-      pivot: {x: -.91061455, y: -1.36312854}
+      pivot: {x: .561452508, y: .497222215}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Robotaraign\xE9e_00007"
       rect:
@@ -124,7 +124,7 @@ TextureImporter:
         width: 179
         height: 179
       alignment: 9
-      pivot: {x: -.91061455, y: -1.36312854}
+      pivot: {x: .561452508, y: .497222215}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Robotaraign\xE9e_00008"
       rect:
@@ -134,7 +134,7 @@ TextureImporter:
         width: 178
         height: 179
       alignment: 9
-      pivot: {x: -.910112381, y: -1.36871505}
+      pivot: {x: .561452508, y: .497222215}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Robotaraign\xE9e_00009"
       rect:
@@ -144,7 +144,7 @@ TextureImporter:
         width: 178
         height: 179
       alignment: 9
-      pivot: {x: -.915730357, y: -1.36871505}
+      pivot: {x: .561452508, y: .497222215}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Robotaraign\xE9e_00010"
       rect:
@@ -154,7 +154,7 @@ TextureImporter:
         width: 179
         height: 179
       alignment: 9
-      pivot: {x: -.905027926, y: -1.36871505}
+      pivot: {x: .561452508, y: .497222215}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Robotaraign\xE9e_00011"
       rect:
@@ -164,7 +164,7 @@ TextureImporter:
         width: 179
         height: 179
       alignment: 9
-      pivot: {x: -.905027926, y: -1.36871505}
+      pivot: {x: .561452508, y: .497222215}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Robotaraign\xE9e_00012"
       rect:
@@ -174,7 +174,7 @@ TextureImporter:
         width: 178
         height: 179
       alignment: 9
-      pivot: {x: -.915730357, y: -1.36871505}
+      pivot: {x: .561452508, y: .497222215}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: "Robotaraign\xE9e_00013"
       rect:
@@ -184,7 +184,7 @@ TextureImporter:
         width: 178
         height: 179
       alignment: 9
-      pivot: {x: -.915730357, y: -1.36871505}
+      pivot: {x: .561452508, y: .497222215}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
