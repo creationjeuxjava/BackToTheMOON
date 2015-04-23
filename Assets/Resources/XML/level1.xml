@@ -60,6 +60,11 @@
 	
 	
 	<!--* *****  Dans l'espace ******-->
+	 <object name="commonPrefabs/ennemies/ETMine" nombre="50" pool="true" layer="foreGround">
+		<Altitude max="150000" min="10000"></Altitude>
+	</object>
+	
+	
     <object name="world1/meteorite" nombre="50" pool="true" layer="foreGround">
 		<Altitude max="150000" min="40000"></Altitude>
 	</object>

@@ -46,7 +46,7 @@ public class controlCollision2 : MonoBehaviour {
 		//GetComponent<SpriteRenderer> ().color = Color.red;
 		//this.renderer.material.color = Color.red;
 		//this.renderer.material.color = Color.green;
-		//Debug.Log (" Ennemi, collision avec Trigger: " + other.gameObject.name);
+		Debug.Log (" Ennemi, collision avec Trigger: " + other.gameObject.name);
 		//Destroy ();
 	}
 
