@@ -270,9 +270,9 @@ public class PlayerController : MonoBehaviour {
 	public void setInvicibility(){
 		resetPlayerState ();
 		//TODO faire un effet de particules !!
-		phoenixEffect = Instantiate(fumee, new Vector3(transform.position.x+0.25f,transform.position.y-1.8f, -2.2f), transform.rotation) as GameObject; 
+		phoenixEffect = Instantiate(phoenixEffect, new Vector3(transform.position.x+0.25f,transform.position.y-1.8f, -2.2f), transform.rotation) as GameObject; 
 		phoenixEffect.transform.parent = this.transform;
-		Destroy (phoenixEffect, 1f);
+		//Destroy (phoenixEffect, 1f);
 
 		//Rend invicible sur 2 à 3 s
 		isInvicible = true;
