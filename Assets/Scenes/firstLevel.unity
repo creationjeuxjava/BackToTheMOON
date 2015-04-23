@@ -12551,7 +12551,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 313015600}
-  currentLevel: 1
 --- !u!114 &1620950175
 MonoBehaviour:
   m_ObjectHideFlags: 0

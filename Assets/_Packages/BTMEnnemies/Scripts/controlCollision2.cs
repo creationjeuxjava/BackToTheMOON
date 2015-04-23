@@ -19,6 +19,7 @@ public class controlCollision2 : MonoBehaviour {
 			//particules
 			Debug.Log (" HURTED !!");
 			isAlive = false;
+			this.gameObject.SetActive(false);
 		}
 
 		if (gameObject.activeSelf) {
