@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<language name="english" code="en">
+<language name="français" code="fr">
 	<object name="worldInfos1" titre="Grec" idLevel="1">
 	 
 		<Texte> Un truc bidon sur le monde \n grec antique !!</Texte>
