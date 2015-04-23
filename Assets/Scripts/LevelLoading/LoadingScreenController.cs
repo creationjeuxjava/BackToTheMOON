@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class LoadingScreenController : MonoBehaviour {
@@ -6,7 +6,7 @@ public class LoadingScreenController : MonoBehaviour {
 	AsyncOperation async;
 	public float waitTime = 2f;
 	public bool isPreloadingRequire = true;
-	public static string nameLevel = "loadingScreen";
+	public static int level = 0;
 	public static LoadingScreenController control;// c'est la clé pour passer des infos aux autres scènes !!
 
 
@@ -39,10 +39,10 @@ public class LoadingScreenController : MonoBehaviour {
 	IEnumerator waitSeconds (float waitTime)
 	{
 		yield return new WaitForSeconds (waitTime);
-		StartCoroutine(LoadLevel (nameLevel));
+		StartCoroutine(LoadLevel (level));
 	}
 
-	IEnumerator LoadLevel(string level) {
+	IEnumerator LoadLevel(int level) {
 		//AsyncOperation async = Application.LoadLevelAsync("firstLevel");
 		Debug.Log (level);
 		async = Application.LoadLevelAsync(level);
@@ -53,7 +53,7 @@ public class LoadingScreenController : MonoBehaviour {
 	}
 
 	/*** appel static depuis le screen des Level, juste avant le chargement de la scène "loadingScreen" ****/
-	public static void setLevelName(string level){
-		nameLevel = level;
+	public static void setLevel(int level){
+		LoadingScreenController.level = level;
 	}
 }

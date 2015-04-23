@@ -42,7 +42,7 @@ public class GameController : MonoBehaviour {
 	private float altBeginOfSpace = 41000f; //10000f; test   //41000f;  realité
 
 	private int coeffVitesse = 1 * 3600; 
-	public int currentLevel = 1; //par défaut le premier niveau
+	public static int currentLevel = 1; //par défaut le premier niveau
 	private float gravityLevel;
 	public static Vector3 lastPlayerSpeed,playerSpeed;
 	public static float vitessePlayerTransormee;
@@ -144,6 +144,9 @@ public class GameController : MonoBehaviour {
 			}
 			if(altitude >= altMaxForWinLevel){
 				isInGame = false;
+				currentLevel++;
+				GameController.Save();
+				currentLevel--;
 			}
 			if(altitude >= altBeginOfSpace && !isInSpace) { 
 				isInSpace = true;
@@ -318,6 +321,7 @@ public class GameController : MonoBehaviour {
 		PlayerData playerData = new PlayerData (); 
 		playerData.coins = nbrePieces;
 		playerData.diamonds = nbreDiamond;
+		playerData.doneLevels [currentLevel+1] = true;
 		//playerData.hasSavedGame = hasSaved;
 		bf.Serialize (file, playerData);
 		Debug.Log ("Saving game into " + Application.persistentDataPath);
@@ -328,7 +332,6 @@ public class GameController : MonoBehaviour {
 
 
 	public static void Load(){
-
 		if(File.Exists(Application.persistentDataPath + "/playerInfo.bttm"));
 		{
 						BinaryFormatter bf = new BinaryFormatter ();

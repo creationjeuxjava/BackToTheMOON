@@ -14,6 +14,7 @@ public class WatchShip : MonoBehaviour {
 		speed = back ? -speed : speed;
 		velocity = new Vector2 (speed, 0);
 		limit = Random.Range (min, max);
+		transform.Rotate (new Vector3 (0, 0, 0));
 		changeLimit ();
 	}
 	// Update is called once per frame
@@ -21,7 +22,6 @@ public class WatchShip : MonoBehaviour {
 		if ((back && transform.localPosition.x < limit) || (!back && transform.localPosition.x > limit)) {
 			changeLimit();
 		}
-		Debug.Log ("transform " + transform.localPosition);
 		rigidbody2D.velocity = velocity;
 	}
 
