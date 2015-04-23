@@ -42,11 +42,17 @@ public class controlCollision2 : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D other){
 
-		isHurted = true;
+		if(other.gameObject.tag == "Player" ){
+			Debug.Log (this+" Ennemi, collision avec Trigger: " + other.gameObject.name);
+			isHurted = true;
+			
+		}
+
+
 		//GetComponent<SpriteRenderer> ().color = Color.red;
 		//this.renderer.material.color = Color.red;
 		//this.renderer.material.color = Color.green;
-		Debug.Log (" Ennemi, collision avec Trigger: " + other.gameObject.name);
+
 		//Destroy ();
 	}
 

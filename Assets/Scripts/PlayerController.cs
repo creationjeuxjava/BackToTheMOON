@@ -163,6 +163,11 @@ public class PlayerController : MonoBehaviour {
 			
 		}
 
+		/*if(other.gameObject.tag == "Ennemies"  && !isFlyBegin){
+			Debug.Log ("***************  collision  avec une mine");
+			
+		}*/
+
 
 
 
@@ -171,6 +176,11 @@ public class PlayerController : MonoBehaviour {
 	/**** détection des collisions avec les GO istrigger = true 
 	 *****    permet de pouvoir passer au travers !!      ****/
 	void OnTriggerEnter2D(Collider2D other) {
+
+		if(other.gameObject.tag == "Ennemies"  && !isFlyBegin){
+			Debug.Log ("***************  collision Trigger avec une mine");
+
+		}
 
 		if(other.gameObject.tag == "Cask"  && !isItemActivated && !isFlyBegin){
 			//Debug.Log ("***************  collision avec un cask ");
@@ -257,7 +267,7 @@ public class PlayerController : MonoBehaviour {
 		//Rend invicible sur 2 à 3 s
 		isInvicible = true;
 		anim.SetBool("isInvicible",true);
-		Debug.Log (this.name + " le player est invicible pour : "+INVICIBILTY_TIME+" s");
+		//Debug.Log (this.name + " le player est invicible pour : "+INVICIBILTY_TIME+" s");
 	}
 	private void checkTimeInvicibility(){
 		
@@ -267,7 +277,7 @@ public class PlayerController : MonoBehaviour {
 			isInvicible = false;
 			timeLeftInvicibility = INVICIBILTY_TIME;
 			anim.SetBool("isInvicible",false);
-			Debug.Log (this.name + " le player n'est plus invicible !!");
+			//Debug.Log (this.name + " le player n'est plus invicible !!");
 		}
 	}
 
