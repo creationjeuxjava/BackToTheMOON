@@ -5,7 +5,7 @@ using System;
 //[Serializable]
 public class PlayerController : MonoBehaviour {
 
-   	public GameObject fumee;
+	public GameObject fumee,particules;
 	private Animator anim;
 
 	/**** nvelle implémentation car le perso ne bouge pas ...c'est le niveau qui le fait ******/
@@ -57,8 +57,8 @@ public class PlayerController : MonoBehaviour {
 		isFlyBegin = true;
 		vitesse = new Vector3(0,-speedPlayer,0);
 		startFlyTime = Time.time;
-		//GameObject particules = Instantiate(fumee, new Vector3(transform.position.x,transform.position.y-2, -2f), transform.rotation) as GameObject; 
-		//particules.transform.parent = this.transform;
+		particules = Instantiate(fumee, new Vector3(transform.position.x+0.25f,transform.position.y-1.8f, -2.2f), transform.rotation) as GameObject; 
+		particules.transform.parent = this.transform;
 		anim.SetTrigger ("decollage");
 	}
 
