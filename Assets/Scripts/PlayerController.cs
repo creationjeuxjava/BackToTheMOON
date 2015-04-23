@@ -240,6 +240,9 @@ public class PlayerController : MonoBehaviour {
             audio.PlayOneShot(diamondTaken);
 			other.gameObject.SetActive(false);
 		}
+		if(other.gameObject.tag == "Ennemies" ){
+			updateVitesse(other.gameObject);
+		}
 
 		if(other.gameObject.tag == "Beans" && !isItemActivated && !isFlyBegin){
 			//Debug.Log ("***************  collision avec beans ");

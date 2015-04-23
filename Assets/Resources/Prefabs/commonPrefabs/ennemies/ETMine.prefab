@@ -13,6 +13,7 @@ GameObject:
   - 61: {fileID: 6182948}
   - 50: {fileID: 5082948}
   - 114: {fileID: 11482948}
+  - 114: {fileID: 11422210}
   m_Layer: 0
   m_Name: ETMine
   m_TagString: Ennemies
@@ -73,6 +74,18 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11422210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9d0357dea91ab45822b1d6d6c4b4d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedReducingFactor: .0199999996
 --- !u!114 &11482948
 MonoBehaviour:
   m_ObjectHideFlags: 1

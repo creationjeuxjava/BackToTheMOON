@@ -21,6 +21,11 @@ public class controlCollision2 : MonoBehaviour {
 			isAlive = false;
 		}
 
+		if (gameObject.activeSelf) {
+			regenerate();
+		
+		}
+
 	}
 
 	public void regenerate(){
