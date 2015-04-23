@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <language name="français" code="fr">
-	<object name="worldInfos1" titre="Grec" idLevel="1">
+	<object name="worldInfos1" titre="Grec" idLevel="1" type= "GUILevelBlock">
 	 
 		<Texte> Un truc bidon sur le monde \n grec antique !!</Texte>
 	</object>
 	
-	<object name="worldInfos2" titre="Fire" idLevel="2">
+	<object name="worldInfos2" titre="Fire" idLevel="2" type= "GUILevelBlock">
 	 
 		<Texte> Un truc bidon sur le monde \n de feu ki brule  !!</Texte>
 	</object>
+	
+	
+	<object name="LoadingTip1" type= "GUILoading">
+	 
+		<Texte> L'astuce \n associée à l'icone présentée en image </Texte>
+		<Image> /path/vers/resources </Image>
+	</object>
+	
+	<object name="ButtonQuitInGame" type= "GUIOneShot">
+	 
+		<Texte> Quitter </Texte>
+	</object>
+	<object name="ButtonReplaytInGame" type= "GUIOneShot">
+	 
+		<Texte> Rejouer </Texte>
+	</object>
+	
 </language>
