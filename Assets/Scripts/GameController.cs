@@ -33,7 +33,8 @@ public class GameController : MonoBehaviour {
 
 	public  static int nbrePieces = 0;
 	public static int nbreDiamond = 0;
-	public static int score = 0;
+	public static bool[] doneLevels;
+ 	public static int score = 0;
 	public const int DIAMOND_FOR_PHOENIX_EFFECT = 5;
 	public const int PHOENIX_EFFECT_COST = 5;
 
@@ -58,7 +59,11 @@ public class GameController : MonoBehaviour {
 		//Application.targetFrameRate = 40;
         if (File.Exists(Application.persistentDataPath + "/playerInfo.bttm"))
         {
-            GameController.Load();
+            DataRecorder.Load();
+			PlayerData playerData = DataRecorder.GetPlayerData();
+			nbrePieces = playerData.coins;
+			nbreDiamond = playerData.diamonds;
+			doneLevels = playerData.doneLevels;
         }
         else Debug.Log("File doesn't exist or cant reache the file");
 		
@@ -154,6 +159,17 @@ public class GameController : MonoBehaviour {
 			}
 			//ActionButtonManager.updateIcon();
 		}
+	}
+
+	private static void Save() {
+		PlayerData toSave = new PlayerData();
+		toSave.coins = nbrePieces;
+		toSave.diamonds = nbreDiamond;
+		toSave.hasSavedGame = true;
+		toSave.maxAltitude = 150000;
+		doneLevels [currentLevel] = true;
+		toSave.doneLevels = doneLevels;
+		DataRecorder.Save(toSave);
 	}
 
 
@@ -339,6 +355,7 @@ public class GameController : MonoBehaviour {
 						PlayerData playerData = (PlayerData) bf.Deserialize(file);
 						nbrePieces = playerData.coins;
 						nbreDiamond = playerData.diamonds;
+						doneLevels = playerData.doneLevels;
 						//hasSaved = playerData.hasSavedGame;
 						file.Close ();
 						Debug.Log ("Loading game from " + Application.persistentDataPath);

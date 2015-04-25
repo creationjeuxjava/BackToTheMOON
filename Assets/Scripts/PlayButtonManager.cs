@@ -6,10 +6,15 @@ public class PlayButtonManager : MonoBehaviour {
 	private GameObject barSelection;
 	private GameObject levelScreen = null;
 	private int selectedLevel = -1;
-	
 	// Use this for initialization
 	public void Start () {
-
+		bool[] doneLevels = GameController.doneLevels;
+		string pathInHierarchy = "/Canvas/HandBackground/LevelScreen/FondPlanete/";
+		int i = 1;
+		do {
+			GameObject.Find (pathInHierarchy + "Trajet-" + i).SetActive (doneLevels [i]);
+			GameObject.Find (pathInHierarchy + "Level-" + i).SetActive (doneLevels [i]);
+		} while(doneLevels[i++]);
 		barSelection = GameObject.Find("/Canvas/HandBackground/LevelScreen/BarSelection");
 		barSelection.SetActive(false);
 		levelScreen = GameObject.Find ("/Canvas/HandBackground/LevelScreen");
