@@ -161,7 +161,7 @@ public class GameController : MonoBehaviour {
 		}
 	}
 
-	private static void Save() {
+	public static void Save() {
 		PlayerData toSave = new PlayerData();
 		toSave.coins = nbrePieces;
 		toSave.diamonds = nbreDiamond;
@@ -328,7 +328,7 @@ public class GameController : MonoBehaviour {
 
 
 
-	public  static void  Save(){
+/*	public  static void  Save(){
 
 		BinaryFormatter bf = new BinaryFormatter ();
 		FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.bttm");
@@ -343,7 +343,7 @@ public class GameController : MonoBehaviour {
 		Debug.Log ("Saving game into " + Application.persistentDataPath);
 		file.Close();
 		hasSaved = true;
-		}
+		}*/
 
 
 
